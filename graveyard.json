@@ -1,0 +1,524 @@
+{
+ "graves": [
+  {
+   "n": {
+    "zh": "ChatGPT 插件",
+    "ja": "ChatGPTプラグイン",
+    "en": "ChatGPT plugins"
+   },
+   "born": "2023.03",
+   "died": "2024.04",
+   "m": 13,
+   "hype": {
+    "zh": "被称为「AI 时代的 App Store」",
+    "ja": "「AI時代のApp Store」と呼ばれた",
+    "en": "Called \"the App Store of AI\""
+   },
+   "cause": {
+    "zh": "被 GPTs 取代，全部停用",
+    "ja": "GPTsに置き換えられ全廃",
+    "en": "Replaced by GPTs and shut down"
+   },
+   "ep": {
+    "zh": "为它写的教程，比用过它的人还多。",
+    "ja": "使った人より、解説記事のほうが多かった。",
+    "en": "More tutorials were written about it than people used it."
+   },
+   "src": "https://tooldirectory.ai/ai-graveyard/2024"
+  },
+  {
+   "n": {
+    "zh": "提示词工程师",
+    "ja": "プロンプトエンジニア",
+    "en": "Prompt engineer (the job title)"
+   },
+   "born": "2023",
+   "died": "2025",
+   "m": 24,
+   "hype": {
+    "zh": "传说年薪 30 万美元的新职业",
+    "ja": "年収30万ドルの新職業と噂された",
+    "en": "Rumored $300K-a-year new profession"
+   },
+   "cause": {
+    "zh": "模型越来越听得懂大白话，真正招这个岗位的公司很少",
+    "ja": "モデルが普通の言葉を理解するようになり、実際の採用はわずか",
+    "en": "Models learned plain language; few companies ever hired for it"
+   },
+   "ep": {
+    "zh": "它教会了我们好好说话，然后就不需要了。",
+    "ja": "ちゃんと話すことを教えてくれて、そして不要になった。",
+    "en": "It taught us to speak clearly, then made itself unnecessary."
+   },
+   "src": "https://www.fortune.com/2025/05/07/prompt-engineering-200k-six-figure-role-now-obsolete-thanks-to-ai"
+  },
+  {
+   "n": {
+    "zh": "Prompt 模板付费课",
+    "ja": "有料プロンプト講座",
+    "en": "Paid prompt-template courses"
+   },
+   "born": "2023",
+   "died": "2024",
+   "m": 18,
+   "hype": {
+    "zh": "「100 个万能咒语，不学就落后」",
+    "ja": "「万能プロンプト100選、学ばないと遅れる」",
+    "en": "\"100 magic prompts you must know\""
+   },
+   "cause": {
+    "zh": "模型会自己补全意图，推理模型自己会拆步骤",
+    "ja": "モデルが意図を補い、推論モデルが自ら手順を分解",
+    "en": "Models infer intent; reasoning models plan on their own"
+   },
+   "ep": {
+    "zh": "学费还在，咒语没了。",
+    "ja": "受講料は消えず、呪文は消えた。",
+    "en": "The tuition stayed. The spells didn't."
+   },
+   "src": "https://www.vktr.com/ai-upskilling/the-truth-about-prompt-engineering-jobs/"
+  },
+  {
+   "n": {
+    "zh": "「一步步思考」咒语",
+    "ja": "「ステップバイステップで」呪文",
+    "en": "\"Let's think step by step\""
+   },
+   "born": "2022",
+   "died": "2024.09",
+   "m": 24,
+   "hype": {
+    "zh": "一句话让模型准确率大涨的秘籍",
+    "ja": "一言で精度が上がる秘伝",
+    "en": "The one line that boosted accuracy"
+   },
+   "cause": {
+    "zh": "o1 等推理模型把「先想再答」做进了模型里",
+    "ja": "o1などの推論モデルが「考えてから答える」を内蔵",
+    "en": "Reasoning models like o1 built thinking in"
+   },
+   "ep": {
+    "zh": "它现在每次都在想，只是不用你提醒了。",
+    "ja": "今も毎回考えている。ただ言わなくてよくなった。",
+    "en": "It still thinks every time. You just don't have to ask."
+   },
+   "src": "https://en.wikipedia.org/wiki/OpenAI_o1"
+  },
+  {
+   "n": {
+    "zh": "Midjourney 参数表",
+    "ja": "Midjourneyパラメータ表",
+    "en": "Midjourney parameter cheat sheets"
+   },
+   "born": "2023.03",
+   "died": "2025.03",
+   "m": 24,
+   "hype": {
+    "zh": "--ar --stylize --chaos，人人收藏",
+    "ja": "--ar --stylize --chaos、みんな保存した",
+    "en": "--ar --stylize --chaos, saved by everyone"
+   },
+   "cause": {
+    "zh": "对话式生图出现，一句话就能出好图",
+    "ja": "対話型の画像生成で一文から良い絵が出るように",
+    "en": "Chat-based image tools made one sentence enough"
+   },
+   "ep": {
+    "zh": "收藏夹里最贵的一页。",
+    "ja": "ブックマークで一番高くついたページ。",
+    "en": "The most expensive page in your bookmarks."
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-4o"
+  },
+  {
+   "n": {
+    "zh": "越狱提示词（DAN）",
+    "ja": "脱獄プロンプト（DAN）",
+    "en": "Jailbreak prompts (DAN)"
+   },
+   "born": "2022.12",
+   "died": "2023",
+   "m": 8,
+   "hype": {
+    "zh": "「让 ChatGPT 解除限制」的神秘口令",
+    "ja": "「ChatGPTの制限を外す」秘密の合言葉",
+    "en": "The secret phrase to \"unlock\" ChatGPT"
+   },
+   "cause": {
+    "zh": "被一轮轮修补",
+    "ja": "次々と修正された",
+    "en": "Patched again and again"
+   },
+   "ep": {
+    "zh": "每个版本号都是一次失败。",
+    "ja": "バージョン番号の数だけ敗北した。",
+    "en": "Every version number marks a defeat."
+   },
+   "src": "https://en.wikipedia.org/wiki/Prompt_injection"
+  },
+  {
+   "n": {
+    "zh": "AutoGPT 热潮",
+    "ja": "AutoGPTブーム",
+    "en": "The AutoGPT craze"
+   },
+   "born": "2023.04",
+   "died": "2023.07",
+   "m": 3,
+   "hype": {
+    "zh": "「AI 能自己干活了」",
+    "ja": "「AIが自分で働く」",
+    "en": "\"AI can work on its own\""
+   },
+   "cause": {
+    "zh": "总在原地打转、烧钱。项目还在，热度没了",
+    "ja": "堂々巡りでコスト高。プロジェクトは残るが熱は冷めた",
+    "en": "Looped and burned money. The project lives on; the hype didn't"
+   },
+   "ep": {
+    "zh": "它一直在努力完成目标，至今仍在努力。",
+    "ja": "目標達成に向けて努力中。今もなお。",
+    "en": "Still working toward its goal. Still."
+   },
+   "src": "https://en.wikipedia.org/wiki/AutoGPT"
+  },
+  {
+   "n": {
+    "zh": "GPT Store 赚钱梦",
+    "ja": "GPT Storeで稼ぐ夢",
+    "en": "The GPT Store gold rush"
+   },
+   "born": "2024.01",
+   "died": "2024",
+   "m": 8,
+   "hype": {
+    "zh": "「人人都能靠 GPTs 躺赚」",
+    "ja": "「誰でもGPTsで不労所得」",
+    "en": "\"Passive income from GPTs\""
+   },
+   "cause": {
+    "zh": "没成为下一个 App Store，分成也没有大面积落地",
+    "ja": "次のApp Storeにはならず、収益分配も広がらず",
+    "en": "Never became the next App Store; revenue sharing barely happened"
+   },
+   "ep": {
+    "zh": "店开了，客人没来。",
+    "ja": "店は開いた。客は来なかった。",
+    "en": "The shop opened. The customers didn't come."
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT_Store"
+  },
+  {
+   "n": {
+    "zh": "手搭 RAG 必修课",
+    "ja": "手作りRAGの必修講座",
+    "en": "\"Build your own RAG\" bootcamps"
+   },
+   "born": "2023",
+   "died": "2024",
+   "m": 15,
+   "hype": {
+    "zh": "「不会向量数据库就不算懂 AI」",
+    "ja": "「ベクトルDBを知らなければAIを語れない」",
+    "en": "\"No vector DB, no AI career\""
+   },
+   "cause": {
+    "zh": "长上下文和文件上传成了标配，普通人直接把文件丢进去",
+    "ja": "長いコンテキストとファイル添付が標準に",
+    "en": "Long context and file upload became standard"
+   },
+   "ep": {
+    "zh": "切了一年的块，模型说：整本给我吧。",
+    "ja": "1年チャンク分割したら、モデルが「丸ごとちょうだい」。",
+    "en": "A year of chunking, then the model said: just send the whole book."
+   },
+   "src": "https://en.wikipedia.org/wiki/Gemini_(language_model)"
+  },
+  {
+   "n": {
+    "zh": "Manus 邀请码",
+    "ja": "Manus招待コード",
+    "en": "Manus invite codes"
+   },
+   "born": "2025.03",
+   "died": "2025.04",
+   "m": 1,
+   "hype": {
+    "zh": "二手平台炒到上万元",
+    "ja": "転売サイトで数万元に",
+    "en": "Resold for thousands of yuan"
+   },
+   "cause": {
+    "zh": "很快开放注册，各家都有了类似功能",
+    "ja": "すぐ登録開放、各社が同様の機能を搭載",
+    "en": "Signups opened and everyone shipped similar features"
+   },
+   "ep": {
+    "zh": "最贵的时候，是还没人用过的时候。",
+    "ja": "一番高かったのは、まだ誰も使っていない時。",
+    "en": "It was priciest before anyone had tried it."
+   },
+   "src": "https://en.wikipedia.org/wiki/Manus_(AI_agent)"
+  },
+  {
+   "n": {
+    "zh": "Sora",
+    "ja": "Sora",
+    "en": "Sora"
+   },
+   "born": "2024.12",
+   "died": "2026.04",
+   "m": 16,
+   "hype": {
+    "zh": "「好莱坞要关门了」",
+    "ja": "「ハリウッドは終わる」",
+    "en": "\"Hollywood is finished\""
+   },
+   "cause": {
+    "zh": "OpenAI 停止服务",
+    "ja": "OpenAIがサービス終了",
+    "en": "Discontinued by OpenAI"
+   },
+   "ep": {
+    "zh": "刷完了。",
+    "ja": "スクロールし終えた。",
+    "en": "Scrolled to the end."
+   },
+   "src": "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation"
+  },
+  {
+   "n": {
+    "zh": "ChatGPT Atlas 浏览器",
+    "ja": "ChatGPT Atlasブラウザ",
+    "en": "ChatGPT Atlas browser"
+   },
+   "born": "2025.10",
+   "died": "2026.08",
+   "m": 10,
+   "hype": {
+    "zh": "「浏览器大战重启」",
+    "ja": "「ブラウザ戦争の再開」",
+    "en": "\"The browser wars are back\""
+   },
+   "cause": {
+    "zh": "据报道上线约 10 个月后关停",
+    "ja": "報道によれば約10か月で終了",
+    "en": "Reportedly shut down after about 10 months"
+   },
+   "ep": {
+    "zh": "标签页已关闭。",
+    "ja": "タブは閉じられました。",
+    "en": "Tab closed."
+   },
+   "src": "https://help.openai.com/en/articles/20001371-evolving-atlas-into-chatgpt-for-browser-based-agentic-work"
+  },
+  {
+   "n": {
+    "zh": "Humane AI Pin",
+    "ja": "Humane AI Pin",
+    "en": "Humane AI Pin"
+   },
+   "born": "2024.04",
+   "died": "2025.02",
+   "m": 10,
+   "hype": {
+    "zh": "699 美元，号称取代手机",
+    "ja": "699ドル、スマホを置き換えると謳った",
+    "en": "$699, pitched as the phone killer"
+   },
+   "cause": {
+    "zh": "评测差、卖不动，停服后设备变砖",
+    "ja": "酷評と不振、終了後に文鎮化",
+    "en": "Panned and unsold; devices bricked after shutdown"
+   },
+   "ep": {
+    "zh": "它想取代手机，最后被手机里的一个 App 取代了。",
+    "ja": "スマホを置き換えるはずが、スマホのアプリに置き換えられた。",
+    "en": "It meant to replace the phone; an app on the phone replaced it."
+   },
+   "src": "https://petapixel.com/2025/02/19/humanes-ai-pin-is-dead-and-all-devices-will-stop-working-in-10-days"
+  },
+  {
+   "n": {
+    "zh": "Rabbit R1",
+    "ja": "Rabbit R1",
+    "en": "Rabbit R1"
+   },
+   "born": "2024.04",
+   "died": "2025.03",
+   "m": 11,
+   "hype": {
+    "zh": "「大动作模型」，不用再打开 App",
+    "ja": "「大規模行動モデル」でアプリ不要",
+    "en": "A \"Large Action Model\" to replace apps"
+   },
+   "cause": {
+    "zh": "被拆解出只是套壳",
+    "ja": "中身はラッパーと判明",
+    "en": "Exposed as a repackaged wrapper"
+   },
+   "ep": {
+    "zh": "橙色的盒子，空的。",
+    "ja": "オレンジの箱、中身は空。",
+    "en": "An orange box. Empty inside."
+   },
+   "src": "https://www.theverge.com/24133200/rabbit-r1-review-ai-gadget"
+  },
+  {
+   "n": {
+    "zh": "GPT-4.5",
+    "ja": "GPT-4.5",
+    "en": "GPT-4.5"
+   },
+   "born": "2025.02",
+   "died": "2025.07",
+   "m": 4,
+   "hype": {
+    "zh": "史上最贵，每百万输入 token 75 美元",
+    "ja": "史上最高額、入力100万トークン75ドル",
+    "en": "Priciest ever at $75 per million input tokens"
+   },
+   "cause": {
+    "zh": "不到五个月被下线",
+    "ja": "5か月足らずで廃止",
+    "en": "Deprecated in under five months"
+   },
+   "ep": {
+    "zh": "贵是真的贵，短也是真的短。",
+    "ja": "高いのも本当、短いのも本当。",
+    "en": "Truly expensive. Truly brief."
+   },
+   "src": "https://community.openai.com/t/gpt-4-5-preview-model-will-be-removed-from-the-api-on-2025-07-14/1230050"
+  },
+  {
+   "n": {
+    "zh": "GPT-5.5（ChatGPT 里）",
+    "ja": "GPT-5.5（ChatGPT内）",
+    "en": "GPT-5.5 in ChatGPT"
+   },
+   "born": "2026.04",
+   "died": "2026.10",
+   "m": 6,
+   "hype": {
+    "zh": "「最强编程 Agent 模型」",
+    "ja": "「最強のコーディングモデル」",
+    "en": "\"The best agentic coding model\""
+   },
+   "cause": {
+    "zh": "被 GPT-6 系列取代，只活了 174 天",
+    "ja": "GPT-6系に置換、174日",
+    "en": "Replaced by GPT-6, after 174 days"
+   },
+   "ep": {
+    "zh": "你还没学会用它，它就退休了。",
+    "ja": "使いこなす前に引退した。",
+    "en": "It retired before you finished learning it."
+   },
+   "src": "https://killedbyai.net/"
+  },
+  {
+   "n": {
+    "zh": "「和 PDF 聊天」创业公司",
+    "ja": "「PDFと会話」系スタートアップ",
+    "en": "\"Chat with your PDF\" startups"
+   },
+   "born": "2023.03",
+   "died": "2024.05",
+   "m": 14,
+   "hype": {
+    "zh": "ChatPDF 等一大批套壳爆火",
+    "ja": "ChatPDFなどラッパーが大流行",
+    "en": "ChatPDF and a wave of wrappers took off"
+   },
+   "cause": {
+    "zh": "大模型直接支持上传文件，整个品类消失",
+    "ja": "モデルがファイル添付に標準対応、カテゴリーごと消滅",
+    "en": "Models added native file upload; the whole category vanished"
+   },
+   "ep": {
+    "zh": "被一个上传按钮打败。",
+    "ja": "アップロードボタン1つに負けた。",
+    "en": "Defeated by an upload button."
+   },
+   "src": "https://killedbyai.net/"
+  },
+  {
+   "n": {
+    "zh": "Character.AI（独立时期）",
+    "ja": "Character.AI（独立期）",
+    "en": "Character.AI (independent)"
+   },
+   "born": "2022.09",
+   "died": "2024.08",
+   "m": 23,
+   "hype": {
+    "zh": "现象级角色聊天平台",
+    "ja": "社会現象になったキャラチャット",
+    "en": "A viral character-chat phenomenon"
+   },
+   "cause": {
+    "zh": "创始团队被谷歌挖回",
+    "ja": "創業チームがGoogleへ",
+    "en": "Founders went back to Google"
+   },
+   "ep": {
+    "zh": "角色还在聊，造角色的人走了。",
+    "ja": "キャラは話し続け、作った人は去った。",
+    "en": "The characters kept talking; their makers left."
+   },
+   "src": "https://www.theverge.com/2024/8/2/24212348/google-character-ai-noam-shazeer"
+  },
+  {
+   "n": {
+    "zh": "Builder.ai",
+    "ja": "Builder.ai",
+    "en": "Builder.ai"
+   },
+   "born": "2016",
+   "died": "2025.05",
+   "m": 108,
+   "hype": {
+    "zh": "微软投资，估值 15 亿美元的「AI 造 App」",
+    "ja": "Microsoft出資、評価額15億ドルの「AIでアプリ」",
+    "en": "Microsoft-backed, $1.5B \"AI app builder\""
+   },
+   "cause": {
+    "zh": "资金耗尽破产",
+    "ja": "資金が尽きて破綻",
+    "en": "Ran out of money"
+   },
+   "ep": {
+    "zh": "说好的 AI，后面坐满了人。",
+    "ja": "AIのはずが、裏には人が大勢いた。",
+    "en": "The AI turned out to have a lot of people behind it."
+   },
+   "src": "https://techcrunch.com/2025/05/20/once-worth-over-1b-microsoft-backed-builder-ai-is-running-out-of-money/"
+  },
+  {
+   "n": {
+    "zh": "豆包和千问的「智能体」创建",
+    "ja": "DoubaoとQwenのエージェント作成",
+    "en": "Doubao & Qwen agent builders"
+   },
+   "born": "2024.05",
+   "died": "2026.07",
+   "m": 26,
+   "hype": {
+    "zh": "「人人都能做智能体」",
+    "ja": "「誰でもエージェントを作れる」",
+    "en": "\"Anyone can build an agent\""
+   },
+   "cause": {
+    "zh": "两家同日关闭该功能",
+    "ja": "両社が同日に機能終了",
+    "en": "Both shut the feature the same day"
+   },
+   "ep": {
+    "zh": "你搭的智能体，和平台一起下班了。",
+    "ja": "作ったエージェントは、プラットフォームと一緒に退勤した。",
+    "en": "Your agents clocked out with the platform."
+   },
+   "src": "https://technode.com/2026/07/06/bytedances-doubao-and-alibabas-qwen-to-shut-down-ai-agent-features-on-july-15/"
+  }
+ ]
+}

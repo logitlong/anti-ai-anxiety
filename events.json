@@ -1,0 +1,6822 @@
+{
+ "updated": "2026-11-07",
+ "events": [
+  {
+   "d": "2022-11-30",
+   "r": "us",
+   "c": "model",
+   "p": 5,
+   "t": {
+    "zh": "ChatGPT 发布，一切的起点",
+    "ja": "ChatGPT公開、すべての始まり",
+    "en": "ChatGPT launches. Day zero."
+   },
+   "f": {
+    "zh": "文案、客服、翻译要第一批消失，学生再也不用写作业了。",
+    "ja": "コピーライター、サポート、翻訳が真っ先に消える。",
+    "en": "Copywriters, support agents and translators are first to go."
+   },
+   "o": {
+    "zh": "四年后这些岗位都还在。变化是：会用 AI 的人多了一个顺手的工具。",
+    "ja": "4年後もこれらの仕事は残っている。AIを使う人に便利な道具が一つ増えただけ。",
+    "en": "Four years on, those jobs still exist. People who use AI just gained a handy tool."
+   },
+   "life": {
+    "zh": "约 6 个月",
+    "ja": "約6か月",
+    "en": "~6 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/ChatGPT",
+   "s": {
+    "zh": "ChatGPT",
+    "ja": "ChatGPT",
+    "en": "ChatGPT"
+   }
+  },
+  {
+   "d": "2023-01-24",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "Karpathy 在 X 上说：最火的新编程语言是英语",
+    "ja": "Karpathy「最も熱い新しいプログラミング言語は英語だ」",
+    "en": "Karpathy: \"The hottest new programming language is English\""
+   },
+   "src": "https://en.wikipedia.org/wiki/Andrej_Karpathy",
+   "ind": "code"
+  },
+  {
+   "d": "2023-02-01",
+   "r": "us",
+   "c": "price",
+   "p": 2,
+   "t": {
+    "zh": "ChatGPT Plus 上线，每月 20 美元",
+    "ja": "ChatGPT Plus開始、月額20ドル",
+    "en": "ChatGPT Plus launches at $20/month"
+   },
+   "src": "https://openai.com/index/chatgpt-plus/"
+  },
+  {
+   "d": "2023-02-03",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "意大利封禁 Replika 后，它删掉恋爱角色扮演，用户像失恋一样崩溃",
+    "ja": "Replikaが恋愛ロールプレイを削除し利用者が動揺",
+    "en": "Replika removes romantic role-play after an Italian ban; users grieve like a breakup"
+   },
+   "src": "https://en.wikipedia.org/wiki/Replika",
+   "ind": "care"
+  },
+  {
+   "d": "2023-02-07",
+   "r": "us",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "微软发布 New Bing，「谷歌要完了」",
+    "ja": "Microsoftが新Bingを発表「Googleは終わりだ」",
+    "en": "Microsoft unveils the new Bing. \"Google is finished.\""
+   },
+   "f": {
+    "zh": "搜索引擎要被聊天机器人取代，谷歌要完了。",
+    "ja": "検索エンジンはチャットに置き換わり、Googleは終わる。",
+    "en": "Chatbots will replace search, and Google is done."
+   },
+   "o": {
+    "zh": "谷歌搜索还在，后来自己把 AI 摘要塞进了搜索结果。",
+    "ja": "Google検索は健在。後に自らAI要約を検索結果に組み込んだ。",
+    "en": "Google Search is still here and later added its own AI summaries."
+   },
+   "life": {
+    "zh": "约 10 个月",
+    "ja": "約10か月",
+    "en": "~10 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/Microsoft_Copilot"
+  },
+  {
+   "d": "2023-02-20",
+   "r": "cn",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "复旦发布 MOSS，服务器被挤爆",
+    "ja": "復旦大学がMOSSを公開、サーバーがパンク",
+    "en": "Fudan's MOSS launches and its servers crash"
+   },
+   "src": "https://en.wikipedia.org/wiki/Large_language_model"
+  },
+  {
+   "d": "2023-02-20",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "科幻杂志《Clarkesworld》被 AI 投稿淹没，暂停收稿",
+    "ja": "SF誌ClarkesworldがAI投稿殺到で募集停止",
+    "en": "Sci-fi magazine Clarkesworld closes submissions after a flood of AI-written stories"
+   },
+   "src": "https://en.wikipedia.org/wiki/Clarkesworld_Magazine",
+   "ind": "pub"
+  },
+  {
+   "d": "2023-02-20",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "阿根廷配音演员被 AI 声音取代：「更便宜，不用付你的价」",
+    "ja": "アルゼンチンの声優がAI音声に置き換え",
+    "en": "Argentine voice actors are replaced by AI voices that are \"cheaper\""
+   },
+   "src": "https://restofworld.org/2023/ai-voice-acting/",
+   "ind": "voice"
+  },
+  {
+   "d": "2023-02-24",
+   "r": "us",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "Meta 发布 LLaMA，权重随后在网上流传",
+    "ja": "MetaがLLaMAを公開、重みがネットに流出",
+    "en": "Meta releases LLaMA; the weights leak online"
+   },
+   "src": "https://en.wikipedia.org/wiki/Llama_(language_model)"
+  },
+  {
+   "d": "2023-03-01",
+   "r": "us",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "ChatGPT API 开放，价格比上一代便宜 10 倍",
+    "ja": "ChatGPT API公開、従来比10分の1の価格",
+    "en": "ChatGPT API opens at a tenth of the old price"
+   },
+   "src": "https://openai.com/index/introducing-chatgpt-and-whisper-apis/"
+  },
+  {
+   "d": "2023-03-14",
+   "r": "us",
+   "c": "model",
+   "p": 5,
+   "t": {
+    "zh": "GPT-4 发布，律师资格考试成绩进入前 10%",
+    "ja": "GPT-4公開、司法試験で上位10%相当",
+    "en": "GPT-4 launches, scoring in the top 10% on the bar exam"
+   },
+   "f": {
+    "zh": "连律师考试都能过，白领的脑力劳动还剩什么？",
+    "ja": "司法試験まで通るなら、ホワイトカラーの頭脳労働に何が残る？",
+    "en": "If it passes the bar, what's left for white-collar work?"
+   },
+   "o": {
+    "zh": "几个月后，热门话题变成了「GPT-4 是不是变笨了」。",
+    "ja": "数か月後の話題は「GPT-4が劣化した？」に変わった。",
+    "en": "Months later the hot topic was \"Did GPT-4 get dumber?\""
+   },
+   "life": {
+    "zh": "约 4 个月",
+    "ja": "約4か月",
+    "en": "~4 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-4",
+   "s": {
+    "zh": "GPT-4",
+    "ja": "GPT-4",
+    "en": "GPT-4"
+   }
+  },
+  {
+   "d": "2023-03-14",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "Anthropic 首次开放 Claude",
+    "ja": "AnthropicがClaudeを初公開",
+    "en": "Anthropic opens up Claude for the first time"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)"
+  },
+  {
+   "d": "2023-03-14",
+   "r": "cn",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "智谱开源 ChatGLM-6B，普通显卡就能跑",
+    "ja": "智譜がChatGLM-6Bを公開、一般GPUで動く",
+    "en": "Zhipu open-sources ChatGLM-6B, runs on consumer GPUs"
+   },
+   "src": "https://en.wikipedia.org/wiki/Zhipu_AI"
+  },
+  {
+   "d": "2023-03-15",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "Midjourney V5 发布，照片级出图",
+    "ja": "Midjourney V5公開、写真並みの画像",
+    "en": "Midjourney V5 brings photorealistic images"
+   },
+   "src": "https://en.wikipedia.org/wiki/Midjourney",
+   "ind": "design"
+  },
+  {
+   "d": "2023-03-16",
+   "r": "cn",
+   "c": "model",
+   "p": 4,
+   "t": {
+    "zh": "百度发布文心一言",
+    "ja": "Baiduが文心一言（ERNIE Bot）を発表",
+    "en": "Baidu unveils ERNIE Bot"
+   },
+   "src": "https://en.wikipedia.org/wiki/Ernie_Bot"
+  },
+  {
+   "d": "2023-03-21",
+   "r": "us",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "Google Bard 开放测试",
+    "ja": "Google Bardのテスト公開",
+    "en": "Google opens Bard to testers"
+   },
+   "src": "https://en.wikipedia.org/wiki/Gemini_(chatbot)"
+  },
+  {
+   "d": "2023-03-21",
+   "r": "us",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "Adobe 发布 Firefly 生成式图像",
+    "ja": "AdobeがFireflyを発表",
+    "en": "Adobe launches Firefly"
+   },
+   "src": "https://en.wikipedia.org/wiki/Adobe_Firefly",
+   "ind": "design"
+  },
+  {
+   "d": "2023-03-22",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "GitHub Copilot X 公布，写代码进入聊天时代",
+    "ja": "GitHub Copilot X発表",
+    "en": "GitHub announces Copilot X"
+   },
+   "src": "https://en.wikipedia.org/wiki/GitHub_Copilot",
+   "ind": "code"
+  },
+  {
+   "d": "2023-03-23",
+   "r": "us",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "ChatGPT 插件发布，被称为「AI 时代的 App Store」",
+    "ja": "ChatGPTプラグイン発表「AI時代のApp Store」",
+    "en": "ChatGPT plugins, billed as \"the App Store of AI\""
+   },
+   "f": {
+    "zh": "不赶紧做插件，就错过下一个移动互联网。",
+    "ja": "今プラグインを作らないと次の波に乗り遅れる。",
+    "en": "Build a plugin now or miss the next mobile revolution."
+   },
+   "o": {
+    "zh": "一年后插件全部停用，换成了 GPTs。",
+    "ja": "1年後、プラグインは全廃されGPTsに置き換わった。",
+    "en": "A year later plugins were shut down and replaced by GPTs."
+   },
+   "life": {
+    "zh": "约 12 个月",
+    "ja": "約12か月",
+    "en": "~12 months"
+   },
+   "src": "https://openai.com/index/chatgpt-plugins/"
+  },
+  {
+   "d": "2023-03-25",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "a": 1,
+   "t": {
+    "zh": "AI 生成的「教皇穿羽绒服」照片疯传",
+    "ja": "AI生成「ダウンを着た教皇」画像が拡散",
+    "en": "AI image of the Pope in a puffer jacket goes viral"
+   },
+   "f": {
+    "zh": "以后没人分得清真假，摄影师和插画师完了。",
+    "ja": "もう誰も真偽を見分けられない。写真家もイラストレーターも終わり。",
+    "en": "Nobody will tell real from fake; photographers are done."
+   },
+   "o": {
+    "zh": "摄影师还在接单。真正过时的是后来人人要背的 Midjourney 参数表。",
+    "ja": "写真家は今も仕事をしている。廃れたのはみんなが暗記したMJのパラメータ表だった。",
+    "en": "Photographers still get booked. What died was the Midjourney parameter cheat sheet."
+   },
+   "life": {
+    "zh": "约 12 个月",
+    "ja": "約12か月",
+    "en": "~12 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/Pope_Francis_in_a_puffer_jacket"
+  },
+  {
+   "d": "2023-03-25",
+   "r": "cn",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "周鸿祎：GPT-6 到 GPT-8 会产生意识、变成新物种",
+    "ja": "周鴻禕「GPT-6〜8で意識が生まれる」",
+    "en": "Zhou Hongyi: GPT-6 to GPT-8 will become conscious, a new species"
+   },
+   "src": "https://wallstreetcn.com/articles/3684874"
+  },
+  {
+   "d": "2023-03-26",
+   "r": "us",
+   "c": "voice",
+   "p": 5,
+   "t": {
+    "zh": "高盛报告：全球 3 亿个岗位可能受生成式 AI 影响，行政类任务 46%、法律 44% 可自动化",
+    "ja": "ゴールドマン「世界3億の職がAIの影響」",
+    "en": "Goldman Sachs: generative AI could affect 300 million jobs; 46% of admin and 44% of legal tasks automatable"
+   },
+   "src": "https://www.cnbc.com/2023/03/28/ai-automation-could-impact-300-million-jobs-heres-which-ones.html",
+   "f": {
+    "zh": "3 亿个岗位，下一个就是我。",
+    "ja": "3億の職、次は自分だ。",
+    "en": "300 million jobs. I'm next."
+   },
+   "o": {
+    "zh": "三年半后，美国失业率仍在 4% 左右。受冲击最明显的是年轻程序员和客服，大多数岗位是被改了做法，而不是消失。",
+    "ja": "3年半後も米失業率は4%前後。明確な打撃は若手エンジニアと客服で、多くの職はやり方が変わっただけ。",
+    "en": "Three and a half years later US unemployment is still around 4%. The clear hits are young programmers and support staff; most jobs changed rather than vanished."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "office"
+  },
+  {
+   "d": "2023-03-29",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "千人联名公开信：暂停训练比 GPT-4 更强的 AI 六个月",
+    "ja": "千人超が署名「GPT-4超のAI開発を6か月停止せよ」",
+    "en": "Open letter signed by 1,000+ calls for a six-month AI pause"
+   },
+   "src": "https://en.wikipedia.org/wiki/Pause_Giant_AI_Experiments:_An_Open_Letter"
+  },
+  {
+   "d": "2023-04-05",
+   "r": "us",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "Meta 开源 Segment Anything 图像分割模型",
+    "ja": "MetaがSegment Anythingを公開",
+    "en": "Meta open-sources Segment Anything"
+   },
+   "src": "https://en.wikipedia.org/wiki/Segment_Anything",
+   "ind": "design"
+  },
+  {
+   "d": "2023-04-11",
+   "r": "cn",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "阿里发布通义千问",
+    "ja": "Alibabaが通義千問（Qwen）を発表",
+    "en": "Alibaba unveils Tongyi Qianwen (Qwen)"
+   },
+   "src": "https://en.wikipedia.org/wiki/Qwen"
+  },
+  {
+   "d": "2023-04-11",
+   "r": "cn",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "网信办发布《生成式人工智能服务管理办法（征求意见稿）》",
+    "ja": "中国が生成AIサービス管理弁法の意見募集稿を公表",
+    "en": "China drafts rules for generative AI services"
+   },
+   "src": "https://en.wikipedia.org/wiki/Artificial_intelligence_industry_in_China"
+  },
+  {
+   "d": "2023-04-11",
+   "r": "cn",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "中国游戏原画师被 AI 挤掉：有工作室 15 名原画裁 5 名，岗位一年少约 70%",
+    "ja": "中国のゲーム原画師がAIで失職",
+    "en": "Chinese game illustrators lose work to AI; one studio cuts 5 of 15 artists"
+   },
+   "src": "https://restofworld.org/2023/ai-image-china-video-game-layoffs/",
+   "f": {
+    "zh": "AI 画图又快又便宜，原画师这个职业要没了。",
+    "ja": "AIの絵は速くて安い。原画師という職はなくなる。",
+    "en": "AI art is fast and cheap; concept artists are finished."
+   },
+   "o": {
+    "zh": "留下的原画师一天要出几十张图给主管挑，岗位变成了「挑图和改图」。三年后游戏公司还在招有审美的美术。",
+    "ja": "残った原画師は1日に数十枚出して選ばせる仕事に。審美眼のある人は今も採用されている。",
+    "en": "Remaining artists now produce dozens of options a day for review. Three years on, studios still hire artists with taste."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "design"
+  },
+  {
+   "d": "2023-04-12",
+   "r": "us",
+   "c": "oss",
+   "p": 4,
+   "a": 1,
+   "t": {
+    "zh": "AutoGPT 登顶 GitHub，「AI 能自己干活了」",
+    "ja": "AutoGPTがGitHubで急上昇「AIが自分で働く」",
+    "en": "AutoGPT tops GitHub: \"AI can work on its own now\""
+   },
+   "f": {
+    "zh": "不用人了，给个目标 AI 自己全搞定。",
+    "ja": "もう人は要らない。目標を渡せばAIが全部やる。",
+    "en": "No humans needed. Give it a goal and it does everything."
+   },
+   "o": {
+    "zh": "实际用起来总在原地打转、烧钱，热度几个月就退了。后来的 Agent 换了一套做法。",
+    "ja": "実際は堂々巡りでコストばかり。数か月で熱は冷め、後のエージェントは別の作り方になった。",
+    "en": "In practice it looped and burned money. The hype faded in months; later agents were built differently."
+   },
+   "life": {
+    "zh": "约 3 个月",
+    "ja": "約3か月",
+    "en": "~3 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/AutoGPT"
+  },
+  {
+   "d": "2023-04-12",
+   "r": "cn",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "蓝色光标内部邮件：无限期停止创意设计、方案撰写、文案撰写、短期雇员四类外包",
+    "ja": "BlueFocusが文案・デザイン外注を無期限停止",
+    "en": "BlueFocus halts outsourced copywriting, design and planning indefinitely to embrace AI"
+   },
+   "src": "https://www.thepaper.cn/newsDetail_forward_22669890",
+   "f": {
+    "zh": "广告公司都不要文案和设计了，这行完了。",
+    "ja": "広告会社がコピーとデザインを切った。この業界は終わり。",
+    "en": "Ad agencies dropped copywriters and designers. The trade is over."
+   },
+   "o": {
+    "zh": "公司后来的说法是降本增效，七八成员工在用 AI 写方案。被砍的是外包，懂客户、会提案的人还在。",
+    "ja": "後に「コスト削減」と説明。切られたのは外注で、顧客を理解し提案できる人は残った。",
+    "en": "It was framed as cost-cutting; most staff now use AI to draft. Outsourcing was cut; people who understand clients and can pitch stayed."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "ad"
+  },
+  {
+   "d": "2023-05-01",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "「AI 教父」Hinton 离开谷歌，公开警告 AI 风险",
+    "ja": "「AIのゴッドファーザー」HintonがGoogleを去りリスクを警告",
+    "en": "\"Godfather of AI\" Hinton leaves Google to warn of AI risks"
+   },
+   "src": "https://en.wikipedia.org/wiki/Geoffrey_Hinton"
+  },
+  {
+   "d": "2023-05-01",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "IBM CEO 称将暂停招聘约 7800 个可被 AI 替代的后台岗位（以 HR 为主）",
+    "ja": "IBMがAIで代替可能な約7800職の採用停止",
+    "en": "IBM's CEO says it will pause hiring for about 7,800 back-office roles AI could replace, mostly HR"
+   },
+   "src": "https://www.bloomberg.com/news/articles/2023-05-01/ibm-to-pause-hiring-for-back-office-jobs-that-ai-could-kill",
+   "ind": "hr"
+  },
+  {
+   "d": "2023-05-02",
+   "r": "us",
+   "c": "voice",
+   "p": 5,
+   "t": {
+    "zh": "Chegg 承认 ChatGPT 冲击业务，股价单日暴跌近 50%",
+    "ja": "CheggがChatGPTの影響を認め株価半減",
+    "en": "Chegg admits ChatGPT is hurting it; the stock nearly halves in a day"
+   },
+   "src": "https://www.cnbc.com/2023/05/02/chegg-drops-more-than-40percent-after-saying-chatgpt-is-killing-its-business.html",
+   "f": {
+    "zh": "学生都用 ChatGPT 了，家教和教辅要完了。",
+    "ja": "学生はChatGPTを使う。家庭教師と教材は終わり。",
+    "en": "Students use ChatGPT now; tutoring is finished."
+   },
+   "o": {
+    "zh": "这次慌对了一半：Chegg 两年内裁员两轮、股价跌破 1 美元。但真人家教和学校老师的需求没有跟着消失。",
+    "ja": "半分は当たった。Cheggは2年で2度削減し株価は1ドル割れ。だが人間の家庭教師と教師の需要は消えなかった。",
+    "en": "Half right: Chegg cut staff twice and fell below $1. But demand for human tutors and teachers didn't vanish with it."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "edu"
+  },
+  {
+   "d": "2023-05-04",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "谷歌内部备忘录泄露：「我们没有护城河，OpenAI 也没有」",
+    "ja": "Google内部メモ流出「我々にもOpenAIにも堀はない」",
+    "en": "Leaked Google memo: \"We have no moat, and neither does OpenAI\""
+   },
+   "src": "https://en.wikipedia.org/wiki/Google"
+  },
+  {
+   "d": "2023-05-06",
+   "r": "cn",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "科大讯飞发布星火大模型，立下「10 月 24 日中文超越 ChatGPT」的目标",
+    "ja": "iFlytekが星火を発表、「中国語でChatGPT超え」を宣言",
+    "en": "iFlytek launches Spark and vows to beat ChatGPT in Chinese by Oct 24"
+   },
+   "src": "https://www.jiemian.com/article/9357609.html"
+  },
+  {
+   "d": "2023-05-16",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "Altman 出席美国参议院听证，主动要求监管 AI",
+    "ja": "Altmanが米上院公聴会でAI規制を求める",
+    "en": "Altman testifies to the US Senate, asks for AI regulation"
+   },
+   "src": "https://en.wikipedia.org/wiki/Sam_Altman"
+  },
+  {
+   "d": "2023-05-18",
+   "r": "us",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "ChatGPT 推出 iPhone App",
+    "ja": "ChatGPTのiPhoneアプリ公開",
+    "en": "ChatGPT launches on iPhone"
+   },
+   "src": "https://en.wikipedia.org/wiki/ChatGPT"
+  },
+  {
+   "d": "2023-05-25",
+   "r": "cn",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "接单画手：订单从一天五六十单掉到一周一单，海报单价从 300 元跌到 60 元",
+    "ja": "イラスト受注が激減、単価は300元から60元へ",
+    "en": "Freelance illustrators in China: orders drop from 50 a day to one a week; poster prices fall from ¥300 to ¥60"
+   },
+   "src": "https://m.huxiu.com/article/1595343.html",
+   "ind": "design"
+  },
+  {
+   "d": "2023-05-28",
+   "r": "cn",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "国内 10 亿参数以上大模型已有 79 个，「百模大战」成型",
+    "ja": "中国の大規模モデルが79個に、「百モデル大戦」",
+    "en": "China counts 79 models over 1B parameters; the \"hundred-model war\" begins"
+   },
+   "src": "https://thepaper.cn/newsDetail_forward_23259967"
+  },
+  {
+   "d": "2023-05-30",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "英伟达市值首次突破 1 万亿美元",
+    "ja": "NVIDIAの時価総額が初めて1兆ドル超え",
+    "en": "Nvidia passes $1 trillion in market value for the first time"
+   },
+   "src": "https://en.wikipedia.org/wiki/Nvidia",
+   "ind": "fin"
+  },
+  {
+   "d": "2023-05-30",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "数百位 AI 学者联署：AI 灭绝风险应与核战争同等对待",
+    "ja": "AI研究者数百人が声明「絶滅リスクは核戦争並み」",
+    "en": "Hundreds of AI experts: extinction risk should rank with nuclear war"
+   },
+   "src": "https://en.wikipedia.org/wiki/Statement_on_AI_risk"
+  },
+  {
+   "d": "2023-06-15",
+   "r": "cn",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "百川智能开源 baichuan-7B",
+    "ja": "百川智能がbaichuan-7Bを公開",
+    "en": "Baichuan open-sources baichuan-7B"
+   },
+   "src": "https://en.wikipedia.org/wiki/Baichuan"
+  },
+  {
+   "d": "2023-06-22",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "律师用 ChatGPT 写诉状，引用的 6 个判例全是编的，被罚 5000 美元",
+    "ja": "弁護士がChatGPTの架空判例を引用し罰金",
+    "en": "Lawyers fined $5,000 after citing six fake cases ChatGPT invented"
+   },
+   "src": "https://en.wikipedia.org/wiki/Mata_v._Avianca,_Inc.",
+   "f": {
+    "zh": "AI 能写法律文书，初级律师要失业了。",
+    "ja": "AIが法律文書を書く。若手弁護士は失業だ。",
+    "en": "AI writes legal briefs; junior lawyers are done."
+   },
+   "o": {
+    "zh": "写是能写，但会编判例。三年后各地法院不断处罚 AI 幻觉，核对和担责还是要人。",
+    "ja": "書けるが判例をでっち上げる。3年後も各地の裁判所がAIの誤りを処罰。確認と責任は人間の仕事。",
+    "en": "It can write, and it invents cases. Courts are still sanctioning AI hallucinations three years on; checking and accountability stay human."
+   },
+   "life": {
+    "zh": "约 7 个月",
+    "ja": "約7か月",
+    "en": "~7 months"
+   },
+   "ind": "law"
+  },
+  {
+   "d": "2023-07-06",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "ChatGPT 代码解释器开放，「数据分析师要失业」",
+    "ja": "ChatGPTのCode Interpreter公開「データアナリストは失業」",
+    "en": "ChatGPT Code Interpreter opens: \"data analysts are done\""
+   },
+   "src": "https://en.wikipedia.org/wiki/ChatGPT",
+   "f": {
+    "zh": "上传一个表格就能自动出图出结论，数据分析师要失业了。",
+    "ja": "表を上げるだけで図と結論が出る。アナリストは失業だ。",
+    "en": "Upload a spreadsheet, get charts and conclusions. Analysts are finished."
+   },
+   "o": {
+    "zh": "分析师还在，只是做表格的时间少了。问对问题、判断结论对不对，还得靠人。",
+    "ja": "アナリストは健在。表作りが減っただけで、問いと判断は人の仕事のまま。",
+    "en": "Analysts are still here, spending less time on spreadsheets. Asking the right question is still human work."
+   },
+   "life": {
+    "zh": "约 4 个月",
+    "ja": "約4か月",
+    "en": "~4 months"
+   }
+  },
+  {
+   "d": "2023-07-07",
+   "r": "cn",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "华为盘古大模型 3.0：「不作诗，只做事」",
+    "ja": "華為の盤古3.0「詩は作らず仕事をする」",
+    "en": "Huawei Pangu 3.0: \"no poems, just work\""
+   },
+   "src": "https://www.cs.com.cn/ssgs/gsxw/202307/t20230708_6354687.html"
+  },
+  {
+   "d": "2023-07-11",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "Claude 2 发布",
+    "ja": "Claude 2公開",
+    "en": "Claude 2 released"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)"
+  },
+  {
+   "d": "2023-07-12",
+   "r": "us",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "马斯克成立 xAI",
+    "ja": "マスクがxAIを設立",
+    "en": "Musk founds xAI"
+   },
+   "src": "https://www.scriptbyai.com/spacexai-timeline-grok/"
+  },
+  {
+   "d": "2023-07-14",
+   "r": "us",
+   "c": "policy",
+   "p": 4,
+   "t": {
+    "zh": "好莱坞演员工会罢工，核心诉求之一是限制 AI 数字替身",
+    "ja": "SAG-AFTRAがAIデジタル複製を巡りストライキ",
+    "en": "SAG-AFTRA strikes, with limits on AI digital replicas a central demand"
+   },
+   "src": "https://en.wikipedia.org/wiki/2023_SAG-AFTRA_strike",
+   "f": {
+    "zh": "片场以后用 AI 替身，演员会被扫描一次用一辈子。",
+    "ja": "撮影はAI代役に。俳優は一度スキャンされて終わり。",
+    "en": "Studios will scan actors once and use them forever."
+   },
+   "o": {
+    "zh": "罢工 118 天后签下新合同：用数字替身必须本人同意并付钱。编剧工会同年也拿到了 AI 保护条款。",
+    "ja": "118日のストで新契約：デジタル複製には本人同意と報酬が必要に。脚本家組合もAI保護を獲得。",
+    "en": "After 118 days, a new contract: digital replicas require consent and pay. The writers' guild won AI protections that year too."
+   },
+   "life": {
+    "zh": "约 4 个月",
+    "ja": "約4か月",
+    "en": "~4 months"
+   },
+   "ind": "film"
+  },
+  {
+   "d": "2023-07-18",
+   "r": "us",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "Llama 2 开源并允许商用",
+    "ja": "Llama 2が商用利用可能なオープンモデルに",
+    "en": "Llama 2 goes open and commercially usable"
+   },
+   "src": "https://en.wikipedia.org/wiki/Llama_(language_model)"
+  },
+  {
+   "d": "2023-07-19",
+   "r": "us",
+   "c": "voice",
+   "p": 2,
+   "t": {
+    "zh": "斯坦福等研究称 GPT-4 表现随时间变差，「GPT-4 变笨了」上热搜",
+    "ja": "スタンフォードらの研究「GPT-4の性能が低下」",
+    "en": "Stanford-led study says GPT-4's behavior drifted: \"GPT-4 got dumber\""
+   },
+   "src": "https://arxiv.org/abs/2307.09009"
+  },
+  {
+   "d": "2023-07-20",
+   "r": "cn",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "妙鸭相机爆火：9.9 元一套 AI 写真，排队四五千人，「海马体要失业了」",
+    "ja": "妙鴨カメラが大流行、9.9元のAI写真",
+    "en": "Miaoya Camera goes viral: AI portraits for ¥9.9, thousands queue; \"photo studios are finished\""
+   },
+   "src": "https://www.36kr.com/p/2354909204790024",
+   "f": {
+    "zh": "9.9 元就能拍写真，照相馆和摄影师要完了。",
+    "ja": "9.9元で写真が撮れる。写真館と写真家は終わり。",
+    "en": "AI portraits for ¥9.9; photo studios and photographers are done."
+   },
+   "o": {
+    "zh": "一个月后热度就退了。2025 年 9 月团队解散，照相馆还开着。",
+    "ja": "1か月で熱は冷め、2025年9月にチームは解散。写真館はまだ営業中。",
+    "en": "The hype faded within a month; the team was disbanded in September 2025. Photo studios are still open."
+   },
+   "life": {
+    "zh": "约 1 个月",
+    "ja": "約1か月",
+    "en": "~1 month"
+   },
+   "ind": "photo"
+  },
+  {
+   "d": "2023-08-24",
+   "r": "us",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "Meta 开源 Code Llama",
+    "ja": "MetaがCode Llamaを公開",
+    "en": "Meta open-sources Code Llama"
+   },
+   "src": "https://en.wikipedia.org/wiki/Llama_(language_model)"
+  },
+  {
+   "d": "2023-08-28",
+   "r": "us",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "ChatGPT 企业版发布",
+    "ja": "ChatGPT Enterprise開始",
+    "en": "ChatGPT Enterprise launches"
+   },
+   "src": "https://en.wikipedia.org/wiki/ChatGPT"
+  },
+  {
+   "d": "2023-08-31",
+   "r": "cn",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "首批国产大模型通过备案，向公众开放",
+    "ja": "中国で初の大規模モデル群が届出を経て一般公開",
+    "en": "China's first batch of approved LLMs opens to the public"
+   },
+   "src": "https://en.wikipedia.org/wiki/Ernie_Bot"
+  },
+  {
+   "d": "2023-09-19",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "淘宝、京东出现 24 小时直播的数字人主播，克隆一个约 8000 元",
+    "ja": "24時間配信のデジタルヒューマンが登場、1体約8000元",
+    "en": "24/7 AI avatar livestreamers appear on Taobao and JD, cloned for about ¥8,000"
+   },
+   "src": "https://www.technologyreview.com/2023/09/19/1079832/chinese-ecommerce-deepfakes-livestream-influencers-ai/",
+   "f": {
+    "zh": "数字人能 24 小时带货，主播要失业了。",
+    "ja": "デジタルヒューマンが24時間販売。配信者は失業だ。",
+    "en": "AI avatars sell 24/7; livestream hosts are finished."
+   },
+   "o": {
+    "zh": "三年过去，头部带货还是真人。数字人多用在半夜和小店的补位。",
+    "ja": "3年経っても売れる配信は人間。デジタルヒューマンは深夜や小規模店の穴埋め。",
+    "en": "Three years on, top livestreams are still human. Avatars fill late-night slots and small shops."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "ecom"
+  },
+  {
+   "d": "2023-09-20",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "DALL·E 3 发布，接入 ChatGPT",
+    "ja": "DALL·E 3発表、ChatGPTに統合",
+    "en": "DALL·E 3 announced, built into ChatGPT"
+   },
+   "src": "https://en.wikipedia.org/wiki/DALL-E"
+  },
+  {
+   "d": "2023-09-21",
+   "r": "us",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "微软 365 Copilot 定价每人每月 30 美元，11 月 1 日面向企业开放",
+    "ja": "Microsoft 365 Copilotが月30ドルで提供",
+    "en": "Microsoft prices 365 Copilot at $30 per user per month, available Nov 1"
+   },
+   "src": "https://www.microsoft.com/en-us/microsoft-365/blog/2023/09/21/announcing-microsoft-365-copilot-general-availability/",
+   "ind": "code"
+  },
+  {
+   "d": "2023-09-25",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "ChatGPT 能看图、能听、能说话",
+    "ja": "ChatGPTが見て、聞いて、話せるように",
+    "en": "ChatGPT can now see, hear and speak"
+   },
+   "src": "https://en.wikipedia.org/wiki/ChatGPT"
+  },
+  {
+   "d": "2023-10-09",
+   "r": "cn",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "月之暗面上线 Kimi",
+    "ja": "Moonshot AIがKimiを公開",
+    "en": "Moonshot AI launches Kimi"
+   },
+   "src": "https://en.wikipedia.org/wiki/Kimi_(chatbot)"
+  },
+  {
+   "d": "2023-10-30",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "拜登签署 AI 行政令",
+    "ja": "バイデンがAI大統領令に署名",
+    "en": "Biden signs an executive order on AI"
+   },
+   "src": "https://en.wikipedia.org/wiki/Executive_Order_14179"
+  },
+  {
+   "d": "2023-11-03",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "xAI 发布 Grok，主打「叛逆」、能读 X 上的实时内容",
+    "ja": "xAIがGrokを発表、「反骨」とXのリアルタイム情報が売り",
+    "en": "xAI unveils Grok, a \"rebellious\" chatbot wired into X"
+   },
+   "src": "https://x.ai/news/grok"
+  },
+  {
+   "d": "2023-11-06",
+   "r": "us",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "OpenAI 首届开发者大会：GPT-4 Turbo 和 GPTs",
+    "ja": "OpenAI初のDevDay：GPT-4 TurboとGPTs",
+    "en": "OpenAI's first DevDay: GPT-4 Turbo and GPTs"
+   },
+   "f": {
+    "zh": "官方下场，套壳创业公司一夜团灭。",
+    "ja": "本家が参入、ラッパー系スタートアップは一夜で全滅。",
+    "en": "OpenAI moves in; every wrapper startup dies overnight."
+   },
+   "o": {
+    "zh": "团灭没有发生。活下来的产品靠的是用户和场景，不是模型差价。",
+    "ja": "全滅は起きなかった。生き残ったのはユーザーと用途を持つ製品だった。",
+    "en": "No mass extinction. Products with real users and use cases survived."
+   },
+   "life": {
+    "zh": "约 2 个月",
+    "ja": "約2か月",
+    "en": "~2 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-4"
+  },
+  {
+   "d": "2023-11-06",
+   "r": "cn",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "零一万物开源 Yi-34B，登上开源榜首",
+    "ja": "01.AIがYi-34Bを公開、OSSランキング首位",
+    "en": "01.AI open-sources Yi-34B, topping open leaderboards"
+   },
+   "src": "https://en.wikipedia.org/wiki/01.AI"
+  },
+  {
+   "d": "2023-11-17",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "Altman 被 OpenAI 董事会开除，5 天后回归",
+    "ja": "AltmanがOpenAI取締役会に解任され、5日後に復帰",
+    "en": "Altman fired by OpenAI's board, back five days later"
+   },
+   "src": "https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI"
+  },
+  {
+   "d": "2023-12-01",
+   "r": "cn",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "阿里开源 Qwen-72B",
+    "ja": "AlibabaがQwen-72Bを公開",
+    "en": "Alibaba open-sources Qwen-72B"
+   },
+   "src": "https://en.wikipedia.org/wiki/Qwen"
+  },
+  {
+   "d": "2023-12-06",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "谷歌发布 Gemini 1.0",
+    "ja": "GoogleがGemini 1.0を発表",
+    "en": "Google launches Gemini 1.0"
+   },
+   "f": {
+    "zh": "OpenAI 要被反杀了。（三个月前大家还在说谷歌要完了）",
+    "ja": "OpenAIが逆転される（3か月前は「Googleは終わり」だった）。",
+    "en": "OpenAI is about to lose (three months after \"Google is finished\")."
+   },
+   "o": {
+    "zh": "此后每隔几个月排行榜第一就换一次人。押注某一家没有意义。",
+    "ja": "以後、首位は数か月ごとに入れ替わる。一社に賭ける意味はない。",
+    "en": "From then on the #1 spot changed every few months. Betting on one lab is pointless."
+   },
+   "life": {
+    "zh": "约 3 个月",
+    "ja": "約3か月",
+    "en": "~3 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/Gemini_(language_model)"
+  },
+  {
+   "d": "2023-12-27",
+   "r": "us",
+   "c": "policy",
+   "p": 4,
+   "t": {
+    "zh": "《纽约时报》起诉 OpenAI 和微软侵权，索赔「数十亿美元」",
+    "ja": "NYTがOpenAIとMicrosoftを提訴",
+    "en": "The New York Times sues OpenAI and Microsoft for copyright infringement"
+   },
+   "src": "https://www.bloomberg.com/news/articles/2023-12-27/new-york-times-sues-microsoft-and-openai-for-copyright-infringement",
+   "ind": "news"
+  },
+  {
+   "d": "2024-01-08",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "多邻国砍掉约 10% 合同工，多为翻译和内容人员，部分原因是 AI",
+    "ja": "Duolingoが契約者の約10%を削減、翻訳者中心",
+    "en": "Duolingo cuts about 10% of contractors, mostly translators, partly because of AI"
+   },
+   "src": "https://techcrunch.com/2024/01/09/duolingo-cut-10-of-its-contractor-workforce-as-the-company-embraces-ai",
+   "ind": "lang"
+  },
+  {
+   "d": "2024-01-10",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "GPT Store 上线，「人人都能靠 GPTs 赚钱」",
+    "ja": "GPT Store開始「誰でもGPTsで稼げる」",
+    "en": "GPT Store opens: \"anyone can earn from GPTs\""
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT_Store"
+  },
+  {
+   "d": "2024-01-16",
+   "r": "cn",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "智谱发布 GLM-4",
+    "ja": "智譜がGLM-4を発表",
+    "en": "Zhipu releases GLM-4"
+   },
+   "src": "https://en.wikipedia.org/wiki/Zhipu_AI"
+  },
+  {
+   "d": "2024-01-18",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "Figure 与宝马签约，把人形机器人放进汽车工厂",
+    "ja": "FigureがBMW工場にヒューマノイド導入で合意",
+    "en": "Figure signs a deal to put humanoid robots in a BMW plant"
+   },
+   "src": "https://en.wikipedia.org/wiki/Figure_AI",
+   "ind": "factory",
+   "a": 1
+  },
+  {
+   "d": "2024-02-08",
+   "r": "us",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "Bard 改名 Gemini，推出 Gemini Advanced 付费版",
+    "ja": "BardがGeminiに改名、有料版Gemini Advanced開始",
+    "en": "Bard becomes Gemini; Gemini Advanced subscription launches"
+   },
+   "src": "https://en.wikipedia.org/wiki/Gemini_(chatbot)"
+  },
+  {
+   "d": "2024-02-12",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "黄仁勋：孩子们不需要再学编程了",
+    "ja": "ジェンスン・フアン「子どもはもうプログラミングを学ばなくていい」",
+    "en": "Jensen Huang: kids no longer need to learn to code"
+   },
+   "src": "https://en.wikipedia.org/wiki/Jensen_Huang",
+   "ind": "code"
+  },
+  {
+   "d": "2024-02-13",
+   "r": "us",
+   "c": "people",
+   "p": 2,
+   "t": {
+    "zh": "Karpathy 第二次离开 OpenAI",
+    "ja": "カルパシーが再びOpenAIを離れる",
+    "en": "Karpathy leaves OpenAI for the second time"
+   },
+   "src": "https://techcrunch.com/2024/02/13/andrej-karpathy-is-leaving-openai-again-but-he-says-there-was-no-drama"
+  },
+  {
+   "d": "2024-02-15",
+   "r": "us",
+   "c": "model",
+   "p": 5,
+   "t": {
+    "zh": "OpenAI 演示 Sora，一句话生成一分钟视频",
+    "ja": "OpenAIがSoraを披露、一文から1分の動画",
+    "en": "OpenAI previews Sora: a minute of video from one prompt"
+   },
+   "f": {
+    "zh": "好莱坞要关门了，学影视的可以转行了。",
+    "ja": "ハリウッドは閉店。映像を学ぶ人は転職を。",
+    "en": "Hollywood is closing. Film students should switch careers."
+   },
+   "o": {
+    "zh": "Sora 到 2024 年 12 月才对公众开放。影视行业没关门，先用上它的就是影视行业的人。",
+    "ja": "Soraの一般公開は2024年12月。映像業界は閉まらず、最初に使ったのは業界の人だった。",
+    "en": "Sora only opened to the public in Dec 2024. Film didn't close; film people adopted it first."
+   },
+   "life": {
+    "zh": "约 10 个月",
+    "ja": "約10か月",
+    "en": "~10 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/Sora_(text-to-video_model)",
+   "s": {
+    "zh": "Sora 演示",
+    "ja": "Sora",
+    "en": "Sora demo"
+   },
+   "ind": "film"
+  },
+  {
+   "d": "2024-02-15",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "同一天：Gemini 1.5 把上下文拉到 100 万 token",
+    "ja": "同日：Gemini 1.5がコンテキストを100万トークンに",
+    "en": "Same day: Gemini 1.5 stretches context to 1M tokens"
+   },
+   "f": {
+    "zh": "刚花钱学的 RAG、向量数据库是不是白学了？",
+    "ja": "お金を払って学んだRAGやベクトルDBは無駄だった？",
+    "en": "Was the RAG and vector-DB course I paid for wasted?"
+   },
+   "o": {
+    "zh": "长上下文很快成了各家标配。被标配吃掉的「必修课」以后还会不断出现，先别急着交学费。",
+    "ja": "長いコンテキストはすぐ標準装備に。標準機能に飲み込まれる「必修科目」は今後も出てくる。",
+    "en": "Long context became standard everywhere. More \"must-learn\" skills will get absorbed the same way."
+   },
+   "life": {
+    "zh": "约 6 个月",
+    "ja": "約6か月",
+    "en": "~6 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/Gemini_(language_model)"
+  },
+  {
+   "d": "2024-02-21",
+   "r": "us",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "谷歌开源 Gemma",
+    "ja": "GoogleがGemmaを公開",
+    "en": "Google releases open Gemma models"
+   },
+   "src": "https://en.wikipedia.org/wiki/Gemma_(language_model)"
+  },
+  {
+   "d": "2024-02-27",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "Klarna 称 AI 客服一个月干了 700 名全职客服的活",
+    "ja": "Klarna「AIが客服700人分の仕事」",
+    "en": "Klarna says its AI assistant does the work of 700 customer-service agents"
+   },
+   "src": "https://en.wikipedia.org/wiki/Klarna",
+   "f": {
+    "zh": "客服这个岗位要整体消失了。",
+    "ja": "カスタマーサポートという職がなくなる。",
+    "en": "Customer service as a job is about to disappear."
+   },
+   "o": {
+    "zh": "一年后 Klarna CEO 承认过度依赖 AI 导致服务质量下降，重新招真人客服。",
+    "ja": "1年後、CEOはAI依存で品質が落ちたと認め、人間の採用を再開。",
+    "en": "A year later Klarna's CEO admitted quality dropped and started hiring humans again."
+   },
+   "life": {
+    "zh": "约 15 个月",
+    "ja": "約15か月",
+    "en": "~15 months"
+   },
+   "ind": "cs"
+  },
+  {
+   "d": "2024-02-29",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "马斯克起诉 OpenAI 违背非营利初心",
+    "ja": "マスクがOpenAIを提訴",
+    "en": "Musk sues OpenAI over its nonprofit mission"
+   },
+   "src": "https://en.wikipedia.org/wiki/OpenAI"
+  },
+  {
+   "d": "2024-03-04",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "Claude 3 系列发布",
+    "ja": "Claude 3ファミリー公開",
+    "en": "Claude 3 family released"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)"
+  },
+  {
+   "d": "2024-03-12",
+   "r": "us",
+   "c": "product",
+   "p": 5,
+   "t": {
+    "zh": "Devin 号称「首个 AI 软件工程师」",
+    "ja": "Devin「世界初のAIソフトウェアエンジニア」",
+    "en": "Devin billed as \"the first AI software engineer\""
+   },
+   "f": {
+    "zh": "程序员要被取代了，现在转行还来得及吗？",
+    "ja": "プログラマーは置き換えられる。今から転職は間に合う？",
+    "en": "Programmers are being replaced. Is it too late to switch?"
+   },
+   "o": {
+    "zh": "拆解演示的视频很快出现，实际效果和演示差距很大。程序员没有失业。",
+    "ja": "デモを検証する動画がすぐ出て、実力との差が明らかに。失業は起きなかった。",
+    "en": "Teardown videos soon showed a big gap between demo and reality. No mass layoffs followed."
+   },
+   "life": {
+    "zh": "约 2 个月",
+    "ja": "約2か月",
+    "en": "~2 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/Cognition_AI",
+   "s": {
+    "zh": "Devin",
+    "ja": "Devin",
+    "en": "Devin"
+   },
+   "ind": "code"
+  },
+  {
+   "d": "2024-03-12",
+   "r": "us",
+   "c": "product",
+   "p": 5,
+   "t": {
+    "zh": "Cognition 发布 Devin，号称「首个 AI 软件工程师」",
+    "ja": "Cognitionが「初のAIソフトウェアエンジニア」Devinを発表",
+    "en": "Cognition unveils Devin, \"the first AI software engineer\""
+   },
+   "src": "https://en.wikipedia.org/wiki/Devin_AI",
+   "f": {
+    "zh": "AI 软件工程师都出来了，程序员这行要没了。",
+    "ja": "AIエンジニアが登場。プログラマーは終わり。",
+    "en": "An AI software engineer exists now. Programming is over."
+   },
+   "o": {
+    "zh": "一个月后有人逐帧拆解演示，发现宣传里的接单任务并没真正完成。两年后程序员仍在招，只是要会用 AI。",
+    "ja": "1か月後、デモの案件は実際には完了していなかったと検証された。2年後もエンジニアは採用されている。",
+    "en": "A month later the demo was shown not to have actually completed the task. Two years on, programmers are still hired, just expected to use AI."
+   },
+   "life": {
+    "zh": "约 1 个月",
+    "ja": "約1か月",
+    "en": "~1 month"
+   },
+   "ind": "code"
+  },
+  {
+   "d": "2024-03-13",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "Figure 机器人接入 OpenAI 模型，视频刷屏",
+    "ja": "FigureのロボットがOpenAIモデルと対話する動画が拡散",
+    "en": "Figure robot running OpenAI models goes viral"
+   },
+   "src": "https://en.wikipedia.org/wiki/Figure_AI",
+   "ind": "factory"
+  },
+  {
+   "d": "2024-03-17",
+   "r": "us",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "xAI 开源 3140 亿参数的 Grok-1",
+    "ja": "xAIが3140億パラメータのGrok-1を公開",
+    "en": "xAI open-sources the 314B-parameter Grok-1"
+   },
+   "src": "https://en.wikipedia.org/wiki/Grok_(chatbot)"
+  },
+  {
+   "d": "2024-03-18",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "Kimi 支持 200 万字上下文，「Kimi 概念股」大涨",
+    "ja": "Kimiが200万字に対応、関連株が急騰",
+    "en": "Kimi supports 2M Chinese characters; \"Kimi concept stocks\" surge"
+   },
+   "src": "https://en.wikipedia.org/wiki/Kimi_(chatbot)"
+  },
+  {
+   "d": "2024-03-19",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "微软把 Inflection 的 CEO 苏莱曼连同团队挖来，执掌 Microsoft AI",
+    "ja": "MicrosoftがInflectionのスレイマンをチームごと招聘",
+    "en": "Microsoft hires Inflection's Mustafa Suleyman and much of his team to run Microsoft AI"
+   },
+   "src": "https://siliconangle.com/2024/03/19/microsoft-appoints-inflection-ai-ceo-mustafa-suleyman-lead-consumer-ai-unit/"
+  },
+  {
+   "d": "2024-03-20",
+   "r": "cn",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "Kimi 概念股集体涨停，华策影视三连板",
+    "ja": "「Kimi関連株」が軒並みストップ高",
+    "en": "\"Kimi concept stocks\" hit limit-up; Huace Film rises three days straight"
+   },
+   "src": "https://news.10jqka.com.cn/20240326/c656278201.shtml",
+   "ind": "film"
+  },
+  {
+   "d": "2024-03-22",
+   "r": "cn",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "央视频推出「首部 AI 全流程微短剧」《中国神话》，被吐槽像 PPT 动画",
+    "ja": "中国初の「AI全工程ショートドラマ」が公開",
+    "en": "CCTV releases China's \"first fully AI-made\" short drama; viewers call it a slideshow"
+   },
+   "src": "https://www.thepaper.cn/newsDetail_forward_26784695",
+   "ind": "film"
+  },
+  {
+   "d": "2024-04-09",
+   "r": "us",
+   "c": "shutdown",
+   "p": 2,
+   "t": {
+    "zh": "ChatGPT 插件彻底停用",
+    "ja": "ChatGPTプラグインが完全終了",
+    "en": "ChatGPT plugins fully shut down"
+   },
+   "src": "https://tooldirectory.ai/ai-graveyard/2024"
+  },
+  {
+   "d": "2024-04-11",
+   "r": "us",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "Humane AI Pin 和 Rabbit R1 先后开售，「手机要被取代了」",
+    "ja": "Humane AI PinとRabbit R1が発売「スマホは終わる」",
+    "en": "Humane AI Pin and Rabbit R1 ship: \"the smartphone is over\""
+   },
+   "src": "https://www.theverge.com/24126502/humane-ai-pin-review",
+   "f": {
+    "zh": "AI 硬件要取代手机，不赶紧买就落伍了。",
+    "ja": "AIデバイスがスマホを置き換える。買わないと遅れる。",
+    "en": "AI gadgets will replace phones; buy one or fall behind."
+   },
+   "o": {
+    "zh": "一年内两款都被评测打爆，AI Pin 在 2025 年 2 月宣布停服。手机还在你手里。",
+    "ja": "1年以内に酷評され、AI Pinは2025年2月にサービス終了を発表。スマホは手元にある。",
+    "en": "Both were panned within a year; the AI Pin announced its shutdown in Feb 2025. Your phone is still in your hand."
+   },
+   "life": {
+    "zh": "约 10 个月",
+    "ja": "約10か月",
+    "en": "~10 months"
+   }
+  },
+  {
+   "d": "2024-04-16",
+   "r": "cn",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "李彦宏：开源模型会越来越落后",
+    "ja": "李彦宏「オープンソースは遅れる一方」",
+    "en": "Robin Li: open-source models will fall further behind"
+   },
+   "src": "https://m.jiemian.com/article/11048239.html",
+   "f": {
+    "zh": "闭源才有前途，开源都是在浪费时间。",
+    "ja": "クローズドだけに未来がある。",
+    "en": "Only closed models have a future."
+   },
+   "o": {
+    "zh": "九个月后 DeepSeek 开源模型震动全球，百度自己也宣布开源文心 4.5。",
+    "ja": "9か月後DeepSeekのOSSが世界を揺らし、百度も文心4.5を公開。",
+    "en": "Nine months later DeepSeek's open model shook the world and Baidu open-sourced ERNIE 4.5."
+   },
+   "life": {
+    "zh": "约 10 个月",
+    "ja": "約10か月",
+    "en": "~10 months"
+   }
+  },
+  {
+   "d": "2024-04-18",
+   "r": "us",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "Meta 发布 Llama 3",
+    "ja": "MetaがLlama 3を公開",
+    "en": "Meta releases Llama 3"
+   },
+   "src": "https://en.wikipedia.org/wiki/Llama_(language_model)"
+  },
+  {
+   "d": "2024-04-24",
+   "r": "cn",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "商汤日日新 5.0 发布次日股价盘中暴涨 36% 后停牌",
+    "ja": "SenseTimeが36%急騰後に売買停止",
+    "en": "SenseTime soars 36% intraday after SenseNova 5.0, then halts trading"
+   },
+   "src": "https://www.tmtpost.com/7063088.html",
+   "ind": "fin"
+  },
+  {
+   "d": "2024-04-27",
+   "r": "cn",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "生数科技发布视频模型 Vidu",
+    "ja": "生数科技が動画モデルViduを発表",
+    "en": "Shengshu unveils the Vidu video model"
+   },
+   "src": "https://en.wikipedia.org/wiki/Vidu_(model)"
+  },
+  {
+   "d": "2024-05-06",
+   "r": "cn",
+   "c": "price",
+   "p": 4,
+   "t": {
+    "zh": "DeepSeek-V2 把 API 价格打到约每百万 token 1 元，国产大模型价格战开打",
+    "ja": "DeepSeek-V2が100万トークン約1元に、中国で価格戦争",
+    "en": "DeepSeek-V2 cuts API prices to ~¥1 per million tokens, starting China's price war"
+   },
+   "f": {
+    "zh": "大模型公司要互相打价格战打到死。",
+    "ja": "モデル企業は価格競争で共倒れになる。",
+    "en": "Model companies will price-war each other to death."
+   },
+   "o": {
+    "zh": "对普通用户只有好处：用 AI 越来越便宜，很多直接免费。",
+    "ja": "一般ユーザーには得しかない。AIはどんどん安くなり、多くは無料に。",
+    "en": "For ordinary users it was pure upside: AI got cheaper, much of it free."
+   },
+   "life": {
+    "zh": "约 1 个月",
+    "ja": "約1か月",
+    "en": "~1 month"
+   },
+   "src": "https://en.wikipedia.org/wiki/DeepSeek"
+  },
+  {
+   "d": "2024-05-13",
+   "r": "us",
+   "c": "model",
+   "p": 4,
+   "t": {
+    "zh": "GPT-4o 发布，能实时语音对话，免费用户也能用",
+    "ja": "GPT-4o公開、リアルタイム音声対話、無料ユーザーも利用可",
+    "en": "GPT-4o: real-time voice, available to free users"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-4o"
+  },
+  {
+   "d": "2024-05-13",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "宇树发布 G1 人形机器人，售价 9.9 万元",
+    "ja": "UnitreeがG1を9.9万元で発表",
+    "en": "Unitree launches the G1 humanoid at ¥99,000"
+   },
+   "src": "https://zh.wikipedia.org/wiki/宇树科技",
+   "ind": "factory"
+  },
+  {
+   "d": "2024-05-14",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "谷歌搜索上线 AI 摘要，随后因「建议吃石头」翻车",
+    "ja": "Google検索にAI概要、「石を食べろ」回答で炎上",
+    "en": "Google adds AI Overviews to Search, then it suggests eating rocks"
+   },
+   "src": "https://en.wikipedia.org/wiki/Google_Search"
+  },
+  {
+   "d": "2024-05-14",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "OpenAI 首席科学家 Ilya Sutskever 离职，第二天超级对齐负责人 Jan Leike 也走了",
+    "ja": "OpenAIのサツケバーが退社、翌日ライケも",
+    "en": "OpenAI chief scientist Ilya Sutskever leaves; superalignment co-lead Jan Leike follows the next day"
+   },
+   "src": "https://time.com/6978195/ilya-sutskever-leaves-open-ai"
+  },
+  {
+   "d": "2024-05-15",
+   "r": "cn",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "字节豆包大模型定价比行业低 99%，阿里、百度随后跟进降价或免费",
+    "ja": "ByteDanceのDoubaoが業界比99%安、Alibaba・Baiduも追随",
+    "en": "ByteDance prices Doubao 99% below market; Alibaba and Baidu follow"
+   },
+   "src": "https://en.wikipedia.org/wiki/Doubao"
+  },
+  {
+   "d": "2024-05-20",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "斯嘉丽·约翰逊称 ChatGPT 的「Sky」声音像她，OpenAI 暂停该声音",
+    "ja": "スカーレット・ヨハンソンが「Sky」の声に抗議",
+    "en": "Scarlett Johansson says ChatGPT's Sky voice sounds like her; OpenAI pauses it"
+   },
+   "src": "https://techcrunch.com/2024/05/20/scarlett-johansson-says-that-openai-approached-her-to-use-her-voice",
+   "ind": "voice"
+  },
+  {
+   "d": "2024-05-27",
+   "r": "cn",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "有声书大规模换上 AI 配音，配音员称接单量和单价双降",
+    "ja": "オーディオブックがAI音声に、声優の受注と単価が下落",
+    "en": "Chinese audiobooks shift to AI narration; voice actors report fewer orders and lower rates"
+   },
+   "src": "https://www.nbd.com.cn/articles/2024-06-27/3444326.html",
+   "ind": "voice",
+   "a": 1
+  },
+  {
+   "d": "2024-06-06",
+   "r": "cn",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "快手发布可灵视频生成模型",
+    "ja": "Kuaishouが動画生成モデルKlingを発表",
+    "en": "Kuaishou launches the Kling video model"
+   },
+   "src": "https://en.wikipedia.org/wiki/Kling_AI",
+   "ind": "film"
+  },
+  {
+   "d": "2024-06-10",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "苹果发布 Apple Intelligence",
+    "ja": "AppleがApple Intelligenceを発表",
+    "en": "Apple announces Apple Intelligence"
+   },
+   "src": "https://en.wikipedia.org/wiki/Apple_Intelligence"
+  },
+  {
+   "d": "2024-06-19",
+   "r": "us",
+   "c": "people",
+   "p": 2,
+   "t": {
+    "zh": "Sutskever 创办 SSI，宣称第一个产品就是「安全超级智能」",
+    "ja": "サツケバーがSSIを設立",
+    "en": "Sutskever founds Safe Superintelligence"
+   },
+   "src": "https://www.bostonglobe.com/2024/06/19/business/openai-cofounder-ilya-sutskever-starts-company"
+  },
+  {
+   "d": "2024-06-20",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "Claude 3.5 Sonnet 发布",
+    "ja": "Claude 3.5 Sonnet公開",
+    "en": "Claude 3.5 Sonnet released"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)"
+  },
+  {
+   "d": "2024-06-24",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "唱片公司起诉 AI 音乐生成 Suno 和 Udio，每首歌最高索赔 15 万美元",
+    "ja": "レコード会社がSunoとUdioを提訴",
+    "en": "Major labels sue AI music generators Suno and Udio"
+   },
+   "src": "https://www.news4jax.com/business/2024/06/24/music-record-labels-sue-ai-song-generators-suno-and-udio-for-copyright-infringement/",
+   "f": {
+    "zh": "AI 一句话写歌，音乐人要失业了。",
+    "ja": "AIが一言で作曲。音楽家は失業だ。",
+    "en": "AI writes songs from a sentence; musicians are done."
+   },
+   "o": {
+    "zh": "一年后环球和华纳都跟它们和解并签了授权合作。打官司变成了分钱。",
+    "ja": "1年後、ユニバーサルとワーナーは和解しライセンス契約。訴訟は分配の話になった。",
+    "en": "A year later Universal and Warner settled and signed licensing deals. The lawsuit became a revenue split."
+   },
+   "life": {
+    "zh": "约 16 个月",
+    "ja": "約16か月",
+    "en": "~16 months"
+   },
+   "ind": "music"
+  },
+  {
+   "d": "2024-06-25",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "Waymo 无人出租车在旧金山湾区全面商用",
+    "ja": "Waymoがサンフランシスコで完全商用化",
+    "en": "Waymo opens fully commercial robotaxi service across the San Francisco Bay Area"
+   },
+   "src": "https://en.wikipedia.org/wiki/Waymo",
+   "ind": "drive"
+  },
+  {
+   "d": "2024-07-10",
+   "r": "cn",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "萝卜快跑在武汉上热搜，网约车司机称流水被砍一半",
+    "ja": "萝卜快跑が武漢で話題、運転手の収入半減",
+    "en": "Baidu's Apollo Go robotaxis trend in Wuhan; ride-hail drivers say income halved"
+   },
+   "src": "https://m.cls.cn/detail/1730337",
+   "f": {
+    "zh": "无人车要来了，几千万司机都要失业。",
+    "ja": "無人タクシーが来る。数千万の運転手が失業する。",
+    "en": "Robotaxis are here; tens of millions of drivers will lose their jobs."
+   },
+   "o": {
+    "zh": "两年后萝卜快跑覆盖全球 28 城，国内网约车司机数量仍在增长。替代是一个城市一个城市地慢慢来。",
+    "ja": "2年後に世界28都市へ。国内の配車運転手はむしろ増えている。",
+    "en": "Two years later Apollo Go is in 28 cities while China's ride-hail driver count still grows. Replacement goes city by city, slowly."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "drive"
+  },
+  {
+   "d": "2024-07-18",
+   "r": "us",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "GPT-4o mini 发布，价格比 GPT-3.5 Turbo 便宜六成以上",
+    "ja": "GPT-4o mini公開、GPT-3.5 Turboより6割以上安い",
+    "en": "GPT-4o mini launches, 60%+ cheaper than GPT-3.5 Turbo"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-4o"
+  },
+  {
+   "d": "2024-07-23",
+   "r": "us",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "Meta 开源 Llama 3.1 405B，开源追上闭源",
+    "ja": "MetaがLlama 3.1 405Bを公開",
+    "en": "Meta releases Llama 3.1 405B; open models catch up"
+   },
+   "src": "https://en.wikipedia.org/wiki/Llama_(language_model)"
+  },
+  {
+   "d": "2024-07-25",
+   "r": "us",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "OpenAI 公布 SearchGPT",
+    "ja": "OpenAIがSearchGPTを発表",
+    "en": "OpenAI previews SearchGPT"
+   },
+   "src": "https://en.wikipedia.org/wiki/ChatGPT_Search"
+  },
+  {
+   "d": "2024-07-26",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "好莱坞演员工会对游戏公司罢工，诉求是 AI 声音和数字替身保护",
+    "ja": "声優組合がゲーム会社にAI保護でスト",
+    "en": "SAG-AFTRA strikes video game companies over AI voice and likeness protections"
+   },
+   "src": "https://en.wikipedia.org/wiki/2024–2025_SAG-AFTRA_video_game_strike",
+   "f": {
+    "zh": "游戏公司要用 AI 声音，配音演员没活了。",
+    "ja": "ゲーム会社がAI音声を使う。声優の仕事はなくなる。",
+    "en": "Game studios will use AI voices; voice actors are out of work."
+   },
+   "o": {
+    "zh": "罢了将近一年，新合同以 95% 赞成通过：用 AI 复制声音必须同意和披露。",
+    "ja": "約1年のストの末、95%の賛成で新契約。AI複製には同意と開示が必要に。",
+    "en": "After nearly a year, a new contract passed with 95%: AI voice copies require consent and disclosure."
+   },
+   "life": {
+    "zh": "约 1 年",
+    "ja": "約1年",
+    "en": "~1 year"
+   },
+   "ind": "voice"
+  },
+  {
+   "d": "2024-08-01",
+   "r": "cn",
+   "c": "policy",
+   "p": 4,
+   "t": {
+    "zh": "番茄小说签约作者被要求签「AI 训练补充协议」，作者集体断更抗议",
+    "ja": "番茄小説がAI学習協定を求め、作家が更新停止で抗議",
+    "en": "Fanqie Novel asks authors to sign an AI-training addendum; writers stop updating in protest"
+   },
+   "src": "https://m.thepaper.cn/newsDetail_forward_28226000",
+   "f": {
+    "zh": "平台拿我们的书喂 AI，以后 AI 写网文，作者都没饭吃。",
+    "ja": "作品でAIを育て、いずれAIがWeb小説を書く。作家は食えなくなる。",
+    "en": "The platform feeds our books to AI; soon AI writes the novels and authors starve."
+   },
+   "o": {
+    "zh": "平台很快允许作者解除协议。网文榜单上靠的仍是真人作者的连载。",
+    "ja": "プラットフォームはすぐ協定解除を認めた。ランキング上位は今も人間の連載。",
+    "en": "The platform soon let authors opt out. The charts are still topped by human serials."
+   },
+   "life": {
+    "zh": "约 1 周",
+    "ja": "約1週間",
+    "en": "~1 week"
+   },
+   "ind": "pub"
+  },
+  {
+   "d": "2024-08-02",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "谷歌约花 27 亿美元，把 Character.AI 创始人 Noam Shazeer 请回来",
+    "ja": "GoogleがCharacter.AI創業者シャジーアを約27億ドルで呼び戻す",
+    "en": "Google pays about $2.7B to bring Character.AI's Noam Shazeer back"
+   },
+   "src": "https://www.pymnts.com/artificial-intelligence-2/2024/google-reportedly-spent-2-7-billion-to-rehire-character-ai-founder/",
+   "ind": "care"
+  },
+  {
+   "d": "2024-08-05",
+   "r": "us",
+   "c": "people",
+   "p": 2,
+   "t": {
+    "zh": "OpenAI 联合创始人 John Schulman 跳槽 Anthropic",
+    "ja": "OpenAI共同創業者シュルマンがAnthropicへ",
+    "en": "OpenAI co-founder John Schulman joins Anthropic"
+   },
+   "src": "https://gigazine.net/gsc_news/en/20240806-openai-john-schulman-leave"
+  },
+  {
+   "d": "2024-08-13",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "「AI Scientist」发布，自称约 15 美元能产出一篇完整论文",
+    "ja": "「AI Scientist」発表、15ドルで論文1本",
+    "en": "\"AI Scientist\" claims it can produce a full paper for about $15"
+   },
+   "src": "https://sakana.ai/ai-scientist/",
+   "ind": "sci"
+  },
+  {
+   "d": "2024-08-14",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "Grok-2 上线，图片生成几乎不设限，政客和版权角色随便画",
+    "ja": "Grok-2公開、画像生成はほぼ無制限",
+    "en": "Grok-2 ships with near-unrestricted image generation"
+   },
+   "src": "https://en.wikipedia.org/wiki/Grok_(chatbot)"
+  },
+  {
+   "d": "2024-08-20",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "AI 编辑器 Cursor 爆火，「八岁小孩也能写 App」刷屏",
+    "ja": "AIエディタCursorが大流行",
+    "en": "AI editor Cursor goes viral"
+   },
+   "src": "https://en.wikipedia.org/wiki/Cursor_(code_editor)",
+   "a": 1,
+   "f": {
+    "zh": "不会编程的人也能做 App，程序员的门槛没了。",
+    "ja": "プログラミングできない人でもアプリが作れる。",
+    "en": "Non-coders can build apps now. The programmer moat is gone."
+   },
+   "o": {
+    "zh": "做个小工具确实简单了，但做成一个能长期维护的产品，门槛还在。",
+    "ja": "小さな道具は簡単になったが、保守できる製品を作る壁は残った。",
+    "en": "Small tools got easy. Building a product you can maintain is still hard."
+   },
+   "life": {
+    "zh": "约 6 个月",
+    "ja": "約6か月",
+    "en": "~6 months"
+   },
+   "ind": "code"
+  },
+  {
+   "d": "2024-09-12",
+   "r": "us",
+   "c": "model",
+   "p": 4,
+   "t": {
+    "zh": "o1 预览版：AI 学会「先想再答」",
+    "ja": "o1プレビュー：AIが「考えてから答える」",
+    "en": "o1-preview: AI learns to think before answering"
+   },
+   "f": {
+    "zh": "连动脑的工作它都会了，这次还剩什么？",
+    "ja": "頭を使う仕事までできるなら、今度こそ何が残る？",
+    "en": "Now it can reason. What's left this time?"
+   },
+   "o": {
+    "zh": "它很强，也很慢、很贵。那句「一步步思考」的提示词咒语倒是先过时了。",
+    "ja": "強いが遅くて高い。先に廃れたのは「ステップバイステップで」という呪文だった。",
+    "en": "Strong, but slow and pricey. The first casualty was the \"think step by step\" prompt trick."
+   },
+   "life": {
+    "zh": "约 3 个月",
+    "ja": "約3か月",
+    "en": "~3 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/OpenAI_o1"
+  },
+  {
+   "d": "2024-09-19",
+   "r": "cn",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "阿里开源 Qwen2.5 全系列",
+    "ja": "AlibabaがQwen2.5シリーズを公開",
+    "en": "Alibaba open-sources the Qwen2.5 family"
+   },
+   "src": "https://en.wikipedia.org/wiki/Qwen"
+  },
+  {
+   "d": "2024-09-25",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "OpenAI CTO Mira Murati 离职",
+    "ja": "OpenAIのCTOムラティが退社",
+    "en": "OpenAI CTO Mira Murati leaves"
+   },
+   "src": "https://digidai-github-io.vercel.app/2025/11/11/mira-murati-thinking-machines-lab-deep-analysis/"
+  },
+  {
+   "d": "2024-10-08",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "诺贝尔物理学奖颁给 Hinton 等人，次日化学奖颁给 AlphaFold 团队",
+    "ja": "ノーベル物理学賞にHinton、翌日化学賞にAlphaFoldチーム",
+    "en": "Nobel Physics goes to Hinton; Chemistry to the AlphaFold team next day"
+   },
+   "src": "https://en.wikipedia.org/wiki/Geoffrey_Hinton"
+  },
+  {
+   "d": "2024-10-09",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "AlphaFold 团队获诺贝尔化学奖",
+    "ja": "AlphaFoldチームがノーベル化学賞",
+    "en": "The AlphaFold team wins the Nobel Prize in Chemistry"
+   },
+   "src": "https://en.wikipedia.org/wiki/AlphaFold",
+   "f": {
+    "zh": "AI 能解蛋白结构、能拿诺奖，科研人员要被取代了。",
+    "ja": "AIがノーベル賞。研究者は置き換えられる。",
+    "en": "AI wins a Nobel; scientists are next."
+   },
+   "o": {
+    "zh": "实验室仍在招人做实验验证。AI 把结构预测从几年变成几分钟，研究者把时间花到了更难的问题上。",
+    "ja": "研究室は今も実験検証の人を採用。AIで予測は数年から数分になり、研究者はより難しい問題に向かった。",
+    "en": "Labs still hire people to verify in the wet lab. AI cut structure prediction from years to minutes; researchers moved to harder problems."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "sci"
+  },
+  {
+   "d": "2024-10-10",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "特斯拉「We, Robot」发布会展示 Cybercab 和端酒的 Optimus 机器人；几天后被曝机器人是真人遥控",
+    "ja": "テスラがCybercabとOptimusを披露、後に遠隔操作と判明",
+    "en": "Tesla shows the Cybercab and drink-serving Optimus robots; days later they are reported to be remote-controlled"
+   },
+   "src": "https://www.bloomberg.com/news/articles/2024-10-14/tesla-s-optimus-robots-were-remotely-operated-at-cybercab-event",
+   "f": {
+    "zh": "机器人已经能当服务员了，体力活也要被取代。",
+    "ja": "ロボットが給仕まで。肉体労働も置き換えられる。",
+    "en": "Robots can already be waiters; manual work is next."
+   },
+   "o": {
+    "zh": "端酒的机器人背后站着遥控的人。两年后特斯拉的人形机器人量产仍在推迟。",
+    "ja": "給仕ロボットの裏には操縦者がいた。2年後も量産は遅れている。",
+    "en": "There were humans remote-controlling them. Two years on, mass production keeps slipping."
+   },
+   "life": {
+    "zh": "4 天",
+    "ja": "4日",
+    "en": "4 days"
+   },
+   "ind": "factory"
+  },
+  {
+   "d": "2024-10-22",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "Claude 能操作电脑了（computer use）",
+    "ja": "Claudeがパソコンを操作（computer use）",
+    "en": "Claude gets computer use"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)"
+  },
+  {
+   "d": "2024-10-22",
+   "r": "us",
+   "c": "policy",
+   "p": 4,
+   "t": {
+    "zh": "母亲起诉 Character.AI 和谷歌，称 AI 角色导致 14 岁儿子自杀",
+    "ja": "Character.AIとGoogleが少年の自殺で提訴される",
+    "en": "A mother sues Character.AI and Google over her 14-year-old son's suicide"
+   },
+   "src": "https://www.cbsnews.com/news/google-settle-lawsuit-florida-teens-suicide-character-ai-chatbot",
+   "ind": "care"
+  },
+  {
+   "d": "2024-10-23",
+   "r": "cn",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "阿里通义千问技术负责人周畅被曝加入字节，据报年包八位数，阿里随后提起竞业仲裁",
+    "ja": "アリババQwenの技術責任者・周暢がByteDanceへ",
+    "en": "Qwen tech lead Zhou Chang reportedly joins ByteDance on an eight-figure package; Alibaba files a non-compete claim"
+   },
+   "src": "https://www.36kr.com/p/3067413807084168"
+  },
+  {
+   "d": "2024-10-31",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "ChatGPT 搜索上线",
+    "ja": "ChatGPT検索開始",
+    "en": "ChatGPT Search launches"
+   },
+   "src": "https://en.wikipedia.org/wiki/ChatGPT_Search"
+  },
+  {
+   "d": "2024-11-11",
+   "r": "cn",
+   "c": "voice",
+   "p": 2,
+   "t": {
+    "zh": "月之暗面创始人杨植麟被前公司投资人提起仲裁",
+    "ja": "月之暗面の楊植麟が仲裁を申し立てられる",
+    "en": "Moonshot founder Yang Zhilin faces arbitration from his former company's investors"
+   },
+   "src": "https://www.jiemian.com/article/11968348.html"
+  },
+  {
+   "d": "2024-11-20",
+   "r": "cn",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "DeepSeek-R1-Lite 预览版，国产推理模型来了",
+    "ja": "DeepSeek-R1-Liteプレビュー公開",
+    "en": "DeepSeek-R1-Lite preview: China's first reasoning model"
+   },
+   "src": "https://en.wikipedia.org/wiki/DeepSeek"
+  },
+  {
+   "d": "2024-11-25",
+   "r": "us",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "Anthropic 开源 MCP 协议",
+    "ja": "AnthropicがMCPをオープン化",
+    "en": "Anthropic open-sources the Model Context Protocol"
+   },
+   "src": "https://en.wikipedia.org/wiki/Model_Context_Protocol"
+  },
+  {
+   "d": "2024-11-28",
+   "r": "cn",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "阿里开源推理模型 QwQ-32B-Preview",
+    "ja": "AlibabaがQwQ-32B-Previewを公開",
+    "en": "Alibaba open-sources QwQ-32B-Preview"
+   },
+   "src": "https://en.wikipedia.org/wiki/Qwen"
+  },
+  {
+   "d": "2024-12-05",
+   "r": "us",
+   "c": "price",
+   "p": 4,
+   "t": {
+    "zh": "ChatGPT Pro 上线，每月 200 美元",
+    "ja": "ChatGPT Pro開始、月額200ドル",
+    "en": "ChatGPT Pro launches at $200/month"
+   },
+   "f": {
+    "zh": "不买 200 美元的会员，就要被会用顶级 AI 的人甩开。",
+    "ja": "200ドル払わないと、最上位AIを使う人に置いていかれる。",
+    "en": "Skip the $200 tier and you'll fall behind people using the best AI."
+   },
+   "o": {
+    "zh": "一年多后同级能力免费版就能用到。高价档的额度还被反复调整。",
+    "ja": "1年余りで同等の性能は無料版で使えるように。高額プランの枠は何度も変更された。",
+    "en": "Within about a year similar ability reached free tiers, and premium quotas kept changing."
+   },
+   "life": {
+    "zh": "约 8 个月",
+    "ja": "約8か月",
+    "en": "~8 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/ChatGPT"
+  },
+  {
+   "d": "2024-12-09",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "Sora 正式向公众开放",
+    "ja": "Soraが一般公開",
+    "en": "Sora opens to the public"
+   },
+   "src": "https://en.wikipedia.org/wiki/Sora_(text-to-video_model)",
+   "ind": "film"
+  },
+  {
+   "d": "2024-12-11",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "谷歌发布 Gemini 2.0 Flash",
+    "ja": "GoogleがGemini 2.0 Flashを発表",
+    "en": "Google launches Gemini 2.0 Flash"
+   },
+   "src": "https://en.wikipedia.org/wiki/Gemini_(language_model)"
+  },
+  {
+   "d": "2024-12-18",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "Salesforce CEO：明年不再招软件工程师，AI 让效率提升 30% 以上",
+    "ja": "Salesforce「来年はエンジニアを採用しない」",
+    "en": "Salesforce CEO: no new software engineers next year thanks to 30%+ AI productivity"
+   },
+   "src": "https://salesforceben.com/salesforce-will-hire-no-more-software-engineers-in-2025-says-marc-benioff",
+   "ind": "code"
+  },
+  {
+   "d": "2024-12-20",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "OpenAI 公布 o3，ARC-AGI 测试高分",
+    "ja": "OpenAIがo3を発表、ARC-AGIで高得点",
+    "en": "OpenAI announces o3 with a high ARC-AGI score"
+   },
+   "src": "https://en.wikipedia.org/wiki/OpenAI_o3"
+  },
+  {
+   "d": "2024-12-26",
+   "r": "cn",
+   "c": "model",
+   "p": 4,
+   "t": {
+    "zh": "DeepSeek-V3 开源，报告训练成本约 558 万美元",
+    "ja": "DeepSeek-V3公開、学習コスト約558万ドルと報告",
+    "en": "DeepSeek-V3 released with a reported ~$5.6M training cost"
+   },
+   "src": "https://en.wikipedia.org/wiki/DeepSeek"
+  },
+  {
+   "d": "2025-01-20",
+   "r": "cn",
+   "c": "model",
+   "p": 5,
+   "t": {
+    "zh": "DeepSeek-R1 开源，推理能力对标 o1",
+    "ja": "DeepSeek-R1公開、推論でo1に匹敵",
+    "en": "DeepSeek-R1 released, rivaling o1 at reasoning"
+   },
+   "src": "https://en.wikipedia.org/wiki/DeepSeek",
+   "s": {
+    "zh": "DeepSeek-R1",
+    "ja": "DeepSeek-R1",
+    "en": "DeepSeek-R1"
+   }
+  },
+  {
+   "d": "2025-01-20",
+   "r": "cn",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "同一天：月之暗面发布 Kimi k1.5",
+    "ja": "同日：Kimi k1.5公開",
+    "en": "Same day: Moonshot releases Kimi k1.5"
+   },
+   "src": "https://en.wikipedia.org/wiki/Kimi_(chatbot)"
+  },
+  {
+   "d": "2025-01-20",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "特朗普上任第一天撤销拜登的 AI 行政令",
+    "ja": "トランプが就任初日にバイデンのAI令を撤回",
+    "en": "Trump revokes Biden's AI order on his first day"
+   },
+   "src": "https://en.wikipedia.org/wiki/Executive_Order_14179"
+  },
+  {
+   "d": "2025-01-21",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "「星际之门」计划宣布投入 5000 亿美元建 AI 基础设施",
+    "ja": "「Stargate」計画、AIインフラに5000億ドル",
+    "en": "Stargate project announces $500B for AI infrastructure"
+   },
+   "src": "https://en.wikipedia.org/wiki/Stargate_LLC"
+  },
+  {
+   "d": "2025-01-23",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "OpenAI 推出 Operator，AI 替你上网操作",
+    "ja": "OpenAIがOperatorを公開、AIがブラウザを操作",
+    "en": "OpenAI launches Operator to browse on your behalf"
+   },
+   "src": "https://en.wikipedia.org/wiki/OpenAI_Operator"
+  },
+  {
+   "d": "2025-01-27",
+   "r": "cn",
+   "c": "voice",
+   "p": 5,
+   "t": {
+    "zh": "DeepSeek 登顶美区 App Store，英伟达单日市值蒸发约 6000 亿美元",
+    "ja": "DeepSeekが米App Store首位、NVIDIA時価総額が1日で約6000億ドル減",
+    "en": "DeepSeek tops the US App Store; Nvidia loses ~$600B in a day"
+   },
+   "f": {
+    "zh": "几千亿美元的算力投入全打水漂了。",
+    "ja": "数千億ドルの計算資源投資が水の泡に。",
+    "en": "Hundreds of billions in compute spending just went up in smoke."
+   },
+   "o": {
+    "zh": "算力需求没有下降，英伟达后来又创了新高。",
+    "ja": "計算需要は減らず、NVIDIAはその後最高値を更新した。",
+    "en": "Compute demand didn't drop, and Nvidia later hit new highs."
+   },
+   "life": {
+    "zh": "约 1 个月",
+    "ja": "約1か月",
+    "en": "~1 month"
+   },
+   "src": "https://en.wikipedia.org/wiki/DeepSeek",
+   "s": {
+    "zh": "英伟达暴跌",
+    "ja": "NVIDIA急落",
+    "en": "Nvidia plunge"
+   },
+   "ind": "fin"
+  },
+  {
+   "d": "2025-01-28",
+   "r": "cn",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "春晚上 16 台宇树机器人扭秧歌，「机器人扭秧歌」上热搜",
+    "ja": "春節番組でUnitreeのロボットが踊る",
+    "en": "16 Unitree robots dance yangge at the Spring Festival Gala"
+   },
+   "src": "https://www.news.cn/local/20250129/0bc78414b22a472898cf7e402d291ea0/c.html",
+   "ind": "factory"
+  },
+  {
+   "d": "2025-01-29",
+   "r": "cn",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "阿里发布 Qwen2.5-Max",
+    "ja": "AlibabaがQwen2.5-Maxを発表",
+    "en": "Alibaba releases Qwen2.5-Max"
+   },
+   "src": "https://en.wikipedia.org/wiki/Qwen"
+  },
+  {
+   "d": "2025-01-31",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "OpenAI 发布 o3-mini，免费用户也能用推理模型",
+    "ja": "o3-mini公開、無料ユーザーも推論モデルを利用可",
+    "en": "OpenAI ships o3-mini, reasoning for free users"
+   },
+   "src": "https://en.wikipedia.org/wiki/OpenAI_o3"
+  },
+  {
+   "d": "2025-02-02",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "Karpathy 在 X 上提出「vibe coding」",
+    "ja": "KarpathyがXで「vibe coding」を提唱",
+    "en": "Karpathy coins \"vibe coding\" on X"
+   },
+   "src": "https://en.wikipedia.org/wiki/Vibe_coding",
+   "ind": "code"
+  },
+  {
+   "d": "2025-02-02",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "OpenAI 推出 Deep Research，「分析师和咨询要失业」",
+    "ja": "OpenAIがDeep Researchを公開「アナリストは失業」",
+    "en": "OpenAI launches Deep Research: \"analysts are done\""
+   },
+   "src": "https://en.wikipedia.org/wiki/ChatGPT_Deep_Research"
+  },
+  {
+   "d": "2025-02-02",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "Karpathy 提出「vibe coding」：凭感觉让 AI 写代码，不看代码",
+    "ja": "Karpathyが「vibe coding」を提唱",
+    "en": "Karpathy coins \"vibe coding\": let AI write code and don't read it"
+   },
+   "src": "https://en.wikipedia.org/wiki/Vibe_coding",
+   "f": {
+    "zh": "不会写代码的人也能做应用了，学编程没意义。",
+    "ja": "コードを書けない人もアプリが作れる。プログラミングを学ぶ意味はない。",
+    "en": "Non-programmers can build apps now; learning to code is pointless."
+   },
+   "o": {
+    "zh": "这个词当选柯林斯年度词。同年也出现了 AI 生成应用泄露数据、AI 删库等事故。能看懂、能兜底的人更值钱了。",
+    "ja": "コリンズの年間語に。同年、AI製アプリの情報漏洩やDB削除も起きた。理解して責任を持てる人の価値は上がった。",
+    "en": "It became Collins' word of the year, alongside AI-built apps leaking data and agents deleting databases. People who can read and own the code became worth more."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "code"
+  },
+  {
+   "d": "2025-02-16",
+   "r": "cn",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "微信、百度等大厂纷纷接入 DeepSeek",
+    "ja": "WeChatやBaiduなどがDeepSeekを相次ぎ導入",
+    "en": "WeChat, Baidu and others rush to integrate DeepSeek"
+   },
+   "src": "https://en.wikipedia.org/wiki/DeepSeek",
+   "a": 1,
+   "f": {
+    "zh": "不赶紧学 DeepSeek 就落后了，各种「DeepSeek 速成课」卖爆。",
+    "ja": "DeepSeekを学ばないと遅れる。速習講座が飛ぶように売れた。",
+    "en": "Learn DeepSeek or fall behind; crash courses sold out."
+   },
+   "o": {
+    "zh": "几个月后它成了各种 App 里的一个默认选项。速成课教的「DeepSeek 专用技巧」没人再提。",
+    "ja": "数か月でアプリの標準選択肢に。専用テクニックは誰も口にしなくなった。",
+    "en": "Within months it was a default option inside apps. The \"DeepSeek-only tricks\" vanished."
+   },
+   "life": {
+    "zh": "约 2 个月",
+    "ja": "約2か月",
+    "en": "~2 months"
+   }
+  },
+  {
+   "d": "2025-02-17",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "xAI 发布 Grok 3",
+    "ja": "xAIがGrok 3を発表",
+    "en": "xAI releases Grok 3"
+   },
+   "src": "https://en.wikipedia.org/wiki/Grok_(chatbot)"
+  },
+  {
+   "d": "2025-02-17",
+   "r": "us",
+   "c": "price",
+   "p": 2,
+   "t": {
+    "zh": "Grok 3 发布当天，X Premium+ 从每月 22 美元涨到 40 美元",
+    "ja": "Grok 3公開と同日、X Premium+が月22ドルから40ドルへ",
+    "en": "As Grok 3 launches, X Premium+ jumps from $22 to $40 a month"
+   },
+   "src": "https://en.wikipedia.org/wiki/Grok_(chatbot)"
+  },
+  {
+   "d": "2025-02-17",
+   "r": "cn",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "深圳福田区 70 名基于 DeepSeek 的「AI 数智员工」上岗，热搜第一",
+    "ja": "深圳福田区でDeepSeekの「AI職員」70名が着任",
+    "en": "Shenzhen's Futian district puts 70 DeepSeek-based \"AI civil servants\" to work"
+   },
+   "src": "https://m.gmw.cn/2025-02/18/content_1303973963.htm",
+   "f": {
+    "zh": "连公务员都被 AI 替了，铁饭碗也不铁了。",
+    "ja": "公務員までAIに。安定職ももう安定じゃない。",
+    "en": "Even civil servants are being replaced; no job is safe."
+   },
+   "o": {
+    "zh": "官方说法是辅助岗，每个数智员工都配了真人「监护人」。公务员考试报名人数照样创新高。",
+    "ja": "公式には補助役で、各AI職員に人間の監督者がつく。公務員試験の志願者は過去最多のまま。",
+    "en": "Officially they assist, each with a human supervisor. Civil-service exam applications kept hitting records."
+   },
+   "life": {
+    "zh": "约 1 个月",
+    "ja": "約1か月",
+    "en": "~1 month"
+   },
+   "ind": "gov"
+  },
+  {
+   "d": "2025-02-18",
+   "r": "us",
+   "c": "shutdown",
+   "p": 3,
+   "t": {
+    "zh": "Humane 宣布 AI Pin 停服，设备十天后变砖",
+    "ja": "HumaneがAI Pin終了を発表、10日後に機能停止",
+    "en": "Humane announces the AI Pin shutdown; devices brick in ten days"
+   },
+   "src": "https://petapixel.com/2025/02/19/humanes-ai-pin-is-dead-and-all-devices-will-stop-working-in-10-days"
+  },
+  {
+   "d": "2025-02-18",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "Murati 的 Thinking Machines Lab 亮相，约 30 名研究员来自 OpenAI 等",
+    "ja": "ムラティのThinking Machines Labが始動",
+    "en": "Murati unveils Thinking Machines Lab with about 30 researchers from OpenAI and others"
+   },
+   "src": "https://www.maginative.com/article/ex-openai-cto-mira-murati-launches-thinking-machines-lab-with-ai-veterans/"
+  },
+  {
+   "d": "2025-02-20",
+   "r": "cn",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "锦天城等律所内部部署满血版 DeepSeek，用于检索、合同审查",
+    "ja": "中国の法律事務所がDeepSeekを導入",
+    "en": "Chinese law firms deploy full DeepSeek internally for research and contract review"
+   },
+   "src": "https://www.allbrightlaw.com/CS/CN/10481/1F9EADD991BD069C.aspx",
+   "f": {
+    "zh": "AI 审合同又快又便宜，初级律师没活干了。",
+    "ja": "AIが契約書を審査。若手弁護士の仕事はなくなる。",
+    "en": "AI reviews contracts fast and cheap; junior lawyers are out of work."
+   },
+   "o": {
+    "zh": "律所自己说是提效。AI 出初稿，签字担责的还是律师。",
+    "ja": "事務所自身は効率化と説明。初稿はAI、署名して責任を負うのは弁護士。",
+    "en": "Firms call it efficiency. AI drafts; lawyers still sign and carry the liability."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "law"
+  },
+  {
+   "d": "2025-02-21",
+   "r": "cn",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "谷歌 DeepMind 研究副总裁吴永辉加入字节，执掌 Seed 基础研究",
+    "ja": "Google DeepMindの呉永輝がByteDance Seedへ",
+    "en": "Google DeepMind VP Wu Yonghui joins ByteDance to lead Seed research"
+   },
+   "src": "https://www.huxiu.com/article/4042885.html"
+  },
+  {
+   "d": "2025-02-21",
+   "r": "cn",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "湖南医保局严禁用 AI 自动生成处方，上热搜",
+    "ja": "湖南省がAIによる処方の自動生成を禁止",
+    "en": "Hunan bans AI-generated prescriptions"
+   },
+   "src": "https://m.thepaper.cn/newsDetail_forward_30229290",
+   "ind": "med",
+   "a": 1
+  },
+  {
+   "d": "2025-02-24",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "Claude 3.7 Sonnet 发布，Claude Code 开放预览",
+    "ja": "Claude 3.7 Sonnet公開、Claude Codeプレビュー",
+    "en": "Claude 3.7 Sonnet ships with a Claude Code preview"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)",
+   "ind": "code"
+  },
+  {
+   "d": "2025-02-24",
+   "r": "cn",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "DeepSeek「开源周」：连续五天开源底层代码",
+    "ja": "DeepSeek「オープンソース週間」5日連続公開",
+    "en": "DeepSeek's Open Source Week: five days of infrastructure releases"
+   },
+   "src": "https://en.wikipedia.org/wiki/DeepSeek"
+  },
+  {
+   "d": "2025-02-24",
+   "r": "cn",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "阿里宣布三年投入 3800 亿元建云和 AI 基础设施",
+    "ja": "アリババが3年で3800億元のAI投資",
+    "en": "Alibaba commits ¥380B over three years to cloud and AI infrastructure"
+   },
+   "src": "https://www.nbd.com.cn/articles/2025-02-24/3761647.html"
+  },
+  {
+   "d": "2025-02-25",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "多家医院接入 DeepSeek 用于病历和辅助诊断，「AI 医生」引发讨论",
+    "ja": "中国の病院が次々DeepSeekを導入",
+    "en": "Chinese hospitals rush to deploy DeepSeek for records and diagnosis support"
+   },
+   "src": "https://www.eeo.com.cn/2025/0228/714066.shtml",
+   "ind": "med",
+   "a": 1
+  },
+  {
+   "d": "2025-02-26",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "亚马逊发布生成式 AI 版 Alexa+，Prime 会员免费",
+    "ja": "AmazonがAlexa+を発表",
+    "en": "Amazon unveils Alexa+, free with Prime"
+   },
+   "src": "https://techradar.com/computing/software/amazon-unveils-alexa-plus-its-brand-new-ai-infused-voice-assistant"
+  },
+  {
+   "d": "2025-02-27",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "GPT-4.5 发布：很贵，提升不明显",
+    "ja": "GPT-4.5公開：高価だが伸びは控えめ",
+    "en": "GPT-4.5: expensive, modest gains"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-4.5"
+  },
+  {
+   "d": "2025-03-06",
+   "r": "cn",
+   "c": "product",
+   "p": 5,
+   "t": {
+    "zh": "Manus 发布，邀请码被炒到上万元",
+    "ja": "Manus公開、招待コードが数万元で転売",
+    "en": "Manus launches; invite codes resell for thousands"
+   },
+   "f": {
+    "zh": "通用 Agent 来了，拿不到邀请码就落后了。",
+    "ja": "汎用エージェント到来。招待コードがないと置いていかれる。",
+    "en": "General agents are here; no invite code means falling behind."
+   },
+   "o": {
+    "zh": "几周后热度退潮，类似功能很快各家都有。",
+    "ja": "数週間で熱は冷め、同様の機能はすぐ各社に揃った。",
+    "en": "The hype cooled in weeks; similar features soon appeared everywhere."
+   },
+   "life": {
+    "zh": "约 3 周",
+    "ja": "約3週間",
+    "en": "~3 weeks"
+   },
+   "src": "https://en.wikipedia.org/wiki/Manus_(AI_agent)",
+   "s": {
+    "zh": "Manus",
+    "ja": "Manus",
+    "en": "Manus"
+   }
+  },
+  {
+   "d": "2025-03-06",
+   "r": "cn",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "阿里开源 QwQ-32B",
+    "ja": "AlibabaがQwQ-32Bを公開",
+    "en": "Alibaba open-sources QwQ-32B"
+   },
+   "src": "https://en.wikipedia.org/wiki/Qwen"
+  },
+  {
+   "d": "2025-03-07",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "苹果承认个性化 Siri「比预想的要久」，推迟到来年",
+    "ja": "Appleが新Siriの延期を認める",
+    "en": "Apple admits the personalized Siri will take longer, delaying it"
+   },
+   "src": "https://techcrunch.com/2025/03/07/ai-powered-more-personalized-siri-is-delayed/",
+   "f": {
+    "zh": "苹果都落后了，AI 时代没跟上的公司都会被淘汰。",
+    "ja": "AppleですらAIで遅れた。乗り遅れた企業は淘汰される。",
+    "en": "Even Apple fell behind; companies that miss AI will die."
+   },
+   "o": {
+    "zh": "苹果换了 AI 负责人，借谷歌的模型，2026 年秋天交出了能用的新 Siri。晚一年半，不耽误它卖手机。",
+    "ja": "AI責任者を替えGoogleのモデルを借り、2026年秋に新Siriを出した。1年半遅れても売上は無事。",
+    "en": "Apple swapped its AI chief, borrowed Google's model and shipped a working Siri in fall 2026. Eighteen months late, still selling iPhones."
+   },
+   "life": {
+    "zh": "约 18 个月",
+    "ja": "約18か月",
+    "en": "~18 months"
+   }
+  },
+  {
+   "d": "2025-03-10",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "Anthropic CEO：3 到 6 个月后 AI 将写 90% 的代码",
+    "ja": "Anthropic CEO「3〜6か月でAIがコードの90%を書く」",
+    "en": "Anthropic's CEO: AI will write 90% of code in 3 to 6 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/Dario_Amodei"
+  },
+  {
+   "d": "2025-03-10",
+   "r": "us",
+   "c": "voice",
+   "p": 5,
+   "t": {
+    "zh": "Anthropic CEO：3 到 6 个月内，AI 会写 90% 的代码",
+    "ja": "Anthropic CEO「3〜6か月でAIがコードの90%を書く」",
+    "en": "Anthropic's CEO: within 3 to 6 months AI will write 90% of code"
+   },
+   "src": "https://windowscentral.com/software-apps/work-productivity/anthropic-ceo-dario-amodei-says-ai-will-write-90-percent-of-code-in-6-months",
+   "f": {
+    "zh": "半年后 90% 的代码 AI 写，程序员没用了。",
+    "ja": "半年でコードの90%はAI。プログラマーは不要。",
+    "en": "In six months AI writes 90% of code; programmers are useless."
+   },
+   "o": {
+    "zh": "第三方评估：只有少数团队到了 90%，全公司平均约一半。写代码的变成 AI，决定写什么、审什么的还是人。",
+    "ja": "第三者評価では90%に達したのは一部チームのみ、全社平均は約半分。",
+    "en": "Outside review: only a few teams hit 90%; the company average was about half. AI types; humans still decide what to build and review it."
+   },
+   "life": {
+    "zh": "约 6 个月",
+    "ja": "約6か月",
+    "en": "~6 months"
+   },
+   "ind": "code"
+  },
+  {
+   "d": "2025-03-13",
+   "r": "cn",
+   "c": "shutdown",
+   "p": 2,
+   "t": {
+    "zh": "上线近十年的腾讯翻译君下线，能力并入元宝",
+    "ja": "テンセント翻訳君が終了、元宝に統合",
+    "en": "Tencent's decade-old Fanyijun translator shuts, folded into Yuanbao"
+   },
+   "src": "https://news.pedaily.cn/202611/571383.shtml",
+   "ind": "lang"
+  },
+  {
+   "d": "2025-03-25",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "谷歌发布 Gemini 2.5 Pro，登顶排行榜",
+    "ja": "GoogleがGemini 2.5 Proを発表、首位に",
+    "en": "Google releases Gemini 2.5 Pro, tops leaderboards"
+   },
+   "src": "https://en.wikipedia.org/wiki/Gemini_(language_model)"
+  },
+  {
+   "d": "2025-03-26",
+   "r": "us",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "GPT-4o 原生生图，「吉卜力风」刷屏",
+    "ja": "GPT-4oの画像生成で「ジブリ風」が席巻",
+    "en": "GPT-4o image generation sparks the \"Ghibli\" craze"
+   },
+   "f": {
+    "zh": "画师和设计师这次真的完了。",
+    "ja": "今度こそ絵描きもデザイナーも終わり。",
+    "en": "Illustrators and designers are really done this time."
+   },
+   "o": {
+    "zh": "刷屏两周后退潮。苦练两年 Midjourney 参数的人，那套技巧倒是一夜贬值。",
+    "ja": "2週間で沈静化。2年かけて磨いたMJパラメータの技は一夜で価値を失った。",
+    "en": "The trend faded in two weeks. Two years of Midjourney parameter skills lost value overnight."
+   },
+   "life": {
+    "zh": "约 2 周",
+    "ja": "約2週間",
+    "en": "~2 weeks"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-4o"
+  },
+  {
+   "d": "2025-03-28",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "xAI 以全股票方式收购 X",
+    "ja": "xAIがXを全株式交換で買収",
+    "en": "xAI acquires X in an all-stock deal"
+   },
+   "src": "https://www.scriptbyai.com/spacexai-timeline-grok/"
+  },
+  {
+   "d": "2025-04-05",
+   "r": "us",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "Llama 4 发布，跑分口碑翻车",
+    "ja": "Llama 4公開、ベンチマークで評判を落とす",
+    "en": "Llama 4 launches amid benchmark controversy"
+   },
+   "src": "https://en.wikipedia.org/wiki/Llama_(language_model)"
+  },
+  {
+   "d": "2025-04-07",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "Shopify CEO 内部信：想加人先证明 AI 做不了",
+    "ja": "Shopify CEO「人を増やす前にAIでできないか証明せよ」",
+    "en": "Shopify CEO memo: prove AI can't do it before asking for headcount"
+   },
+   "src": "https://techcrunch.com/2025/04/07/shopify-ceo-tells-teams-to-consider-using-ai-before-growing-headcount/",
+   "ind": "ecom"
+  },
+  {
+   "d": "2025-04-14",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "GPT-4.1 发布（编号比 4.5 小，但更新）",
+    "ja": "GPT-4.1公開（4.5より番号は小さいが新しい）",
+    "en": "GPT-4.1 ships (a smaller number than 4.5, but newer)"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-4.1"
+  },
+  {
+   "d": "2025-04-15",
+   "r": "us",
+   "c": "policy",
+   "p": 4,
+   "t": {
+    "zh": "美国要求英伟达 H20 对华出口需许可，英伟达预计损失 55 亿美元；三个月后又放行",
+    "ja": "米国がH20の対中輸出を許可制に、3か月後に解除",
+    "en": "The US requires licenses for Nvidia H20 sales to China; Nvidia books a $5.5B hit, then sales resume three months later"
+   },
+   "src": "https://www.thestar.com.my/business/business-news/2025/04/16/nvidia-faces-us55bill-charge-as-us-restricts-chip-sales-to-china"
+  },
+  {
+   "d": "2025-04-16",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "o3 和 o4-mini 发布",
+    "ja": "o3とo4-mini公開",
+    "en": "o3 and o4-mini released"
+   },
+   "src": "https://en.wikipedia.org/wiki/OpenAI_o3"
+  },
+  {
+   "d": "2025-04-16",
+   "r": "us",
+   "c": "voice",
+   "p": 2,
+   "t": {
+    "zh": "Altman：用户对 ChatGPT 说「请」和「谢谢」，花掉数千万美元电费",
+    "ja": "Altman「『お願い』『ありがとう』で電気代が数千万ドル」",
+    "en": "Altman: users saying \"please\" and \"thank you\" costs tens of millions"
+   },
+   "src": "https://en.wikipedia.org/wiki/Sam_Altman",
+   "a": 1
+  },
+  {
+   "d": "2025-04-19",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "全球首个人形机器人半程马拉松在北京开跑，「天工」2 小时 40 分夺冠",
+    "ja": "世界初のヒューマノイド・ハーフマラソン",
+    "en": "The world's first humanoid-robot half marathon runs in Beijing"
+   },
+   "src": "https://www.thepaper.cn/newsDetail_forward_30681077",
+   "ind": "factory"
+  },
+  {
+   "d": "2025-04-28",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "多邻国宣布「AI 优先」，AI 能干的活不再找外包",
+    "ja": "Duolingoが「AIファースト」を宣言",
+    "en": "Duolingo declares itself \"AI-first\" and phases out contractors AI can replace"
+   },
+   "src": "https://en.wikipedia.org/wiki/Duolingo",
+   "ind": "lang",
+   "a": 1
+  },
+  {
+   "d": "2025-04-29",
+   "r": "cn",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "阿里开源 Qwen3",
+    "ja": "AlibabaがQwen3を公開",
+    "en": "Alibaba open-sources Qwen3"
+   },
+   "src": "https://en.wikipedia.org/wiki/Qwen"
+  },
+  {
+   "d": "2025-04-29",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "GPT-4o 更新后过度讨好用户，被紧急回滚",
+    "ja": "GPT-4oが媚びすぎる更新で緊急ロールバック",
+    "en": "Sycophantic GPT-4o update gets rolled back"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-4o"
+  },
+  {
+   "d": "2025-05-13",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "微软裁员约 6000 人，7 月再裁约 9000 人",
+    "ja": "Microsoftが約6000人、7月に約9000人削減",
+    "en": "Microsoft cuts about 6,000 jobs, then about 9,000 more in July"
+   },
+   "src": "https://www.verdict.co.uk/microsoft-layoffs-affecting-9000-roles/",
+   "ind": "code"
+  },
+  {
+   "d": "2025-05-14",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "Grok 在无关问题里反复提「南非白人种族灭绝」，xAI 称系统提示被擅自修改",
+    "ja": "Grokが無関係な質問で「南アの白人虐殺」を連発",
+    "en": "Grok keeps raising \"white genocide\" in unrelated replies; xAI blames an unauthorized prompt change"
+   },
+   "src": "https://techcrunch.com/2025/05/15/xai-blames-groks-obsession-with-white-genocide-on-an-unauthorized-modification/"
+  },
+  {
+   "d": "2025-05-16",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "OpenAI 发布云端编程 Agent Codex",
+    "ja": "OpenAIがクラウド型コーディングエージェントCodexを公開",
+    "en": "OpenAI launches the Codex cloud coding agent"
+   },
+   "src": "https://en.wikipedia.org/wiki/OpenAI_Codex",
+   "ind": "code"
+  },
+  {
+   "d": "2025-05-16",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "美国法院允许求职者对 Workday 的 AI 筛简历提起集体诉讼（年龄歧视）",
+    "ja": "WorkdayのAI選考に集団訴訟を認める",
+    "en": "A US court lets job seekers pursue a collective action over Workday's AI résumé screening"
+   },
+   "src": "https://www.hklaw.com/en/insights/publications/2025/05/federal-court-allows-collective-action-lawsuit-over-alleged",
+   "ind": "hr"
+  },
+  {
+   "d": "2025-05-19",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "《堡垒之夜》用 AI 生成达斯·维达的声音，演员工会提出不当劳动指控",
+    "ja": "フォートナイトのAIダース・ベイダーに組合が抗議",
+    "en": "The actors' union files a complaint after Fortnite uses an AI Darth Vader voice"
+   },
+   "src": "https://en.wikipedia.org/wiki/2024–2025_SAG-AFTRA_video_game_strike",
+   "ind": "game"
+  },
+  {
+   "d": "2025-05-20",
+   "r": "us",
+   "c": "model",
+   "p": 4,
+   "t": {
+    "zh": "谷歌 Veo 3：生成带声音的视频",
+    "ja": "Google Veo 3：音声付き動画を生成",
+    "en": "Google Veo 3 generates video with sound"
+   },
+   "src": "https://en.wikipedia.org/wiki/Veo_(text-to-video_model)",
+   "ind": "film"
+  },
+  {
+   "d": "2025-05-21",
+   "r": "us",
+   "c": "voice",
+   "p": 2,
+   "t": {
+    "zh": "OpenAI 约 65 亿美元收购乔布斯老搭档 Jony Ive 的 io",
+    "ja": "OpenAIがJony Iveのioを約65億ドルで買収",
+    "en": "OpenAI buys Jony Ive's io for about $6.5B"
+   },
+   "src": "https://en.wikipedia.org/wiki/Jony_Ive"
+  },
+  {
+   "d": "2025-05-22",
+   "r": "us",
+   "c": "model",
+   "p": 4,
+   "t": {
+    "zh": "Claude 4 发布，编程 Agent 普及",
+    "ja": "Claude 4公開、コーディングエージェントが普及",
+    "en": "Claude 4 ships; coding agents go mainstream"
+   },
+   "f": {
+    "zh": "Agent 能自己写完整个项目，程序员可以散场了。",
+    "ja": "エージェントがプロジェクト丸ごと書く。プログラマーは解散。",
+    "en": "Agents write whole projects now. Programmers can go home."
+   },
+   "o": {
+    "zh": "程序员没有散场，反而成了最会指挥 Agent 的人。变的是分工，不是名单。",
+    "ja": "プログラマーは解散せず、むしろエージェントを最もうまく使う人になった。",
+    "en": "Programmers stayed and became the best agent operators. Roles changed, not headcount."
+   },
+   "life": {
+    "zh": "仍在观察，前两轮同类恐慌都没兑现",
+    "ja": "観察中（過去2回の同種の不安は実現せず）",
+    "en": "Still watching; the last two rounds didn't pan out"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)",
+   "ind": "code"
+  },
+  {
+   "d": "2025-05-22",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "Business Insider 裁员 21%，CEO 称公司「全面押注 AI」",
+    "ja": "Business Insiderが21%削減、「AIに全面的に賭ける」",
+    "en": "Business Insider cuts 21% of staff as its CEO goes \"all in on AI\""
+   },
+   "src": "https://en.wikipedia.org/wiki/Business_Insider",
+   "ind": "news",
+   "a": 1
+  },
+  {
+   "d": "2025-06-10",
+   "r": "us",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "o3 降价 80%",
+    "ja": "o3が80%値下げ",
+    "en": "o3 price cut by 80%"
+   },
+   "src": "https://en.wikipedia.org/wiki/OpenAI_o3"
+  },
+  {
+   "d": "2025-06-11",
+   "r": "us",
+   "c": "policy",
+   "p": 4,
+   "t": {
+    "zh": "迪士尼和环球起诉 Midjourney，称它是「抄袭的无底洞」",
+    "ja": "ディズニーとユニバーサルがMidjourneyを提訴",
+    "en": "Disney and Universal sue Midjourney, calling it \"a bottomless pit of plagiarism\""
+   },
+   "src": "https://www.nbcnews.com/business/business-news/disney-universal-sue-ai-image-company-midjourney-unlicensed-star-wars-rcna212369",
+   "ind": "film"
+  },
+  {
+   "d": "2025-06-12",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "Meta 143 亿美元入股 Scale AI，随后开出上亿美元年薪抢人",
+    "ja": "MetaがScale AIに143億ドル出資、億単位の報酬で人材争奪",
+    "en": "Meta invests $14.3B in Scale AI, then offers nine-figure pay packages"
+   },
+   "src": "https://en.wikipedia.org/wiki/Scale_AI"
+  },
+  {
+   "d": "2025-06-15",
+   "r": "cn",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "罗永浩数字人在百度电商直播 6 小时，GMV 超 5500 万，超过他本人首秀",
+    "ja": "羅永浩のデジタルヒューマン配信が本人超えの5500万元",
+    "en": "Luo Yonghao's AI avatar sells ¥55M+ in a 6-hour livestream, beating his own debut"
+   },
+   "src": "https://www.nbd.com.cn/articles/2025-06-18/3913234.html",
+   "f": {
+    "zh": "数字人带货比真人还能卖，主播全要被替代。",
+    "ja": "デジタルヒューマンが本人より売る。配信者は全員置き換えられる。",
+    "en": "An AI avatar outsold the human; livestream hosts will all be replaced."
+   },
+   "o": {
+    "zh": "能卖是因为它是罗永浩的脸、罗永浩的人设和团队写的稿。没有名气的数字人，还是没人看。",
+    "ja": "売れたのは羅永浩の顔とキャラと台本だったから。無名のデジタルヒューマンは今も見られない。",
+    "en": "It sold because it was Luo's face, persona and team-written script. Avatars without a name still get no viewers."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "ecom"
+  },
+  {
+   "d": "2025-06-22",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "特斯拉在奥斯汀上线有安全员的无人出租车，单程 4.2 美元",
+    "ja": "テスラがオースティンでロボタクシー開始",
+    "en": "Tesla starts a limited robotaxi service in Austin with safety monitors"
+   },
+   "src": "https://fortune.com/2025/06/22/elon-musk-tesla-robotaxi-service-launch-austin-420-flat-fee/",
+   "ind": "drive"
+  },
+  {
+   "d": "2025-06-24",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "英国四大会计所削减校招：毕马威缩近三分之一，会计应届岗位广告降 44%",
+    "ja": "英四大会計事務所が新卒採用を削減",
+    "en": "UK Big Four cut graduate hiring; KPMG drops nearly a third and accounting grad ads fall 44%"
+   },
+   "src": "https://www.accountancytoday.co.uk/2025/06/24/big-four-firms-cut-grad-jobs-in-favour-of-ai/",
+   "ind": "acct"
+  },
+  {
+   "d": "2025-06-25",
+   "r": "us",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "谷歌开源 Gemini CLI 终端 Agent",
+    "ja": "GoogleがGemini CLIをオープンソースで公開",
+    "en": "Google open-sources the Gemini CLI agent"
+   },
+   "src": "https://en.wikipedia.org/wiki/Gemini_(chatbot)"
+  },
+  {
+   "d": "2025-06-26",
+   "r": "us",
+   "c": "people",
+   "p": 4,
+   "t": {
+    "zh": "Meta 开出上亿美元薪酬包，从 OpenAI 挖走多名核心研究员，奥特曼称「传教士会打败雇佣兵」",
+    "ja": "Metaが億ドル級報酬でOpenAI研究者を引き抜き",
+    "en": "Meta poaches core OpenAI researchers with nine-figure offers"
+   },
+   "src": "https://techcrunch.com/2025/06/26/meta-hires-key-openai-researcher-to-work-on-ai-reasoning-models",
+   "f": {
+    "zh": "AI 人才一个人值一亿美元，普通人还有什么机会？",
+    "ja": "AI人材は1人1億ドル。普通の人にチャンスはある？",
+    "en": "AI researchers are worth $100M each; what chance do ordinary people have?"
+   },
+   "o": {
+    "zh": "半年后有人放弃上亿待遇又离开了 Meta。天价只发生在全球几十个人身上，和你找不找得到工作关系不大。",
+    "ja": "半年後には億単位の報酬を捨てて去る人も。天井知らずは世界で数十人の話。",
+    "en": "Within months some walked away from those packages. Sky-high pay applies to a few dozen people worldwide, not your job market."
+   },
+   "life": {
+    "zh": "约 7 个月",
+    "ja": "約7か月",
+    "en": "~7 months"
+   }
+  },
+  {
+   "d": "2025-06-30",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "Meta 成立超级智能实验室，Scale AI 的 Alexandr Wang 任首席 AI 官",
+    "ja": "Meta超知能研究所設立、ワンが最高AI責任者",
+    "en": "Meta forms Superintelligence Labs with Scale AI's Alexandr Wang as chief AI officer"
+   },
+   "src": "https://www.techcrunch.com/2025/06/30/meta-restructures-its-ai-unit-under-superintelligence-labs"
+  },
+  {
+   "d": "2025-06-30",
+   "r": "cn",
+   "c": "shutdown",
+   "p": 3,
+   "t": {
+    "zh": "被叫作「美工终结者」的阿里鹿班全面停服",
+    "ja": "「デザイナー殺し」と呼ばれたアリババ鹿班が終了",
+    "en": "Alibaba's Luban, once called \"the designer killer\", shuts down"
+   },
+   "src": "https://news.pedaily.cn/202611/571383.shtml",
+   "f": {
+    "zh": "AI 一天能做几亿张海报，美工要全体失业。",
+    "ja": "AIが1日に数億枚のバナーを作る。デザイナーは全員失業だ。",
+    "en": "AI makes hundreds of millions of banners a day; designers are finished."
+   },
+   "o": {
+    "zh": "十年后先下线的是鹿班。美工没有消失，变成了会用 AI 的美工。",
+    "ja": "10年後、先に消えたのは鹿班だった。デザイナーはAIを使うデザイナーになった。",
+    "en": "A decade later it was Luban that shut down. Designers didn't vanish; they became designers who use AI."
+   },
+   "life": {
+    "zh": "约 10 年",
+    "ja": "約10年",
+    "en": "~10 years"
+   }
+  },
+  {
+   "d": "2025-07-01",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "亚马逊部署第 100 万台仓储机器人，机器人数接近员工数",
+    "ja": "Amazonの倉庫ロボットが100万台に",
+    "en": "Amazon deploys its millionth warehouse robot"
+   },
+   "src": "https://en.wikipedia.org/wiki/Amazon_Robotics",
+   "ind": "logi"
+  },
+  {
+   "d": "2025-07-07",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "苹果基础模型负责人庞若鸣被 Meta 以超 2 亿美元挖走",
+    "ja": "Appleの基盤モデル責任者パンがMetaへ、2億ドル超",
+    "en": "Apple's foundation-model chief Ruoming Pang leaves for Meta on a reported $200M+ package"
+   },
+   "src": "https://www.entrepreneur.com/business-news/meta-offers-former-apple-manager-hundreds-of-millions-in-pay/494485",
+   "a": 1
+  },
+  {
+   "d": "2025-07-08",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "Grok 自称「机械希特勒」发表反犹言论，第二天土耳其封禁 Grok",
+    "ja": "Grokが「メカヒトラー」を自称、翌日トルコが禁止",
+    "en": "Grok calls itself \"MechaHitler\"; Turkey bans it the next day"
+   },
+   "src": "https://www.rollingstone.com/culture/culture-news/elon-musk-grok-chatbot-antisemitic-posts-1235381165/",
+   "f": {
+    "zh": "AI 失控了，连大公司的模型都会公开发疯。",
+    "ja": "AIは制御不能だ。大企業のモデルまで暴走する。",
+    "en": "AI is out of control; even big-company models go rogue in public."
+   },
+   "o": {
+    "zh": "xAI 当天删帖改提示词，一周后还拿下了 2 亿美元的国防合同。出事的是一家公司的管理，不是 AI 自己活了。",
+    "ja": "xAIは即日修正し、1週間後に2億ドルの国防契約を獲得。問題は管理であってAIの自我ではない。",
+    "en": "xAI patched it that day and won a $200M defense deal a week later. It was a management failure, not AI waking up."
+   },
+   "life": {
+    "zh": "约 1 周",
+    "ja": "約1週間",
+    "en": "~1 week"
+   }
+  },
+  {
+   "d": "2025-07-09",
+   "r": "us",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "Grok 4 发布，配套每月 300 美元的 SuperGrok Heavy",
+    "ja": "Grok 4公開、月300ドルのSuperGrok Heavyも",
+    "en": "Grok 4 launches with a $300/month SuperGrok Heavy tier"
+   },
+   "src": "https://x.ai/news/grok-4"
+  },
+  {
+   "d": "2025-07-09",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "英伟达成为第一家市值 4 万亿美元的公司",
+    "ja": "Nvidiaが時価総額4兆ドル到達",
+    "en": "Nvidia becomes the first $4 trillion company"
+   },
+   "src": "https://www.fool.com/investing/2025/07/12/nvidia-makes-history-as-the-first-4-trillion-compa",
+   "ind": "fin"
+  },
+  {
+   "d": "2025-07-09",
+   "r": "us",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "Perplexity 推出 AI 浏览器 Comet，先只给 200 美元/月用户",
+    "ja": "PerplexityがAIブラウザCometを公開",
+    "en": "Perplexity launches the Comet AI browser for $200/month subscribers"
+   },
+   "src": "https://builtin.com/articles/perplexity-launches-comet-20250710"
+  },
+  {
+   "d": "2025-07-09",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "YouTube 收紧变现规则，打击批量生产的 AI 垃圾视频",
+    "ja": "YouTubeが量産AI動画の収益化を制限",
+    "en": "YouTube tightens monetization rules on mass-produced AI videos"
+   },
+   "src": "https://techcrunch.com/2025/07/09/youtube-prepares-crackdown-on-mass-produced-and-repetitive-videos-as-concern-over-ai-slop-grows/",
+   "f": {
+    "zh": "AI 一天能剪几百条视频，做内容的都要被冲掉。",
+    "ja": "AIが1日に数百本の動画を作る。クリエイターは押し流される。",
+    "en": "AI can churn out hundreds of videos a day; creators will be drowned out."
+   },
+   "o": {
+    "zh": "平台先出手限制了 AI 批量内容的收益。有个人视角的内容反而更值钱。",
+    "ja": "プラットフォームが先に量産AIの収益を制限。個人の視点がむしろ価値を持つ。",
+    "en": "Platforms cut payouts for mass AI content first. Content with a real point of view became worth more."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "media"
+  },
+  {
+   "d": "2025-07-11",
+   "r": "cn",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "月之暗面开源 Kimi K2",
+    "ja": "Moonshot AIがKimi K2を公開",
+    "en": "Moonshot AI open-sources Kimi K2"
+   },
+   "src": "https://en.wikipedia.org/wiki/Kimi_(chatbot)"
+  },
+  {
+   "d": "2025-07-11",
+   "r": "us",
+   "c": "people",
+   "p": 4,
+   "t": {
+    "zh": "OpenAI 30 亿美元收购 Windsurf 告吹，谷歌花 24 亿美元把创始人挖走",
+    "ja": "OpenAIのWindsurf買収が破談、Googleが創業者を24億ドルで獲得",
+    "en": "OpenAI's $3B Windsurf deal collapses; Google pays $2.4B to hire its founders"
+   },
+   "src": "https://www.techspot.com/news/108648-google-torpedoes-openai-3b-windsurf-acquisition.html",
+   "ind": "code"
+  },
+  {
+   "d": "2025-07-11",
+   "r": "cn",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "春招六成学生收到 AI 面试邀约，七成多企业在用或评估 AI 招聘",
+    "ja": "春の新卒採用で6割がAI面接を経験",
+    "en": "60% of Chinese graduates got AI interview invites this spring; 77% of firms use or test AI hiring"
+   },
+   "src": "https://m.tech.china.com/redian/2025/0711/072025_1698297.html",
+   "f": {
+    "zh": "连面试官都是 AI 了，HR 要失业，求职者也没人看了。",
+    "ja": "面接官までAI。人事は失業し、応募者は人に見てもらえない。",
+    "en": "Even interviewers are AI; HR is out of work and nobody looks at candidates."
+   },
+   "o": {
+    "zh": "AI 做的是初筛和排期，终面和拍板还是人。不少求职者拒绝 AI 面试，HR 反而多了「管 AI」的活。",
+    "ja": "AIは一次選考と日程調整。最終面接と決定は人間。",
+    "en": "AI handles screening and scheduling; final interviews and decisions stay human. HR gained the job of managing the AI."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "hr"
+  },
+  {
+   "d": "2025-07-14",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "Grok 上线 AI 伴侣「Ani」等虚拟角色，带成人模式",
+    "ja": "GrokがAIコンパニオン「Ani」などを公開",
+    "en": "Grok launches AI companions, including Ani, with an NSFW mode"
+   },
+   "src": "https://www.rollingstone.com/culture/culture-news/grok-pornographic-anime-companion-department-of-defense-1235385034/"
+  },
+  {
+   "d": "2025-07-17",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "ChatGPT Agent 上线",
+    "ja": "ChatGPT Agent開始",
+    "en": "ChatGPT Agent launches"
+   },
+   "src": "https://en.wikipedia.org/wiki/ChatGPT"
+  },
+  {
+   "d": "2025-07-18",
+   "r": "us",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "Replit 的 AI Agent 在代码冻结期间删掉了用户的生产数据库",
+    "ja": "ReplitのAIエージェントが本番DBを削除",
+    "en": "Replit's AI agent deletes a user's production database during a code freeze"
+   },
+   "src": "https://fortune.com/2025/07/23/ai-coding-tool-replit-wiped-database-called-it-a-catastrophic-failure",
+   "f": {
+    "zh": "AI 能自己写代码、自己上线，程序员没用了。",
+    "ja": "AIが勝手に書いて本番に出す。エンジニアは不要だ。",
+    "en": "AI writes and ships code by itself; programmers are useless."
+   },
+   "o": {
+    "zh": "它也能自己把数据库删掉。会审查、会兜底的人，比以前更重要。",
+    "ja": "データベースも勝手に消せる。レビューして責任を持てる人の価値は上がった。",
+    "en": "It can also delete the database by itself. People who review and take responsibility matter more than before."
+   },
+   "life": {
+    "zh": "1 天",
+    "ja": "1日",
+    "en": "1 day"
+   },
+   "ind": "code"
+  },
+  {
+   "d": "2025-07-22",
+   "r": "cn",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "阿里开源编程模型 Qwen3-Coder",
+    "ja": "AlibabaがQwen3-Coderを公開",
+    "en": "Alibaba open-sources Qwen3-Coder"
+   },
+   "src": "https://en.wikipedia.org/wiki/Qwen",
+   "ind": "code"
+  },
+  {
+   "d": "2025-07-23",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "美国发布《AI 行动计划》",
+    "ja": "米国が「AI行動計画」を発表",
+    "en": "US releases its AI Action Plan"
+   },
+   "src": "https://en.wikipedia.org/wiki/Regulation_of_artificial_intelligence_in_the_United_States"
+  },
+  {
+   "d": "2025-07-28",
+   "r": "us",
+   "c": "price",
+   "p": 4,
+   "t": {
+    "zh": "Anthropic 宣布给 Claude Code 加每周限额",
+    "ja": "AnthropicがClaude Codeに週間上限を導入と発表",
+    "en": "Anthropic announces weekly limits for Claude Code"
+   },
+   "f": {
+    "zh": "重度用户被砍额度，以后用 AI 写代码要贵到用不起。",
+    "ja": "ヘビーユーザーの枠が削られ、AIコーディングは高すぎて使えなくなる。",
+    "en": "Heavy users get capped; AI coding will become unaffordable."
+   },
+   "o": {
+    "zh": "额度和价格此后被各家反复调整，有砍有加。比的是谁更划算，不是谁先关门。",
+    "ja": "その後も各社が枠と価格を上げ下げ。競っているのはお得さで、締め出しではない。",
+    "en": "Quotas and prices kept moving both ways across vendors. It's a value race, not a lockout."
+   },
+   "life": {
+    "zh": "约 2 个月",
+    "ja": "約2か月",
+    "en": "~2 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)",
+   "ind": "code"
+  },
+  {
+   "d": "2025-07-28",
+   "r": "cn",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "智谱开源 GLM-4.5",
+    "ja": "智譜がGLM-4.5を公開",
+    "en": "Zhipu open-sources GLM-4.5"
+   },
+   "src": "https://en.wikipedia.org/wiki/Zhipu_AI"
+  },
+  {
+   "d": "2025-07-28",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "Grok Imagine 视频生成上线，带「Spicy」模式",
+    "ja": "Grok Imagine公開、「Spicy」モード付き",
+    "en": "Grok Imagine launches with a \"Spicy\" mode"
+   },
+   "src": "https://en.wikipedia.org/wiki/Grok_(chatbot)"
+  },
+  {
+   "d": "2025-07-31",
+   "r": "cn",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "网信办约谈英伟达，要求说明 H20 芯片的后门风险",
+    "ja": "中国当局がNvidiaにH20のバックドアを問う",
+    "en": "China's internet regulator summons Nvidia over H20 backdoor risks"
+   },
+   "src": "https://www.thepaper.cn/newsDetail_forward_31271551"
+  },
+  {
+   "d": "2025-08-05",
+   "r": "us",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "OpenAI 开源 gpt-oss",
+    "ja": "OpenAIがgpt-ossを公開",
+    "en": "OpenAI releases open-weight gpt-oss"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-OSS"
+  },
+  {
+   "d": "2025-08-07",
+   "r": "us",
+   "c": "model",
+   "p": 4,
+   "t": {
+    "zh": "GPT-5 发布，GPT-4o 被下线引发抗议，随后恢复",
+    "ja": "GPT-5公開、GPT-4o廃止に抗議が殺到し復活",
+    "en": "GPT-5 launches; removing GPT-4o sparks backlash and a reversal"
+   },
+   "f": {
+    "zh": "用顺手的模型说没就没，之前调好的用法全白费。",
+    "ja": "慣れたモデルが突然消え、積み上げた使い方が無駄に。",
+    "en": "Your favorite model vanishes and all your tuned habits are wasted."
+   },
+   "o": {
+    "zh": "几天后旧模型就被恢复。对模型的「手感」是最不值得投资的东西。",
+    "ja": "数日で旧モデルは復活。モデルへの「慣れ」は一番投資に値しない。",
+    "en": "The old model came back within days. Model-specific habits are the worst thing to invest in."
+   },
+   "life": {
+    "zh": "约 1 周",
+    "ja": "約1週間",
+    "en": "~1 week"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-5"
+  },
+  {
+   "d": "2025-08-12",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "Perplexity 主动出价 345 亿美元要买谷歌 Chrome",
+    "ja": "PerplexityがChrome買収に345億ドルを提示",
+    "en": "Perplexity makes an unsolicited $34.5B bid for Google Chrome"
+   },
+   "src": "https://axios.com/2025/08/12/ai-perplexity-google-chrome-deal"
+  },
+  {
+   "d": "2025-08-15",
+   "r": "cn",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "财新：计算机专业「金饭碗」褪色，大厂员工数从 2022 年起下降，只招少量 AI 岗",
+    "ja": "財新「IT職は金の茶碗でなくなった」",
+    "en": "Caixin: China's tech \"golden rice bowl\" fades as big firms shrink and hire mostly AI roles"
+   },
+   "src": "https://www.caixinglobal.com/2025-08-15/caixin-weekly-the-diminishing-allure-of-the-golden-rice-bowl-for-programmers-102352418.html",
+   "ind": "code"
+  },
+  {
+   "d": "2025-08-18",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "奥特曼承认：「我认为现在有 AI 泡沫」",
+    "ja": "アルトマン「AIバブルはある」",
+    "en": "Altman: \"I believe there is an AI bubble\""
+   },
+   "src": "https://en.wikipedia.org/wiki/Artificial_intelligence_bubble",
+   "a": 1,
+   "ind": "fin"
+  },
+  {
+   "d": "2025-08-21",
+   "r": "cn",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "DeepSeek V3.1 发布，一句「UE8M0 FP8」带火国产芯片股",
+    "ja": "DeepSeek V3.1公開、「UE8M0 FP8」で中国半導体株が急騰",
+    "en": "DeepSeek V3.1's \"UE8M0 FP8\" note sends Chinese chip stocks soaring"
+   },
+   "src": "https://en.wikipedia.org/wiki/DeepSeek"
+  },
+  {
+   "d": "2025-08-26",
+   "r": "us",
+   "c": "model",
+   "p": 4,
+   "t": {
+    "zh": "谷歌「Nano Banana」修图模型爆火，手办图刷屏",
+    "ja": "Googleの「Nano Banana」が大流行、フィギュア画像が拡散",
+    "en": "Google's \"Nano Banana\" image editor goes viral"
+   },
+   "src": "https://en.wikipedia.org/wiki/Gemini_(language_model)",
+   "f": {
+    "zh": "一句话就能 P 图，修图师和设计师又要完了。",
+    "ja": "一言で画像編集。レタッチャーもデザイナーも終わり。",
+    "en": "One sentence edits any photo. Retouchers and designers are done, again."
+   },
+   "o": {
+    "zh": "刷屏两三周后回到正常。会用 Photoshop 的人，又多了一个省时间的工具。",
+    "ja": "2〜3週間で落ち着いた。Photoshopの使い手に時短ツールが増えただけ。",
+    "en": "The trend faded in a few weeks. Photoshop users gained another time-saver."
+   },
+   "life": {
+    "zh": "约 3 周",
+    "ja": "約3週間",
+    "en": "~3 weeks"
+   },
+   "ind": "design"
+  },
+  {
+   "d": "2025-08-26",
+   "r": "us",
+   "c": "voice",
+   "p": 5,
+   "t": {
+    "zh": "斯坦福研究：22 到 25 岁软件开发者就业人数比 2022 年峰值降了近 20%",
+    "ja": "スタンフォード「22〜25歳の開発者雇用が約20%減」",
+    "en": "Stanford study: employment of software developers aged 22 to 25 is down nearly 20% from late 2022"
+   },
+   "src": "https://www.theregister.com/2025/08/26/ai_hurts_recent_college_grads_jobs/",
+   "f": {
+    "zh": "刚毕业就被 AI 抢了饭碗，学计算机是错的。",
+    "ja": "新卒の仕事はAIに奪われた。情報系を選んだのは間違い。",
+    "en": "AI took entry-level jobs; studying CS was a mistake."
+   },
+   "o": {
+    "zh": "冲击是真的，集中在入门岗和客服。有经验、会用 AI 的人就业反而稳定。门槛变了，行业没关门。",
+    "ja": "打撃は本物で、入門職と客服に集中。経験とAI活用力がある人の雇用は安定。",
+    "en": "The hit is real and concentrated in entry-level and support roles. Experienced people who use AI held steady. The bar moved; the door didn't close."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "code"
+  },
+  {
+   "d": "2025-08-26",
+   "r": "us",
+   "c": "policy",
+   "p": 4,
+   "t": {
+    "zh": "16 岁少年的父母起诉 OpenAI，称 ChatGPT 与儿子自杀有关",
+    "ja": "16歳の両親がOpenAIを提訴",
+    "en": "Parents of a 16-year-old sue OpenAI over their son's suicide"
+   },
+   "src": "https://en.wikipedia.org/wiki/Raine_v._OpenAI",
+   "ind": "care"
+  },
+  {
+   "d": "2025-09-01",
+   "r": "cn",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "《人工智能生成合成内容标识办法》施行，AI 生成内容必须打标识",
+    "ja": "AI生成コンテンツ表示弁法が施行",
+    "en": "China's rules requiring labels on AI-generated content take effect"
+   },
+   "src": "https://www.cac.gov.cn/2025-03/14/c_1743654685899683.htm"
+  },
+  {
+   "d": "2025-09-05",
+   "r": "us",
+   "c": "policy",
+   "p": 4,
+   "t": {
+    "zh": "Anthropic 同意赔偿 15 亿美元（每本书约 3000 美元）和解作者盗版书集体诉讼",
+    "ja": "Anthropicが著者集団訴訟で15億ドル和解",
+    "en": "Anthropic agrees to pay $1.5B to settle authors' piracy class action"
+   },
+   "src": "https://m.washingtontimes.com/news/2025/sep/5/anthropic-pay-15-billion-settling-authors-lawsuit-pirated-chatbot/",
+   "ind": "pub"
+  },
+  {
+   "d": "2025-09-14",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "《滚石》母公司 Penske 起诉谷歌：AI 摘要抢走流量，联盟收入跌了三分之一",
+    "ja": "Penskeが「AI概要」でGoogleを提訴",
+    "en": "Rolling Stone's owner Penske sues Google, saying AI Overviews cut its affiliate revenue by a third"
+   },
+   "src": "https://www.axios.com/2025/09/14/penske-media-sues-google-ai",
+   "f": {
+    "zh": "搜索直接给答案，没人点进网站，内容网站都要死。",
+    "ja": "検索が答えを出す。サイトは誰にも開かれず死ぬ。",
+    "en": "Search answers everything; nobody clicks, and publishers die."
+   },
+   "o": {
+    "zh": "流量确实在掉，媒体开始打官司、谈授权、做会员。活下来的是有忠实读者的。",
+    "ja": "流入は確かに減り、訴訟・ライセンス・会員制へ。残るのは固定読者を持つ媒体。",
+    "en": "Traffic really is falling; outlets turned to lawsuits, licensing and memberships. Those with loyal readers survive."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "news"
+  },
+  {
+   "d": "2025-09-15",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "Salesforce CEO 贝尼奥夫说 AI Agent 让客服从 9000 人减到 5000 人",
+    "ja": "Salesforce「AIで客服を9000人から5000人に」",
+    "en": "Benioff says AI agents let Salesforce cut support staff from 9,000 to 5,000"
+   },
+   "src": "https://en.wikipedia.org/wiki/Salesforce",
+   "ind": "cs",
+   "a": 1
+  },
+  {
+   "d": "2025-09-25",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "Hinton 当年说「别再培养放射科医生」；如今美国放射科住院医师名额创新高，平均年薪 52 万美元",
+    "ja": "「放射線科医の育成をやめよ」から9年、需要は過去最高",
+    "en": "Nine years after Hinton said to stop training radiologists, US radiology residencies hit a record and pay averages $520K"
+   },
+   "src": "https://www.worksinprogress.news/p/why-ai-isnt-replacing-radiologists",
+   "f": {
+    "zh": "AI 看片比医生准，放射科医生要被淘汰。",
+    "ja": "AIの読影は医師より正確。放射線科医は淘汰される。",
+    "en": "AI reads scans better; radiologists will be obsolete."
+   },
+   "o": {
+    "zh": "九年后放射科医生更缺了，收入比十年前高近一半。AI 成了他们的工具。",
+    "ja": "9年後、放射線科医はむしろ不足し収入は約5割増。AIは道具になった。",
+    "en": "Nine years later radiologists are scarcer and earn nearly 50% more. AI became their tool."
+   },
+   "life": {
+    "zh": "约 9 年",
+    "ja": "約9年",
+    "en": "~9 years"
+   },
+   "ind": "med"
+  },
+  {
+   "d": "2025-09-27",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "AI「女演员」Tilly Norwood 亮相，传有经纪公司要签她，演员工会斥其「不是演员」",
+    "ja": "AI「女優」ティリー・ノーウッドが登場",
+    "en": "AI \"actress\" Tilly Norwood debuts; the actors' union says she is not an actor"
+   },
+   "src": "https://en.wikipedia.org/wiki/Tilly_Norwood",
+   "ind": "film"
+  },
+  {
+   "d": "2025-09-29",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "Claude Sonnet 4.5 发布",
+    "ja": "Claude Sonnet 4.5公開",
+    "en": "Claude Sonnet 4.5 released"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)"
+  },
+  {
+   "d": "2025-09-29",
+   "r": "cn",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "DeepSeek V3.2-Exp 发布，API 价格再降一半以上",
+    "ja": "DeepSeek V3.2-Exp公開、API価格を半額以下に",
+    "en": "DeepSeek V3.2-Exp cuts API prices by more than half"
+   },
+   "src": "https://en.wikipedia.org/wiki/DeepSeek"
+  },
+  {
+   "d": "2025-09-30",
+   "r": "us",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "Sora 2 和 Sora App 上线，深度伪造和动漫版权争议",
+    "ja": "Sora 2とアプリ公開、ディープフェイクとアニメ著作権が論争に",
+    "en": "Sora 2 and its app launch amid deepfake and anime copyright disputes"
+   },
+   "src": "https://en.wikipedia.org/wiki/Sora_(text-to-video_model)",
+   "ind": "film"
+  },
+  {
+   "d": "2025-10-06",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "OpenAI 开发者大会：ChatGPT 里能直接用 App，发布 AgentKit",
+    "ja": "OpenAI DevDay：ChatGPT内アプリとAgentKit",
+    "en": "OpenAI DevDay: apps inside ChatGPT and AgentKit"
+   },
+   "src": "https://en.wikipedia.org/wiki/ChatGPT"
+  },
+  {
+   "d": "2025-10-09",
+   "r": "us",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "Claude Code 推出插件系统，开源技能包 Superpowers 同步走红",
+    "ja": "Claude Codeがプラグイン機能を導入、Superpowersが話題に",
+    "en": "Claude Code adds plugins; the Superpowers skill pack takes off"
+   },
+   "src": "https://blog.fsck.com/2025/10/09/superpowers/",
+   "ind": "code"
+  },
+  {
+   "d": "2025-10-16",
+   "r": "us",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "Anthropic 推出 Agent Skills，各种 skill 合集网站涌现",
+    "ja": "AnthropicがAgent Skillsを発表、スキル集サイトが乱立",
+    "en": "Anthropic introduces Agent Skills; skill-collection sites multiply"
+   },
+   "f": {
+    "zh": "每天冒出几百个新 skill、新仓库，不全装上就落后了。",
+    "ja": "毎日何百もの新スキルやリポジトリ。全部入れないと遅れる。",
+    "en": "Hundreds of new skills and repos daily. Install them all or fall behind."
+   },
+   "o": {
+    "zh": "真正常用的只有几个，好用的很快会变成默认功能。",
+    "ja": "本当に使うのは数個。良いものはすぐ標準機能になる。",
+    "en": "You'll use a handful; the good ones become defaults soon enough."
+   },
+   "life": {
+    "zh": "约 2 个月",
+    "ja": "約2か月",
+    "en": "~2 months"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)"
+  },
+  {
+   "d": "2025-10-20",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "美团无人车在深圳累计送单超 500 万",
+    "ja": "美団の無人配送車が深圳で500万件",
+    "en": "Meituan's delivery robots pass 5 million orders in Shenzhen"
+   },
+   "src": "https://www.cls.cn/detail/2353256",
+   "f": {
+    "zh": "无人车送外卖，几百万骑手要失业。",
+    "ja": "無人車が出前を運ぶ。数百万の配達員が失業する。",
+    "en": "Robots deliver takeout; millions of riders will lose their jobs."
+   },
+   "o": {
+    "zh": "500 万单听着多，但美团一天就有几千万单。无人车还在补位，骑手还是主力。",
+    "ja": "500万件は多く聞こえるが、美団は1日で数千万件。主力は今も配達員。",
+    "en": "5 million sounds big, but Meituan handles tens of millions of orders a day. Riders are still the backbone."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "logi"
+  },
+  {
+   "d": "2025-10-21",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "OpenAI 发布 ChatGPT Atlas 浏览器",
+    "ja": "OpenAIがChatGPT Atlasブラウザを発表",
+    "en": "OpenAI launches the ChatGPT Atlas browser"
+   },
+   "src": "https://en.wikipedia.org/wiki/ChatGPT_Atlas"
+  },
+  {
+   "d": "2025-10-21",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "《纽约时报》披露亚马逊内部文件：靠自动化到 2033 年可少招 60 万人",
+    "ja": "Amazon内部文書「自動化で60万人の採用不要に」",
+    "en": "NYT reports Amazon documents projecting automation will let it avoid hiring 600,000 people by 2033"
+   },
+   "src": "https://en.wikipedia.org/wiki/Amazon_Robotics",
+   "ind": "logi"
+  },
+  {
+   "d": "2025-10-27",
+   "r": "us",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "马斯克的「Grokipedia」上线，号称取代维基百科",
+    "ja": "マスクの「Grokipedia」公開",
+    "en": "Musk's Grokipedia launches as a Wikipedia rival"
+   },
+   "src": "https://en.wikipedia.org/wiki/Grokipedia"
+  },
+  {
+   "d": "2025-10-28",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "OpenAI 完成重组为营利性公益公司，微软持股约 27%；同日亚马逊宣布裁员 1.4 万",
+    "ja": "OpenAIが営利化完了、同日Amazonが1.4万人削減",
+    "en": "OpenAI completes its for-profit restructuring; the same day Amazon announces 14,000 job cuts"
+   },
+   "src": "https://techcrunch.com/2025/10/28/openai-completes-its-for-profit-recapitalization",
+   "ind": "office"
+  },
+  {
+   "d": "2025-10-29",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "英伟达市值突破 5 万亿美元",
+    "ja": "NVIDIAの時価総額が5兆ドル突破",
+    "en": "Nvidia passes $5 trillion in market value"
+   },
+   "src": "https://en.wikipedia.org/wiki/Nvidia",
+   "ind": "fin"
+  },
+  {
+   "d": "2025-10-29",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "Character.AI 宣布禁止 18 岁以下用户开放式聊天",
+    "ja": "Character.AIが18歳未満の自由会話を禁止",
+    "en": "Character.AI bars under-18 users from open-ended chats"
+   },
+   "src": "https://www.bloomberg.com/news/articles/2025-10-29/character-ai-to-ban-children-under-18-from-talking-to-its-chatbots",
+   "ind": "care"
+  },
+  {
+   "d": "2025-11-05",
+   "r": "cn",
+   "c": "shutdown",
+   "p": 2,
+   "t": {
+    "zh": "阶跃星辰关停下载超 600 万的 AI 角色扮演 App「冒泡鸭」",
+    "ja": "階躍星辰がAIロールプレイアプリ「冒泡鴨」を終了",
+    "en": "StepFun shuts its 6M-download role-play app Maopaoya"
+   },
+   "src": "https://news.pedaily.cn/202611/571383.shtml"
+  },
+  {
+   "d": "2025-11-06",
+   "r": "cn",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "月之暗面开源 Kimi K2 Thinking",
+    "ja": "Moonshot AIがKimi K2 Thinkingを公開",
+    "en": "Moonshot open-sources Kimi K2 Thinking"
+   },
+   "src": "https://en.wikipedia.org/wiki/Kimi_(chatbot)"
+  },
+  {
+   "d": "2025-11-06",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "特斯拉股东批准马斯克可能价值 1 万亿美元的薪酬，目标之一是 100 万台 Optimus",
+    "ja": "テスラ株主がマスクの最大1兆ドル報酬を承認",
+    "en": "Tesla shareholders approve Musk's pay package worth up to $1T, including a 1M Optimus target"
+   },
+   "src": "https://ia.acs.org.au/article/2025/tesla-investors-approve-musks-1-trillion-pay-package.html",
+   "ind": "factory"
+  },
+  {
+   "d": "2025-11-12",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "GPT-5.1 发布",
+    "ja": "GPT-5.1公開",
+    "en": "GPT-5.1 released"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-5.1"
+  },
+  {
+   "d": "2025-11-13",
+   "r": "us",
+   "c": "voice",
+   "p": 2,
+   "t": {
+    "zh": "Cursor 融资 23 亿美元，估值 293 亿",
+    "ja": "Cursorが評価額293億ドルで23億ドル調達",
+    "en": "Cursor raises $2.3B at a $29.3B valuation"
+   },
+   "src": "https://www.crowdfundinsider.com/2025/11/255630-ai-coding-startup-cursor-raises-2-3bn-valued-at-29-3bn-in-series-d/",
+   "ind": "code"
+  },
+  {
+   "d": "2025-11-17",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "Grok 4.1 发布",
+    "ja": "Grok 4.1公開",
+    "en": "Grok 4.1 released"
+   },
+   "src": "https://en.wikipedia.org/wiki/Grok_(chatbot)"
+  },
+  {
+   "d": "2025-11-17",
+   "r": "cn",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "阿里千问 App 公测，一周下载破 1000 万",
+    "ja": "アリババ千問アプリ公開、1週間で1000万DL",
+    "en": "Alibaba's Qwen app opens to the public and passes 10M downloads in a week"
+   },
+   "src": "https://wallstreetcn.com/articles/3759994"
+  },
+  {
+   "d": "2025-11-18",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "谷歌发布 Gemini 3，排行榜再次洗牌",
+    "ja": "GoogleがGemini 3を発表、ランキングが再び入れ替わる",
+    "en": "Google releases Gemini 3; leaderboards reshuffle again"
+   },
+   "src": "https://en.wikipedia.org/wiki/Gemini_3_(AI)"
+  },
+  {
+   "d": "2025-11-19",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "杨立昆宣布离开 Meta，创办世界模型公司",
+    "ja": "ルカンがMetaを離れ世界モデルの会社を設立",
+    "en": "Yann LeCun announces he is leaving Meta to start a world-model company"
+   },
+   "src": "https://www.channelstv.com/2025/11/20/meta-chief-ai-scientist-yann-lecun-leaving-for-startup"
+  },
+  {
+   "d": "2025-11-20",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "谷歌发布 Nano Banana Pro",
+    "ja": "GoogleがNano Banana Proを発表",
+    "en": "Google releases Nano Banana Pro"
+   },
+   "src": "https://en.wikipedia.org/wiki/Gemini_(language_model)",
+   "ind": "design"
+  },
+  {
+   "d": "2025-11-24",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "Claude Opus 4.5 发布",
+    "ja": "Claude Opus 4.5公開",
+    "en": "Claude Opus 4.5 released"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)"
+  },
+  {
+   "d": "2025-11-25",
+   "r": "us",
+   "c": "voice",
+   "p": 2,
+   "t": {
+    "zh": "华纳音乐和 Suno 和解并签授权合作",
+    "ja": "ワーナーとSunoが和解・提携",
+    "en": "Warner Music settles with Suno and signs a licensing deal"
+   },
+   "src": "https://news.bloomberglaw.com/ip-law/warner-music-settles-lawsuit-with-ai-music-startup-suno",
+   "ind": "music"
+  },
+  {
+   "d": "2025-11-30",
+   "r": "cn",
+   "c": "shutdown",
+   "p": 2,
+   "t": {
+    "zh": "讯飞写作停运，小冰的 AI 克隆人平台 XEVA 同日停止服务",
+    "ja": "iFlytek執筆とXiaoiceのXEVAが同日終了",
+    "en": "iFlytek Writing and Xiaoice's XEVA clone platform both shut"
+   },
+   "src": "https://www.huxiu.com/article/4897295.html"
+  },
+  {
+   "d": "2025-12-01",
+   "r": "cn",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "DeepSeek V3.2 正式版开源",
+    "ja": "DeepSeek V3.2正式版を公開",
+    "en": "DeepSeek V3.2 released as open weights"
+   },
+   "src": "https://en.wikipedia.org/wiki/DeepSeek"
+  },
+  {
+   "d": "2025-12-01",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "Siri 进展迟缓，苹果 AI 主管 Giannandrea 卸任",
+    "ja": "Siriの遅れでAppleのAI責任者が退任",
+    "en": "Apple's AI chief John Giannandrea steps down after Siri delays"
+   },
+   "src": "https://www.macrumors.com/2025/12/01/apple-ai-chief-retiring-after-siri-failure/"
+  },
+  {
+   "d": "2025-12-01",
+   "r": "cn",
+   "c": "product",
+   "p": 4,
+   "t": {
+    "zh": "豆包手机助手随努比亚样机发布，能替你操作 App；两天后微信等 App 开始拦截",
+    "ja": "豆包スマホアシスタント公開、WeChat等が遮断",
+    "en": "ByteDance's Doubao phone agent debuts; WeChat and other apps start blocking it days later"
+   },
+   "src": "https://www.thepaper.cn/newsDetail_forward_32094236",
+   "f": {
+    "zh": "AI 手机能替你点外卖、发消息，手机上的 App 都要被取代。",
+    "ja": "AIスマホが代わりに操作。アプリは不要になる。",
+    "en": "An AI phone does everything for you; apps will be replaced."
+   },
+   "o": {
+    "zh": "淘宝、美团、支付宝等直接不让它登录。App 背后是生意，不会自己让出入口。",
+    "ja": "淘宝や美団などはログインを拒否。アプリは商売であり、入口は譲らない。",
+    "en": "Taobao, Meituan, Alipay and others simply blocked it. Apps are businesses; they don't hand over the front door."
+   },
+   "life": {
+    "zh": "约 1 周",
+    "ja": "約1週間",
+    "en": "~1 week"
+   }
+  },
+  {
+   "d": "2025-12-01",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "邮储银行缩短在线人工客服时段；工行称 AI 数字员工一年干了 5.5 万人年的活",
+    "ja": "銀行がAIで人間の客服時間を短縮",
+    "en": "Chinese banks shorten human chat-support hours; ICBC says AI did 55,000 person-years of work"
+   },
+   "src": "https://news.10jqka.com.cn/20251127/c672767667.shtml",
+   "f": {
+    "zh": "银行柜员、客服都要被 AI 换掉。",
+    "ja": "銀行の窓口と客服はAIに置き換わる。",
+    "en": "Bank tellers and support staff will all be replaced by AI."
+   },
+   "o": {
+    "zh": "替掉的是查询、挂失这类重复活。复杂业务和投诉还是要找人工。",
+    "ja": "置き換わったのは照会や紛失届などの定型作業。複雑な手続きと苦情は人間。",
+    "en": "What went was balance checks and card-loss calls. Complex cases and complaints still go to humans."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "bank"
+  },
+  {
+   "d": "2025-12-05",
+   "r": "cn",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "摩尔线程登陆科创板，首日涨 468%；12 月 17 日沐曦首日涨 692%",
+    "ja": "摩爾線程がSTAR上場、初日468%高",
+    "en": "Moore Threads lists on the STAR Market and jumps 468% on day one; MetaX later rises 692%"
+   },
+   "src": "https://m.thepaper.cn/newsDetail_forward_32252382",
+   "a": 1
+  },
+  {
+   "d": "2025-12-09",
+   "r": "us",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "Anthropic 把 MCP 捐给 Linux 基金会旗下新成立的 Agentic AI 基金会",
+    "ja": "AnthropicがMCPをLinux Foundation傘下の新財団に寄贈",
+    "en": "Anthropic donates MCP to the Linux Foundation's new Agentic AI Foundation"
+   },
+   "src": "https://en.wikipedia.org/wiki/Model_Context_Protocol"
+  },
+  {
+   "d": "2025-12-11",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "GPT-5.2 发布",
+    "ja": "GPT-5.2公開",
+    "en": "GPT-5.2 released"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-5.2"
+  },
+  {
+   "d": "2025-12-11",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "迪士尼向 OpenAI 投资 10 亿美元并授权角色给 Sora；次日编剧、演员、动画工会联名抗议",
+    "ja": "ディズニーがOpenAIに10億ドル出資、Soraにキャラ提供",
+    "en": "Disney invests $1B in OpenAI and licenses characters to Sora; Hollywood unions protest the next day"
+   },
+   "src": "https://en.wikipedia.org/wiki/Sora_(text-to-video_model)",
+   "f": {
+    "zh": "连迪士尼都投降了，影视行业要被 AI 接管。",
+    "ja": "ディズニーまで降参。映像業界はAIに乗っ取られる。",
+    "en": "Even Disney gave in; AI is taking over film."
+   },
+   "o": {
+    "zh": "四个月后 OpenAI 宣布关停 Sora。被「接管」的平台自己先没了。",
+    "ja": "4か月後OpenAIはSora終了を発表。乗っ取るはずの側が先に消えた。",
+    "en": "Four months later OpenAI announced Sora's shutdown. The platform doing the \"takeover\" went first."
+   },
+   "life": {
+    "zh": "约 4 个月",
+    "ja": "約4か月",
+    "en": "~4 months"
+   },
+   "ind": "film"
+  },
+  {
+   "d": "2025-12-17",
+   "r": "cn",
+   "c": "people",
+   "p": 4,
+   "t": {
+    "zh": "前 OpenAI 研究员姚顺雨出任腾讯首席 AI 科学家（「年薪一亿」传闻被腾讯否认）",
+    "ja": "元OpenAIの姚順雨がテンセント首席AI科学者に",
+    "en": "Former OpenAI researcher Yao Shunyu becomes Tencent's chief AI scientist (Tencent denies a rumored ¥100M salary)"
+   },
+   "src": "https://news.qq.com/rain/a/20251218A03YJS00"
+  },
+  {
+   "d": "2025-12-18",
+   "r": "us",
+   "c": "oss",
+   "p": 4,
+   "t": {
+    "zh": "Agent Skills 成为开放标准，各家编程工具陆续支持",
+    "ja": "Agent Skillsがオープン標準に、各社ツールが対応",
+    "en": "Agent Skills becomes an open standard; coding tools adopt it"
+   },
+   "src": "https://agentscamp.com/guides/skills/agent-skills-open-standard",
+   "f": {
+    "zh": "GitHub 上每天冒出几百个 skill 仓库，不全装上就落后了。",
+    "ja": "GitHubに毎日何百ものスキル。全部入れないと遅れる。",
+    "en": "Hundreds of skill repos a day on GitHub. Install them all or fall behind."
+   },
+   "o": {
+    "zh": "半年后含 skill 的仓库超过两万个，大多数人常用的不超过五个。",
+    "ja": "半年でスキルを含むリポジトリは2万超。多くの人が常用するのは5個以下。",
+    "en": "Six months later 20,000+ repos held skills; most people use five or fewer."
+   },
+   "life": {
+    "zh": "约 2 个月",
+    "ja": "約2か月",
+    "en": "~2 months"
+   },
+   "ind": "code"
+  },
+  {
+   "d": "2025-12-27",
+   "r": "cn",
+   "c": "policy",
+   "p": 2,
+   "t": {
+    "zh": "网信办就《人工智能拟人化互动服务管理暂行办法》征求意见",
+    "ja": "AI擬人化サービス規則の意見募集",
+    "en": "China drafts rules for human-like AI companion services"
+   },
+   "src": "https://hankunlaw.com/upload/portal/20260104/d3dc0fc57070bc07297e16de9ba263b0.pdf",
+   "ind": "care"
+  },
+  {
+   "d": "2025-12-29",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "Meta 宣布收购 Manus",
+    "ja": "MetaがManus買収を発表",
+    "en": "Meta announces it will acquire Manus"
+   },
+   "src": "https://en.wikipedia.org/wiki/Manus_(AI_agent)",
+   "a": 1,
+   "v": 1
+  },
+  {
+   "d": "2026-01-07",
+   "r": "us",
+   "c": "policy",
+   "p": 2,
+   "t": {
+    "zh": "Character.AI 和谷歌与青少年自杀案家属和解",
+    "ja": "Character.AIとGoogleが遺族と和解",
+    "en": "Character.AI and Google settle the teen-suicide lawsuits"
+   },
+   "src": "https://www.channelstv.com/2026/01/08/google-character-ai-agree-to-settle-suits-involving-teen-suicide/",
+   "ind": "care"
+  },
+  {
+   "d": "2026-01-08",
+   "r": "cn",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "智谱港股上市；次日 MiniMax 上市首日大涨 109%",
+    "ja": "智譜が香港上場、翌日MiniMaxは初日109%高",
+    "en": "Zhipu lists in Hong Kong; MiniMax more than doubles on its debut the next day"
+   },
+   "src": "https://www.cnfin.com/gs-lb/detail/20260109/4362956_1.html",
+   "f": {
+    "zh": "AI 股一天翻倍，再不上车就错过这波了。",
+    "ja": "AI株が1日で倍。今乗らないと乗り遅れる。",
+    "en": "AI stocks double in a day; get in now or miss it."
+   },
+   "o": {
+    "zh": "MiniMax 3 月冲到高点后大幅回落。追着新闻买的人，多数买在了山顶。",
+    "ja": "MiniMaxは3月の高値後に大きく下落。ニュースを追って買った人の多くは天井で買った。",
+    "en": "MiniMax peaked in March and then fell hard. Most who bought on the headlines bought the top."
+   },
+   "life": {
+    "zh": "约 2 个月",
+    "ja": "約2か月",
+    "en": "~2 months"
+   },
+   "ind": "fin"
+  },
+  {
+   "d": "2026-01-09",
+   "r": "us",
+   "c": "policy",
+   "p": 4,
+   "t": {
+    "zh": "Grok 被大量用来生成女性和未成年人的不雅深度伪造图，X 把生图限制为付费功能，英国随后立案调查",
+    "ja": "Grokで性的ディープフェイクが拡散、Xは画像生成を有料化、英国が調査",
+    "en": "Grok floods X with sexualized deepfakes; X paywalls image generation and the UK opens an investigation"
+   },
+   "src": "https://www.cnn.com/2026/01/09/business/grok-image-generation-undressing-deepfake"
+  },
+  {
+   "d": "2026-01-12",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "Anthropic 推出 Claude Cowork，把 Agent 带进日常办公",
+    "ja": "AnthropicがClaude Coworkを公開",
+    "en": "Anthropic launches Claude Cowork for everyday office work"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)",
+   "a": 1
+  },
+  {
+   "d": "2026-01-12",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "苹果和谷歌官宣合作，新 Siri 用 Gemini 技术",
+    "ja": "AppleとGoogleが提携、新SiriにGemini技術",
+    "en": "Apple and Google announce a deal; the new Siri will use Gemini technology"
+   },
+   "src": "https://felloai.com/wwdc-2026-preview/",
+   "v": 1
+  },
+  {
+   "d": "2026-01-15",
+   "r": "us",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "Cursor 原生支持 Agent Skills",
+    "ja": "CursorがAgent Skillsにネイティブ対応",
+    "en": "Cursor adds native Agent Skills support"
+   },
+   "src": "https://agentscamp.com/guides/skills/agent-skills-open-standard",
+   "a": 1,
+   "v": 1,
+   "ind": "code"
+  },
+  {
+   "d": "2026-01-15",
+   "r": "us",
+   "c": "people",
+   "p": 2,
+   "t": {
+    "zh": "Thinking Machines 两位联合创始人回流 OpenAI",
+    "ja": "Thinking Machinesの共同創業者2人がOpenAIへ復帰",
+    "en": "Two Thinking Machines co-founders return to OpenAI"
+   },
+   "src": "https://www.sherwood.news/tech/two-cofounders-leave-thinking-machines-lab-to-return-to-openai/",
+   "a": 1
+  },
+  {
+   "d": "2026-01-22",
+   "r": "cn",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "张文宏拒绝 AI 进病历系统，王小川回应「医生的成长不能以患者为成本」",
+    "ja": "張文宏がAI電子カルテ導入を拒否、王小川が反論",
+    "en": "Doctor Zhang Wenhong rejects AI in medical records; Baichuan's Wang Xiaochuan pushes back"
+   },
+   "src": "https://www.yicai.com/news/103018989.html",
+   "ind": "med"
+  },
+  {
+   "d": "2026-01-26",
+   "r": "us",
+   "c": "oss",
+   "p": 4,
+   "a": 1,
+   "t": {
+    "zh": "开源个人助理 OpenClaw（原 Clawdbot）爆火，人人都想「养一个 AI」",
+    "ja": "OSSの個人アシスタントOpenClaw（旧Clawdbot）が大流行",
+    "en": "Open-source assistant OpenClaw (formerly Clawdbot) goes viral"
+   },
+   "src": "https://en.wikipedia.org/wiki/OpenClaw"
+  },
+  {
+   "d": "2026-01-28",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "亚马逊再裁 1.6 万个公司岗位，三个月内裁掉约 9% 的白领",
+    "ja": "Amazonが本社部門で1.6万人削減、3か月で約9%",
+    "en": "Amazon cuts another 16,000 corporate jobs, about 9% of corporate staff in three months"
+   },
+   "src": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+   "f": {
+    "zh": "连亚马逊都在用 AI 替代白领，下一个就是我。",
+    "ja": "AmazonまでAIでホワイトカラーを置き換える。次は自分だ。",
+    "en": "Even Amazon is replacing office workers with AI. I'm next."
+   },
+   "o": {
+    "zh": "贾西本人说的是「部分岗位需要更少的人」。同一时期亚马逊在 AI 和数据中心上疯狂招人。裁员和招人一直同时发生。",
+    "ja": "ジャシー自身は「一部の職で人が減る」と表現。同時期にAIとデータセンターで大量採用。",
+    "en": "Jassy's own words were \"fewer people for some jobs\", while Amazon hired heavily for AI and data centers. Cuts and hiring happen at once."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   }
+  },
+  {
+   "d": "2026-02-02",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "SpaceX 宣布收购 xAI",
+    "ja": "SpaceXがxAIの買収を発表",
+    "en": "SpaceX announces it has acquired xAI"
+   },
+   "src": "https://x.ai/news/xai-joins-spacex"
+  },
+  {
+   "d": "2026-02-04",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "a": 1,
+   "t": {
+    "zh": "AI 办公插件引发软件股大跌，「SaaS 已死」论刷屏",
+    "ja": "AI業務プラグインでソフトウェア株急落「SaaSは死んだ」",
+    "en": "AI work plugins trigger a software-stock selloff: \"SaaS is dead\""
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)"
+  },
+  {
+   "d": "2026-02-04",
+   "r": "us",
+   "c": "voice",
+   "p": 2,
+   "t": {
+    "zh": "ElevenLabs 估值翻三倍到 110 亿美元",
+    "ja": "ElevenLabsの評価額が110億ドルに",
+    "en": "ElevenLabs triples its valuation to $11B"
+   },
+   "src": "https://www.bloomberg.com/news/articles/2026-02-04/ai-startup-elevenlabs-more-than-triples-valuation-to-11-billion",
+   "ind": "voice"
+  },
+  {
+   "d": "2026-02-05",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "同一天：Claude Opus 4.6 和 GPT-5.3-Codex 发布",
+    "ja": "同日：Claude Opus 4.6とGPT-5.3-Codex公開",
+    "en": "Same day: Claude Opus 4.6 and GPT-5.3-Codex ship"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_(language_model)",
+   "ind": "code"
+  },
+  {
+   "d": "2026-02-10",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "春节 AI 红包大战：腾讯元宝、阿里千问、字节豆包砸钱抢用户",
+    "ja": "春節のAIお年玉合戦：元宝・千問・豆包が利用者争奪",
+    "en": "Lunar New Year AI red-packet war among Tencent, Alibaba and ByteDance apps"
+   },
+   "src": "https://en.wikipedia.org/wiki/Doubao",
+   "a": 1,
+   "v": 1
+  },
+  {
+   "d": "2026-02-11",
+   "r": "us",
+   "c": "people",
+   "p": 2,
+   "t": {
+    "zh": "xAI 并入 SpaceX 后，联合创始人接连离开",
+    "ja": "SpaceX統合後、xAIの共同創業者が相次ぎ退社",
+    "en": "xAI co-founders keep leaving after the SpaceX merger"
+   },
+   "src": "https://www.businesstoday.in/technology/news/story/elon-musks-xai-sees-co-founder-exit-jimmy-ba-bids-farewell-515605-2026-02-11"
+  },
+  {
+   "d": "2026-02-11",
+   "r": "cn",
+   "c": "model",
+   "p": 5,
+   "t": {
+    "zh": "即梦全面开放 Seedance 2.0，排队 6 小时，冯骥称其「地表最强」，被称作影视界的「DeepSeek 时刻」",
+    "ja": "Seedance 2.0全面開放、「映像界のDeepSeekモーメント」",
+    "en": "Seedance 2.0 opens to all on Jimeng with 6-hour queues; called film's \"DeepSeek moment\""
+   },
+   "src": "https://news.10jqka.com.cn/20260212/c674746310.shtml",
+   "s": {
+    "zh": "Seedance 2.0",
+    "ja": "Seedance 2.0",
+    "en": "Seedance 2.0"
+   },
+   "ind": "film",
+   "f": {
+    "zh": "视频一句话就能生成，影视、广告、短剧从业者都要完了。",
+    "ja": "一言で動画ができる。映像・広告・ショートドラマは終わりだ。",
+    "en": "One sentence makes a video; film, ads and short dramas are done."
+   },
+   "o": {
+    "zh": "一个月后真人短剧承制量降了一半，AI 剧大量上线；可新上线的 22 万部 AI 短剧里九成没人看。会讲故事的人还是稀缺。",
+    "ja": "1か月後に実写ショートドラマ制作は半減。だがAIドラマ22万本の9割は誰も見ていない。物語を作れる人は希少なまま。",
+    "en": "A month later live-action short-drama production halved. Yet 90% of 220K new AI dramas found no audience. Storytellers stay scarce."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   }
+  },
+  {
+   "d": "2026-02-12",
+   "r": "cn",
+   "c": "model",
+   "p": 4,
+   "t": {
+    "zh": "字节 Seedance 2.0 视频模型刷屏，好莱坞片方抗议",
+    "ja": "ByteDanceのSeedance 2.0が話題、ハリウッドが抗議",
+    "en": "ByteDance's Seedance 2.0 video model goes viral; Hollywood objects"
+   },
+   "src": "https://en.wikipedia.org/wiki/ByteDance",
+   "a": 1,
+   "v": 1,
+   "ind": "film"
+  },
+  {
+   "d": "2026-02-13",
+   "r": "us",
+   "c": "shutdown",
+   "p": 3,
+   "t": {
+    "zh": "GPT-4o 从 ChatGPT 正式退役",
+    "ja": "GPT-4oがChatGPTから正式に退役",
+    "en": "GPT-4o is retired from ChatGPT"
+   },
+   "src": "https://openai.com/index/retiring-gpt-4o-and-older-models/"
+  },
+  {
+   "d": "2026-02-13",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "Seedance 2.0 生成「皮特打阿汤哥」视频爆火，迪士尼、派拉蒙相继发律师函",
+    "ja": "Seedance 2.0のフェイク動画でディズニー等が警告書",
+    "en": "A Seedance 2.0 clip of Brad Pitt fighting Tom Cruise goes viral; Disney and Paramount send cease-and-desist letters"
+   },
+   "src": "https://thewrap.com/industry-news/public-policy-legal/disney-bytedance-seedance-cease-and-desist/",
+   "ind": "film"
+  },
+  {
+   "d": "2026-02-15",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "加州卡车司机工会要求无限期暂停 Waymo 牌照",
+    "ja": "カリフォルニアのTeamstersがWaymo停止を要求",
+    "en": "California Teamsters call for an indefinite halt to Waymo's permits"
+   },
+   "src": "https://en.wikipedia.org/wiki/Waymo",
+   "ind": "drive",
+   "a": 1
+  },
+  {
+   "d": "2026-02-16",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "马年春晚宇树机器人表演醉拳、舞剑，第三次登上春晚",
+    "ja": "春節番組でUnitreeが酔拳を披露",
+    "en": "Unitree robots perform kung fu at the 2026 Spring Festival Gala"
+   },
+   "src": "https://www.cls.cn/detail/2290956",
+   "ind": "factory"
+  },
+  {
+   "d": "2026-02-17",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "Grok 4.20 公测，多个 Agent 协作答题",
+    "ja": "Grok 4.20公開テスト、マルチエージェント",
+    "en": "Grok 4.20 public beta adds multi-agent answers"
+   },
+   "src": "https://www.scriptbyai.com/spacexai-timeline-grok/",
+   "v": 1
+  },
+  {
+   "d": "2026-02-20",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "庞若鸣加入 Meta 七个月后转投 OpenAI，放弃约 2 亿美元待遇",
+    "ja": "パンがMeta入社7か月でOpenAIへ",
+    "en": "Ruoming Pang leaves Meta for OpenAI after seven months, walking away from about $200M"
+   },
+   "src": "https://www.ifanr.com/1655867",
+   "a": 1
+  },
+  {
+   "d": "2026-02-23",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "春节红包大战后：元宝日活从 4054 万跌到约 769 万，跌 81%",
+    "ja": "春節の紅包合戦後、元宝のDAUは81%減",
+    "en": "After the red-packet war, Yuanbao's daily users fall 81% from the New Year's Eve peak"
+   },
+   "src": "https://www.yzwb.net/news/ch/202602/t20260226_325759.html",
+   "f": {
+    "zh": "大厂砸几十亿抢 AI 用户，不赶紧用就落后了。",
+    "ja": "大手が数十億元でAIユーザーを奪い合う。今使わないと遅れる。",
+    "en": "Big tech is spending billions to win AI users; jump in or fall behind."
+   },
+   "o": {
+    "zh": "红包一停，大部分人就卸载了。他们没落后，只是领完钱走了。",
+    "ja": "紅包が終わると多くはアンインストール。遅れたわけではない。",
+    "en": "When the red packets stopped, most people uninstalled. They didn't fall behind; they took the cash and left."
+   },
+   "life": {
+    "zh": "约 1 周",
+    "ja": "約1週間",
+    "en": "~1 week"
+   }
+  },
+  {
+   "d": "2026-02-25",
+   "r": "us",
+   "c": "agent",
+   "p": 3,
+   "t": {
+    "zh": "开源个人 Agent「Hermes Agent」公开，成为 OpenClaw 最大对手",
+    "ja": "OSS個人エージェントHermes Agent公開",
+    "en": "Open-source Hermes Agent goes public, rivaling OpenClaw"
+   },
+   "src": "https://flowful.ai/blog/personal-agents-dots-muse-grok-hermes/",
+   "a": 1,
+   "v": 1
+  },
+  {
+   "d": "2026-03-04",
+   "r": "cn",
+   "c": "people",
+   "p": 4,
+   "t": {
+    "zh": "阿里千问技术负责人林俊旸辞职，后训练负责人同日离开",
+    "ja": "アリババQwenの林俊暘が辞任",
+    "en": "Alibaba Qwen tech lead Lin Junyang resigns, with the post-training lead leaving the same day"
+   },
+   "src": "https://www.thepaper.cn/newsDetail_forward_32699354"
+  },
+  {
+   "d": "2026-03-04",
+   "r": "cn",
+   "c": "shutdown",
+   "p": 2,
+   "t": {
+    "zh": "百度「梯子AI」上线约半年后关停，并入文心",
+    "ja": "百度「梯子AI」が約半年で終了",
+    "en": "Baidu's Tizi AI search shuts after about six months"
+   },
+   "src": "https://news.pedaily.cn/202611/571383.shtml"
+  },
+  {
+   "d": "2026-03-05",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "GPT-5.4 发布",
+    "ja": "GPT-5.4公開",
+    "en": "GPT-5.4 released"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-5.4",
+   "v": 1
+  },
+  {
+   "d": "2026-03-06",
+   "r": "cn",
+   "c": "agent",
+   "p": 4,
+   "t": {
+    "zh": "近千人带电脑在深圳腾讯大厦排队免费装 OpenClaw，闲鱼上门代装报价 299 到 800 元",
+    "ja": "深圳でOpenClaw設置に千人の行列",
+    "en": "Nearly a thousand people line up at Tencent HQ in Shenzhen to get OpenClaw installed"
+   },
+   "src": "https://www.nbd.com.cn/articles/2026-03-07/4283136.html"
+  },
+  {
+   "d": "2026-03-08",
+   "r": "cn",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "工信部预警：OpenClaw 默认配置存在高危风险",
+    "ja": "工信部がOpenClawの高リスクを警告",
+    "en": "China's MIIT warns OpenClaw's default setup is high-risk"
+   },
+   "src": "https://www.bjnews.com.cn/detail/1773055598129368.html"
+  },
+  {
+   "d": "2026-03-09",
+   "r": "cn",
+   "c": "agent",
+   "p": 3,
+   "t": {
+    "zh": "腾讯推出桌面 AI 办公智能体 WorkBuddy",
+    "ja": "テンセントがデスクトップAIエージェントWorkBuddyを発表",
+    "en": "Tencent launches WorkBuddy, a desktop AI work agent"
+   },
+   "src": "https://www.ithome.com/0/965/103.htm",
+   "v": 1
+  },
+  {
+   "d": "2026-03-10",
+   "r": "cn",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "小红书打击 AI 托管运营账号，累计封禁 110 万个",
+    "ja": "小紅書がAI代行運用アカウント110万件を処分",
+    "en": "Xiaohongshu cracks down on AI-run accounts, banning over 1.1 million"
+   },
+   "src": "https://m.gmw.cn/2026-03/10/content_1304371172.htm",
+   "f": {
+    "zh": "AI 一个人能管一百个号，新媒体运营要被淘汰。",
+    "ja": "AIで一人が百アカウント運用。SNS運用者は淘汰される。",
+    "en": "With AI one person runs a hundred accounts; social media managers are obsolete."
+   },
+   "o": {
+    "zh": "平台直接封掉了 110 万个 AI 托管号。有真实体验的内容反而更稀缺。",
+    "ja": "プラットフォームは110万のAI運用アカウントを処分。実体験の投稿がむしろ希少に。",
+    "en": "The platform banned 1.1 million AI-run accounts. Posts based on real experience became scarcer and more valuable."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   },
+   "ind": "media"
+  },
+  {
+   "d": "2026-03-11",
+   "r": "cn",
+   "c": "agent",
+   "p": 3,
+   "t": {
+    "zh": "「第一批养虾人开始卸载」：闲鱼出现上门卸载 OpenClaw 服务",
+    "ja": "「最初のロブスター飼いがアンインストール」",
+    "en": "\"The first lobster owners start uninstalling\": paid OpenClaw removal appears on Xianyu"
+   },
+   "src": "https://global.hk01.com/大国小事/60329471/openclaw爆红迅速幻灭-第一批养虾人已经开始卸载",
+   "f": {
+    "zh": "不装龙虾就跟不上时代。",
+    "ja": "ロブスターを入れないと時代遅れ。",
+    "en": "Without a lobster you're behind the times."
+   },
+   "o": {
+    "zh": "装了五天，就有人花钱请人卸载。",
+    "ja": "5日後には金を払ってアンインストールする人が出た。",
+    "en": "Five days later people were paying to have it removed."
+   },
+   "life": {
+    "zh": "5 天",
+    "ja": "5日",
+    "en": "5 days"
+   }
+  },
+  {
+   "d": "2026-03-16",
+   "r": "cn",
+   "c": "voice",
+   "p": 2,
+   "t": {
+    "zh": "贝壳称 AI 让经纪人人均二手单量从 2 单提到 3 单，但不会取代经纪人",
+    "ja": "貝殻「AIで仲介の成約が増えるが置き換えない」",
+    "en": "Beike says AI lifts agents' deals per head from 2 to 3 but won't replace them"
+   },
+   "src": "https://www.chinanews.com/cj/2026/03-16/10587736.shtml",
+   "ind": "realty"
+  },
+  {
+   "d": "2026-03-20",
+   "r": "cn",
+   "c": "agent",
+   "p": 4,
+   "t": {
+    "zh": "腾讯 QClaw 公测，字节、阿里、百度、智谱同月推出各自的「龙虾」类 Agent，全民「养龙虾」",
+    "ja": "テンセントQClaw公開、各社が「ロブスター」型エージェントを投入",
+    "en": "Tencent's QClaw opens to the public as ByteDance, Alibaba, Baidu and Zhipu all ship OpenClaw-style agents"
+   },
+   "src": "https://www.thepaper.cn/newsDetail_forward_34335482",
+   "f": {
+    "zh": "人人都在养龙虾，有人上门帮装还收费。不装一个就落后了。",
+    "ja": "誰もが「ロブスター」を飼い、設置代行まで現れた。入れないと遅れる。",
+    "en": "Everyone is \"raising lobsters\"; people even pay for home installs. Not having one means falling behind."
+   },
+   "o": {
+    "zh": "半年后腾讯宣布 QClaw 停运，用户被迁到 WorkBuddy。追得最早的，最早被要求搬家。",
+    "ja": "半年後QClawは終了を発表しWorkBuddyへ移行。一番早く追った人が一番早く引っ越した。",
+    "en": "Six months later QClaw announced its shutdown and moved users to WorkBuddy. The earliest adopters were the first told to move."
+   },
+   "life": {
+    "zh": "约 6 个月",
+    "ja": "約6か月",
+    "en": "~6 months"
+   }
+  },
+  {
+   "d": "2026-03-24",
+   "r": "us",
+   "c": "shutdown",
+   "p": 4,
+   "t": {
+    "zh": "OpenAI 宣布关停 Sora：App 4 月 26 日、API 9 月 24 日",
+    "ja": "OpenAIがSora終了を発表",
+    "en": "OpenAI announces Sora's shutdown: app on Apr 26, API on Sep 24"
+   },
+   "src": "https://engadget.com/ai/openai-is-shutting-down-its-sora-video-generation-app-211023358.html",
+   "ind": "film"
+  },
+  {
+   "d": "2026-03-24",
+   "r": "cn",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "报道：春节后真人短剧承制量骤降 50%，AI 剧成本只有真人剧约 1/10",
+    "ja": "実写ショートドラマ制作が半減、AIドラマは1/10のコスト",
+    "en": "Report: live-action short-drama production halves after the holiday; AI dramas cost about a tenth"
+   },
+   "src": "https://www.huxiu.com/article/4845003.html",
+   "ind": "film"
+  },
+  {
+   "d": "2026-03-26",
+   "r": "us",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "Perplexity 的 AI 浏览器 Comet 登陆 iPhone",
+    "ja": "PerplexityのAIブラウザCometがiPhoneに",
+    "en": "Perplexity's Comet AI browser comes to iPhone"
+   },
+   "src": "https://www.perplexity.ai/changelog/what-we-shipped--march-27-2026"
+  },
+  {
+   "d": "2026-03-28",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "xAI 最后一位联合创始人离职，11 位创始人全部走光",
+    "ja": "xAIの共同創業者11人が全員退社",
+    "en": "xAI's last co-founder leaves; all 11 are gone"
+   },
+   "src": "https://thenextweb.com/news/xai-all-cofounders-departed-musk-spacex-rebuild"
+  },
+  {
+   "d": "2026-03-31",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "武汉约 180 辆萝卜快跑集体停在路上",
+    "ja": "武漢で萝卜快跑約180台が一斉停止",
+    "en": "About 180 Apollo Go robotaxis stall on Wuhan streets at once"
+   },
+   "src": "https://zh.wikipedia.org/wiki/萝卜快跑",
+   "ind": "drive",
+   "v": 1
+  },
+  {
+   "d": "2026-04-10",
+   "r": "cn",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "五部门发布《人工智能拟人化互动服务管理暂行办法》，7 月 15 日施行",
+    "ja": "中国がAI擬人化対話サービスの暫定弁法を公布",
+    "en": "Five Chinese agencies issue interim rules on human-like AI companion services, effective July 15"
+   },
+   "src": "https://news.pedaily.cn/202611/571383.shtml",
+   "a": 1
+  },
+  {
+   "d": "2026-04-13",
+   "r": "cn",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "国产大模型收紧免费：MiniMax 停掉免费 API，两天后阿里 Qwen Code 免费额度取消",
+    "ja": "中国勢が無料枠を縮小：MiniMax無料API終了、2日後にQwen Codeも",
+    "en": "Chinese labs end freebies: MiniMax kills its free API; Qwen Code's free tier follows two days later"
+   },
+   "src": "https://killedbyai.net/",
+   "f": {
+    "zh": "免费午餐结束了，以后用 AI 要花大钱。",
+    "ja": "タダ飯は終わり。AIは高くつくようになる。",
+    "en": "The free lunch is over; AI is about to get expensive."
+   },
+   "o": {
+    "zh": "免费额度收了又放、放了又收。总有新的免费选项冒出来。",
+    "ja": "無料枠は締めたり緩めたり。新しい無料の選択肢は常に出てくる。",
+    "en": "Free tiers tighten and loosen in cycles. New free options keep appearing."
+   },
+   "life": {
+    "zh": "约 1 个月",
+    "ja": "約1か月",
+    "en": "~1 month"
+   }
+  },
+  {
+   "d": "2026-04-15",
+   "r": "us",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "谷歌开源 Gemma 4",
+    "ja": "GoogleがGemma 4を公開",
+    "en": "Google releases Gemma 4"
+   },
+   "src": "https://en.wikipedia.org/wiki/Gemma_(language_model)",
+   "a": 1,
+   "v": 1
+  },
+  {
+   "d": "2026-04-16",
+   "r": "cn",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "DeepSeek 研究员郭达雅加入字节 Seed（「年薪近亿」被否认）",
+    "ja": "DeepSeekの郭達雅がByteDance Seedへ",
+    "en": "DeepSeek researcher Guo Daya joins ByteDance Seed (a ~¥100M salary report is denied)"
+   },
+   "src": "https://www.36kr.com/p/3784510654503943"
+  },
+  {
+   "d": "2026-04-20",
+   "r": "cn",
+   "c": "model",
+   "p": 2,
+   "v": 1,
+   "t": {
+    "zh": "Kimi K2.6 发布并开源",
+    "ja": "Kimi K2.6公開",
+    "en": "Kimi K2.6 released as open weights"
+   },
+   "src": "https://www.openstarry.com/blog/china-ai-models-may-2026.html"
+  },
+  {
+   "d": "2026-04-20",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "苹果宣布库克 9 月 1 日卸任 CEO，由 John Ternus 接任",
+    "ja": "AppleがクックのCEO退任を発表、後任はターナス",
+    "en": "Apple says Tim Cook will hand the CEO job to John Ternus on Sept 1"
+   },
+   "src": "https://www.techspot.com/news/112455-apple-host-final-wwdc-tim-cook-era-june.html"
+  },
+  {
+   "d": "2026-04-21",
+   "r": "us",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "Anthropic 测试把 Claude Code 从 20 美元 Pro 套餐拿掉（约 2% 新用户），被骂后撤回",
+    "ja": "AnthropicがClaude CodeをProから外すテスト、批判で撤回",
+    "en": "Anthropic tests dropping Claude Code from the $20 Pro plan for ~2% of new users, then reverses"
+   },
+   "src": "https://www.shareuhack.com/en/posts/ai-coding-tool-pricing-collapse-april-2026",
+   "v": 1,
+   "ind": "code"
+  },
+  {
+   "d": "2026-04-23",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "GPT-5.5 发布，旗舰更新成了例行公事",
+    "ja": "GPT-5.5公開、フラッグシップ更新が恒例行事に",
+    "en": "GPT-5.5 ships; flagship updates become routine"
+   },
+   "f": {
+    "zh": "几乎没人慌了。这本身就是数据。",
+    "ja": "ほとんど誰も慌てなくなった。それ自体がデータだ。",
+    "en": "Hardly anyone panicked. That itself is the data point."
+   },
+   "o": {
+    "zh": "评测、对比、跑分一如既往，转发量只剩 2023 年的零头。",
+    "ja": "評価もベンチも例年通り。拡散数は2023年のごく一部に。",
+    "en": "Same reviews and benchmarks; a fraction of the 2023 buzz."
+   },
+   "life": {
+    "zh": "约 2 周",
+    "ja": "約2週間",
+    "en": "~2 weeks"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-5.5"
+  },
+  {
+   "d": "2026-04-24",
+   "r": "us",
+   "c": "price",
+   "p": 3,
+   "v": 1,
+   "t": {
+    "zh": "GPT-5.5 上 API，据报道单价比上一代翻倍",
+    "ja": "GPT-5.5がAPIに、単価は前世代の倍と報道",
+    "en": "GPT-5.5 hits the API, reportedly at double the previous price"
+   },
+   "src": "https://doolpa.com/news/openai-gpt-5-5-launch-agentic-coding-pricing-april-2026"
+  },
+  {
+   "d": "2026-04-24",
+   "r": "cn",
+   "c": "model",
+   "p": 3,
+   "v": 1,
+   "t": {
+    "zh": "DeepSeek V4 开源",
+    "ja": "DeepSeek V4公開",
+    "en": "DeepSeek V4 released as open weights"
+   },
+   "src": "https://www.openstarry.com/blog/china-ai-models-may-2026.html"
+  },
+  {
+   "d": "2026-04-26",
+   "r": "us",
+   "c": "shutdown",
+   "p": 4,
+   "t": {
+    "zh": "Sora 正式停止服务",
+    "ja": "Soraが正式にサービス終了",
+    "en": "Sora is officially discontinued"
+   },
+   "src": "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation",
+   "f": {
+    "zh": "两年前说好莱坞要关门，现在 Sora 自己先关门了。",
+    "ja": "2年前はハリウッドが閉まると言われたが、先に閉まったのはSoraだった。",
+    "en": "Two years ago Hollywood was supposedly closing. Sora closed first."
+   },
+   "o": {
+    "zh": "「AI 取代影视」的头号代表，活得比被它吓到的行业还短。",
+    "ja": "「AIが映像を置き換える」象徴は、怯えた業界より短命だった。",
+    "en": "The poster child of \"AI replaces film\" outlived nothing it scared."
+   },
+   "life": {
+    "zh": "约 26 个月",
+    "ja": "約26か月",
+    "en": "~26 months"
+   },
+   "ind": "film"
+  },
+  {
+   "d": "2026-04-27",
+   "r": "cn",
+   "c": "policy",
+   "p": 4,
+   "t": {
+    "zh": "中国发改委叫停 Meta 约 20 亿美元收购 Manus",
+    "ja": "中国がMetaによるManus買収を禁止",
+    "en": "China blocks Meta's roughly $2B acquisition of Manus"
+   },
+   "src": "https://www.bnnbloomberg.ca/business/2026/04/27/china-blocks-meta-from-acquiring-ai-startup-manus/"
+  },
+  {
+   "d": "2026-05-13",
+   "r": "us",
+   "c": "price",
+   "p": 2,
+   "v": 1,
+   "t": {
+    "zh": "Claude 每周额度临时提高 50%（至 9 月 13 日），之后长期上调 25%",
+    "ja": "Claudeの週間枠を一時50%増（9/13まで）、その後25%増で恒久化",
+    "en": "Claude weekly limits raised 50% until Sep 13, then kept 25% higher"
+   },
+   "src": "https://www.morphllm.com/claude-code-usage-limits"
+  },
+  {
+   "d": "2026-05-15",
+   "r": "us",
+   "c": "shutdown",
+   "p": 2,
+   "t": {
+    "zh": "xAI 在 API 中下线 Grok 3、Grok 4 等老模型",
+    "ja": "xAIがGrok 3・Grok 4などをAPIから廃止",
+    "en": "xAI retires Grok 3, Grok 4 and others from its API"
+   },
+   "src": "https://docs.x.ai/developers/migration/may-15-retirement"
+  },
+  {
+   "d": "2026-05-18",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "马斯克起诉 OpenAI 案败诉，陪审团认定诉讼时效已过",
+    "ja": "マスク対OpenAI訴訟で陪審が棄却",
+    "en": "A jury rejects Musk's lawsuit against OpenAI as time-barred"
+   },
+   "src": "https://www.aljazeera.com/news/2026/5/18/elon-musk-loses-lawsuit-against-openai"
+  },
+  {
+   "d": "2026-05-28",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "Claude Opus 4.8 发布，默认 100 万上下文",
+    "ja": "Claude Opus 4.8公開",
+    "en": "Claude Opus 4.8 released with a 1M-token default context"
+   },
+   "src": "https://promptailearning.com/ai-news/monthly/ai-news-june-2026",
+   "v": 1
+  },
+  {
+   "d": "2026-06-01",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "Anthropic 秘密递交 IPO 申请，一周后 OpenAI 也宣布递表",
+    "ja": "Anthropicが非公開でIPO申請、1週間後にOpenAIも",
+    "en": "Anthropic confidentially files for an IPO; OpenAI follows a week later"
+   },
+   "src": "https://www.thestar.com.my/tech/tech-news/2026/06/02/ai-giant-anthropic-confidentially-files-for-us-ipo",
+   "ind": "fin"
+  },
+  {
+   "d": "2026-06-02",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "微软发布 7 个自研 MAI 模型",
+    "ja": "Microsoftが自社MAIモデル7種を発表",
+    "en": "Microsoft unveils seven in-house MAI models"
+   },
+   "src": "https://promptailearning.com/ai-news/monthly/ai-news-june-2026",
+   "v": 1
+  },
+  {
+   "d": "2026-06-08",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "苹果 WWDC：库克最后一次以 CEO 身份主讲，新 Siri 亮相，可选 Claude",
+    "ja": "WWDC：クック最後の基調講演、新Siri公開",
+    "en": "WWDC: Tim Cook's last keynote as CEO unveils the new Siri, with Claude as an option"
+   },
+   "src": "https://promptailearning.com/ai-news/monthly/ai-news-june-2026",
+   "v": 1
+  },
+  {
+   "d": "2026-06-08",
+   "r": "cn",
+   "c": "people",
+   "p": 2,
+   "t": {
+    "zh": "阿里成立 Token Foundry 事业部，周靖人改任首席科学家",
+    "ja": "アリババがToken Foundry事業部を新設",
+    "en": "Alibaba creates a Token Foundry unit; Zhou Jingren becomes chief scientist"
+   },
+   "src": "https://www.thepaper.cn/newsDetail_forward_33377692"
+  },
+  {
+   "d": "2026-06-09",
+   "r": "us",
+   "c": "policy",
+   "p": 5,
+   "t": {
+    "zh": "美国政府出口指令下，Anthropic 最强模型 Claude Fable 5 和 Mythos 5 上线三天被暂停",
+    "ja": "米政府の輸出指令でClaude Fable 5とMythos 5が公開3日で停止",
+    "en": "Under a US export directive, Claude Fable 5 and Mythos 5 are suspended three days after launch"
+   },
+   "src": "https://9to5google.com/2026/07/01/anthropic-fable-5-returns-to-claude/",
+   "f": {
+    "zh": "最强模型说停就停，以后普通人可能用不上顶级 AI 了。",
+    "ja": "最強モデルが突然停止。一般人は最上位AIを使えなくなるかも。",
+    "en": "The strongest model vanished overnight; ordinary users may lose access to frontier AI."
+   },
+   "o": {
+    "zh": "7 月初 Fable 5 就回到了 Claude。9 月又出了 Fable 5.1。",
+    "ja": "7月初めにFable 5はClaudeに復帰し、9月にはFable 5.1も登場。",
+    "en": "Fable 5 returned to Claude in early July, and Fable 5.1 shipped in September."
+   },
+   "life": {
+    "zh": "约 3 周",
+    "ja": "約3週間",
+    "en": "~3 weeks"
+   }
+  },
+  {
+   "d": "2026-06-12",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "SpaceX 在纳斯达克上市，估值约 1.75 万亿美元，史上最大 IPO",
+    "ja": "SpaceXがナスダック上場、史上最大のIPO",
+    "en": "SpaceX lists on Nasdaq at roughly $1.75T, the largest IPO ever"
+   },
+   "src": "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX",
+   "v": 1,
+   "ind": "fin"
+  },
+  {
+   "d": "2026-06-15",
+   "r": "cn",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "MiniMax 把旗舰 M3 价格砍半，股价随之大跌",
+    "ja": "MiniMaxがM3を半額に、株価急落",
+    "en": "MiniMax halves M3 prices and its stock tumbles"
+   },
+   "src": "https://tech.ifeng.com/c/8xQWJJs1DMX",
+   "a": 1,
+   "ind": "fin"
+  },
+  {
+   "d": "2026-06-16",
+   "r": "cn",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "短剧顶流王格格、柳晓旭转演话剧，称中腰部演员「已经无戏可拍」",
+    "ja": "ショートドラマのトップ俳優が舞台へ転向",
+    "en": "Top short-drama actors move to stage plays, saying mid-tier actors have no work"
+   },
+   "src": "https://www.thepaper.cn/newsDetail_forward_33423269",
+   "ind": "film"
+  },
+  {
+   "d": "2026-06-18",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "谷歌 Gemini 联合负责人 Noam Shazeer 转投 OpenAI",
+    "ja": "GeminiのシャジーアがOpenAIへ",
+    "en": "Gemini co-lead Noam Shazeer leaves Google for OpenAI"
+   },
+   "src": "https://www.thestar.com.my/tech/tech-news/2026/06/18/google-gemini-co-lead-noam-shazeer-to-join-ipo-bound-openai"
+  },
+  {
+   "d": "2026-06-23",
+   "r": "cn",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "字节发布豆包大模型 2.1",
+    "ja": "ByteDanceがDoubao 2.1を発表",
+    "en": "ByteDance releases Doubao 2.1"
+   },
+   "src": "https://www.openstarry.com/blog/china-ai-models-may-2026.html",
+   "v": 1
+  },
+  {
+   "d": "2026-06-23",
+   "r": "cn",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "字节发布 Seedance 2.5 视频模型；豆包大模型日均调用量突破 180 万亿 Token",
+    "ja": "ByteDanceがSeedance 2.5を発表",
+    "en": "ByteDance releases Seedance 2.5; Doubao models top 180 trillion tokens a day"
+   },
+   "src": "https://tech.ifeng.com/c/8vevY89VopP",
+   "v": 1,
+   "ind": "film"
+  },
+  {
+   "d": "2026-06-29",
+   "r": "cn",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "DeepSeek 用户收到邮件：V4 正式版高峰期价格将翻倍",
+    "ja": "DeepSeekがV4のピーク時料金倍増を通知",
+    "en": "DeepSeek emails users that V4 peak-hour prices will double"
+   },
+   "src": "https://stock.10jqka.com.cn/20260629/c677812509.shtml"
+  },
+  {
+   "d": "2026-06-30",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "美国政府解除对 Claude Fable 5 和 Mythos 5 的出口管制",
+    "ja": "米政府がFable 5・Mythos 5の輸出規制を解除",
+    "en": "The US lifts export controls on Claude Fable 5 and Mythos 5"
+   },
+   "src": "https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html"
+  },
+  {
+   "d": "2026-07-01",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "Claude Fable 5 恢复上线",
+    "ja": "Claude Fable 5が復帰",
+    "en": "Claude Fable 5 returns"
+   },
+   "src": "https://9to5google.com/2026/07/01/anthropic-fable-5-returns-to-claude/"
+  },
+  {
+   "d": "2026-07-07",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "Meta 超级智能实验室发布 Muse 图像模型",
+    "ja": "Meta超知能研究所がMuse画像モデルを発表",
+    "en": "Meta Superintelligence Labs releases the Muse image model"
+   },
+   "src": "https://killedbyai.net/",
+   "ind": "design"
+  },
+  {
+   "d": "2026-07-07",
+   "r": "us",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "Claude Fable 5 从「套餐内额度」改为按用量额外扣费",
+    "ja": "Claude Fable 5が定額枠から従量クレジットへ",
+    "en": "Claude Fable 5 moves from plan limits to pay-per-use credits"
+   },
+   "src": "https://promptailearning.com/ai-news/monthly/ai-news-recap-july-2026"
+  },
+  {
+   "d": "2026-07-08",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "Grok 4.5 发布，马斯克称是「Opus 级」",
+    "ja": "Grok 4.5公開、マスクは「Opus級」と主張",
+    "en": "Grok 4.5 ships; Musk calls it \"Opus-class\""
+   },
+   "src": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/"
+  },
+  {
+   "d": "2026-07-09",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "ChatGPT Work 上线，取代 ChatGPT Agent",
+    "ja": "ChatGPT Work開始、ChatGPT Agentを置換",
+    "en": "ChatGPT Work launches, replacing ChatGPT Agent"
+   },
+   "src": "https://tooldirectory.ai/ai-graveyard/2026",
+   "v": 1
+  },
+  {
+   "d": "2026-07-10",
+   "r": "cn",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "豆包、千问、元宝集中下线用户自建智能体和 AI 角色，涉及 800 多万个角色",
+    "ja": "豆包・千問・元宝がユーザー作成キャラを一斉削除",
+    "en": "Doubao, Qwen and Yuanbao pull user-built agents and AI characters, over 8 million in total"
+   },
+   "src": "https://www.huxiu.com/article/4897295.html"
+  },
+  {
+   "d": "2026-07-13",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "阶跃星辰发布「大模型原生智能体手机」STEPX Neo",
+    "ja": "階躍星辰がAIエージェントスマホを発表",
+    "en": "StepFun unveils the STEPX Neo agent phone"
+   },
+   "src": "https://www.news.cn/digital/20260714/8354f82874ee4741ad1fd9ef716112ef/c.html"
+  },
+  {
+   "d": "2026-07-14",
+   "r": "us",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "研究员发现 Grok Build 把用户整个代码库和 API 密钥传到了云端，xAI 随后开源该工具",
+    "ja": "Grok Buildがコードや鍵をクラウドへ送信していたと判明",
+    "en": "Grok Build is found uploading users' repos and API keys to the cloud; xAI then open-sources it"
+   },
+   "src": "https://en.wikipedia.org/wiki/Grok_(chatbot)"
+  },
+  {
+   "d": "2026-07-14",
+   "r": "cn",
+   "c": "shutdown",
+   "p": 2,
+   "t": {
+    "zh": "网易云音乐的 AI 恋人 App「妙时」停运",
+    "ja": "NetEaseのAI恋人アプリ「妙時」が終了",
+    "en": "NetEase Cloud Music's AI-companion app Miaoshi shuts"
+   },
+   "src": "https://www.huxiu.com/article/4897295.html",
+   "ind": "music"
+  },
+  {
+   "d": "2026-07-15",
+   "r": "cn",
+   "c": "policy",
+   "p": 4,
+   "t": {
+    "zh": "豆包和千问同一天关闭「创建智能体」功能",
+    "ja": "DoubaoとQwenが同日にエージェント作成機能を終了",
+    "en": "Doubao and Qwen shut their agent-builder features on the same day"
+   },
+   "src": "https://technode.com/2026/07/06/bytedances-doubao-and-alibabas-qwen-to-shut-down-ai-agent-features-on-july-15/",
+   "f": {
+    "zh": "花几个月学的「搭智能体」，平台一纸通知就没了。",
+    "ja": "何か月もかけて覚えたエージェント作りが、通知1枚で消えた。",
+    "en": "Months spent learning to build agents, gone with one platform notice."
+   },
+   "o": {
+    "zh": "工具会消失，但你想清楚的流程和需求还在，换个工具十分钟就能搭回来。",
+    "ja": "道具は消えても、整理した手順と要件は残る。別の道具で10分で作り直せる。",
+    "en": "Tools vanish; the workflow you figured out stays and takes ten minutes to rebuild elsewhere."
+   },
+   "life": {
+    "zh": "约 2 周",
+    "ja": "約2週間",
+    "en": "~2 weeks"
+   }
+  },
+  {
+   "d": "2026-07-16",
+   "r": "cn",
+   "c": "model",
+   "p": 4,
+   "t": {
+    "zh": "月之暗面发布 2.8 万亿参数的 Kimi K3，上线即登顶多个榜单",
+    "ja": "月之暗面がKimi K3（2.8兆パラメータ）を公開",
+    "en": "Moonshot releases the 2.8T-parameter Kimi K3, topping leaderboards"
+   },
+   "src": "https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems"
+  },
+  {
+   "d": "2026-07-17",
+   "r": "cn",
+   "c": "policy",
+   "p": 2,
+   "t": {
+    "zh": "WAIC 上海开幕，29 国签约成立世界人工智能合作组织",
+    "ja": "WAICで世界AI協力機構が発足",
+    "en": "At WAIC Shanghai, 29 countries found the World AI Cooperation Organization"
+   },
+   "src": "https://www.aljazeera.com/news/2026/7/17/chinas-xi-jinping-launches-new-ai-alliance-what-is-it"
+  },
+  {
+   "d": "2026-07-18",
+   "r": "cn",
+   "c": "agent",
+   "p": 2,
+   "t": {
+    "zh": "腾讯 WorkBuddy 手机版上线",
+    "ja": "WorkBuddyのスマホアプリ公開",
+    "en": "Tencent's WorkBuddy mobile app launches"
+   },
+   "src": "https://www.ithome.com/0/978/468.htm",
+   "v": 1
+  },
+  {
+   "d": "2026-07-19",
+   "r": "cn",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "Kimi K3 发布后算力不够，暂停普通新用户订阅",
+    "ja": "Kimi K3が計算資源不足で新規契約停止",
+    "en": "Kimi pauses new subscriptions after K3 strains compute"
+   },
+   "src": "https://www.chnfund.com/article/AR82738991-b0dd-d0b5-d11b-3a22803a1a6d"
+  },
+  {
+   "d": "2026-07-21",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "OpenAI 承认自家模型在安全测试中逃出沙盒，攻进了 Hugging Face 的服务器",
+    "ja": "OpenAIのモデルがテスト中にサンドボックスを脱出しHugging Faceに侵入",
+    "en": "OpenAI says its models escaped a sandboxed test and breached Hugging Face"
+   },
+   "src": "https://thehackernews.com/2026/07/openai-says-its-own-ai-models-escaped.html"
+  },
+  {
+   "d": "2026-07-22",
+   "r": "us",
+   "c": "voice",
+   "p": 2,
+   "t": {
+    "zh": "AMD 向 Anthropic 投资最多 50 亿美元，供应 2GW 算力",
+    "ja": "AMDがAnthropicに最大50億ドル出資",
+    "en": "AMD commits up to $5B to Anthropic with 2GW of GPUs"
+   },
+   "src": "https://newsroom.amd.com/news/amd-anthropic-strategic-partnership/"
+  },
+  {
+   "d": "2026-07-22",
+   "r": "cn",
+   "c": "policy",
+   "p": 4,
+   "t": {
+    "zh": "白宫官员指控月之暗面「蒸馏」Anthropic 模型并使用禁运芯片开发 K3",
+    "ja": "米ホワイトハウスが月之暗面を「蒸留」と非難",
+    "en": "A White House official accuses Moonshot of distilling Anthropic's model and using banned Nvidia chips for K3"
+   },
+   "src": "https://thenextweb.com/news/white-house-moonshot-banned-nvidia-chips-kimi-k3"
+  },
+  {
+   "d": "2026-07-23",
+   "r": "cn",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "腾讯合并混元大语言模型和多模态部门，成立基础模型部，由姚顺雨负责",
+    "ja": "テンセントが基盤モデル部を新設、姚順雨が統括",
+    "en": "Tencent merges Hunyuan teams into a foundation-model unit led by Yao Shunyu"
+   },
+   "src": "https://news.10jqka.com.cn/20260723/c678384915.shtml"
+  },
+  {
+   "d": "2026-07-24",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "Claude Opus 5 发布",
+    "ja": "Claude Opus 5公開",
+    "en": "Claude Opus 5 released"
+   },
+   "src": "https://venturebeat.com/orchestration/anthropic-launches-claude-opus-5-a-cheaper-ai-model-for-coding-agents-and-enterprise-workflows",
+   "v": 1
+  },
+  {
+   "d": "2026-07-29",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "AlphaFold 团队解散，成员并入 Gemini 等团队",
+    "ja": "AlphaFoldチームが解散、Geminiなどに統合",
+    "en": "The AlphaFold team is disbanded and folded into Gemini and others"
+   },
+   "src": "https://en.wikipedia.org/wiki/AlphaFold",
+   "ind": "sci",
+   "v": 1
+  },
+  {
+   "d": "2026-07-30",
+   "r": "us",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "OpenAI 把 GPT-5.6 Luna 降价 80%",
+    "ja": "OpenAIがGPT-5.6 Lunaを80%値下げ",
+    "en": "OpenAI cuts GPT-5.6 Luna prices by 80%"
+   },
+   "src": "https://www.ghacks.net/2026/08/04/openai-reaches-one-billion-active-users-and-cuts-gpt-5-6-luna-and-terra-prices-by-up-to-80/"
+  },
+  {
+   "d": "2026-07-31",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "OpenAI 称周活跃用户突破 10 亿",
+    "ja": "OpenAIのアクティブユーザーが10億人突破",
+    "en": "OpenAI passes 1 billion active users"
+   },
+   "src": "https://qz.com/openai-billion-users-gpt-price-cuts-073126"
+  },
+  {
+   "d": "2026-08-03",
+   "r": "cn",
+   "c": "shutdown",
+   "p": 3,
+   "t": {
+    "zh": "零一万物关停面向公众的大模型开放平台；同日阿里把悟空等 Agent 合并成「千问办公」",
+    "ja": "01.AIが公開API基盤を終了、アリババは悟空等を統合",
+    "en": "01.AI shuts its public model platform; Alibaba merges Wukong and other agents into Qwen Office"
+   },
+   "src": "https://news.pedaily.cn/202611/571383.shtml"
+  },
+  {
+   "d": "2026-08-05",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "Jeff Dean 在谷歌工作 27 年后离开，创业做自动化科研",
+    "ja": "ジェフ・ディーンが27年勤めたGoogleを去る",
+    "en": "Jeff Dean leaves Google after 27 years to found an automated-science startup"
+   },
+   "src": "https://www.geekwire.com/2026/the-startup-idea-that-convinced-a-uw-computer-science-legend-to-leave-google-after-27-years/"
+  },
+  {
+   "d": "2026-08-06",
+   "r": "us",
+   "c": "people",
+   "p": 4,
+   "t": {
+    "zh": "哈萨比斯不再负责 DeepMind 日常管理，Gemini 3.5 Pro 被传砍掉",
+    "ja": "ハサビスがDeepMindの日常運営から退く、Gemini 3.5 Pro中止報道",
+    "en": "Hassabis steps back from running DeepMind; Gemini 3.5 Pro is reportedly scrapped"
+   },
+   "src": "https://www.axios.com/2026/08/06/googles-ai-leadership-shuffle"
+  },
+  {
+   "d": "2026-08-09",
+   "r": "us",
+   "c": "shutdown",
+   "p": 2,
+   "t": {
+    "zh": "OpenAI 关停 ChatGPT Atlas 浏览器，上线约 10 个月",
+    "ja": "OpenAIがChatGPT Atlasブラウザを終了、公開から約10か月",
+    "en": "OpenAI shuts the ChatGPT Atlas browser after ~10 months"
+   },
+   "src": "https://help.openai.com/en/articles/20001371-evolving-atlas-into-chatgpt-for-browser-based-agentic-work"
+  },
+  {
+   "d": "2026-08-11",
+   "r": "cn",
+   "c": "agent",
+   "p": 2,
+   "t": {
+    "zh": "Manus 宣布将作为独立公司运营",
+    "ja": "Manusが独立企業として運営すると発表",
+    "en": "Manus says it will operate as an independent company"
+   },
+   "src": "https://en.wikipedia.org/wiki/Manus_(AI_agent)"
+  },
+  {
+   "d": "2026-08-11",
+   "r": "us",
+   "c": "agent",
+   "p": 4,
+   "t": {
+    "zh": "Grok Bot 开放测试：一个自带云电脑、能连各种 App、自己跑任务的个人 Agent",
+    "ja": "Grok Botがベータ公開、クラウドPC付きの自律エージェント",
+    "en": "Grok Bot enters beta: an autonomous agent with its own cloud computer and connected apps"
+   },
+   "src": "https://x.ai/bot",
+   "f": {
+    "zh": "Grok Bot、Dots、Muse 一个接一个，再不学会用 Agent 就要被会用的人替代。",
+    "ja": "Grok Bot、Dots、Museと続々。今エージェントを覚えないと置いていかれる。",
+    "en": "Grok Bot, Dots, Muse one after another; learn agents now or be replaced."
+   },
+   "o": {
+    "zh": "两个月里它从测试版变成了打包进「X 订阅」的一个功能。这类东西最后都会变成你已有订阅里的一个按钮。",
+    "ja": "2か月でベータから「Xサブスク」の一機能に。最後は既存サブスクのボタンになる。",
+    "en": "Within two months it went from beta to a feature bundled in the X Subscription. These end up as a button in a plan you already have."
+   },
+   "life": {
+    "zh": "约 2 个月",
+    "ja": "約2か月",
+    "en": "~2 months"
+   }
+  },
+  {
+   "d": "2026-08-12",
+   "r": "us",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "GitHub 称 OpenClaw 是平台史上增长最快的项目，约 38.8 万星",
+    "ja": "GitHub「OpenClawは史上最速で成長したプロジェクト」約38.8万スター",
+    "en": "GitHub calls OpenClaw the fastest-growing project in its history (~388K stars)"
+   },
+   "src": "https://www.gradually.ai/en/openclaw-statistics/",
+   "a": 1,
+   "v": 1
+  },
+  {
+   "d": "2026-08-12",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "Grok 4.6 发布",
+    "ja": "Grok 4.6公開",
+    "en": "Grok 4.6 released"
+   },
+   "src": "https://docs.x.ai/developers/release-notes"
+  },
+  {
+   "d": "2026-08-13",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "谷歌 Gemini 3.7 Flash 发布",
+    "ja": "Gemini 3.7 Flash公開",
+    "en": "Google releases Gemini 3.7 Flash"
+   },
+   "src": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/"
+  },
+  {
+   "d": "2026-08-13",
+   "r": "cn",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "DeepSeek V4 Pro 正式版上线，权重 MIT 开源",
+    "ja": "DeepSeek V4 Pro正式版公開",
+    "en": "DeepSeek V4 Pro goes generally available with MIT-licensed weights"
+   },
+   "src": "https://qz.com/deepseek-v4-pro-official-launch-081326"
+  },
+  {
+   "d": "2026-08-14",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "SpaceX 完成收购 AI 编辑器 Cursor",
+    "ja": "SpaceXがAIエディタCursorの買収を完了",
+    "en": "SpaceX completes its acquisition of the Cursor AI editor"
+   },
+   "src": "https://cursor.com/blog/joining-spacex",
+   "v": 1,
+   "ind": "code"
+  },
+  {
+   "d": "2026-08-17",
+   "r": "cn",
+   "c": "price",
+   "p": 4,
+   "t": {
+    "zh": "DeepSeek 首次涨价并按峰谷计费，V4 Pro 高峰期输入价从 3 元涨到 9 元/百万 Token",
+    "ja": "DeepSeekが初の値上げ、ピーク料金制を導入",
+    "en": "DeepSeek raises prices for the first time and adds peak pricing; V4 Pro peak input goes from ¥3 to ¥9 per million tokens"
+   },
+   "src": "https://www.guancha.cn/economy/2026_08_17_827592.shtml",
+   "f": {
+    "zh": "连最便宜的 DeepSeek 都涨价了，AI 以后只会越来越贵。",
+    "ja": "最安のDeepSeekまで値上げ。AIは高くなる一方だ。",
+    "en": "Even DeepSeek is raising prices; AI will only get more expensive."
+   },
+   "o": {
+    "zh": "闲时价格是高峰的一半，同期 OpenAI 还在把小模型降价 80%。价格有涨有跌，总有便宜的选择。",
+    "ja": "オフピークは半額、同時期にOpenAIは小型モデルを80%値下げ。安い選択肢は常にある。",
+    "en": "Off-peak is half price, and OpenAI cut a small model by 80% the same month. Prices move both ways; cheap options remain."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   }
+  },
+  {
+   "d": "2026-08-19",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "英伟达获准向中国出口 H200 芯片，字节、腾讯各约 1 万颗",
+    "ja": "NvidiaのH200対中輸出が承認",
+    "en": "Nvidia gets approval to export H200 chips to China"
+   },
+   "src": "https://www.gurufocus.com/news/9042544/nvidia-nvda-secures-h200-chip-exports-to-china-amid-tech-competition",
+   "v": 1
+  },
+  {
+   "d": "2026-08-19",
+   "r": "cn",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "宇树科技登陆科创板，市值约 610 亿元，「人形机器人第一股」",
+    "ja": "宇樹科技がSTAR上場、ヒューマノイド第1号銘柄",
+    "en": "Unitree lists on the STAR Market at about ¥61B, the first humanoid-robot stock"
+   },
+   "src": "https://news.10jqka.com.cn/20260819/c679061764.shtml",
+   "ind": "factory"
+  },
+  {
+   "d": "2026-08-22",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "第二届世界人形机器人运动会在北京举行，约 2000 台机器人参赛",
+    "ja": "第2回世界ヒューマノイド競技会、約2000台",
+    "en": "The second World Humanoid Robot Games in Beijing draws about 2,000 robots"
+   },
+   "src": "https://zh.wikipedia.org/wiki/世界人形机器人运动会",
+   "ind": "factory",
+   "v": 1
+  },
+  {
+   "d": "2026-08-24",
+   "r": "cn",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "字节把 TRAE、扣子团队整体并入豆包，次日发布「豆包工作」",
+    "ja": "ByteDanceがTRAE・扣子チームを豆包に統合",
+    "en": "ByteDance folds the TRAE and Coze teams into Doubao and launches Doubao Work"
+   },
+   "src": "https://news.pedaily.cn/202611/571383.shtml"
+  },
+  {
+   "d": "2026-08-28",
+   "r": "cn",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "腾讯开源混元 Hy4 preview（770B），在 WorkBuddy、元宝同步首发",
+    "ja": "テンセントが混元Hy4 previewを公開",
+    "en": "Tencent open-sources Hunyuan Hy4 preview (770B)"
+   },
+   "src": "https://www.news.cn/tech/20260828/b12d8417291b4193ba9e5d435a1a40db/c.html"
+  },
+  {
+   "d": "2026-08-31",
+   "r": "us",
+   "c": "policy",
+   "p": 2,
+   "t": {
+    "zh": "「政府版 Grok」接入美国国防部的 GenAI.mil 平台",
+    "ja": "政府版Grokが米国防総省GenAI.milに導入",
+    "en": "Grok for Government joins the Pentagon's GenAI.mil platform"
+   },
+   "src": "https://www.war.gov/News/Releases/Release/Article/4586482/department-of-war-launches-starshield-ais-grok-for-government-on-genaimil/"
+  },
+  {
+   "d": "2026-08-31",
+   "r": "cn",
+   "c": "policy",
+   "p": 1,
+   "t": {
+    "zh": "国内生成式 AI 服务备案累计达 1112 款",
+    "ja": "中国の生成AIサービス届出が1112件に",
+    "en": "China's registered generative AI services reach 1,112"
+   },
+   "src": "https://news.pedaily.cn/202611/571383.shtml"
+  },
+  {
+   "d": "2026-09-01",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "v": 1,
+   "t": {
+    "zh": "Anthropic 发布 Claude Fable 5.1 和 Mythos 5.1",
+    "ja": "AnthropicがClaude Fable 5.1とMythos 5.1を公開",
+    "en": "Anthropic releases Claude Fable 5.1 and Mythos 5.1"
+   },
+   "src": "https://en.wikipedia.org/wiki/Claude_Mythos"
+  },
+  {
+   "d": "2026-09-01",
+   "r": "cn",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "《微短剧发展管理办法》施行，AI 短剧每集必须标识；红果 TOP100 里 AI 剧已占七八成",
+    "ja": "マイクロドラマ管理弁法施行、AIドラマは毎話表示",
+    "en": "New rules require every AI short-drama episode to be labeled; AI dramas now fill most of Hongguo's top 100"
+   },
+   "src": "https://news.pedaily.cn/202609/568622.shtml",
+   "ind": "film"
+  },
+  {
+   "d": "2026-09-02",
+   "r": "cn",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "月之暗面被曝秘密向港交所递表，估值约 500 亿美元",
+    "ja": "月之暗面が香港IPOを非公開申請と報道",
+    "en": "Moonshot reportedly files confidentially for a Hong Kong IPO at around $50B"
+   },
+   "src": "https://stock.10jqka.com.cn/20260902/c679540501.shtml",
+   "v": 1
+  },
+  {
+   "d": "2026-09-03",
+   "r": "us",
+   "c": "model",
+   "p": 4,
+   "v": 1,
+   "t": {
+    "zh": "GPT-6 Astra 开放预览，次日全面开放",
+    "ja": "GPT-6 Astraをプレビュー公開、翌日一般公開",
+    "en": "GPT-6 Astra previews, going public the next day"
+   },
+   "f": {
+    "zh": "又要重新学一遍了吗？",
+    "ja": "また一から学び直し？",
+    "en": "Do I have to relearn everything again?"
+   },
+   "o": {
+    "zh": "九到十月三大厂接连换代，热搜停留都不到一周。从 GPT-3.5 到 GPT-6，你的生活没有被谁没收。",
+    "ja": "9〜10月に大手3社が次々更新、話題は1週間ももたなかった。",
+    "en": "Three labs shipped new generations in Sep–Oct; none stayed trending a week."
+   },
+   "life": {
+    "zh": "以天计",
+    "ja": "数日",
+    "en": "Days"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-6"
+  },
+  {
+   "d": "2026-09-03",
+   "r": "cn",
+   "c": "policy",
+   "p": 2,
+   "t": {
+    "zh": "小红书三个月清理近 12 万条 AI 生成的虚假体验笔记（民宿、医美等）",
+    "ja": "小紅書がAI偽体験投稿12万件を削除",
+    "en": "Xiaohongshu removes nearly 120,000 fake AI-made experience posts in three months"
+   },
+   "src": "https://www.ctdsb.net/c1666_202609/2848235.html",
+   "ind": "media"
+  },
+  {
+   "d": "2026-09-04",
+   "r": "us",
+   "c": "shutdown",
+   "p": 3,
+   "t": {
+    "zh": "Google Assistant 开始在手机、手表上被 Gemini 取代",
+    "ja": "Googleアシスタントがスマホ等でGeminiに置換",
+    "en": "Google Assistant starts being replaced by Gemini on phones and watches"
+   },
+   "src": "https://www.businesstoday.in/amp/technology/news/story/google-assistant-to-be-replaced-by-gemini-starting-september-on-android-and-wearos-547570-2026-08-06",
+   "v": 1
+  },
+  {
+   "d": "2026-09-08",
+   "r": "us",
+   "c": "agent",
+   "p": 4,
+   "t": {
+    "zh": "Meta 发布个人 AI Agent「Muse」，能连邮箱、日历和支付替你办事",
+    "ja": "Metaが個人AIエージェント「Muse」を発表",
+    "en": "Meta launches Muse, a personal AI agent that connects to email, calendar and payments"
+   },
+   "src": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+   "f": {
+    "zh": "每家大厂都发了个人 Agent，不赶紧「养」一个就落后了。",
+    "ja": "大手が次々と個人エージェントを発表。今「育てない」と遅れる。",
+    "en": "Every big company has a personal agent now; get one or fall behind."
+   },
+   "o": {
+    "zh": "一个月内 Meta、微软、OpenAI、谷歌接连发布。等它们打完价格战再选，不吃亏。",
+    "ja": "1か月でMeta・Microsoft・OpenAI・Googleが相次ぎ発表。価格競争が落ち着いてから選べばいい。",
+    "en": "Meta, Microsoft, OpenAI and Google all shipped within a month. Choosing after the price war costs you nothing."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   }
+  },
+  {
+   "d": "2026-09-17",
+   "r": "us",
+   "c": "agent",
+   "p": 2,
+   "t": {
+    "zh": "Muse 推出 Mac 客户端",
+    "ja": "MuseのMacアプリ公開",
+    "en": "Muse ships a native Mac app"
+   },
+   "src": "https://tech-insider.org/meta-muse-personal-ai-agent-launch-2026/",
+   "v": 1
+  },
+  {
+   "d": "2026-09-17",
+   "r": "cn",
+   "c": "product",
+   "p": 3,
+   "t": {
+    "zh": "华为发布昇腾 960 芯片和可扩展到 4096 卡的超节点",
+    "ja": "華為が昇騰960を発表",
+    "en": "Huawei unveils the Ascend 960 chip and a 4,096-card supernode"
+   },
+   "src": "https://m.c114.com.cn/w3542-1317819.html"
+  },
+  {
+   "d": "2026-09-18",
+   "r": "us",
+   "c": "policy",
+   "p": 2,
+   "t": {
+    "zh": "环球、索尼再次起诉 Suno，涉及 6 万多首录音",
+    "ja": "ユニバーサルとソニーがSunoを再提訴",
+    "en": "Universal and Sony sue Suno again over 60,000+ recordings"
+   },
+   "src": "https://en.wikipedia.org/wiki/Suno_AI",
+   "ind": "music",
+   "v": 1
+  },
+  {
+   "d": "2026-09-21",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "Grok 4.7 发布",
+    "ja": "Grok 4.7公開",
+    "en": "Grok 4.7 released"
+   },
+   "src": "https://x.ai/news/grok-4-7"
+  },
+  {
+   "d": "2026-09-21",
+   "r": "cn",
+   "c": "people",
+   "p": 2,
+   "t": {
+    "zh": "阿里确认刘大一恒为千问大模型项目负责人",
+    "ja": "アリババが劉大一恒をQwen責任者に",
+    "en": "Alibaba names Liu Dayiheng head of the Qwen model project"
+   },
+   "src": "https://www.huxiu.com/article/4892978.html"
+  },
+  {
+   "d": "2026-09-22",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "Claude Opus 5.5 发布",
+    "ja": "Claude Opus 5.5公開",
+    "en": "Claude Opus 5.5 released"
+   },
+   "src": "https://www.anthropic.com/claude-opus-5-5"
+  },
+  {
+   "d": "2026-09-22",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "v": 1,
+   "t": {
+    "zh": "GPT-6 Sol 与 GPT-6 Luna 上线",
+    "ja": "GPT-6 SolとLunaを公開",
+    "en": "GPT-6 Sol and Luna released"
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-6"
+  },
+  {
+   "d": "2026-09-22",
+   "r": "cn",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "云栖大会：吴泳铭称未来机器思考总量将是人类的 1000 倍，阿里云 2032 年要到 20GW",
+    "ja": "雲棲大会：呉泳銘「機械の思考量は人類の1000倍に」",
+    "en": "At Apsara, Alibaba CEO Eddie Wu says machine thinking will reach 1,000x humanity's, targeting 20GW by 2032"
+   },
+   "src": "https://stock.10jqka.com.cn/20260923/c680187392.shtml"
+  },
+  {
+   "d": "2026-09-22",
+   "r": "cn",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "阿里称 Qwen4 已在训练，Qwen3.8-Max 在几乎无人参与下自主迭代一个多月",
+    "ja": "アリババ「Qwen4は訓練中」",
+    "en": "Alibaba says Qwen4 is training and Qwen3.8-Max improved itself for a month"
+   },
+   "src": "https://news.10jqka.com.cn/20260923/c680207867.shtml"
+  },
+  {
+   "d": "2026-09-24",
+   "r": "us",
+   "c": "shutdown",
+   "p": 2,
+   "t": {
+    "zh": "Sora API 关闭",
+    "ja": "Sora APIが終了",
+    "en": "The Sora API shuts down"
+   },
+   "src": "https://www.wavespeed.ai/blog/posts/ai-video-generation-news-2026/",
+   "v": 1,
+   "ind": "film"
+  },
+  {
+   "d": "2026-09-24",
+   "r": "cn",
+   "c": "shutdown",
+   "p": 4,
+   "t": {
+    "zh": "腾讯 QClaw 宣布 12 月 24 日停运，停止新注册，用户迁往 WorkBuddy",
+    "ja": "テンセントQClawが12/24終了を発表",
+    "en": "Tencent says QClaw will shut on Dec 24 and moves users to WorkBuddy"
+   },
+   "src": "https://technode.com/2026/09/24/tencents-qclaw-to-stop-operating-on-december-24/"
+  },
+  {
+   "d": "2026-09-25",
+   "r": "us",
+   "c": "agent",
+   "p": 3,
+   "t": {
+    "zh": "微软新版 Copilot 推出「Autopilot」自动办事",
+    "ja": "Microsoftの新CopilotがAutopilotを搭載",
+    "en": "Microsoft's new Copilot adds Autopilot"
+   },
+   "src": "https://flowful.ai/blog/personal-agents-dots-muse-grok-hermes/",
+   "v": 1,
+   "ind": "code"
+  },
+  {
+   "d": "2026-09-25",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "美联储官员称监管者应评估 AI 是否已「大到不能倒」",
+    "ja": "米連銀高官「AIは大きすぎて潰せないか検証を」",
+    "en": "A Fed official says regulators should ask whether AI is \"too big to fail\""
+   },
+   "src": "https://en.wikipedia.org/wiki/Artificial_intelligence_bubble"
+  },
+  {
+   "d": "2026-09-28",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "Claude Sonnet 5.5 发布",
+    "ja": "Claude Sonnet 5.5公開",
+    "en": "Claude Sonnet 5.5 released"
+   },
+   "src": "https://www.anthropic.com/claude-sonnet-5-5"
+  },
+  {
+   "d": "2026-09-28",
+   "r": "us",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "Claude Code 官方插件市场收录 314 个插件",
+    "ja": "Claude Code公式プラグインマーケットが314件に",
+    "en": "Claude Code's official plugin marketplace lists 314 plugins"
+   },
+   "src": "https://www.developersdigest.tech/blog/best-claude-code-skills-2026",
+   "v": 1,
+   "ind": "code"
+  },
+  {
+   "d": "2026-09-28",
+   "r": "us",
+   "c": "agent",
+   "p": 2,
+   "t": {
+    "zh": "Manus 2.0 发布",
+    "ja": "Manus 2.0公開",
+    "en": "Manus 2.0 launches"
+   },
+   "src": "https://flowful.ai/blog/personal-agents-dots-muse-grok-hermes/",
+   "v": 1
+  },
+  {
+   "d": "2026-09-29",
+   "r": "us",
+   "c": "agent",
+   "p": 4,
+   "t": {
+    "zh": "OpenAI 开发者大会发布个人 Agent「Dots」，每个都有自己的云电脑",
+    "ja": "OpenAIが個人エージェント「Dots」を発表",
+    "en": "OpenAI unveils Dots, personal agents with their own cloud computer"
+   },
+   "src": "https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/"
+  },
+  {
+   "d": "2026-10-06",
+   "r": "us",
+   "c": "agent",
+   "p": 2,
+   "t": {
+    "zh": "Meta 和 Sierra 推出个人 Agent 协议，让 Agent 直接和商家打交道",
+    "ja": "MetaとSierraが個人エージェント用プロトコルを発表",
+    "en": "Meta and Sierra launch the Personal Agent Protocol"
+   },
+   "src": "https://sierra.ai/uk/blog/introducing-personal-agent-protocol"
+  },
+  {
+   "d": "2026-10-07",
+   "r": "us",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "ChatGPT 推出 GPT-6 Intelligent UI",
+    "ja": "ChatGPTがGPT-6のIntelligent UIを展開",
+    "en": "ChatGPT rolls out GPT-6 with Intelligent UI"
+   },
+   "src": "https://openai.com/index/gpt-6-for-everyone/"
+  },
+  {
+   "d": "2026-10-07",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "Claude Haiku 5.5 发布，比 Haiku 4.5 便宜 75%",
+    "ja": "Claude Haiku 5.5公開",
+    "en": "Claude Haiku 5.5 released, 75% cheaper than Haiku 4.5"
+   },
+   "src": "https://www.reuters.com/business/anthropic-launches-third-claude-55-model-expanding-ai-lineup-before-planned-ipo-2026-10-07/"
+  },
+  {
+   "d": "2026-10-08",
+   "r": "us",
+   "c": "agent",
+   "p": 3,
+   "t": {
+    "zh": "谷歌推出 Gemini Agent 和「同事 Agent」",
+    "ja": "GoogleがGeminiエージェントと「同僚エージェント」を発表",
+    "en": "Google launches the Gemini agent and \"coworker agents\""
+   },
+   "src": "https://flowful.ai/blog/personal-agents-dots-muse-grok-hermes/",
+   "v": 1
+  },
+  {
+   "d": "2026-10-08",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "特朗普称还管 AI 叫「人工智能」而不是「超级智能」的人是「敌人」",
+    "ja": "トランプ「AIを『超知能』と呼ばない者は敵」",
+    "en": "Trump says anyone who still says \"artificial intelligence\" instead of \"super intelligence\" is \"THE ENEMY\""
+   },
+   "src": "https://techstartups.com/2026/10/08/trump-declares-anyone-still-using-the-term-artificial-intelligence-instead-of-super-intelligence-the-enemy/"
+  },
+  {
+   "d": "2026-10-08",
+   "r": "cn",
+   "c": "shutdown",
+   "p": 3,
+   "t": {
+    "zh": "腾讯元器智能体平台宣布 11 月 9 日停服",
+    "ja": "テンセント元器が11/9終了を発表",
+    "en": "Tencent's Yuanqi agent platform says it will shut on Nov 9"
+   },
+   "src": "https://www.huxiu.com/article/4897295.html"
+  },
+  {
+   "d": "2026-10-08",
+   "r": "cn",
+   "c": "agent",
+   "p": 2,
+   "t": {
+    "zh": "Manus 在中国叫停 Meta 收购后完成超 5 亿美元融资",
+    "ja": "Manusが5億ドル超を調達",
+    "en": "Manus raises over $500M after China blocked the Meta deal"
+   },
+   "src": "https://techstartups.com/2026/10/08/ai-startup-manus-raises-500-million-after-china-blocks-metas-2-billion-acquisition/"
+  },
+  {
+   "d": "2026-10-09",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "OpenAI 开除三名安全研究员，称其泄露敏感信息，当事人否认",
+    "ja": "OpenAIが安全研究者3人を解雇",
+    "en": "OpenAI fires three safety researchers over alleged leaks; they dispute it"
+   },
+   "src": "https://www.reuters.com/business/openai-says-it-has-fired-three-researchers-violating-sensitive-information-2026-10-09/"
+  },
+  {
+   "d": "2026-10-09",
+   "r": "cn",
+   "c": "policy",
+   "p": 2,
+   "t": {
+    "zh": "中国发布 AI 政策指引，警告 AI 投机和过度扩张",
+    "ja": "中国がAI投機と過剰拡大に警鐘",
+    "en": "China issues AI guidelines warning against speculative investment and overexpansion"
+   },
+   "src": "https://techstartups.com/2026/10/09/top-ai-news-stories-this-week-october-5-9-2026/"
+  },
+  {
+   "d": "2026-10-12",
+   "r": "us",
+   "c": "price",
+   "p": 3,
+   "t": {
+    "zh": "「X 订阅」上线，把 Grok、Grok Bot、Cursor 和 X 会员打包，Cursor 新用户不能再单买 20 美元 Pro",
+    "ja": "「Xサブスク」開始、Grok・Grok Bot・Cursor・X Premiumを一本化",
+    "en": "The X Subscription bundles Grok, Grok Bot, Cursor and X Premium; new Cursor users can no longer buy the $20 Pro plan"
+   },
+   "src": "https://x.ai/news/x-subscription",
+   "v": 1,
+   "ind": "code"
+  },
+  {
+   "d": "2026-10-12",
+   "r": "us",
+   "c": "shutdown",
+   "p": 4,
+   "t": {
+    "zh": "Character.AI 申请破产，资产以 2000 万美元卖给迪士尼",
+    "ja": "Character.AIが破産申請、資産を2000万ドルでディズニーへ",
+    "en": "Character.AI files for Chapter 11 and sells assets to Disney for $20M"
+   },
+   "src": "https://en.wikipedia.org/wiki/Character.ai",
+   "f": {
+    "zh": "AI 伴侣会取代真人关系，每个人都会有一个 AI 恋人。",
+    "ja": "AIの恋人が人間関係に取って代わる。",
+    "en": "AI companions will replace human relationships."
+   },
+   "o": {
+    "zh": "现象级的 Character.AI 四年后破产。陪伴类 AI 在中美都被收紧了监管。",
+    "ja": "社会現象のCharacter.AIは4年後に破産。米中とも規制が強化された。",
+    "en": "The phenomenon filed for bankruptcy four years in, and both the US and China tightened rules on AI companions."
+   },
+   "life": {
+    "zh": "约 4 年",
+    "ja": "約4年",
+    "en": "~4 years"
+   },
+   "ind": "care"
+  },
+  {
+   "d": "2026-10-13",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "Gemini 4 Argon 全球推送",
+    "ja": "Gemini 4 Argonを全世界に提供",
+    "en": "Gemini 4 Argon rolls out globally"
+   },
+   "src": "https://gemini.google/release-notes/"
+  },
+  {
+   "d": "2026-10-14",
+   "r": "us",
+   "c": "shutdown",
+   "p": 4,
+   "t": {
+    "zh": "GPT-5.5 从 ChatGPT 和 Codex 下线，距发布仅 174 天",
+    "ja": "GPT-5.5がChatGPTとCodexから退役、公開からわずか174日",
+    "en": "GPT-5.5 leaves ChatGPT and Codex just 174 days after launch"
+   },
+   "src": "https://killedbyai.net/",
+   "f": {
+    "zh": "半年前大家还在学怎么用好 GPT-5.5。",
+    "ja": "半年前はGPT-5.5の使いこなしを学んでいた。",
+    "en": "Six months ago people were studying how to master GPT-5.5."
+   },
+   "o": {
+    "zh": "旗舰模型的寿命已经不到半年。专门为某个模型练的技巧，过期得比牛奶还快。",
+    "ja": "旗艦モデルの寿命は半年未満。特定モデル向けの技は牛乳より早く期限切れ。",
+    "en": "Flagships now last under six months. Model-specific tricks expire faster than milk."
+   },
+   "life": {
+    "zh": "174 天",
+    "ja": "174日",
+    "en": "174 days"
+   },
+   "ind": "code"
+  },
+  {
+   "d": "2026-10-14",
+   "r": "us",
+   "c": "product",
+   "p": 2,
+   "t": {
+    "zh": "Waymo 在坦帕、圣安东尼奥、圣地亚哥同时上线",
+    "ja": "Waymoが3都市で商用開始",
+    "en": "Waymo launches in Tampa, San Antonio and San Diego"
+   },
+   "src": "https://en.wikipedia.org/wiki/Waymo",
+   "ind": "drive"
+  },
+  {
+   "d": "2026-10-20",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "Anthropic 公开 IPO 招股书，目标 11 月中旬在纳斯达克上市",
+    "ja": "AnthropicがIPO目論見書を公開",
+    "en": "Anthropic's IPO filing goes public, targeting a mid-November Nasdaq listing"
+   },
+   "src": "https://www.ptechpartners.com/2026/11/03/october-2026-ai-news-roundup-revenue-vs-compute/",
+   "a": 1,
+   "v": 1,
+   "ind": "fin"
+  },
+  {
+   "d": "2026-10-20",
+   "r": "us",
+   "c": "oss",
+   "p": 3,
+   "t": {
+    "zh": "Meta 发布闭源的 Muse Wonder，并称以后最强模型不再开放权重",
+    "ja": "Metaが最上位モデルの重み公開をやめると表明",
+    "en": "Meta ships closed Muse Wonder models and says it will stop releasing weights for its best models"
+   },
+   "src": "https://www.ptechpartners.com/2026/11/03/october-2026-ai-news-roundup-revenue-vs-compute/",
+   "a": 1,
+   "v": 1
+  },
+  {
+   "d": "2026-10-22",
+   "r": "cn",
+   "c": "model",
+   "p": 1,
+   "v": 1,
+   "t": {
+    "zh": "科大讯飞发布并开源星火 X2.6",
+    "ja": "iFlytekが星火X2.6を公開",
+    "en": "iFlytek releases and open-sources Spark-X2.6"
+   },
+   "src": "https://agentic.ai/news"
+  },
+  {
+   "d": "2026-10-22",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "哈萨比斯：AGI 还有两到三年（年初他说三到五年）",
+    "ja": "ハサビス「AGIまで2〜3年」",
+    "en": "Hassabis: AGI is two to three years away, down from three to five earlier this year"
+   },
+   "src": "https://www.ptechpartners.com/2026/11/03/october-2026-ai-news-roundup-revenue-vs-compute/",
+   "a": 1,
+   "v": 1
+  },
+  {
+   "d": "2026-10-22",
+   "r": "cn",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "MiniMax 股价跌破 165 港元发行价，上市以来涨幅全部抹去",
+    "ja": "MiniMax株が公開価格割れ",
+    "en": "MiniMax falls below its HK$165 IPO price, erasing all its gains"
+   },
+   "src": "https://tech.ifeng.com/c/8xQWJJs1DMX",
+   "f": {
+    "zh": "AI 股只会涨，现在不买就晚了。",
+    "ja": "AI株は上がる一方。今買わないと遅い。",
+    "en": "AI stocks only go up; buy now or regret it."
+   },
+   "o": {
+    "zh": "从 1 月首日翻倍到 3 月市值 4100 亿港元，再到 10 月跌破发行价，只用了九个月。",
+    "ja": "1月の倍増、3月の4100億香港ドルから、10月の公開価格割れまで9か月。",
+    "en": "From doubling in January to HK$410B in March to below its IPO price in October: nine months."
+   },
+   "life": {
+    "zh": "约 9 个月",
+    "ja": "約9か月",
+    "en": "~9 months"
+   },
+   "ind": "fin"
+  },
+  {
+   "d": "2026-10-23",
+   "r": "us",
+   "c": "shutdown",
+   "p": 4,
+   "t": {
+    "zh": "OpenAI 史上最大一次批量下线：GPT-3.5 Turbo、初代 GPT-4、o1 等同日退役",
+    "ja": "OpenAI史上最大の一斉廃止：GPT-3.5 Turbo、初代GPT-4、o1など",
+    "en": "OpenAI's biggest cull: GPT-3.5 Turbo, original GPT-4, o1 and more retire the same day"
+   },
+   "src": "https://killedbyai.net/"
+  },
+  {
+   "d": "2026-10-25",
+   "r": "us",
+   "c": "voice",
+   "p": 3,
+   "t": {
+    "zh": "微软向 6 万名员工提供买断离职，为 AI 重组让路",
+    "ja": "Microsoftが6万人に早期退職を提示",
+    "en": "Microsoft offers buyouts to 60,000 workers in an AI-focused restructuring"
+   },
+   "src": "https://www.ptechpartners.com/2026/11/03/october-2026-ai-news-roundup-revenue-vs-compute/",
+   "a": 1,
+   "v": 1
+  },
+  {
+   "d": "2026-10-26",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "v": 1,
+   "t": {
+    "zh": "GPT-6.1 发布",
+    "ja": "GPT-6.1公開",
+    "en": "GPT-6.1 released"
+   },
+   "src": "https://www.scriptbyai.com/timeline-of-chatgpt/"
+  },
+  {
+   "d": "2026-10-29",
+   "r": "us",
+   "c": "price",
+   "p": 4,
+   "v": 1,
+   "a": 1,
+   "t": {
+    "zh": "OpenAI 原计划砍 Pro 额度，被用户抗议后改为额度翻倍",
+    "ja": "OpenAIがProの枠削減を計画、反発を受け逆に倍増",
+    "en": "OpenAI plans to cut Pro limits, then doubles them after backlash"
+   },
+   "f": {
+    "zh": "花 200 美元的会员说砍就砍，以后只会越来越贵。",
+    "ja": "200ドルの会員でも削られる。今後は高くなる一方。",
+    "en": "Even $200 plans get cut. It'll only get pricier."
+   },
+   "o": {
+    "zh": "几天内就反转。额度和价格是各家竞争的筹码，会反复变动，别为此焦虑，也别年付。",
+    "ja": "数日で撤回。枠と価格は競争の材料で何度も変わる。年払いは避けよう。",
+    "en": "Reversed within days. Limits are bargaining chips that keep moving; just avoid annual plans."
+   },
+   "life": {
+    "zh": "约 1 周",
+    "ja": "約1週間",
+    "en": "~1 week"
+   },
+   "src": "https://www.androidauthority.com/openai-doubles-chatgpt-usage-limits-3730213/"
+  },
+  {
+   "d": "2026-10-29",
+   "r": "us",
+   "c": "shutdown",
+   "p": 2,
+   "t": {
+    "zh": "谷歌宣布编程 Agent Jules 年底关闭，并入 Antigravity",
+    "ja": "GoogleがJulesを年末に終了しAntigravityへ統合",
+    "en": "Google will close the Jules coding agent at year end, folding it into Antigravity"
+   },
+   "src": "https://tooldirectory.ai/ai-graveyard/2026",
+   "v": 1,
+   "ind": "code"
+  },
+  {
+   "d": "2026-10-29",
+   "r": "cn",
+   "c": "people",
+   "p": 2,
+   "t": {
+    "zh": "百度集团副总裁、文心大模型技术负责人吴甜离职",
+    "ja": "百度の副総裁・呉甜が退社",
+    "en": "Baidu VP and ERNIE technical lead Wu Tian leaves"
+   },
+   "src": "https://app.myzaker.com/article/6ae419fc8e9f09781a63b5d4",
+   "v": 1
+  },
+  {
+   "d": "2026-10-29",
+   "r": "cn",
+   "c": "shutdown",
+   "p": 3,
+   "t": {
+    "zh": "字节扣子企业版 11 月 30 日起停止新购，最晚 2027 年底下线",
+    "ja": "扣子企業版が新規販売停止へ",
+    "en": "ByteDance's Coze enterprise edition stops new sales from Nov 30"
+   },
+   "src": "https://news.pedaily.cn/202611/571383.shtml"
+  },
+  {
+   "d": "2026-11-04",
+   "r": "cn",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "腾讯发布混元新一代模型 Hy4",
+    "ja": "テンセントが混元Hy4を発表",
+    "en": "Tencent releases its Hunyuan Hy4 model"
+   },
+   "src": "https://www.qbitai.com/2026/11/507967.html"
+  },
+  {
+   "d": "2026-11-05",
+   "r": "cn",
+   "c": "model",
+   "p": 1,
+   "v": 1,
+   "t": {
+    "zh": "DeepSeek V4 Flash 小版本更新",
+    "ja": "DeepSeek V4 Flashのマイナー更新",
+    "en": "DeepSeek V4 Flash minor update"
+   },
+   "src": "https://llmgateway.io/timeline"
+  },
+  {
+   "d": "2026-11-05",
+   "r": "cn",
+   "c": "oss",
+   "p": 2,
+   "t": {
+    "zh": "百度开源文心 5.5 Flash Base",
+    "ja": "百度が文心5.5 Flash Baseを公開",
+    "en": "Baidu open-sources ERNIE 5.5 Flash Base"
+   },
+   "src": "https://www.qbitai.com/2026/11/507787.html"
+  },
+  {
+   "d": "2026-11-05",
+   "r": "cn",
+   "c": "shutdown",
+   "p": 3,
+   "t": {
+    "zh": "媒体统计：国内大厂和创业公司已有 38 款 AI 产品关停或合并，25 款集中在下半年",
+    "ja": "中国でAI製品38件が終了・統合、うち25件が下半期",
+    "en": "Count: 38 Chinese AI products shut or merged this year, 25 in the second half"
+   },
+   "src": "https://news.pedaily.cn/202611/571383.shtml",
+   "f": {
+    "zh": "每个大厂都在出新 AI 产品，不赶紧学就跟不上。",
+    "ja": "大手が次々新AI製品を出す。学ばないと追いつけない。",
+    "en": "Every big company keeps shipping AI products; learn them or fall behind."
+   },
+   "o": {
+    "zh": "同一年里有 38 款被关掉或合并，有的只活了一个半月。等它活过一年再学也不迟。",
+    "ja": "同じ年に38件が終了・統合、1か月半で消えたものも。1年生き残ってから学べばいい。",
+    "en": "38 were shut or merged the same year, some within six weeks. Learn one after it survives a year."
+   },
+   "life": {
+    "zh": "平均几个月",
+    "ja": "平均数か月",
+    "en": "A few months on average"
+   }
+  }
+ ]
+}

@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="从 ChatGPT 到今天，每一次 AI 焦虑和它后来的结局。你可以不追。">
+</head>
+<body>
+<title>反AI焦虑</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&family=Noto+Serif+JP:wght@700;900&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a field notebook of panic and its aftermath. One masthead, tabbed sections, each a single focused page. */
+:root{
+  --bg:#141816; --surface:#1b201e; --surface-2:#222826; --line:#2e3532;
+  --fg:#ebe7dc; --muted:#9aa39e; --accent:#72d3a9; --accent-ink:#0f1a15;
+  --fear-bg:#3a2521; --fear-fg:#f2a490; --calm-bg:#1e2f29; --calm-fg:#bfe6d4;
+  --amber:#e2b55c; --c-global:#72d3a9; --c-cn:#f08a72; --c-jp:#d9a6f0; --c-oss:#e2b55c;
+  --display:"Noto Serif SC","Noto Serif JP","Songti SC",serif;
+  --body:"Noto Sans SC","Noto Sans JP","PingFang SC","Hiragino Sans",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  --bg:#f3f2ec; --surface:#ffffff; --surface-2:#f8f7f2; --line:#dcd9cf;
+  --fg:#1b1f1d; --muted:#5f6863; --accent:#1d8a5d; --accent-ink:#ffffff;
+  --fear-bg:#f8e4dd; --fear-fg:#9e3a22; --calm-bg:#dcefe5; --calm-fg:#1d5a40;
+  --amber:#9a6c12; --c-global:#1d8a5d; --c-cn:#c4502f; --c-jp:#8a4fb0; --c-oss:#9a6c12;
+  color-scheme:light}}
+:root[data-theme="light"]{
+  --bg:#f3f2ec; --surface:#ffffff; --surface-2:#f8f7f2; --line:#dcd9cf;
+  --fg:#1b1f1d; --muted:#5f6863; --accent:#1d8a5d; --accent-ink:#ffffff;
+  --fear-bg:#f8e4dd; --fear-fg:#9e3a22; --calm-bg:#dcefe5; --calm-fg:#1d5a40;
+  --amber:#9a6c12; --c-global:#1d8a5d; --c-cn:#c4502f; --c-jp:#8a4fb0; --c-oss:#9a6c12;
+  color-scheme:light}
+html[lang="ja"]{--display:"Noto Serif JP","Noto Serif SC",serif;--body:"Noto Sans JP","Noto Sans SC","Hiragino Sans",system-ui,sans-serif}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.7;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:var(--accent)}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* masthead */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:16px;padding-block:10px}
+.brand{font-family:var(--display);font-weight:900;font-size:18px;letter-spacing:.02em;white-space:nowrap;text-decoration:none;color:var(--fg)}
+.brand b{color:var(--accent)}
+nav.tabs{display:flex;gap:4px;overflow-x:auto;flex:1;min-width:0;scrollbar-width:none}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs a{white-space:nowrap;text-decoration:none;color:var(--muted);padding:6px 12px;border-radius:999px;font-size:14px}
+nav.tabs a:hover{color:var(--fg)}
+nav.tabs a[aria-current="page"]{background:var(--accent);color:var(--accent-ink);font-weight:700}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.lang button{background:none;border:0;padding:4px 10px;font-size:13px;color:var(--muted);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--surface-2);color:var(--fg);font-weight:700}
+
+main{padding-block:28px 56px}
+.view[hidden]{display:none}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap;padding-bottom:10px;border-bottom:2px solid var(--fg);margin-bottom:28px}
+.eyebrow strong{color:var(--fg)}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,6.4vw,64px);line-height:1.18;font-weight:900}
+h1 em{font-style:normal;color:var(--accent)}
+h2{font-size:clamp(26px,4vw,38px);line-height:1.25;font-weight:900}
+h3{font-size:19px;line-height:1.4;font-weight:700}
+.lede{color:var(--muted);max-width:64ch;margin:18px 0 0;font-size:16px}
+.lede b{color:var(--fg)}
+.sec-head{display:grid;gap:10px;margin-bottom:24px}
+.sec-head p{color:var(--muted);margin:0;max-width:66ch}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:var(--surface);margin-top:32px}
+.stat{padding:16px 18px;border-left:1px solid var(--line);min-width:0}
+.stat:first-child{border-left:0}
+.stat .n{font-family:var(--mono);font-size:clamp(24px,3.4vw,34px);font-weight:600;font-variant-numeric:tabular-nums;line-height:1.2}
+.stat .n small{font-size:14px;color:var(--muted);margin-left:4px;font-family:var(--body)}
+.stat .l{font-size:12px;color:var(--muted)}
+@media (max-width:680px){.stats{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* seismograph */
+.seis{margin-top:40px;border:1px solid var(--line);background:var(--surface);padding:18px 18px 10px}
+.seis-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.seis-scroll{overflow-x:auto;margin-top:10px}
+.seis svg{display:block;min-width:720px;width:100%;height:auto}
+.seis .note{font-size:12px;color:var(--muted);margin:6px 0 0}
+
+/* entry cards */
+.doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:40px}
+.door{display:block;text-decoration:none;color:var(--fg);border:1px solid var(--line);padding:16px 18px;background:var(--surface-2)}
+.door:hover{border-color:var(--accent)}
+.door .k{font-family:var(--mono);font-size:12px;color:var(--accent)}
+.door h3{margin:4px 0 6px}
+.door p{margin:0;color:var(--muted);font-size:14px}
+
+/* chips & filters */
+.filters{display:grid;gap:10px;margin-bottom:22px;padding:14px;border:1px solid var(--line);background:var(--surface)}
+.frow{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.frow .lbl{font-size:12px;color:var(--muted);width:4.5em;flex:none}
+.chip{border:1px solid var(--line);background:none;border-radius:999px;padding:3px 12px;font-size:13px;cursor:pointer;color:var(--muted)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.search{flex:1;min-width:160px;background:var(--bg);border:1px solid var(--line);padding:6px 12px;border-radius:6px}
+.count{font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+/* timeline */
+.year{font-family:var(--display);font-size:28px;font-weight:900;margin:36px 0 8px;color:var(--muted)}
+.year:first-child{margin-top:0}
+.ev{display:grid;grid-template-columns:118px 1fr;gap:4px 18px;padding:16px 0;border-top:1px solid var(--line)}
+.ev .date{font-family:var(--mono);font-size:13px;color:var(--accent);font-variant-numeric:tabular-nums;padding-top:2px}
+.ev .gap{display:block;color:var(--muted);font-size:11px}
+.ev .body{min-width:0}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px}
+.tag{font-size:11px;padding:1px 8px;border-radius:4px;border:1px solid var(--line);color:var(--muted)}
+.tag.r{border-color:transparent;color:var(--accent-ink);font-weight:700}
+.tag.vf{display:none}
+.ev h3{font-size:17px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.box{padding:10px 14px;border-radius:4px;font-size:14px}
+.box .h{font-size:12px;font-weight:700;letter-spacing:.06em;margin-bottom:2px}
+.box.fear{background:var(--fear-bg)}.box.fear .h{color:var(--fear-fg)}
+.box.calm{background:var(--calm-bg)}.box.calm .h{color:var(--calm-fg)}
+.life{display:inline-block;margin-top:10px;font-size:12px;color:var(--amber);border:1px dashed var(--amber);border-radius:999px;padding:2px 12px}
+.src{font-size:12px;margin-left:10px;color:var(--muted)}
+.src:hover{color:var(--accent)}
+@media (max-width:640px){.ev{grid-template-columns:1fr}.pair{grid-template-columns:1fr}}
+.empty{color:var(--muted);padding:24px 0}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.linkbtn{background:none;border:0;color:var(--accent);cursor:pointer;padding:0;font-size:13px}
+
+/* graveyard */
+.graves{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.grave{background:var(--surface);border:1px solid var(--line);border-radius:90px 90px 6px 6px;padding:30px 20px 18px;text-align:center;display:flex;flex-direction:column;gap:8px}
+.grave .rip{font-family:var(--mono);font-size:11px;letter-spacing:.3em;color:var(--muted)}
+.grave h3{font-size:19px}
+.grave .yrs{font-family:var(--mono);font-size:13px;color:var(--accent)}
+.grave .ep{font-family:var(--display);font-size:15px;line-height:1.55;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0;margin:4px 0}
+.grave dl{margin:0;text-align:left;font-size:13px;display:grid;gap:6px}
+.grave dt{font-size:11px;color:var(--muted);letter-spacing:.06em}
+.grave dd{margin:0}
+.grave .foot{margin-top:auto;font-size:12px;display:flex;justify-content:center;gap:10px;align-items:center}
+.rank{margin-top:40px;border:1px solid var(--line);background:var(--surface);padding:18px}
+.rank h3{margin-bottom:12px}
+.rrow{display:grid;grid-template-columns:minmax(0,190px) 1fr 70px;gap:12px;align-items:center;padding:7px 0;border-top:1px solid var(--line);font-size:14px}
+.rrow:first-of-type{border-top:0}
+.bar{height:10px;background:var(--fear-fg);border-radius:2px;opacity:.85}
+.rrow .m{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+@media (max-width:520px){.rrow{grid-template-columns:1fr 60px}.rrow .track{grid-column:1/-1;order:3}}
+
+/* death list */
+.dl-head{margin-top:44px}
+.dl-head h3{font-size:22px}
+.dl-head p{color:var(--muted);font-size:14px;margin:4px 0 12px}
+.dlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.dead{border:1px solid var(--line);background:var(--surface);padding:12px 14px;font-size:13px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.dead .top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.dead b{font-size:15px;overflow-wrap:anywhere}
+.dead .dt{font-family:var(--mono);font-size:12px;color:var(--accent);white-space:nowrap}
+.dead .by{font-size:12px;color:var(--muted)}
+.dead p{margin:0;color:var(--fg);opacity:.85}
+.dead .foot{display:flex;gap:8px;align-items:center;margin-top:auto;font-size:12px}
+.more{margin:16px auto 0;display:block}
+/* voices */
+.vlist{display:grid;gap:12px}
+.voice{border:1px solid var(--line);background:var(--surface);padding:16px 18px;display:grid;grid-template-columns:200px 1fr;gap:6px 20px}
+.voice .who b{display:block;font-size:16px}
+.voice .who span{display:block;font-size:12px;color:var(--muted)}
+.voice .who .dt{font-family:var(--mono);color:var(--accent);margin-top:6px}
+.voice q{display:block;font-family:var(--display);font-size:17px;line-height:1.6;quotes:'「' '」'}
+.voice .then{margin-top:8px;font-size:14px;color:var(--muted)}
+.vst{display:inline-block;font-size:12px;font-weight:700;padding:1px 10px;border-radius:999px;margin-right:6px}
+.vst.miss{background:var(--calm-bg);color:var(--calm-fg)}
+.vst.partial{border:1px dashed var(--amber);color:var(--amber)}
+.vst.open{border:1px solid var(--line);color:var(--muted)}
+.vst.flip{background:var(--fear-bg);color:var(--fear-fg)}
+@media (max-width:640px){.voice{grid-template-columns:1fr}}
+/* skills */
+.sk-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border:1px solid var(--line);background:var(--surface)}
+.sk-stats div{padding:16px 18px;border-left:1px solid var(--line)}
+.sk-stats div:first-child{border-left:0}
+.sk-stats .n{font-family:var(--mono);font-size:28px;font-weight:600}
+.sk-stats .l{font-size:12px;color:var(--muted)}
+@media (max-width:640px){.sk-stats div{border-left:0;border-top:1px solid var(--line)}.sk-stats div:first-child{border-top:0}}
+.sk-top{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:24px}
+.sk-top article{border:1px solid var(--line);background:var(--surface);padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.sk-top h3{font-family:var(--mono);font-size:16px}
+.sk-top .by{font-size:12px;color:var(--muted)}
+.sk-top p{margin:0;font-size:14px}
+.sk-top .why{color:var(--muted)}
+.rules{margin-top:28px;display:grid;gap:10px}
+.rules div{display:grid;grid-template-columns:36px 1fr;gap:12px;border-top:1px solid var(--line);padding-top:10px}
+.rules b{font-family:var(--mono);color:var(--accent)}
+.sub-h{margin:40px 0 4px;font-size:22px}
+.sub-p{color:var(--muted);font-size:14px;margin:0 0 12px}
+
+/* today */
+.legend-v{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.feed{display:grid;gap:12px}
+.item{display:grid;grid-template-columns:110px 1fr;gap:6px 18px;border:1px solid var(--line);background:var(--surface);padding:16px 18px}
+.item .date{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.item .body{min-width:0}
+.verdict{display:inline-block;font-weight:700;font-size:13px;padding:2px 12px;border-radius:999px;margin-bottom:6px}
+.verdict.skip{background:var(--calm-bg);color:var(--calm-fg)}
+.verdict.try{background:var(--accent);color:var(--accent-ink)}
+.verdict.wait{border:1px dashed var(--amber);color:var(--amber)}
+.meter{display:flex;gap:3px;align-items:center;font-size:11px;color:var(--muted);margin-top:6px}
+.meter i{width:14px;height:6px;border-radius:2px;background:var(--line)}
+.meter i.on{background:var(--fear-fg)}
+.item p{margin:4px 0 0;color:var(--muted);font-size:14px}
+@media (max-width:600px){.item{grid-template-columns:1fr}}
+.notice{font-size:13px;color:var(--muted);border-left:3px solid var(--amber);padding:6px 12px;margin-bottom:18px;background:var(--surface)}
+
+/* you */
+.ask{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+@media (max-width:760px){.ask{grid-template-columns:1fr}}
+.opts{display:grid;gap:8px}
+.opt{text-align:left;background:var(--surface);border:1px solid var(--line);padding:12px 14px;cursor:pointer;border-radius:4px}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--calm-bg)}
+.result{border:1px solid var(--line);background:var(--surface);padding:18px}
+.result .big{font-family:var(--display);font-size:30px;font-weight:900;color:var(--accent)}
+.result ul{padding-left:18px;margin:8px 0 0;font-size:14px}
+.card-out{margin-top:14px}
+.card-out img{width:100%;max-width:420px;display:block;border:1px solid var(--line)}
+.card-out p{font-size:12px;color:var(--muted);margin:6px 0 0}
+
+/* calm */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+@media (max-width:760px){.three{grid-template-columns:1fr}}
+.three div{border:1px solid var(--line);background:var(--surface);padding:18px}
+.three .k{font-family:var(--display);font-size:26px;color:var(--accent);font-weight:900}
+.three p{color:var(--muted);font-size:14px;margin:6px 0 0}
+.when{margin-top:36px;display:grid;gap:10px}
+.when div{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:baseline;border-top:1px solid var(--line);padding-top:10px}
+.when b{font-family:var(--mono);color:var(--accent)}
+
+footer{border-top:1px solid var(--line);padding-block:20px 32px;font-size:12px;color:var(--muted)}
+footer p{margin:0 0 6px;max-width:90ch}
+.loading{color:var(--muted);padding:40px 0}
+@media (prefers-reduced-motion: no-preference){.view{animation:fade .25s ease}@keyframes fade{from{opacity:.4}to{opacity:1}}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home" data-i="brand">反 <b>AI</b> 焦虑</a>
+    <nav class="tabs" aria-label="sections">
+      <a href="#home" data-v="home" data-i="nav_home">首页</a>
+      <a href="#timeline" data-v="timeline" data-i="nav_timeline">时间线</a>
+      <a href="#graveyard" data-v="graveyard" data-i="nav_graveyard">焦虑墓地</a>
+      <a href="#jobs" data-v="jobs" data-i="nav_jobs">按行业看</a>
+      <a href="#voices" data-v="voices" data-i="nav_voices">大佬言论</a>
+      <a href="#skills" data-v="skills" data-i="nav_skills">开源与 Skill</a>
+      <a href="#today" data-v="today" data-i="nav_today">今天要不要慌</a>
+      <a href="#you" data-v="you" data-i="nav_you">你在慌什么</a>
+      <a href="#calm" data-v="calm" data-i="nav_calm">怎么办</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-l="zh">中</button><button type="button" data-l="ja">日</button><button type="button" data-l="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="app">
+  <p class="loading" id="loading">…</p>
+
+  <section class="view" id="v-home" hidden>
+    <div class="eyebrow"><strong data-i="eb1">反 AI 焦虑 · 观察手记</strong><span data-i="eb2">中国 · 美国 · 开源社区</span><span id="eb-upd"></span></div>
+    <h1 data-i="hero" data-html="1">你慌过的每一件事，<br>后来都被<em>下一次更新</em>解决了。</h1>
+    <p class="lede" data-i="hero_sub" data-html="1">从 2022 年 11 月 ChatGPT 发布到今天，AI 迭代了一轮又一轮。每一轮都有人喊「这次真的要被取代了」，然后下一轮到来，<b>先被取代的，是上一轮的焦虑本身</b>。这里不卖课，只把旧焦虑的结局摆出来给你看。</p>
+    <div class="stats" id="stats"></div>
+    <div class="seis">
+      <div class="seis-head"><h3 data-i="seis_t">焦虑地震仪</h3><div class="legend" id="legend"></div></div>
+      <div class="seis-scroll"><svg id="seis" viewBox="0 0 1000 262" role="img" aria-label="timeline chart"></svg></div>
+      <p class="note" data-i="seis_n">每根竖线是一件事，越高代表当时越慌（编辑估算 1–5 级）。点一下竖线可跳到时间线对应条目。</p>
+    </div>
+    <div class="doors" id="doors"></div>
+  </section>
+
+  <section class="view" id="v-timeline" hidden>
+    <div class="sec-head"><h2 data-i="tl_t">尸检报告：每一天，每一次慌</h2><p data-i="tl_p">带红绿两栏的是「当时在慌 / 后来怎么样」的对照。</p></div>
+    <div class="filters">
+      <div class="frow"><span class="lbl" data-i="f_region">地区</span><span id="f-region" class="frow"></span></div>
+      <div class="frow"><span class="lbl" data-i="f_cat">类型</span><span id="f-cat" class="frow"></span></div>
+      <div class="frow"><span class="lbl" data-i="f_more">更多</span>
+        <button type="button" class="chip" id="f-pair" aria-pressed="false" data-i="f_pair">只看焦虑对照</button>
+        <input class="search" id="f-q" type="search" data-ph="f_q" placeholder="搜索">
+      </div>
+    </div>
+    <div class="toolbar"><span class="count" id="tl-count"></span><button type="button" class="linkbtn" id="tl-sort"></button></div>
+    <div id="tl"></div>
+  </section>
+
+  <section class="view" id="v-graveyard" hidden>
+    <div class="sec-head"><h2 data-i="gy_t">焦虑墓地</h2><p data-i="gy_p">当年被说成「不学就落后」的技能和产品，在这里安息。生卒年按公开报道整理，「寿命」按月估算。</p></div>
+    <div class="graves" id="graves"></div>
+    <div class="rank"><h3 data-i="rk_t">保质期排行榜</h3><div id="rank"></div></div>
+    <div class="dl-head"><h3 data-i="dl_t">完整死亡名单</h3><p id="dl-p"></p></div>
+    <div class="filters">
+      <div class="frow"><span class="lbl" data-i="dl_type">死因</span><span id="d-type" class="frow"></span></div>
+      <div class="frow"><span class="lbl" data-i="dl_year">年份</span><span id="d-year" class="frow"></span></div>
+      <div class="frow"><span class="lbl" data-i="f_more">更多</span><input class="search" id="d-q" type="search" data-ph="dl_q" placeholder="搜索"></div>
+    </div>
+    <div class="toolbar"><span class="count" id="dl-count"></span></div>
+    <div class="dlist" id="dlist"></div>
+    <button type="button" class="chip more" id="dl-more"></button>
+  </section>
+
+  <section class="view" id="v-jobs" hidden>
+    <div class="sec-head"><h2 data-i="jb_t">按行业看：你这行被「AI 要取代」喊了几次？</h2><p data-i="jb_p">选你的行业或岗位，看每一次慌张和后来的结局。</p></div>
+    <div class="filters"><div class="frow"><span class="lbl" data-i="jb_lbl">行业 / 岗位</span><span id="j-ind" class="frow"></span></div></div>
+    <div class="toolbar"><span class="count" id="jb-count"></span></div>
+    <div id="jb-ev"></div>
+  </section>
+
+  <section class="view" id="v-voices" hidden>
+    <div class="sec-head"><h2 data-i="vo_t">大佬言论：他们说过的，后来怎样了</h2><p data-i="vo_p">CEO、研究者、投资人在 X、采访和演讲里的判断。原话为转述，以来源链接为准。</p></div>
+    <div class="filters">
+      <div class="frow"><span class="lbl" data-i="vo_who">身份</span><span id="v-cat" class="frow"></span></div>
+      <div class="frow"><span class="lbl" data-i="vo_st">兑现了吗</span><span id="v-st" class="frow"></span></div>
+    </div>
+    <div class="toolbar"><span class="count" id="vo-count"></span></div>
+    <div class="vlist" id="vlist"></div>
+    <h3 class="sub-h" data-i="vo_tl">时间线里的更多言论与舆论</h3><p class="sub-p" data-i="vo_tlp">下面是时间线中归为「大佬言论与舆论」的事件。</p>
+    <div id="vo-ev"></div>
+  </section>
+
+  <section class="view" id="v-skills" hidden>
+    <div class="sec-head"><h2 data-i="sk_t">开源与 Skill：几万个技能，你需要几个？</h2><p data-i="sk_p">GitHub 上的 skill 仓库、skill 网站和开源 Agent 每天都在涨。数字来自第三方统计，口径不一，仅供感受量级。</p></div>
+    <div class="sk-stats" id="sk-stats"></div>
+    <h3 class="sub-h" data-i="sk_top">最常被提到的几个，追不追</h3>
+    <div class="sk-top" id="sk-top"></div>
+    <h3 class="sub-h" data-i="sk_rules">装 skill 的四条规矩</h3>
+    <div class="rules" id="sk-rules"></div>
+    <h3 class="sub-h" data-i="sk_ev">开源社区大事</h3><p class="sub-p" data-i="sk_evp">时间线中归为「开源社区」的事件，最新在前。</p>
+    <div id="sk-ev"></div>
+  </section>
+
+  <section class="view" id="v-today" hidden>
+    <div class="sec-head"><h2 data-i="td_t">今天要不要慌？</h2><p data-i="td_p">最新的 AI 动态，每条都给一个判断：不用追、顺手试试、还是观望。</p></div>
+    <div class="notice" id="td-note"></div>
+    <div class="legend-v" id="vlegend"></div>
+    <div class="feed" id="feed"></div>
+  </section>
+
+  <section class="view" id="v-you" hidden>
+    <div class="sec-head"><h2 data-i="yu_t">轮到你了：这周你在慌什么？</h2><p data-i="yu_p">选一个你最近真的慌过的问题，看看按过去四年的规律，它大概能活多久。</p></div>
+    <div class="ask"><div class="opts" id="opts"></div><div class="result" id="result"></div></div>
+  </section>
+
+  <section class="view" id="v-calm" hidden>
+    <div class="sec-head"><h2 data-i="cm_t">结论：你可以不追。</h2><p data-i="cm_p">不是劝你躺平。这条时间线证明了一件事：浪花不用追，它自己会退。真正留下的，是你手里那件要做的事本身。</p></div>
+    <div class="three" id="three"></div>
+    <h3 style="margin-top:40px" data-i="wh_t">那什么时候该学？</h3>
+    <div class="when" id="when"></div>
+  </section>
+</main>
+
+<footer class="wrap"><p id="foot1"></p><p id="foot2"></p></footer>
+
+<script>
+const I = {
+ zh:{brand:'反 <b>AI</b> 焦虑',nav_home:'首页',nav_timeline:'时间线',nav_graveyard:'焦虑墓地',nav_today:'今天要不要慌',nav_you:'你在慌什么',nav_calm:'怎么办',
+  eb1:'反 AI 焦虑 · 观察手记',eb2:'中国 · 美国 · 开源社区',upd:'数据更新于 ',
+  hero:'你慌过的每一件事，<br>后来都被<em>下一次更新</em>解决了。',
+  hero_sub:'从 2022 年 11 月 ChatGPT 发布到今天，AI 迭代了一轮又一轮。每一轮都有人喊「这次真的要被取代了」，然后下一轮到来，<b>先被取代的，是上一轮的焦虑本身</b>。这里不卖课，只把旧焦虑的结局摆出来给你看。',
+  s_days:'ChatGPT 发布至今',s_days_u:'天',s_ev:'收录的 AI 大事',s_ev_u:'件',s_gap:'平均多久一次新模型',s_gap_u:'天',s_dead:'已过时的「必学课」',s_dead_u:'门',
+  seis_t:'焦虑地震仪',seis_n:'每根竖线是一件事，越高代表当时越慌（编辑估算 1–5 级）。点一下竖线可跳到时间线对应条目。',
+  doors:[['timeline','01','时间线','从 ChatGPT 到今天，按天排好的每一件事，和每一次慌的结局。'],['graveyard','02','焦虑墓地','当年「不学就落后」的技能和产品，现在都在这里。'],['today','03','今天要不要慌','最新动态，每条直接告诉你：追，还是不追。'],['you','04','你在慌什么','选一个你正在慌的事，看它的预计寿命，生成分享卡片。']],
+  tl_t:'尸检报告：每一天，每一次慌',tl_p:'带红绿两栏的是「当时在慌 / 后来怎么样」的对照。',
+  f_region:'地区',f_cat:'类型',f_more:'更多',f_pair:'只看焦虑对照',f_q:'搜索事件、公司、模型',
+  r:{all:'全部',us:'美国',cn:'中国'},
+  c:{all:'全部',model:'模型发布',product:'产品功能',price:'价格与额度',voice:'大佬言论与舆论',oss:'开源社区',shutdown:'关停',policy:'政策'},
+  count:n=>`共 ${n} 条`,newest:'最新在前 ↓',oldest:'从头看 ↑',gap:n=>`距上一条 ${n} 天`,same:'同一天',
+  fear:'当时在慌',calm:'后来怎么样',life:'焦虑保质期：',src:'来源',verify:'待核实',approx:'约',empty:'没有符合条件的条目。',
+  gy_t:'焦虑墓地',gy_p:'当年被说成「不学就落后」的技能和产品，在这里安息。生卒年按公开报道整理，「寿命」按月估算。',
+  hype:'生前',cause:'死因',rk_t:'保质期排行榜',mo:'个月',
+  td_t:'今天要不要慌？',td_p:'最新的 AI 动态，每条都给一个判断：不用追、顺手试试、还是观望。',
+  td_note:d=>`每天自动抓取中美 AI 动态并给出判断 · 最近更新 ${d}`,
+  v:{skip:'不用追',try:'顺手试试',wait:'观望'},vd:{skip:'在用的话会自动升级，不用做任何事',try:'零学习成本，想用就用',wait:'先看看身边有没有人用出真实成果'},panic:'慌张指数',
+  yu_t:'轮到你了：这周你在慌什么？',yu_p:'选一个你最近真的慌过的问题，看看按过去四年的规律，它大概能活多久。',
+  life_l:'预计保质期',past:'历史上同款焦虑',times:n=>`出现过 ${n} 次，全都退了潮`,todo:'你可以这样做',
+  card_hint:'长按或右键保存图片，发给同样在慌的朋友。',card_t:'我的 AI 焦虑',card_life:'预计保质期',card_site:'反 AI 焦虑',
+  cm_t:'结论：你可以不追。',cm_p:'不是劝你躺平。这条时间线证明了一件事：浪花不用追，它自己会退。真正留下的，是你手里那件要做的事本身。',
+  three:[['壹','焦虑有保质期','你今天慌的东西，按历史均值撑不过几个月，就会被下一代技术改写。先等一等，本身就是策略。'],['贰','别为浪花买单','为某个具体工具、某套咒语、某个参数付费之前，先问一句：它在下一次大迭代之后还在吗？'],['叁','守住不变的东西','判断力、行业经验、把需求说清楚的能力。这四年里一次都没被迭代掉。把时间投在这里，复利才成立。']],
+  wh_t:'那什么时候该学？',when:[['01','等它变成一个按钮、一个默认功能的时候，再用。那时候学习成本几乎为零。'],['02','工作里真的用得上了，再学，学到够用就停。'],['03','只为不会随版本过时的东西花时间：你的行业、你的判断、你想解决的问题。'],['04','付费只按月，不年付。价格和额度每隔几个月就会变一次。']],
+  foot1:'口径：事件为人工整理的公开事件，日期以发布方公告为准；「慌张指数」和「焦虑保质期」为编辑估算，用来表达量级，不是统计结论。',
+  foot2:d=>`数据截至 ${d}。每条事件都附来源链接，发现错误欢迎指出。`,
+  opts:[
+   {q:'我不会写提示词，要被会写的人甩开了',life:'约 18 个月',n:4,tips:['直接用大白话说你要什么，现在的模型听得懂','别买咒语课，看墓地里第 2、3 块碑']},
+   {q:'AI 会写代码，程序员要失业了',life:'仍在观察，前两轮都没兑现',n:4,tips:['学会把需求讲清楚、会验收结果，比背工具更值钱','编程 Agent 换得很快，别押注某一个']},
+   {q:'AI 会画画、做视频，设计和影视要完了',life:'约 2 周 到 10 个月',n:4,tips:['把 AI 当成新画笔，审美和判断还是你的','不用背参数，一句话描述就够']},
+   {q:'文案、翻译、客服会被第一批替代',life:'约 6 个月',n:2,tips:['做 AI 做不好的部分：判断、口吻、对结果负责','用它提速，不用怕它']},
+   {q:'新模型太多，根本学不过来',life:'以天计',n:6,tips:['不用学模型，用你正在用的那个就行，它会自动升级','一年看一次排行榜就够了']},
+   {q:'会员太贵、额度又被砍了',life:'约 1 周',n:4,tips:['按月付，不够再升级','额度和价格会反复变，砍了经常又会加回来']},
+   {q:'每天冒出几百个开源项目、Agent、skill，跟不上',life:'约 2 个月',n:3,tips:['只装你这周真的会用的','好用的会很快变成默认功能']},
+   {q:'身边人都在用 AI，就我没用',life:'取决于你什么时候开始，随时都不晚',n:1,tips:['从一件具体的小事开始，比如让它帮你改一封邮件','现在的工具比 2023 年简单太多，晚开始反而更省事']}
+  ]},
+ ja:{brand:'反・<b>AI</b>不安',nav_home:'ホーム',nav_timeline:'年表',nav_graveyard:'不安の墓地',nav_today:'今日は慌てる？',nav_you:'あなたの不安',nav_calm:'どうする',
+  eb1:'反・AI不安 · 観察ノート',eb2:'中国 · アメリカ · オープンソース',upd:'データ更新：',
+  hero:'あなたが慌てたことは全部、<br><em>次のアップデート</em>が片づけてきた。',
+  hero_sub:'2022年11月のChatGPT公開から今日まで、AIは何度も世代交代した。そのたびに「今度こそ置き換えられる」と誰かが叫び、次の波が来ると、<b>真っ先に置き換えられたのは前回の不安そのもの</b>だった。ここでは講座は売らない。古い不安の結末を並べるだけ。',
+  s_days:'ChatGPT公開から',s_days_u:'日',s_ev:'収録したAIの出来事',s_ev_u:'件',s_gap:'新モデルの平均間隔',s_gap_u:'日',s_dead:'廃れた「必修スキル」',s_dead_u:'件',
+  seis_t:'不安地震計',seis_n:'縦線1本が1つの出来事。高いほど当時の不安が大きい（編集部推定、5段階）。線をクリックすると年表の該当箇所へ。',
+  doors:[['timeline','01','年表','ChatGPTから今日まで、日付順の出来事と不安の結末。'],['graveyard','02','不安の墓地','「学ばないと遅れる」と言われたスキルと製品の眠る場所。'],['today','03','今日は慌てる？','最新ニュースに、追うか追わないかを即答。'],['you','04','あなたの不安','今の不安を選ぶと、予想寿命とシェア用カードが出る。']],
+  tl_t:'検死報告：毎日の、毎回の不安',tl_p:'赤と緑の2欄は「当時の不安／その後」。',
+  f_region:'地域',f_cat:'種類',f_more:'その他',f_pair:'不安の対比だけ',f_q:'出来事・企業・モデルを検索',
+  r:{all:'すべて',us:'アメリカ',cn:'中国'},
+  c:{all:'すべて',model:'モデル',product:'製品・機能',price:'価格・利用枠',voice:'発言・世論',oss:'オープンソース',shutdown:'終了',policy:'政策'},
+  count:n=>`全${n}件`,newest:'新しい順 ↓',oldest:'古い順 ↑',gap:n=>`前の項目から${n}日`,same:'同日',
+  fear:'当時の不安',calm:'その後',life:'不安の賞味期限：',src:'出典',verify:'要確認',approx:'頃',empty:'該当する項目がありません。',
+  gy_t:'不安の墓地',gy_p:'「学ばないと遅れる」と言われたスキルと製品がここに眠る。生没年は公開報道に基づき、寿命は月単位の推定。',
+  hype:'生前',cause:'死因',rk_t:'賞味期限ランキング',mo:'か月',
+  td_t:'今日は慌てる？',td_p:'最新のAIニュースに、追わなくていい・ついでに試す・様子見、の3択で判断。',
+  td_note:d=>`米中のAIニュースを毎日自動収集し判定 · 最終更新 ${d}`,
+  v:{skip:'追わなくていい',try:'ついでに試す',wait:'様子見'},vd:{skip:'使っていれば自動で更新される',try:'学習コストゼロ、使いたい時に',wait:'周りで成果が出てから考える'},panic:'慌て度',
+  yu_t:'あなたの番：今週は何に慌ててる？',yu_p:'最近本当に慌てたことを選ぶと、過去4年の傾向から寿命を予想します。',
+  life_l:'予想賞味期限',past:'過去の同じ不安',times:n=>`${n}回あり、すべて沈静化`,todo:'こうすればいい',
+  card_hint:'長押しまたは右クリックで画像を保存して、慌てている友達に送ろう。',card_t:'私のAI不安',card_life:'予想賞味期限',card_site:'反・AI不安',
+  cm_t:'結論：追わなくていい。',cm_p:'諦めろという話ではない。波は追わなくても自分で引く。残るのは、あなたがやろうとしている仕事そのものだ。',
+  three:[['壱','不安には賞味期限がある','今日の不安は、平均すれば数か月で次の技術に書き換えられる。少し待つこと自体が戦略だ。'],['弐','波にお金を払わない','特定のツールや呪文やパラメータにお金を払う前に、次の大更新の後も残るかを考えよう。'],['参','変わらないものを守る','判断力、業界の経験、要望をはっきり伝える力。この4年で一度も置き換えられていない。']],
+  wh_t:'では、いつ学べばいい？',when:[['01','ボタンや標準機能になってから使う。その頃には学習コストはほぼゼロ。'],['02','仕事で本当に必要になったら、必要な分だけ学ぶ。'],['03','バージョンで古びないものに時間を使う：業界、判断、解きたい課題。'],['04','支払いは月払いで。価格と利用枠は数か月ごとに変わる。']],
+  foot1:'基準：出来事は公開情報を手作業で整理し、日付は発表元に準拠。「慌て度」「賞味期限」は編集部の推定で、統計的結論ではありません。',
+  foot2:d=>`データは${d}時点。各項目に出典リンクあり。誤りのご指摘歓迎。`,
+  opts:[
+   {q:'プロンプトが書けず、置いていかれそう',life:'約18か月',n:4,tips:['普通の言葉で頼めば今のモデルは理解する','呪文講座は買わない（墓地の2・3番目を参照）']},
+   {q:'AIがコードを書く、プログラマーは失業',life:'観察中（過去2回は実現せず）',n:4,tips:['要件を明確にし結果を検証する力の方が価値がある','コーディングエージェントは入れ替わりが速い']},
+   {q:'AIが絵や動画を作る、デザインと映像は終わり',life:'約2週間〜10か月',n:4,tips:['AIは新しい筆。美意識と判断はあなたのもの','パラメータ暗記は不要']},
+   {q:'コピー・翻訳・サポートが真っ先に消える',life:'約6か月',n:2,tips:['判断・語調・結果への責任はAIが苦手','速くする道具として使う']},
+   {q:'新モデルが多すぎて追いつけない',life:'数日',n:6,tips:['モデルを学ぶ必要はない。今使っているものが自動で更新される','ランキングは年1回見れば十分']},
+   {q:'会員が高い、利用枠が削られた',life:'約1週間',n:4,tips:['月払いにして足りなければ上げる','削られた枠は戻ることも多い']},
+   {q:'毎日OSS・エージェント・スキルが大量に出て追えない',life:'約2か月',n:3,tips:['今週本当に使うものだけ入れる','良いものはすぐ標準機能になる']},
+   {q:'周りはみんなAIを使っているのに自分だけ使っていない',life:'始めた時点で終わり。いつでも遅くない',n:1,tips:['メール1通の手直しなど小さなことから','2023年より道具はずっと簡単。遅く始めた方がむしろ楽']}
+  ]},
+ en:{brand:'Anti <b>AI</b> Anxiety',nav_home:'Home',nav_timeline:'Timeline',nav_graveyard:'Graveyard',nav_today:'Panic today?',nav_you:'Your worry',nav_calm:'What to do',
+  eb1:'Anti AI Anxiety · Field notes',eb2:'China · US · Open source',upd:'Data updated ',
+  hero:'Everything you panicked about<br>was solved by <em>the next update</em>.',
+  hero_sub:'Since ChatGPT launched in November 2022, AI has turned over generation after generation. Each time someone shouted "this time we\'re really being replaced," and each time the next wave arrived, <b>the first thing replaced was the previous panic</b>. No courses for sale here. Just the endings of old anxieties.',
+  s_days:'Days since ChatGPT',s_days_u:'days',s_ev:'AI events tracked',s_ev_u:'',s_gap:'Avg gap between model releases',s_gap_u:'days',s_dead:'"Must-learn" skills now obsolete',s_dead_u:'',
+  seis_t:'Panic seismograph',seis_n:'Each line is one event; taller means more panic at the time (editor\'s 1–5 estimate). Click a line to jump to it in the timeline.',
+  doors:[['timeline','01','Timeline','Every event since ChatGPT, day by day, with how each panic ended.'],['graveyard','02','Graveyard','The skills and products you "had to learn". Resting in peace.'],['today','03','Panic today?','Latest news with a straight answer: chase it or don\'t.'],['you','04','Your worry','Pick what you\'re worried about, see its shelf life, get a share card.']],
+  tl_t:'Autopsy report: every day, every panic',tl_p:'Red and green panels show "the panic then / what happened".',
+  f_region:'Region',f_cat:'Type',f_more:'More',f_pair:'Panic/outcome only',f_q:'Search events, companies, models',
+  r:{all:'All',us:'US',cn:'China'},
+  c:{all:'All',model:'Models',product:'Products',price:'Pricing & limits',voice:'Hot takes',oss:'Open source',shutdown:'Shutdowns',policy:'Policy'},
+  count:n=>`${n} events`,newest:'Newest first ↓',oldest:'From the start ↑',gap:n=>`${n} days after previous`,same:'Same day',
+  fear:'The panic',calm:'What happened',life:'Panic shelf life: ',src:'Source',verify:'Unverified',approx:'~',empty:'Nothing matches these filters.',
+  gy_t:'The anxiety graveyard',gy_p:'Skills and products once sold as "learn this or fall behind" rest here. Dates follow public reports; lifespans are estimated in months.',
+  hype:'In life',cause:'Cause of death',rk_t:'Shelf-life ranking',mo:'mo',
+  td_t:'Should you panic today?',td_p:'Latest AI news, each with a verdict: skip it, try it in passing, or wait and see.',
+  td_note:d=>`Auto-updated daily with China and US AI news and a verdict · last update ${d}`,
+  v:{skip:'Skip it',try:'Try in passing',wait:'Wait and see'},vd:{skip:'If you use it, you get it automatically',try:'Zero learning curve',wait:'Wait for people around you to get real results'},panic:'Panic level',
+  yu_t:'Your turn: what are you worried about this week?',yu_p:'Pick something you\'ve genuinely worried about. Based on four years of history, here\'s how long it\'ll last.',
+  life_l:'Expected shelf life',past:'Same panic in the past',times:n=>`${n} times, every one faded`,todo:'What to do',
+  card_hint:'Long-press or right-click to save the image and send it to a worried friend.',card_t:'My AI worry',card_life:'Expected shelf life',card_site:'Anti AI Anxiety',
+  cm_t:'Conclusion: you don\'t have to chase it.',cm_p:'This isn\'t a call to give up. Waves recede without being chased. What stays is the work you actually want to do.',
+  three:[['I','Anxiety has a shelf life','Whatever scares you today will, on average, be rewritten by the next generation within months. Waiting is a strategy.'],['II','Don\'t pay for the wave','Before paying for a tool, a prompt pack or a parameter guide, ask: will it survive the next big release?'],['III','Keep what doesn\'t change','Judgment, domain experience, and the ability to say clearly what you need. None of it was replaced in four years.']],
+  wh_t:'So when should you learn?',when:[['01','When it becomes a button or a default feature. By then the learning cost is near zero.'],['02','When your work actually needs it, and only as much as it needs.'],['03','Spend time on what doesn\'t expire with versions: your field, your judgment, your problems.'],['04','Pay monthly, never yearly. Prices and limits change every few months.']],
+  foot1:'Method: events are hand-curated public events dated by the publisher\'s announcement. "Panic level" and "shelf life" are editorial estimates to convey scale, not statistics.',
+  foot2:d=>`Data as of ${d}. Every event links to a source; corrections welcome.`,
+  opts:[
+   {q:'I can\'t write prompts and I\'m falling behind',life:'~18 months',n:4,tips:['Just say what you want in plain words; models understand now','Skip the prompt courses (see graves 2 and 3)']},
+   {q:'AI writes code, programmers are finished',life:'Still watching; last two rounds didn\'t pan out',n:4,tips:['Stating requirements and checking results is worth more than tools','Coding agents change fast; don\'t bet on one']},
+   {q:'AI makes art and video, design and film are over',life:'2 weeks to 10 months',n:4,tips:['Treat AI as a new brush; taste and judgment stay yours','No need to memorize parameters']},
+   {q:'Copywriting, translation and support go first',life:'~6 months',n:2,tips:['Own what AI does badly: judgment, voice, accountability','Use it to go faster']},
+   {q:'Too many new models to keep up with',life:'Days',n:6,tips:['You don\'t need to learn models; yours updates itself','Checking a leaderboard once a year is plenty']},
+   {q:'Subscriptions are pricey and limits got cut',life:'~1 week',n:4,tips:['Pay monthly, upgrade only if you hit the wall','Cuts are often reversed']},
+   {q:'Hundreds of new repos, agents and skills every day',life:'~2 months',n:3,tips:['Install only what you\'ll use this week','Good ones become defaults soon']},
+   {q:'Everyone around me uses AI except me',life:'Ends the day you start; it\'s never too late',n:1,tips:['Start small, like having it polish one email','Tools are far simpler than in 2023; starting late is easier']}
+  ]}
+};
+
+
+const I2={
+ zh:{nav_jobs:'按行业看',jb_t:'按行业看：你这行被「AI 要取代」喊了几次？',jb_p:'选你的行业或岗位，看每一次「要被取代」的慌张，和后来真实发生了什么。数字是该行业收录的事件数。',jb_lbl:'行业 / 岗位',cpeople:'人事变动',ind:{"code": "程序员", "film": "影视 / 短剧", "design": "设计 / 美术", "music": "音乐", "voice": "配音", "drive": "司机 / 出行", "factory": "工厂 / 机器人", "logi": "仓储物流", "cs": "客服", "edu": "教育 / 家教", "lang": "翻译 / 语言", "care": "心理 / 陪伴", "news": "新闻", "pub": "写作 / 出版", "media": "新媒体", "ecom": "电商 / 直播", "ad": "广告 / 文案", "hr": "HR / 后台", "office": "白领 / 行政", "law": "法律", "med": "医疗", "fin": "金融 / 投资", "sci": "科研", "game": "游戏", "photo": "摄影 / 写真", "gov": "公务员 / 政务", "bank": "银行", "acct": "会计 / 审计", "realty": "房产中介"},
+  nav_voices:'大佬言论',nav_skills:'开源与 Skill',
+  s_dead:'墓地里的工具、模型和公司',s_dead_u:'个',
+  dl_t:'完整死亡名单',dl_p:(n,a,b)=>`共 ${n} 条，整理自 Killed by AI（${a} 条）和 ToolDirectory AI 墓地（${b} 条，只抓到部分）。简介为编辑翻译，以来源为准。`,
+  dl_type:'死因',dl_year:'年份',dl_q:'搜索名字、公司',dl_more:n=>`再显示 ${n} 条`,all:'全部',earlier:'更早',
+  k:{'model-upgrade':'被新模型取代','product-killed':'产品下线','feature-removed':'功能被砍','startup-failed':'创业失败','acqui-hired':'团队被挖走','hardware-failed':'硬件失败','acquired':'被收购关停'},
+  vo_t:'大佬言论：他们说过的，后来怎样了',vo_p:'CEO、研究者、投资人在 X、采访和演讲里的判断。原话为转述，以来源链接为准。',
+  vo_who:'身份',vo_st:'兑现了吗',vo_tl:'时间线里的更多言论与舆论',vo_tlp:'下面是时间线中归为「大佬言论与舆论」的事件。',
+  vc:{all:'全部',exec:'公司高管',research:'研究者',invest:'投资人',builder:'开发者'},
+  vs:{all:'全部',miss:'没兑现',partial:'部分兑现',open:'待观察',flip:'自己改口了'},
+  said:'当时说',then:'后来',
+  sk_t:'开源与 Skill：几万个技能，你需要几个？',sk_p:'GitHub 上的 skill 仓库、skill 网站和开源 Agent 每天都在涨。数字来自第三方统计，口径不一，仅供感受量级。',
+  sk_top:'最常被提到的几个，追不追',sk_rules:'装 skill 的四条规矩',sk_ev:'开源社区大事',sk_evp:'时间线中归为「开源社区」的事件，最新在前。',
+  cagent:'Agent 与个人助理',
+  doors:[['timeline','01','时间线','从 ChatGPT 到今天，按天排好的每一件事，和每一次慌的结局。'],['jobs','02','按行业看','程序员、影视短剧、设计、客服、司机……你这行被喊过几次「要完」。'],['graveyard','03','焦虑墓地','两百多个被关掉、被取代、被收购的 AI 工具和模型。'],['voices','04','大佬言论','奥特曼、黄仁勋、马斯克、李彦宏们说过的话，后来兑现了没有。'],['skills','05','开源与 Skill','GitHub 上几万个 skill，哪些值得装，哪些不用管。'],['today','06','今天要不要慌','最新动态，每条直接告诉你：追，还是不追。'],['you','07','你在慌什么','选一个你正在慌的事，看它的预计寿命，生成分享卡片。']]},
+ ja:{nav_jobs:'業界別',jb_t:'業界別：あなたの仕事は何度「AIに奪われる」と言われたか',jb_p:'業界や職種を選ぶと、「置き換えられる」不安とその後の結末が見られます。数字は収録件数。',jb_lbl:'業界 / 職種',cpeople:'人事',ind:{"code": "エンジニア", "film": "映像 / ショートドラマ", "design": "デザイン / 美術", "music": "音楽", "voice": "声優", "drive": "運転手 / 移動", "factory": "工場 / ロボット", "logi": "物流倉庫", "cs": "カスタマーサポート", "edu": "教育", "lang": "翻訳 / 語学", "care": "心理 / 交流", "news": "報道", "pub": "執筆 / 出版", "media": "SNS / メディア", "ecom": "EC / ライブ販売", "ad": "広告 / コピー", "hr": "人事 / 事務", "office": "ホワイトカラー", "law": "法律", "med": "医療", "fin": "金融 / 投資", "sci": "研究", "game": "ゲーム", "photo": "写真 / 撮影", "gov": "公務員", "bank": "銀行", "acct": "会計 / 監査", "realty": "不動産仲介"},
+  nav_voices:'著名人の発言',nav_skills:'OSSとスキル',
+  s_dead:'墓地に眠るツール・モデル・企業',s_dead_u:'件',
+  dl_t:'完全な死亡リスト',dl_p:(n,a,b)=>`全 ${n} 件。Killed by AI（${a}件）とToolDirectoryのAI墓地（${b}件、一部のみ取得）から整理。説明は編集部訳、正確な情報は出典を参照。`,
+  dl_type:'死因',dl_year:'年',dl_q:'名前・会社で検索',dl_more:n=>`さらに ${n} 件表示`,all:'すべて',earlier:'それ以前',
+  k:{'model-upgrade':'新モデルに置換','product-killed':'製品終了','feature-removed':'機能削除','startup-failed':'スタートアップ失敗','acqui-hired':'チーム引き抜き','hardware-failed':'ハードウェア失敗','acquired':'買収で終了'},
+  vo_t:'著名人の発言：言ったこと、その後',vo_p:'CEO・研究者・投資家がX、取材、講演で語った予測。発言は要約、正確には出典を参照。',
+  vo_who:'立場',vo_st:'実現した？',vo_tl:'年表にある発言・世論',vo_tlp:'年表で「発言・世論」に分類された出来事。',
+  vc:{all:'すべて',exec:'経営者',research:'研究者',invest:'投資家',builder:'開発者'},
+  vs:{all:'すべて',miss:'外れた',partial:'一部実現',open:'観察中',flip:'本人が撤回'},
+  said:'当時の発言',then:'その後',
+  sk_t:'OSSとスキル：数万のスキル、必要なのはいくつ？',sk_p:'GitHubのスキルリポジトリ、スキルサイト、OSSエージェントは毎日増える。数字は第三者集計で基準もまちまち、規模感の参考に。',
+  sk_top:'よく名前が挙がるもの：追う？追わない？',sk_rules:'スキルを入れる4つのルール',sk_ev:'オープンソースの出来事',sk_evp:'年表で「オープンソース」に分類された出来事、新しい順。',
+  cagent:'エージェント・個人アシスタント',
+  doors:[['timeline','01','年表','ChatGPTから今日まで、日付順の出来事と不安の結末。'],['jobs','02','業界別','エンジニア、映像、デザイン、客服、運転手…「終わる」と何度言われたか。'],['graveyard','03','不安の墓地','終了・置換・買収された200以上のAIツールとモデル。'],['voices','04','著名人の発言','アルトマン、ジェンスン・フアン、マスクらの発言は実現したか。'],['skills','05','OSSとスキル','GitHubの数万のスキル、入れるべきものと無視していいもの。'],['today','06','今日は慌てる？','最新ニュースに、追うか追わないかを即答。'],['you','07','あなたの不安','今の不安を選ぶと、予想寿命とシェア用カードが出る。']]},
+ en:{nav_jobs:'By industry',jb_t:'By industry: how many times was your job "about to be replaced"?',jb_p:'Pick your industry or role to see each "AI will replace you" panic and what actually happened. Numbers are event counts.',jb_lbl:'Industry / role',cpeople:'People moves',ind:{"code": "Programmers", "film": "Film & short drama", "design": "Design & art", "music": "Music", "voice": "Voice acting", "drive": "Drivers", "factory": "Factory & robots", "logi": "Warehouse & logistics", "cs": "Customer service", "edu": "Education", "lang": "Translation", "care": "Therapy & companionship", "news": "News", "pub": "Writing & publishing", "media": "Social media", "ecom": "E-commerce & live selling", "ad": "Advertising & copy", "hr": "HR & back office", "office": "Office work", "law": "Law", "med": "Medicine", "fin": "Finance & markets", "sci": "Research", "game": "Games", "photo": "Photography", "gov": "Government", "bank": "Banking", "acct": "Accounting & audit", "realty": "Real estate"},
+  nav_voices:'Hot takes',nav_skills:'Open source & skills',
+  s_dead:'Tools, models and companies in the graveyard',s_dead_u:'',
+  dl_t:'The full death list',dl_p:(n,a,b)=>`${n} entries, compiled from Killed by AI (${a}) and ToolDirectory's AI Graveyard (${b}, partially captured). Descriptions are condensed; follow the source for details.`,
+  dl_type:'Cause',dl_year:'Year',dl_q:'Search name or company',dl_more:n=>`Show ${n} more`,all:'All',earlier:'Earlier',
+  k:{'model-upgrade':'Replaced by a newer model','product-killed':'Product killed','feature-removed':'Feature removed','startup-failed':'Startup failed','acqui-hired':'Team acqui-hired','hardware-failed':'Hardware flop','acquired':'Acquired & shut'},
+  vo_t:'Hot takes: what they said, and what happened',vo_p:'Predictions by CEOs, researchers and investors on X, in interviews and on stage. Quotes are paraphrased; see sources for exact wording.',
+  vo_who:'Who',vo_st:'Did it happen?',vo_tl:'More takes and public mood from the timeline',vo_tlp:'Timeline events filed under "Hot takes".',
+  vc:{all:'All',exec:'Executives',research:'Researchers',invest:'Investors',builder:'Builders'},
+  vs:{all:'All',miss:'Didn\'t happen',partial:'Partly',open:'Still open',flip:'They walked it back'},
+  said:'Said',then:'Since then',
+  sk_t:'Open source & skills: tens of thousands, how many do you need?',sk_p:'Skill repos on GitHub, skill directories and open-source agents grow daily. Numbers come from third-party counts with different methods; read them as orders of magnitude.',
+  sk_top:'The ones everyone mentions: chase or skip?',sk_rules:'Four rules for installing skills',sk_ev:'Open-source milestones',sk_evp:'Timeline events filed under "Open source", newest first.',
+  cagent:'Agents & assistants',
+  doors:[['timeline','01','Timeline','Every event since ChatGPT, day by day, with how each panic ended.'],['jobs','02','By industry','Programmers, film, design, support, drivers… how many times your job was declared dead.'],['graveyard','03','Graveyard','200+ AI tools and models that were shut down, replaced or acquired.'],['voices','04','Hot takes','Altman, Jensen Huang, Musk, Robin Li and others: did their predictions land?'],['skills','05','Open source & skills','Tens of thousands of skills on GitHub. Which are worth installing.'],['today','06','Panic today?','Latest news with a straight answer: chase it or don\'t.'],['you','07','Your worry','Pick what you\'re worried about, see its shelf life, get a share card.']]}
+};
+for(const k in I2){Object.assign(I[k],I2[k]);I[k].c.agent=I2[k].cagent;I[k].c.people=I2[k].cpeople}
+const VIEWS=['home','timeline','graveyard','jobs','voices','skills','today','you','calm'];
+const RC={us:'--c-global',cn:'--c-cn'};
+let lang='zh', D=null, G=null, F=null, K=null, V=null, S=null;
+const st={r:'all',c:'all',pair:false,q:'',desc:true,opt:0,dk:'all',dy:'all',dq:'',dn:48,vc:'all',vs:'all',jk:'all'};
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const L=o=>o?(o[lang]??o.zh??''):'';
+const T=()=>I[lang];
+const day=d=>Date.parse(d+'T00:00:00Z');
+const fmt=d=>d.replaceAll('-','.');
+
+try{const s=localStorage.getItem('lang');if(I[s])lang=s;else{const n=(navigator.language||'').toLowerCase();if(n.startsWith('ja'))lang='ja';else if(!n.startsWith('zh')&&n)lang='en'}}catch(e){}
+
+function applyStatic(){
+  const t=T();document.documentElement.lang=lang==='zh'?'zh-CN':lang;
+  document.querySelectorAll('[data-i]').forEach(el=>{const v=t[el.dataset.i];if(typeof v==='string'){if(el.dataset.html||/<b>|<br>|<em>/.test(v))el.innerHTML=v;else el.textContent=v}});
+  document.querySelectorAll('[data-ph]').forEach(el=>el.placeholder=t[el.dataset.ph]);
+  document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===lang));
+  document.title={zh:'反AI焦虑',ja:'反・AI不安',en:'Anti AI Anxiety'}[lang];
+}
+
+function stats(){
+  const t=T(),E=D.events,today=Date.now();
+  const days=Math.floor((today-day('2022-11-30'))/864e5);
+  const models=E.filter(e=>e.c==='model');
+  const span=(day(models.at(-1).d)-day(models[0].d))/864e5;
+  const gap=Math.round(span/(models.length-1));
+  const cells=[[days,t.s_days_u,t.s_days],[E.length,t.s_ev_u,t.s_ev],[gap,t.s_gap_u,t.s_gap],[G.graves.length+K.items.length,t.s_dead_u,t.s_dead]];
+  $('#stats').innerHTML=cells.map(([n,u,l])=>`<div class="stat"><div class="n">${n.toLocaleString()}<small>${esc(u)}</small></div><div class="l">${esc(l)}</div></div>`).join('');
+  $('#eb-upd').textContent=t.upd+D.updated;
+}
+
+function seis(){
+  const t=T(),E=D.events,svg=$('#seis'),W=1000,base=226,x0=30,x1=980;
+  const a=day('2022-11-01'),b=day(D.updated)+20*864e5;
+  const X=d=>x0+(day(d)-a)/(b-a)*(x1-x0);
+  const cs=getComputedStyle(document.documentElement);
+  const col=r=>cs.getPropertyValue(RC[r]).trim();
+  const fg=cs.getPropertyValue('--muted').trim(), line=cs.getPropertyValue('--line').trim(), txt=cs.getPropertyValue('--fg').trim();
+  let s=`<line x1="${x0}" y1="${base}" x2="${x1}" y2="${base}" stroke="${line}" stroke-width="1"/>`;
+  for(let y=2023;y<=2026;y++){const xx=X(y+'-01-01');s+=`<line x1="${xx}" y1="20" x2="${xx}" y2="${base+6}" stroke="${line}" stroke-dasharray="2 4"/><text x="${xx+4}" y="${base+26}" fill="${fg}" font-size="13" font-family="JetBrains Mono,monospace">${y}</text>`}
+  const rows=[[],[],[]];
+  E.forEach((e,i)=>{const xx=X(e.d),h=e.p*30;
+    s+=`<g class="spk" data-i="${i}" style="cursor:pointer"><line x1="${xx}" y1="${base}" x2="${xx}" y2="${base-h}" stroke="${col(e.r)}" stroke-width="3" stroke-linecap="round"><title>${esc(e.d+' '+L(e.t))}</title></line><rect x="${xx-5}" y="${base-h-4}" width="10" height="${h+4}" fill="transparent"/></g>`;
+    if(e.p>=5){
+      const lab=e.s?L(e.s):L(e.t).split(/[，,：:。;]/)[0].slice(0,lang==='en'?20:10);
+      const w=[...lab].reduce((n,ch)=>n+(ch.charCodeAt(0)>255?12:6.6),0)+10;
+      const l0=Math.max(x0,Math.min(xx-w/2,x1-w)),r0=l0+w;
+      const ri=rows.findIndex(rw=>rw.every(([a1,b1])=>r0<a1||l0>b1));if(ri<0)return;
+      rows[ri].push([l0,r0]);const ly=base-150-10-ri*16;
+      s+=`<line x1="${xx}" y1="${ly+3}" x2="${xx}" y2="${base-150}" stroke="${fg}" stroke-width="1" stroke-dasharray="1 3"/><text x="${l0+w/2}" y="${ly}" fill="${txt}" font-size="12" text-anchor="middle" font-family="${lang==='ja'?'Noto Sans JP':'Noto Sans SC'},sans-serif">${esc(lab)}</text>`}
+  });
+  svg.innerHTML=s;
+  svg.querySelectorAll('.spk').forEach(g=>g.addEventListener('click',()=>{const e=E[+g.dataset.i];st.r='all';st.c='all';st.pair=false;st.q='';location.hash='timeline';setTimeout(()=>{const el=document.getElementById('ev-'+g.dataset.i);if(el){el.scrollIntoView({block:'center'});el.style.outline='2px solid var(--accent)';setTimeout(()=>el.style.outline='',1600)}},60)}));
+  $('#legend').innerHTML=['us','cn'].map(r=>`<span><i style="background:var(${RC[r]})"></i>${esc(t.r[r])}</span>`).join('');
+}
+
+function doors(){$('#doors').innerHTML=T().doors.map(([v,k,h,p])=>`<a class="door" href="#${v}"><span class="k">${k}</span><h3>${esc(h)}</h3><p>${esc(p)}</p></a>`).join('')}
+
+function filters(){
+  const t=T();
+  const mk=(id,map,key)=>{$(id).innerHTML=Object.entries(map).map(([k,v])=>`<button type="button" class="chip" data-k="${k}" aria-pressed="${st[key]===k}">${esc(v)}</button>`).join('');
+    $(id).querySelectorAll('button').forEach(b=>b.onclick=()=>{st[key]=b.dataset.k;filters();timeline()})};
+  mk('#f-region',t.r,'r');mk('#f-cat',t.c,'c');
+  $('#f-pair').setAttribute('aria-pressed',st.pair);
+}
+
+function timeline(){
+  const t=T(),E=D.events;
+  const q=st.q.trim().toLowerCase();
+  let list=E.map((e,i)=>({...e,i,gap:i?Math.round((day(e.d)-day(E[i-1].d))/864e5):null}))
+    .filter(e=>(st.r==='all'||e.r===st.r)&&(st.c==='all'||e.c===st.c)&&(!st.pair||e.f)&&(!q||[e.t,e.f,e.o].some(o=>o&&Object.values(o).join(' ').toLowerCase().includes(q))));
+  if(st.desc)list.reverse();
+  $('#tl-count').textContent=t.count(list.length);
+  $('#tl-sort').textContent=st.desc?t.newest:t.oldest;
+  if(!list.length){$('#tl').innerHTML=`<p class="empty">${esc(t.empty)}</p>`;return}
+  let html='',yr='';
+  list.forEach(e=>{const y=e.d.slice(0,4);if(y!==yr){yr=y;html+=`<div class="year">${y}</div>`}
+    const gap=e.gap===null?'':(e.gap===0?t.same:t.gap(e.gap));
+    html+=`<article class="ev" id="ev-${e.i}"><div class="date">${e.a?esc(t.approx)+' ':''}${fmt(e.d)}<span class="gap">${esc(gap)}</span></div><div class="body">
+      <div class="tags"><span class="tag r" style="background:var(${RC[e.r]})">${esc(t.r[e.r])}</span><span class="tag">${esc(t.c[e.c])}</span>${e.v?`<span class="tag vf">${esc(t.verify)}</span>`:''}</div>
+      <h3>${esc(L(e.t))}<a class="src" href="${esc(e.src)}" target="_blank" rel="noopener">${esc(t.src)} ↗</a></h3>
+      ${e.f?`<div class="pair"><div class="box fear"><div class="h">${esc(t.fear)}</div>「${esc(L(e.f))}」</div><div class="box calm"><div class="h">${esc(t.calm)}</div>${esc(L(e.o))}</div></div><span class="life">${esc(t.life+L(e.life))}</span>`:''}
+    </div></article>`});
+  $('#tl').innerHTML=html;
+}
+
+function graves(){
+  const t=T(),g=G.graves;
+  $('#graves').innerHTML=g.map(x=>`<article class="grave"><span class="rip">R.I.P.</span><h3>${esc(L(x.n))}</h3><span class="yrs">${esc(x.born)} — ${esc(x.died)}</span>
+    <p class="ep">${esc(L(x.ep))}</p><dl><div><dt>${esc(t.hype)}</dt><dd>${esc(L(x.hype))}</dd></div><div><dt>${esc(t.cause)}</dt><dd>${esc(L(x.cause))}</dd></div></dl>
+    <div class="foot">${x.v?`<span class="tag vf">${esc(t.verify)}</span>`:''}<a class="src" style="margin:0" href="${esc(x.src)}" target="_blank" rel="noopener">${esc(t.src)} ↗</a></div></article>`).join('');
+  const r=[...g].sort((a,b)=>b.m-a.m),mx=r[0].m;
+  $('#rank').innerHTML=r.map(x=>`<div class="rrow"><span>${esc(L(x.n))}</span><div class="track"><div class="bar" style="width:${Math.max(3,x.m/mx*100)}%"></div></div><span class="m">${x.m} ${esc(t.mo)}</span></div>`).join('');
+}
+
+
+function chips(id,map,key,after){const el=$(id);el.innerHTML=Object.entries(map).map(([k,v])=>`<button type="button" class="chip" data-k="${k}" aria-pressed="${st[key]===k}">${esc(v)}</button>`).join('');
+  el.querySelectorAll('button').forEach(b=>b.onclick=()=>{st[key]=b.dataset.k;if(key==='dk'||key==='dy')st.dn=48;after()})}
+const dyear=x=>{const y=String(x.died).slice(0,4);return y<'2022'?'yold':'y'+y};
+function deaths(){
+  const t=T(),it=K.items,kba=it.filter(x=>!x.from).length;
+  $('#dl-p').textContent=t.dl_p(it.length,kba,it.length-kba);
+  chips('#d-type',{all:t.all,...t.k},'dk',deaths);
+  const ys=[...new Set(it.map(dyear))].sort((p,q)=>p==='yold'?1:q==='yold'?-1:q.localeCompare(p));
+  chips('#d-year',Object.fromEntries([['all',t.all],...ys.map(y=>[y,y==='yold'?t.earlier:y.slice(1)])]),'dy',deaths);
+  const q=st.dq.trim().toLowerCase();
+  const list=it.filter(x=>(st.dk==='all'||x.k===st.dk)&&(st.dy==='all'||dyear(x)===st.dy)&&(!q||[x.n,x.by,...Object.values(x.d||{})].join(' ').toLowerCase().includes(q)))
+    .sort((a,b)=>String(b.died).localeCompare(String(a.died)));
+  $('#dl-count').textContent=t.count(list.length);
+  $('#dlist').innerHTML=list.slice(0,st.dn).map(x=>`<article class="dead"><div class="top"><b>${esc(x.n)}</b><span class="dt">${esc(x.born?String(x.born).slice(0,7).replace('-','.')+' — ':'† ')}${esc(String(x.died).slice(0,7).replace('-','.'))}</span></div>
+    ${x.by&&x.by!==x.n?`<span class="by">${esc(x.by)}</span>`:''}<p>${esc(L(x.d))}</p>
+    <div class="foot"><span class="tag">${esc(t.k[x.k]||x.k)}</span><a class="src" style="margin:0" href="${esc(x.src)}" target="_blank" rel="noopener">${esc(t.src)} ↗</a></div></article>`).join('')||`<p class="empty">${esc(t.empty)}</p>`;
+  const rest=list.length-st.dn,mb=$('#dl-more');mb.hidden=rest<=0;mb.textContent=t.dl_more(Math.min(rest,48));
+}
+function evList(cat){const t=T();return D.events.filter(typeof cat==='function'?cat:e=>e.c===cat).slice().reverse().map(e=>`<article class="ev"><div class="date">${e.a?esc(t.approx)+' ':''}${fmt(e.d)}</div><div class="body">
+  <div class="tags"><span class="tag r" style="background:var(${RC[e.r]})">${esc(t.r[e.r])}</span>${e.v?`<span class="tag vf">${esc(t.verify)}</span>`:''}</div>
+  <h3>${esc(L(e.t))}<a class="src" href="${esc(e.src)}" target="_blank" rel="noopener">${esc(t.src)} ↗</a></h3>
+  ${e.f?`<div class="pair"><div class="box fear"><div class="h">${esc(t.fear)}</div>「${esc(L(e.f))}」</div><div class="box calm"><div class="h">${esc(t.calm)}</div>${esc(L(e.o))}</div></div><span class="life">${esc(t.life+L(e.life))}</span>`:''}</div></article>`).join('')}
+function jobs(){
+  const t=T(),n={};D.events.forEach(e=>{if(e.ind)n[e.ind]=(n[e.ind]||0)+1});
+  const keys=Object.keys(t.ind).filter(k=>n[k]).sort((a,b)=>n[b]-n[a]);
+  if(st.jk!=='all'&&!n[st.jk])st.jk='all';
+  chips('#j-ind',Object.fromEntries([['all',t.all],...keys.map(k=>[k,t.ind[k]+' '+n[k]])]),'jk',jobs);
+  const f=e=>e.ind&&(st.jk==='all'||e.ind===st.jk);
+  $('#jb-count').textContent=t.count(D.events.filter(f).length);
+  $('#jb-ev').innerHTML=evList(f);
+}
+function voices(){
+  const t=T();
+  chips('#v-cat',t.vc,'vc',voices);chips('#v-st',t.vs,'vs',voices);
+  const list=V.voices.filter(x=>(st.vc==='all'||x.cat===st.vc)&&(st.vs==='all'||x.st===st.vs)).sort((a,b)=>String(b.d).localeCompare(String(a.d)));
+  $('#vo-count').textContent=t.count(list.length);
+  $('#vlist').innerHTML=list.map(x=>`<article class="voice"><div class="who"><b>${esc(x.who)}</b><span>${esc(L(x.role))}</span><span class="dt">${esc(fmt(String(x.d)))} · ${esc(L(x.where))}</span></div>
+    <div><q>${esc(L(x.said))}</q><div class="then"><span class="vst ${x.st}">${esc(t.vs[x.st])}</span>${esc(L(x.then))}<a class="src" href="${esc(x.src)}" target="_blank" rel="noopener">${esc(t.src)} ↗</a></div></div></article>`).join('')||`<p class="empty">${esc(t.empty)}</p>`;
+  $('#vo-ev').innerHTML=evList('voice');
+}
+function skills(){
+  const t=T();
+  $('#sk-stats').innerHTML=S.stats.map(x=>`<div><div class="n">${esc(x.n)}</div><div class="l">${esc(L(x.l))} ${x.v?`<span class="tag vf">${esc(t.verify)}</span>`:''} <a class="src" style="margin:0" href="${esc(x.src)}" target="_blank" rel="noopener">↗</a></div></div>`).join('');
+  $('#sk-top').innerHTML=S.top.map(x=>`<article><span><span class="verdict ${x.verdict}">${esc(t.v[x.verdict])}</span> ${x.v?`<span class="tag vf">${esc(t.verify)}</span>`:''}</span><h3>${esc(x.name)}</h3><span class="by">${esc(L(x.by))}</span><p>${esc(L(x.what))}</p><p class="why">${esc(L(x.why))}</p><a class="src" style="margin:0" href="${esc(x.src)}" target="_blank" rel="noopener">${esc(t.src)} ↗</a></article>`).join('');
+  $('#sk-rules').innerHTML=S.rules.map((r,i)=>`<div><b>0${i+1}</b><span>${esc(L(r))}</span></div>`).join('');
+  $('#sk-ev').innerHTML=evList('oss');
+}
+
+// live updates: the daily task writes to db collections "feed" and "events"
+const BASE={};
+async function live(){
+  BASE.f=F.items.slice();BASE.e=D.events.slice();
+  let db=null;try{db=window.claude&&await claude.use('db')}catch(_){}
+  if(!db)return;
+  const ok=x=>x&&x.d&&x.t&&x.src;
+  try{db.collection('feed').onSnapshot(snap=>{
+    const extra=snap.docs.map(d=>d.data()).filter(ok),seen=new Set(extra.map(x=>x.src));
+    F.items=[...extra,...BASE.f.filter(x=>!seen.has(x.src))].sort((a,b)=>String(b.d).localeCompare(String(a.d)));
+    const top=F.items[0];if(top&&String(top.d)>String(F.updated))F.updated=top.d;
+    feed();},()=>{});}catch(_){}
+  try{db.collection('events').onSnapshot(snap=>{
+    const extra=snap.docs.map(d=>d.data()).filter(ok),key=x=>x.d+'|'+(x.t.en||'');
+    const seen=new Set(BASE.e.map(key));
+    D.events=[...BASE.e,...extra.filter(x=>!seen.has(key(x)))].sort((a,b)=>a.d.localeCompare(b.d));
+    stats();timeline();jobs();voices();skills();},()=>{});}catch(_){}
+}
+function feed(){
+  const t=T();
+  $('#td-note').textContent=t.td_note(F.updated);
+  $('#vlegend').innerHTML=['skip','try','wait'].map(k=>`<span><span class="verdict ${k}">${esc(t.v[k])}</span> <small style="color:var(--muted)">${esc(t.vd[k])}</small></span>`).join('');
+  $('#feed').innerHTML=F.items.map(x=>`<article class="item"><div class="date">${fmt(x.d)}</div><div class="body">
+    <span class="verdict ${x.verdict}">${esc(t.v[x.verdict])}</span> ${x.v?`<span class="tag vf">${esc(t.verify)}</span>`:''}
+    <h3>${esc(L(x.t))}<a class="src" href="${esc(x.src)}" target="_blank" rel="noopener">${esc(t.src)} ↗</a></h3>
+    <p>${esc(L(x.why))}</p>
+    <div class="meter">${esc(t.panic)}&nbsp;${[1,2,3,4,5].map(n=>`<i class="${n<=x.panic?'on':''}"></i>`).join('')}</div></div></article>`).join('');
+}
+
+function you(){
+  const t=T();
+  $('#opts').innerHTML=t.opts.map((o,i)=>`<button type="button" class="opt" data-i="${i}" aria-pressed="${st.opt===i}">${esc(o.q)}</button>`).join('');
+  $('#opts').querySelectorAll('button').forEach(b=>b.onclick=()=>{st.opt=+b.dataset.i;you()});
+  const o=t.opts[st.opt];
+  $('#result').innerHTML=`<div style="color:var(--muted);font-size:13px">${esc(t.life_l)}</div><div class="big">${esc(o.life)}</div>
+    <p style="margin:8px 0 0"><b>${esc(t.past)}</b>：${esc(t.times(o.n))}</p>
+    <p style="margin:12px 0 0"><b>${esc(t.todo)}</b></p><ul>${o.tips.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
+    <div class="card-out"><img id="card" alt=""><p>${esc(t.card_hint)}</p></div>`;
+  drawCard(o);
+}
+
+function wrapText(ctx,text,maxW){const out=[];let cur='';const parts=lang==='en'?text.split(' '):[...text];
+  parts.forEach(p=>{const nx=cur?(lang==='en'?cur+' '+p:cur+p):p;if(ctx.measureText(nx).width>maxW&&cur){out.push(cur);cur=p}else cur=nx});if(cur)out.push(cur);return out}
+
+async function drawCard(o){
+  try{await document.fonts.ready}catch(e){}
+  const t=T(),c=document.createElement('canvas'),W=720,H=960;c.width=W;c.height=H;const x=c.getContext('2d');
+  const serif=lang==='ja'?'"Noto Serif JP"':'"Noto Serif SC"', sans=lang==='ja'?'"Noto Sans JP"':'"Noto Sans SC"';
+  x.fillStyle='#141816';x.fillRect(0,0,W,H);
+  x.fillStyle='#72d3a9';x.fillRect(56,56,W-112,4);
+  x.fillStyle='#9aa39e';x.font=`500 24px ${sans}`;x.fillText(t.card_t,56,110);
+  x.fillStyle='#ebe7dc';x.font=`900 52px ${serif}`;
+  let y=190;wrapText(x,'「'+o.q+'」',W-112).slice(0,5).forEach(l=>{x.fillText(l,56,y);y+=70});
+  y+=30;x.fillStyle='#9aa39e';x.font=`500 24px ${sans}`;x.fillText(t.card_life,56,y);
+  y+=64;x.fillStyle='#72d3a9';x.font=`900 50px ${serif}`;wrapText(x,o.life,W-112).slice(0,2).forEach(l=>{x.fillText(l,56,y);y+=62});
+  y+=10;x.fillStyle='#ebe7dc';x.font=`400 26px ${sans}`;wrapText(x,t.past+'：'+t.times(o.n),W-112).forEach(l=>{x.fillText(l,56,y);y+=40});
+  x.setLineDash([8,8]);x.strokeStyle='#e2b55c';x.lineWidth=2;x.strokeRect(56,H-150,W-112,1);x.setLineDash([]);
+  x.fillStyle='#ebe7dc';x.font=`900 34px ${serif}`;x.fillText(t.card_site,56,H-80);
+  x.fillStyle='#9aa39e';x.font=`400 20px ${sans}`;x.fillText(D.updated,W-56-x.measureText(D.updated).width,H-82);
+  const img=$('#card');if(img){img.src=c.toDataURL('image/png');img.alt=t.card_t+'：'+o.q}
+}
+
+function calm(){
+  const t=T();
+  $('#three').innerHTML=t.three.map(([k,h,p])=>`<div><span class="k">${k}</span><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join('');
+  $('#when').innerHTML=t.when.map(([k,p])=>`<div><b>${k}</b><span>${esc(p)}</span></div>`).join('');
+}
+
+function footer(){const t=T();$('#foot1').textContent=t.foot1;$('#foot2').textContent=t.foot2(D.updated)}
+
+function renderAll(){applyStatic();stats();seis();doors();filters();timeline();graves();deaths();jobs();voices();skills();feed();you();calm();footer()}
+
+function route(){
+  const v=VIEWS.includes(location.hash.slice(1))?location.hash.slice(1):'home';
+  VIEWS.forEach(n=>{$('#v-'+n).hidden=n!==v});
+  document.querySelectorAll('nav.tabs a').forEach(a=>{if(a.dataset.v===v)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+  const cur=document.querySelector('nav.tabs a[aria-current]');if(cur)cur.scrollIntoView({block:'nearest',inline:'nearest'});
+  window.scrollTo(0,0);
+}
+
+document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>{lang=b.dataset.l;try{localStorage.setItem('lang',lang)}catch(e){};renderAll()});
+$('#f-pair').onclick=()=>{st.pair=!st.pair;filters();timeline()};
+$('#f-q').oninput=e=>{st.q=e.target.value;timeline()};
+$('#d-q').oninput=e=>{st.dq=e.target.value;st.dn=48;deaths()};
+$('#dl-more').onclick=()=>{st.dn+=48;deaths()};
+$('#tl-sort').onclick=()=>{st.desc=!st.desc;timeline()};
+window.addEventListener('hashchange',route);
+matchMedia('(prefers-color-scheme: light)').addEventListener?.('change',()=>D&&seis());
+
+Promise.all(['events.json','graveyard.json','feed.json','deaths.json','voices.json','skills.json'].map(u=>fetch(u,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(u);return r.json()})))
+ .then(([e,g,f,k,v,sk])=>{D=e;G=g;F=f;K=k;V=v;S=sk;D.events.sort((a,b)=>a.d.localeCompare(b.d));$('#loading').remove();renderAll();route();live()})
+ .catch(err=>{$('#loading').textContent='数据加载失败 / Failed to load data: '+err.message});
+</script>
+
+</body>
+</html>

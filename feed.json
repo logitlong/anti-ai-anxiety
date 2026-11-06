@@ -1,0 +1,254 @@
+{
+ "updated": "2026-11-07",
+ "mode": "manual",
+ "items": [
+  {
+   "d": "2026-11-05",
+   "verdict": "skip",
+   "panic": 1,
+   "v": 1,
+   "t": {
+    "zh": "DeepSeek V4 Flash 小版本更新",
+    "ja": "DeepSeek V4 Flashのマイナー更新",
+    "en": "DeepSeek V4 Flash minor update"
+   },
+   "why": {
+    "zh": "小版本迭代。在用的话会自动换上，不用做任何事。",
+    "ja": "小さな更新。使っていれば自動で反映、何もしなくていい。",
+    "en": "A point release. If you use it, you get it automatically."
+   },
+   "src": "https://llmgateway.io/timeline"
+  },
+  {
+   "d": "2026-11-04",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "Meta 收购 Conductor，云服务 11 月 20 日关停",
+    "ja": "MetaがConductorを買収、クラウドは11/20終了",
+    "en": "Meta buys Conductor; its cloud shuts Nov 20"
+   },
+   "why": {
+    "zh": "又一个被收购后关停的工具。用着的话把数据导出来，换一个就行。",
+    "ja": "買収後に終了するツールがまた一つ。データを書き出して乗り換えればいい。",
+    "en": "Another acquired-then-closed tool. Export your data and switch."
+   },
+   "src": "https://tooldirectory.ai/ai-graveyard/2026",
+   "v": 1
+  },
+  {
+   "d": "2026-11-04",
+   "verdict": "try",
+   "panic": 1,
+   "v": 1,
+   "t": {
+    "zh": "OpenAI 上线新一代图像模型 GPT Image 2.6",
+    "ja": "OpenAIが新画像モデルGPT Image 2.6を公開",
+    "en": "OpenAI ships GPT Image 2.6"
+   },
+   "why": {
+    "zh": "零学习成本，想出图时直接用就行，不用学参数。",
+    "ja": "学習コストゼロ。必要な時にそのまま使えばいい。",
+    "en": "Zero learning curve. Use it when you need an image."
+   },
+   "src": "https://llmgateway.io/timeline"
+  },
+  {
+   "d": "2026-11-02",
+   "verdict": "skip",
+   "panic": 1,
+   "t": {
+    "zh": "Agent 平台 Vellum 因竞争激烈关停",
+    "ja": "エージェント基盤Vellumが競争激化で終了",
+    "en": "Agent platform Vellum shuts down amid competition"
+   },
+   "why": {
+    "zh": "Agent 搭建平台在洗牌。没在用就不用管。",
+    "ja": "エージェント構築基盤は再編中。使っていなければ無関係。",
+    "en": "Agent-builder platforms are consolidating. Not your problem unless you use it."
+   },
+   "src": "https://tooldirectory.ai/ai-graveyard/2026",
+   "v": 1
+  },
+  {
+   "d": "2026-10-29",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "谷歌编程 Agent Jules 年底关闭",
+    "ja": "GoogleのJulesが年末終了",
+    "en": "Google's Jules coding agent closes at year end"
+   },
+   "why": {
+    "zh": "功能并入 Antigravity。这就是别押注单个工具的原因。",
+    "ja": "Antigravityに統合。単一ツールに賭けない理由がこれ。",
+    "en": "Folded into Antigravity. This is why you don't bet on one tool."
+   },
+   "src": "https://tooldirectory.ai/ai-graveyard/2026",
+   "v": 1
+  },
+  {
+   "d": "2026-10-29",
+   "verdict": "skip",
+   "panic": 3,
+   "v": 1,
+   "t": {
+    "zh": "OpenAI 先说要砍 Pro 额度，被骂后改成翻倍",
+    "ja": "OpenAIがProの枠削減を撤回し倍増",
+    "en": "OpenAI reverses a Pro cut and doubles limits"
+   },
+   "why": {
+    "zh": "额度和价格会反复变。按月付费，不够再升级，别年付。",
+    "ja": "枠と価格は何度も変わる。月払いで、足りなければ上げる。",
+    "en": "Limits keep moving. Pay monthly, upgrade only if you hit the wall."
+   },
+   "src": "https://www.androidauthority.com/openai-doubles-chatgpt-usage-limits-3730213/"
+  },
+  {
+   "d": "2026-10-26",
+   "verdict": "skip",
+   "panic": 1,
+   "v": 1,
+   "t": {
+    "zh": "GPT-6.1 发布",
+    "ja": "GPT-6.1公開",
+    "en": "GPT-6.1 released"
+   },
+   "why": {
+    "zh": "距上一版不到两个月。用 ChatGPT 的话已经自动在用了。",
+    "ja": "前版から2か月足らず。ChatGPT利用者は既に自動で使っている。",
+    "en": "Under two months after the last one. ChatGPT users already have it."
+   },
+   "src": "https://www.scriptbyai.com/timeline-of-chatgpt/"
+  },
+  {
+   "d": "2026-10-23",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "OpenAI 一次性下线 GPT-3.5 Turbo、初代 GPT-4、o1 等一批模型",
+    "ja": "OpenAIがGPT-3.5 Turbo・初代GPT-4・o1などを一斉廃止",
+    "en": "OpenAI retires GPT-3.5 Turbo, original GPT-4, o1 and more"
+   },
+   "why": {
+    "zh": "只影响还在调用老接口的开发者。普通用户没有任何感觉。",
+    "ja": "旧APIを使う開発者だけが対象。一般利用者は影響なし。",
+    "en": "Only matters to developers on old APIs. Ordinary users won't notice."
+   },
+   "src": "https://killedbyai.net/"
+  },
+  {
+   "d": "2026-10-14",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "GPT-5.5 从 ChatGPT 下线，只活了 174 天",
+    "ja": "GPT-5.5がChatGPTから退役、174日",
+    "en": "GPT-5.5 leaves ChatGPT after 174 days"
+   },
+   "why": {
+    "zh": "旗舰寿命已经不到半年，别再花钱学「某个模型专属技巧」。",
+    "ja": "旗艦の寿命は半年未満。モデル専用テクにお金を払わない。",
+    "en": "Flagships last under six months. Stop paying for model-specific tricks."
+   },
+   "src": "https://killedbyai.net/"
+  },
+  {
+   "d": "2026-10-13",
+   "verdict": "wait",
+   "panic": 2,
+   "t": {
+    "zh": "Gemini 4 Argon 全球推送",
+    "ja": "Gemini 4 Argonを全世界に提供",
+    "en": "Gemini 4 Argon rolls out globally"
+   },
+   "why": {
+    "zh": "如果你本来就用 Gemini，等它自动出现；不用专门换。",
+    "ja": "Gemini利用者なら自動で届く。乗り換える必要はない。",
+    "en": "If you already use Gemini, it'll show up. No need to switch."
+   },
+   "src": "https://gemini.google/release-notes/"
+  },
+  {
+   "d": "2026-10-07",
+   "verdict": "try",
+   "panic": 2,
+   "t": {
+    "zh": "ChatGPT 推出 GPT-6 Intelligent UI",
+    "ja": "ChatGPTがGPT-6のIntelligent UIを展開",
+    "en": "ChatGPT launches GPT-6 Intelligent UI"
+   },
+   "why": {
+    "zh": "界面层面的变化，打开就能用，不需要教程。",
+    "ja": "画面の変化なので開けば使える。チュートリアル不要。",
+    "en": "An interface change. Open it and go; no tutorial needed."
+   },
+   "src": "https://openai.com/index/gpt-6-for-everyone/"
+  },
+  {
+   "d": "2026-09-29",
+   "verdict": "wait",
+   "panic": 4,
+   "t": {
+    "zh": "OpenAI 发布个人 Agent「Dots」",
+    "ja": "OpenAIが個人エージェントDotsを発表",
+    "en": "OpenAI launches Dots personal agents"
+   },
+   "why": {
+    "zh": "目前只对 Pro 等高价套餐开放，价格说法也不一。等它进到普通套餐再说。",
+    "ja": "現状は高額プランのみで価格情報も錯綜。普通のプランに来てから。",
+    "en": "High-tier plans only for now, with conflicting pricing. Wait for it to reach regular plans."
+   },
+   "src": "https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/"
+  },
+  {
+   "d": "2026-09-28",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "Claude Sonnet 5.5 发布",
+    "ja": "Claude Sonnet 5.5公開",
+    "en": "Claude Sonnet 5.5 released"
+   },
+   "why": {
+    "zh": "更快更便宜的版本。在用 Claude 的话会自动换上。",
+    "ja": "より速く安い版。Claude利用者には自動で反映。",
+    "en": "Faster and cheaper. Claude users get it automatically."
+   },
+   "src": "https://www.anthropic.com/claude-sonnet-5-5"
+  },
+  {
+   "d": "2026-09-08",
+   "verdict": "wait",
+   "panic": 3,
+   "t": {
+    "zh": "Meta 发布个人 Agent「Muse」",
+    "ja": "Metaが個人エージェントMuseを発表",
+    "en": "Meta launches the Muse personal agent"
+   },
+   "why": {
+    "zh": "有免费版，可以顺手试试做个小事。但它要连你的邮箱和支付，授权前想清楚。",
+    "ja": "無料版あり。ただメールや決済につながるので権限は慎重に。",
+    "en": "There's a free tier, but it wants email and payment access. Think before granting it."
+   },
+   "src": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
+  },
+  {
+   "d": "2026-09-03",
+   "verdict": "wait",
+   "panic": 4,
+   "v": 1,
+   "t": {
+    "zh": "GPT-6 Astra 发布",
+    "ja": "GPT-6 Astra公開",
+    "en": "GPT-6 Astra released"
+   },
+   "why": {
+    "zh": "大版本号最吓人，但你的用法不用变。等身边有人用出真实成果再看。",
+    "ja": "大きな番号ほど怖く見えるが使い方は変わらない。",
+    "en": "Big version numbers look scary; your workflow doesn't need to change."
+   },
+   "src": "https://en.wikipedia.org/wiki/GPT-6"
+  }
+ ]
+}
