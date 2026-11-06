@@ -242,6 +242,11 @@ h3{font-size:19px;line-height:1.4;font-weight:700}
 /* you */
 .home-ask{margin-top:36px;border:1px solid var(--accent);background:var(--surface);padding:20px}
 .home-ask .ph h3{font-size:clamp(18px,2.4vw,22px)}
+.home-ask .ask{grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr)}
+.home-ask .result{display:grid;grid-template-columns:minmax(0,1fr) 220px;column-gap:20px;align-content:start}
+.home-ask .result>*{grid-column:1}
+.home-ask .result .card-out{grid-column:2;grid-row:1 / span 8;margin-top:0}
+@media (max-width:900px){.home-ask .ask{grid-template-columns:1fr}.home-ask .result{grid-template-columns:1fr}.home-ask .result .card-out{grid-column:1;grid-row:auto;margin-top:14px}}
 .card-act{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
 .card-act button{font:inherit;font-size:14px;font-weight:700;padding:8px 16px;border-radius:999px;cursor:pointer;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink)}
 .card-act button.ghost{background:none;color:var(--accent)}
