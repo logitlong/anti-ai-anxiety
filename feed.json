@@ -118,6 +118,22 @@
   {
    "d": "2026-11-04",
    "verdict": "skip",
+   "panic": 4,
+   "t": {
+    "zh": "Canva 裁员 1271 人（约 22%），13 年来第一次，AI 成本涨太快",
+    "ja": "Canvaが1271人（約22%）を削減、13年で初めて、AIコスト高騰も一因",
+    "en": "Canva cuts 1,271 jobs (about 22%) in its first layoffs in 13 years, as AI costs balloon"
+   },
+   "why": {
+    "zh": "看着像「AI 抢饭碗」，细看还有另一面：AI 太贵，把公司的算力账单顶上去了，增长又放缓。被挤掉的是「只会套模板」的部分，设计这门活本身没消失。用 Canva 的人什么都不用做，继续用就行。",
+    "ja": "「AIに仕事を奪われた」話に見えるが、裏側ではAIのコスト高が会社の支出を膨らませ、成長も鈍った。消えたのはテンプレ作業の部分で、デザインの仕事自体ではない。利用者はそのまま使えばいい。",
+    "en": "It looks like \"AI took the jobs,\" but the other half of the story is that AI got expensive: compute bills ballooned while growth slowed. What got squeezed is template-only work, not design itself. If you use Canva, just keep using it."
+   },
+   "src": "https://techcrunch.com/2026/11/04/canva-lays-off-over-1200-people-amid-slowing-growth/?utm_campaign=mb&utm_source=morning_brew&utm_medium=newsletter"
+  },
+  {
+   "d": "2026-11-04",
+   "verdict": "skip",
    "panic": 2,
    "t": {
     "zh": "Meta 收购 Conductor，云服务 11 月 20 日关停",
