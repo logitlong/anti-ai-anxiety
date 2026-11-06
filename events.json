@@ -6817,6 +6817,18 @@
     "ja": "平均数か月",
     "en": "A few months on average"
    }
+  },
+  {
+   "d": "2026-11-05",
+   "r": "us",
+   "c": "voice",
+   "p": 4,
+   "t": {
+    "zh": "METR 报告：Anthropic 用 AI 辅助研发，模型进步速度约为此前一倍",
+    "ja": "METR報告：AnthropicはAI支援の研究開発でモデルの進歩速度が約2倍に",
+    "en": "METR report: Anthropic's AI-assisted R&D is improving models about twice as fast"
+   },
+   "src": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
   }
  ]
 }

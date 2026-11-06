@@ -3,6 +3,102 @@
  "mode": "manual",
  "items": [
   {
+   "d": "2026-11-06",
+   "verdict": "try",
+   "panic": 2,
+   "t": {
+    "zh": "蚂蚁百灵发布 Ling-3.2-Flash 多模态模型，前两周免费",
+    "ja": "アントの百霊がマルチモーダルモデルLing-3.2-Flashを公開、最初の2週間は無料",
+    "en": "Ant Group's Ling team ships the Ling-3.2-Flash multimodal model, free for two weeks"
+   },
+   "why": {
+    "zh": "又一个大模型上线，自测跑分看看就好。真好奇就趁免费在网页上试两下，不用下载，也不用学新工具。",
+    "ja": "また新しい大モデル。自社ベンチは話半分で。気になるなら無料期間にWebで触るだけで十分、ダウンロードも学習も不要。",
+    "en": "Another big model launch; vendor benchmarks are vendor benchmarks. If you're curious, try it free on the web — nothing to install or learn."
+   },
+   "src": "https://www.ithome.com/1/023/043.htm"
+  },
+  {
+   "d": "2026-11-05",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "OpenAI 发布安全专用模型 GPT-6 Cyber，只给审核过的安全团队",
+    "ja": "OpenAIがセキュリティ特化モデルGPT-6 Cyberを発表、審査済みチーム限定",
+    "en": "OpenAI launches GPT-6 Cyber, a security model limited to vetted teams"
+   },
+   "why": {
+    "zh": "它在 Linux 和 Firefox 里挖出了一堆漏洞，听着吓人，但普通人根本拿不到，只开放给审核过的安全团队。你要做的只有一件：把软件自动更新打开。",
+    "ja": "LinuxやFirefoxで大量の脆弱性を見つけたと聞くと怖いが、一般人はそもそも使えない。審査済みチーム限定。やることはソフトの自動更新をオンにするだけ。",
+    "en": "It found piles of flaws in Linux and Firefox, which sounds scary, but you can't get it anyway — it's limited to vetted security teams. Your only job: leave automatic software updates on."
+   },
+   "src": "https://openai.com/index/introducing-gpt-6-cyber/"
+  },
+  {
+   "d": "2026-11-05",
+   "verdict": "try",
+   "panic": 2,
+   "t": {
+    "zh": "谷歌视频模型 Gemini Omni 1.2 Flash：能做 15 秒，还降价 30%",
+    "ja": "Googleの動画モデルGemini Omni 1.2 Flash、15秒対応で30%値下げ",
+    "en": "Google's Gemini Omni 1.2 Flash does 15-second video and costs 30% less"
+   },
+   "why": {
+    "zh": "视频从 10 秒变 15 秒，价格还便宜了。平时做短视频的顺手试试就行；不做视频的完全可以跳过，不必为多 5 秒换工具。",
+    "ja": "動画が10秒から15秒になり、値下げもした。短い動画を作る人だけ試せばいい。作らない人は5秒のために乗り換え不要。",
+    "en": "Clips grow from 10 to 15 seconds and get cheaper. Worth a try only if you already make short videos — no need to switch tools for five extra seconds."
+   },
+   "src": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/?ref=aiposthub.com"
+  },
+  {
+   "d": "2026-11-05",
+   "verdict": "skip",
+   "panic": 4,
+   "t": {
+    "zh": "报告称 Anthropic 用 AI 做研发，模型进步速度快了约一倍",
+    "ja": "AnthropicはAIでAI開発を加速、進歩速度は約2倍との報告",
+    "en": "Report: Anthropic's AI-assisted R&D is improving models about twice as fast"
+   },
+   "why": {
+    "zh": "「AI 在造 AI」听着像科幻，但报告自己说不确定性很大，关键证据还被打码了。对普通人的影响约等于零：模型变强也是自动推送到你手里，不用提前焦虑。",
+    "ja": "「AIがAIを作る」と聞くとSFだが、報告自体が不確実性は大きいとし、肝心の証拠は黒塗り。一般人への影響はほぼゼロで、強くなっても自動で届く。",
+    "en": "\"AI building AI\" sounds like sci-fi, but the report itself stresses high uncertainty and its key evidence is redacted. For ordinary users the impact is nil — stronger models arrive automatically anyway."
+   },
+   "src": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+  },
+  {
+   "d": "2026-11-05",
+   "verdict": "wait",
+   "panic": 2,
+   "t": {
+    "zh": "Claude 上线个人财务功能（美国测试版）：能看账单，不能动钱",
+    "ja": "Claudeに個人財務機能が登場（米国のベータ）: 支出は見えるがお金は動かせない",
+    "en": "Claude adds Personal Finance in US beta: it can read your bills, not move your money"
+   },
+   "why": {
+    "zh": "它能连上银行账单帮你算「钱花哪了」，但只能看、不能转账。目前只有美国付费用户能用，其他地区连入口都没有，先观望，不用急着把账单交出去。",
+    "ja": "銀行明細を読んで支出を教えてくれるが、送金はできない。現状は米国の有料ユーザーだけで、他地域は入口すらない。様子見でいい。",
+    "en": "It can read your bank transactions and explain where money went, but it can't move a cent. US paid plans only for now — everyone else can't even see it, so just wait."
+   },
+   "src": "https://claude.com/resources/articles/introducing-personal-finance-in-claude?ref=testingcatalog.com"
+  },
+  {
+   "d": "2026-11-05",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "月之暗面开放 Kimi K3.1 Pro 权重，2.8 万亿参数",
+    "ja": "Moonshot AIがKimi K3.1 Proのウェイトを公開、2.8兆パラメータ",
+    "en": "Moonshot AI open-sources Kimi K3.1 Pro weights, a 2.8T-parameter model"
+   },
+   "why": {
+    "zh": "参数大得吓人，但「开放权重」主要是给开发者部署用的，普通人打开 Kimi 网页就能直接聊。你不用为了一个模型去买显卡。",
+    "ja": "パラメータ数は巨大だが、ウェイト公開は主に開発者向け。一般人はKimiのWebでそのまま使える。モデルのためにGPUを買う必要はない。",
+    "en": "The parameter count is huge, but open weights are mainly for developers to deploy. Everyone else can just chat with Kimi on the web — no GPU purchase required."
+   },
+   "src": "https://www.ithome.com/1/022/490.htm"
+  },
+  {
    "d": "2026-11-05",
    "verdict": "skip",
    "panic": 1,
