@@ -47,15 +47,16 @@ button,input,select{font:inherit;color:inherit}
 
 /* masthead */
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;gap:16px;padding-block:10px}
+.top .wrap{display:flex;align-items:center;flex-wrap:wrap;gap:6px 16px;padding-block:10px 8px}
 .brand{font-family:var(--display);font-weight:900;font-size:18px;letter-spacing:.02em;white-space:nowrap;text-decoration:none;color:var(--fg)}
 .brand b{color:var(--accent)}
-nav.tabs{display:flex;gap:4px;overflow-x:auto;flex:1;min-width:0;scrollbar-width:none}
+nav.tabs{display:flex;flex-wrap:wrap;gap:2px 4px;order:3;flex:1 0 100%;min-width:0;margin-left:-12px}
+@media (max-width:680px){nav.tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-left:0;-webkit-mask-image:linear-gradient(to right,#000 88%,transparent);mask-image:linear-gradient(to right,#000 88%,transparent)}}
 nav.tabs::-webkit-scrollbar{display:none}
 nav.tabs a{white-space:nowrap;text-decoration:none;color:var(--muted);padding:6px 12px;border-radius:999px;font-size:14px}
 nav.tabs a:hover{color:var(--fg)}
 nav.tabs a[aria-current="page"]{background:var(--accent);color:var(--accent-ink);font-weight:700}
-.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none;margin-left:auto}
 .lang button{background:none;border:0;padding:4px 10px;font-size:13px;color:var(--muted);cursor:pointer}
 .lang button[aria-pressed="true"]{background:var(--surface-2);color:var(--fg);font-weight:700}
 
