@@ -60,7 +60,7 @@
   },
   {
    "d": "2023-02-03",
-   "r": "us",
+   "r": "other",
    "c": "policy",
    "p": 3,
    "t": {
@@ -125,7 +125,7 @@
   },
   {
    "d": "2023-02-20",
-   "r": "us",
+   "r": "other",
    "c": "voice",
    "p": 3,
    "t": {
@@ -1243,7 +1243,7 @@
   },
   {
    "d": "2024-02-27",
-   "r": "us",
+   "r": "other",
    "c": "voice",
    "p": 4,
    "t": {
@@ -2851,7 +2851,7 @@
   },
   {
    "d": "2025-04-07",
-   "r": "us",
+   "r": "other",
    "c": "voice",
    "p": 3,
    "t": {
@@ -3094,6 +3094,20 @@
    "a": 1
   },
   {
+   "d": "2025-06-02",
+   "r": "other",
+   "c": "voice",
+   "p": 2,
+   "ind": "pub",
+   "t": {
+    "zh": "Canva 裁掉 12 名技术文档写作者中的 10 人，称因推进 AI",
+    "ja": "Canvaがテクニカルライター12人中10人を削減",
+    "en": "Canva cuts 10 of its 12 technical writers as it pushes AI"
+   },
+   "src": "https://ia.acs.org.au/article/2025/canva-lays-off-technical-writers-amid-ai-push.html",
+   "a": 1
+  },
+  {
    "d": "2025-06-10",
    "r": "us",
    "c": "price",
@@ -3173,7 +3187,7 @@
   },
   {
    "d": "2025-06-24",
-   "r": "us",
+   "r": "other",
    "c": "voice",
    "p": 3,
    "t": {
@@ -3830,7 +3844,7 @@
   },
   {
    "d": "2025-09-27",
-   "r": "us",
+   "r": "other",
    "c": "voice",
    "p": 3,
    "t": {
@@ -6765,6 +6779,34 @@
     "en": "Tencent releases its Hunyuan Hy4 model"
    },
    "src": "https://www.qbitai.com/2026/11/507967.html"
+  },
+  {
+   "d": "2026-11-04",
+   "r": "other",
+   "c": "voice",
+   "p": 4,
+   "ind": "design",
+   "t": {
+    "zh": "澳大利亚设计平台 Canva 宣布成立 13 年来首次大规模裁员，涉及 1271 个岗位（约 22%），称是 AI 冲击和增长放缓",
+    "ja": "Canvaが創業13年で初の大規模削減、1271職（約22%）",
+    "en": "Canva announces its first major restructure in 13 years, affecting 1,271 roles (about 22%) amid AI disruption"
+   },
+   "src": "https://www.forbes.com.au/news/innovation/mass-job-cuts-canva-unveils-major-restructure/",
+   "f": {
+    "zh": "连做设计工具的公司都在裁员，设计师更没出路了。",
+    "ja": "デザインツールの会社まで削減。デザイナーに未来はない。",
+    "en": "Even the design-tool company is cutting jobs; designers have no future."
+   },
+   "o": {
+    "zh": "Canva 被冲击，恰恰是因为「一句话出图」让模板工具不值钱了。被淘汰的是做模板的生意，懂审美、懂品牌的人还是要有人来当。",
+    "ja": "打撃を受けたのは「一言で画像」がテンプレートを安くしたから。淘汰されたのはテンプレ商売で、審美眼とブランド感覚は必要とされ続ける。",
+    "en": "Canva was hit because one-line image generation made templates cheap. What got squeezed is the template business; taste and brand judgment are still needed."
+   },
+   "life": {
+    "zh": "仍在观察",
+    "ja": "観察中",
+    "en": "Still watching"
+   }
   },
   {
    "d": "2026-11-05",

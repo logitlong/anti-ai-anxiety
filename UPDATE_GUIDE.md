@@ -14,7 +14,7 @@
 - 关停：killedbyai.net、tooldirectory.ai/ai-graveyard
 - 再搜几次：「AI 关停」「AI 裁员」「AI 涨价」「AI shutdown」「AI layoffs」「AI price」
 
-范围是**中美两国所有和 AI 有关的事**：新模型、新产品、关停、涨价降价、额度变化、个人 Agent、开源和 skill、大佬言论、上市和股价、裁员、监管、诉讼、芯片、机器人、人事变动（挖人、高管离职），以及 AI 对各行各业和岗位的冲击。
+范围以**中美两国所有和 AI 有关的事**为主；其他国家的大事（比如 Canva 裁员、欧盟法规、日本韩国的大模型）也收，`r` 填 `other`：新模型、新产品、关停、涨价降价、额度变化、个人 Agent、开源和 skill、大佬言论、上市和股价、裁员、监管、诉讼、芯片、机器人、人事变动（挖人、高管离职），以及 AI 对各行各业和岗位的冲击。
 
 不收：小版本号更新以外没内容的、纯营销稿、已经收过的。
 
@@ -67,7 +67,7 @@
 }
 ```
 
-- `r`：`cn` 或 `us`
+- `r`：`cn` 中国 · `us` 美国 · `other` 其他国家和地区（如欧洲、日本、韩国、澳大利亚、加拿大的公司或事件）
 - `c`：`model` 模型 · `product` 产品 · `price` 价格额度 · `voice` 大佬言论与舆论 · `oss` 开源 · `shutdown` 关停 · `policy` 监管诉讼 · `agent` Agent · `people` 人事变动
 - `p`：1–5
 - `ind`（可选，行业）：`code` 程序员、`film` 影视短剧、`design` 设计、`music` 音乐、`voice` 配音、`drive` 司机、`factory` 工厂机器人、`logi` 物流、`cs` 客服、`edu` 教育、`lang` 翻译、`care` 心理陪伴、`news` 新闻、`pub` 写作出版、`media` 新媒体、`ecom` 电商直播、`ad` 广告文案、`hr` HR、`office` 白领、`law` 法律、`med` 医疗、`fin` 金融、`sci` 科研、`game` 游戏、`photo` 摄影、`gov` 政务、`bank` 银行、`acct` 会计、`realty` 房产中介

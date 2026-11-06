@@ -34,7 +34,7 @@ if "events.json" in data:
     for i, e in enumerate(data["events.json"].get("events", [])):
         w = f"events.json events[{i}]"
         need(DATE.match(str(e.get("d", ""))), f"{w}: 'd' must be YYYY-MM-DD")
-        need(e.get("r") in ("us", "cn"), f"{w}: r must be us / cn")
+        need(e.get("r") in ("us", "cn", "other"), f"{w}: r must be us / cn / other")
         need(e.get("c") in ("model", "product", "price", "voice", "oss", "shutdown", "policy", "agent", "people"), f"{w}: bad category c")
         need(e.get("p") in (1, 2, 3, 4, 5), f"{w}: p must be 1-5")
         tri(e.get("t"), w + ".t")

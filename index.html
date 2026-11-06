@@ -414,7 +414,7 @@ const I = {
   doors:[['timeline','01','时间线','从 ChatGPT 到今天，按天排好的每一件事，和每一次慌的结局。'],['graveyard','02','焦虑墓地','当年「不学就落后」的技能和产品，现在都在这里。'],['today','03','今天要不要慌','最新动态，每条直接告诉你：追，还是不追。'],['you','04','你在慌什么','选一个你正在慌的事，看它的预计寿命，生成分享卡片。']],
   tl_t:'尸检报告：每一天，每一次慌',tl_p:'带红绿两栏的是「当时在慌 / 后来怎么样」的对照。',
   f_region:'地区',f_cat:'类型',f_more:'更多',f_pair:'只看焦虑对照',f_q:'搜索事件、公司、模型',
-  r:{all:'全部',us:'美国',cn:'中国'},
+  r:{all:'全部',us:'美国',cn:'中国',other:'其他'},
   c:{all:'全部',model:'模型发布',product:'产品功能',price:'价格与额度',voice:'大佬言论与舆论',oss:'开源社区',shutdown:'关停',policy:'政策'},
   count:n=>`共 ${n} 条`,newest:'最新在前 ↓',oldest:'从头看 ↑',gap:n=>`距上一条 ${n} 天`,same:'同一天',
   fear:'当时在慌',calm:'后来怎么样',life:'焦虑保质期：',src:'来源',verify:'待核实',approx:'约',empty:'没有符合条件的条目。',
@@ -450,7 +450,7 @@ const I = {
   doors:[['timeline','01','年表','ChatGPTから今日まで、日付順の出来事と不安の結末。'],['graveyard','02','不安の墓地','「学ばないと遅れる」と言われたスキルと製品の眠る場所。'],['today','03','今日は慌てる？','最新ニュースに、追うか追わないかを即答。'],['you','04','あなたの不安','今の不安を選ぶと、予想寿命とシェア用カードが出る。']],
   tl_t:'検死報告：毎日の、毎回の不安',tl_p:'赤と緑の2欄は「当時の不安／その後」。',
   f_region:'地域',f_cat:'種類',f_more:'その他',f_pair:'不安の対比だけ',f_q:'出来事・企業・モデルを検索',
-  r:{all:'すべて',us:'アメリカ',cn:'中国'},
+  r:{all:'すべて',us:'アメリカ',cn:'中国',other:'その他'},
   c:{all:'すべて',model:'モデル',product:'製品・機能',price:'価格・利用枠',voice:'発言・世論',oss:'オープンソース',shutdown:'終了',policy:'政策'},
   count:n=>`全${n}件`,newest:'新しい順 ↓',oldest:'古い順 ↑',gap:n=>`前の項目から${n}日`,same:'同日',
   fear:'当時の不安',calm:'その後',life:'不安の賞味期限：',src:'出典',verify:'要確認',approx:'頃',empty:'該当する項目がありません。',
@@ -486,7 +486,7 @@ const I = {
   doors:[['timeline','01','Timeline','Every event since ChatGPT, day by day, with how each panic ended.'],['graveyard','02','Graveyard','The skills and products you "had to learn". Resting in peace.'],['today','03','Panic today?','Latest news with a straight answer: chase it or don\'t.'],['you','04','Your worry','Pick what you\'re worried about, see its shelf life, get a share card.']],
   tl_t:'Autopsy report: every day, every panic',tl_p:'Red and green panels show "the panic then / what happened".',
   f_region:'Region',f_cat:'Type',f_more:'More',f_pair:'Panic/outcome only',f_q:'Search events, companies, models',
-  r:{all:'All',us:'US',cn:'China'},
+  r:{all:'All',us:'US',cn:'China',other:'Other'},
   c:{all:'All',model:'Models',product:'Products',price:'Pricing & limits',voice:'Hot takes',oss:'Open source',shutdown:'Shutdowns',policy:'Policy'},
   count:n=>`${n} events`,newest:'Newest first ↓',oldest:'From the start ↑',gap:n=>`${n} days after previous`,same:'Same day',
   fear:'The panic',calm:'What happened',life:'Panic shelf life: ',src:'Source',verify:'Unverified',approx:'~',empty:'Nothing matches these filters.',
@@ -565,7 +565,7 @@ const I2={
 };
 for(const k in I2){Object.assign(I[k],I2[k]);I[k].c.agent=I2[k].cagent;I[k].c.people=I2[k].cpeople}
 const VIEWS=['home','timeline','graveyard','jobs','voices','skills','today','you','calm'];
-const RC={us:'--c-global',cn:'--c-cn'};
+const RC={us:'--c-global',cn:'--c-cn',other:'--c-jp'};
 let lang='zh', D=null, G=null, F=null, K=null, V=null, S=null;
 const st={r:'all',c:'all',pair:false,q:'',desc:true,opt:0,dk:'all',dy:'all',dq:'',dn:48,vc:'all',vs:'all',jk:'all'};
 const $=s=>document.querySelector(s);
@@ -618,7 +618,7 @@ function seis(){
   });
   svg.innerHTML=s;
   svg.querySelectorAll('.spk').forEach(g=>g.addEventListener('click',()=>{const e=E[+g.dataset.i];st.r='all';st.c='all';st.pair=false;st.q='';location.hash='timeline';setTimeout(()=>{const el=document.getElementById('ev-'+g.dataset.i);if(el){el.scrollIntoView({block:'center'});el.style.outline='2px solid var(--accent)';setTimeout(()=>el.style.outline='',1600)}},60)}));
-  $('#legend').innerHTML=['us','cn'].map(r=>`<span><i style="background:var(${RC[r]})"></i>${esc(t.r[r])}</span>`).join('');
+  $('#legend').innerHTML=['us','cn','other'].map(r=>`<span><i style="background:var(${RC[r]})"></i>${esc(t.r[r])}</span>`).join('');
 }
 
 function doors(){$('#doors').innerHTML=T().doors.map(([v,k,h,p])=>`<a class="door" href="#${v}"><span class="k">${k}</span><h3>${esc(h)}</h3><p>${esc(p)}</p></a>`).join('');home()}
