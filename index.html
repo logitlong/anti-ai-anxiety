@@ -408,6 +408,22 @@ html[lang="en"] .short::after{content:"EXPIRED";font-family:var(--mono)}
 .navbox.can-l .nav-arr.l,.navbox.can-r .nav-arr.r{display:block}
 .navbox.hint .nav-arr.r{animation:navnudge .9s ease-in-out 3}
 @keyframes navnudge{50%{transform:translateX(4px)}}
+
+/* archive clippings under worry options */
+.ask-l{min-width:0}
+.home-ask .past{display:none}
+.past{margin-top:26px;border-top:3px double var(--ink);padding-top:12px}
+.past h4{margin:0 0 6px;font:700 13px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.clip{padding:12px 0;border-bottom:1px solid var(--line)}
+.clip-d{font:12px var(--mono);color:var(--muted)}
+.clip-life{color:var(--accent)}
+.clip-t{font-weight:700;margin:4px 0 6px;line-height:1.45}
+.clip p{margin:3px 0 0;font-size:14px;line-height:1.6}
+.clip p b{font:700 11px var(--mono);margin-right:8px;padding:1px 5px;border:1px solid currentColor}
+.clip-f{color:var(--muted)}
+.clip-f b{color:var(--accent)}
+.clip-o b{background:var(--calm-bg);color:var(--ink)}
+.clip-more{display:inline-block;margin-top:10px;font:13px var(--mono);color:var(--accent)}
 </style>
 </head>
 <body>
@@ -530,7 +546,7 @@ html[lang="en"] .short::after{content:"EXPIRED";font-family:var(--mono)}
 
   <section class="view" id="v-you" hidden>
     <div class="sec-head"><h2 data-i="yu_t">轮到你了：这周你在慌什么？</h2><p data-i="yu_p">选一个你最近真的慌过的问题，看看按过去四年的规律，它大概能活多久。</p></div>
-    <div id="you-ask"><div class="ask"><div class="opts" id="opts"></div><div class="result" id="result"></div></div></div>
+    <div id="you-ask"><div class="ask"><div class="ask-l"><div class="opts" id="opts"></div><div class="past" id="past"></div></div><div class="result" id="result"></div></div></div>
     <div class="sec-head" style="margin-top:56px"><h2 data-i="cm_t">结论：你可以不追。</h2><p data-i="cm_p">不是劝你躺平。这条时间线证明了一件事：浪花不用追，它自己会退。真正留下的，是你手里那件要做的事本身。</p></div>
     <div class="three" id="three"></div>
     <h3 style="margin-top:40px" data-i="wh_t">那什么时候该学？</h3>
@@ -781,7 +797,7 @@ function home(){
   const today=pad(now.getMonth()+1)+'-'+pad(now.getDate());
   const near=k=>{const a=new Date(2000,now.getMonth(),now.getDate());return D.events.filter(e=>!e.a&&+e.d.slice(0,4)<y&&Math.abs((new Date(2000,+e.d.slice(5,7)-1,+e.d.slice(8,10))-a)/864e5)<=k)};
   let list=near(0),k=0;while(list.length<3&&k<7){k++;list=near(k)}
-  list=list.sort((a,b)=>b.p-a.p||b.d.localeCompare(a.d)).slice(0,4).sort((a,b)=>a.d.localeCompare(b.d));
+  list=list.sort((a,b)=>b.p-a.p||b.d.localeCompare(a.d)).slice(0,3).sort((a,b)=>a.d.localeCompare(b.d));
   $('#h-otd-sub').textContent=k?t.h_otd_near(k):t.h_otd_exact;
   $('#h-otd').innerHTML=list.map(e=>`<a class="mini" href="#timeline"><span class="otd-y">${e.d.slice(0,4)}</span><span><b>${esc(L(e.t))}</b></span>${e.o?`<span class="why">→ ${esc(L(e.o))}</span>`:`<span class="why">${fmt(e.d)}</span>`}</a>`).join('')||`<p class="empty">${esc(t.empty)}</p>`;
   const pool=D.events.filter(e=>e.f&&lifeDays(e)!==null&&lifeDays(e)<=45).sort((a,b)=>lifeDays(a)-lifeDays(b)||b.p-a.p);
@@ -906,6 +922,28 @@ function feed(){
     <div class="meter">${esc(t.panic)}&nbsp;${[1,2,3,4,5].map(n=>`<i class="${n<=x.panic?'on':''}"></i>`).join('')}</div></div></article>`).join('');
 }
 
+
+const PAST=[
+ e=>/提示词|咒语|prompt/i.test((e.t.zh||'')+(e.f&&e.f.zh||'')),
+ e=>e.ind==='code',
+ e=>['design','film','photo','music'].includes(e.ind),
+ e=>['ad','lang','cs','pub','media','news'].includes(e.ind),
+ e=>e.c==='model',
+ e=>e.c==='price',
+ e=>e.c==='oss'||e.c==='agent',
+ e=>['office','hr','edu'].includes(e.ind)||/普通人|打工人|身边|焦虑/.test(e.f&&e.f.zh||'')];
+const IPAST={zh:{t:'档案室：历史上的同款焦虑',more:'在时间线里看全部 →'},ja:{t:'資料室：過去の同じ不安',more:'年表ですべて見る →'},en:{t:'From the archive: the same panic, earlier',more:'See them all in the timeline →'}};
+function pastList(){
+  const el=$('#past');if(!el||typeof D==='undefined'||!D||!D.events)return;
+  const t=T(),ip=IPAST[lang]||IPAST.zh,m=PAST[st.opt]||PAST[0];
+  let list=D.events.filter(e=>e.f&&e.o&&m(e)).sort((a,b)=>b.p-a.p||b.d.localeCompare(a.d)).slice(0,3).sort((a,b)=>a.d.localeCompare(b.d));
+  if(list.length<3&&G&&G.graves)list=G.graves.filter(g=>/提示词|Prompt|咒语|参数|越狱/.test(g.n.zh)).slice(0,3).map(g=>({d:g.born+' – '+g.died,t:g.n,f:g.hype,o:g.cause,life:g.m?{zh:'约 '+g.m+' 个月',ja:'約'+g.m+'か月',en:'~'+g.m+' months'}:null}));
+  if(!list.length){el.innerHTML='';return}
+  el.innerHTML=`<h4>${esc(ip.t)}</h4>`+list.map(e=>`<article class="clip"><div class="clip-d">${esc(e.d)}${e.life?` · <span class="clip-life">${esc(t.life)}${esc(L(e.life))}</span>`:''}</div>
+    <div class="clip-t">${esc(L(e.t))}</div>
+    <p class="clip-f"><b>${esc(t.fear)}</b>${esc(L(e.f))}</p><p class="clip-o"><b>${esc(t.calm)}</b>${esc(L(e.o))}</p></article>`).join('')+
+    `<a class="clip-more" href="#timeline">${esc(ip.more)}</a>`;
+}
 function you(){
   const t=T();
   $('#opts').innerHTML=t.opts.map((o,i)=>`<button type="button" class="opt" data-i="${i}" aria-pressed="${st.opt===i}">${esc(o.q)}</button>`).join('');
@@ -917,6 +955,7 @@ function you(){
     <div class="card-out"><img id="card" alt=""><div class="card-act"><button type="button" id="c-share">${esc(t.c_share)}</button><button type="button" class="ghost" id="c-save">${esc(t.c_save)}</button></div><p>${esc(t.card_hint)}</p></div>`;
   $('#c-save').onclick=saveCard;$('#c-share').onclick=shareCard;
   drawCard(o);
+  pastList();
 }
 
 async function cardBlob(){const r=await fetch($('#card').src);return r.blob()}
