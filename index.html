@@ -285,6 +285,8 @@ h3{font-size:19px;line-height:1.4;font-weight:700}
 .result ul{padding-left:18px;margin:8px 0 0;font-size:14px}
 .card-out{margin-top:14px}
 .rc-card{margin-top:24px}
+.card-out p.flash{color:var(--accent);font-weight:700;font-size:13px}
+.rc-out .rc-tier{border-top:0;margin-top:4px;padding-top:0}
 .card-out img{width:100%;max-width:420px;display:block;border:1px solid var(--line)}
 .card-out p{font-size:12px;color:var(--muted);margin:6px 0 0}
 
@@ -732,9 +734,15 @@ for(const k in I2){Object.assign(I[k],I2[k]);I[k].c.agent=I2[k].cagent;I[k].c.pe
 const I3={"zh": {"rc_t": "多亏我当初没学：躺平省钱账单", "rc_p": "勾选这几年你动过念头、差点掏钱、最后因为拖延没去折腾的东西。价格按当时常见报价估算。", "rc_head": "躺平红利结算单", "rc_items": "躲过的坑", "rc_money": "省下的钱", "rc_hours": "省下的时间", "rc_eq": ["相当于 {a} 顿火锅", 150], "rc_sleep": "外加 {b} 个整晚好觉", "rc_none": "先在左边勾几项。", "rc_all": "全选（我全都忍住了）", "rc_copy": "复制战报", "rc_copied": "已复制", "rc_share": "{n} 个 AI 学习坑我都没踩，省了 {m}、{h} 小时。你呢？", "unit_h": "小时", "unit_x": "个", "jg_t": "贩卖焦虑黑话翻译机", "jg_p": "下次在朋友圈、小红书、短视频里看到这些话，在脑子里自动换成右边这句。", "jg_a": "原话", "jg_b": "翻译成人话", "rc": [[199, 15, "199 元的「提示词工程大师课」和万能咒语表", "现在直接说人话就行"], [2980, 60, "Stable Diffusion 本地炼丹、修手指训练营", "新模型原生就能画对手"], [12999, 25, "为了本地跑模型买的 RTX 4090 高配主机", "云端又快又便宜"], [0, 40, "收藏了 50 个「必学 AI 神器合集」，一个没打开", "其中一大半已关停或被官方内置（见焦虑墓地）"], [699, 35, "Coze / Dify 五十个节点的工作流搭建课", "扣子企业版都关了，Agent 会自己规划步骤"], [599, 5, "早期套壳网站的「终身 VIP 会员」", "躲过了套壳站跑路潮"], [399, 30, "AI 视频「防崩坏抽卡」运镜参数课", "新一代视频模型一步到位"], [0, 20, "熬夜捏 GPTs，等着 GPT 商店分成", "GPTs 已被官方关掉（见焦虑墓地）"], [0, 30, "为了读长 PDF，学 LangChain 切片和本地向量库", "现在直接把整本书拖进对话框"], [1500, 10, "一口气年付了三四个 AI 会员", "价格和额度每几个月就变一次，按月付才不亏"]], "jg": [["炸裂！硅谷又发布颠覆级模型，普通人再不学就彻底出局！", "跑分高了几个点，它更听得懂大白话了。你需要学的反而更少。"], ["淘汰你的不是 AI，是会用 AI 的人。限时领取 100G 独家资料！", "那 100G 多半是半年前的旧教程，里面一半工具已经关停了。不信去焦虑墓地对一下名字。"], ["这套提示词模板，让你效率提升 10 倍！", "模型一升级，模板多半就失效了。把你要什么说清楚，比任何模板都好用。"], ["明年每个人都需要自己的多 Agent 矩阵，否则寸步难行。", "复杂配置半年内就会变成一个按钮。等按钮出来再用，一分钱学费都不用交。"], ["XX 岗位明年就会彻底消失。", "过去四年被喊过「要消失」的岗位，绝大多数还在招人。去「按行业看」翻翻结局。"], ["早鸟价今晚截止，这是最后一次上车机会！", "AI 课程最好的购买时间是永远不买。这个月卖的技巧，下个月会被新版本免费内置。"], ["某大佬说，AGI 两年内一定到来。", "这句话每年都有人说。去「大佬言论」数数兑现了几条。"], ["不会 XX 的人，三年内全部失业。", "三年前说「不会写提示词就失业」的人，现在在卖别的课了。"]]}, "ja": {"rc_t": "学ばなくてよかった：先延ばし節約レシート", "rc_p": "この数年、学ぼうと思った・お金を払いかけた・でも先延ばしで手を出さなかったものにチェック。金額は当時の相場から推定。", "rc_head": "先延ばし配当レシート", "rc_items": "避けた落とし穴", "rc_money": "浮いたお金", "rc_hours": "浮いた時間", "rc_eq": ["回転寿司 {a} 回分", 3000], "rc_sleep": "さらに {b} 晩ぐっすり眠れる", "rc_none": "左で項目を選んでください。", "rc_all": "全部選ぶ（全部ガマンした）", "rc_copy": "結果をコピー", "rc_copied": "コピーしました", "rc_share": "AI学習の落とし穴を{n}個回避、{m}と{h}時間が浮いた。あなたは？", "unit_h": "時間", "unit_x": "個", "jg_t": "不安商法ことば翻訳機", "jg_p": "SNSや動画でこういう言葉を見たら、頭の中で右側に置き換えてください。", "jg_a": "原文", "jg_b": "普通の言葉で言うと", "rc": [[199, 15, "199元の「プロンプト職人講座」と呪文集", "今は普通に話せば通じる"], [2980, 60, "Stable Diffusionの手直し・ローカル学習講座", "新モデルは最初から手を正しく描く"], [12999, 25, "ローカルでモデルを動かすためのRTX 4090マシン", "クラウドの方が速くて安い"], [0, 40, "「必修AIツール50選」を保存したまま開かず", "大半は終了か公式に統合済み（不安の墓地へ）"], [699, 35, "Coze/Difyで50ノードのワークフロー講座", "扣子企業版は終了、エージェントが自分で手順を組む"], [599, 5, "初期のラッパーサイトの「永久VIP会員」", "ラッパーサイトの夜逃げを回避"], [399, 30, "AI動画の「崩れ防止ガチャ」講座", "新世代の動画モデルは一発で出る"], [0, 20, "GPTストアの収益分配を夢見てGPTsを量産", "GPTsは公式に終了（不安の墓地へ）"], [0, 30, "長いPDFのためにLangChainと分割を学ぶ", "今は本を丸ごと会話欄に入れるだけ"], [1500, 10, "AIサービスを3〜4個まとめて年払い", "価格も枠も数か月で変わる。月払いが正解"]], "jg": [["衝撃！シリコンバレーでまた革命的モデル。今学ばない一般人は完全に脱落！", "ベンチマークが数点上がり、普通の言葉がもっと通じるようになった。学ぶことはむしろ減った。"], ["AIに仕事を奪われるのではない、AIを使える人に奪われる。100GBの限定資料を今すぐ！", "その100GBは半年前の古い教材で、半分のツールは既に終了。不安の墓地で名前を確かめてみて。"], ["このプロンプトテンプレートで効率10倍！", "モデルが更新されるとテンプレートはたいてい無効に。欲しいものをはっきり言う方がどんなテンプレートより効く。"], ["来年は誰もがマルチエージェント体制を持たないと何もできない。", "複雑な設定は半年でボタン一つになる。ボタンが出てから使えば、受講料はゼロ。"], ["〇〇職は来年完全に消える。", "この4年「消える」と言われた職の大半は今も募集中。「業界別」で結末を見てみて。"], ["早割は今夜まで、最後のチャンス！", "AI講座の最適な購入時期は「買わない」。今月売られた技は来月の新版に無料で入っている。"], ["著名人いわく、AGIは2年以内に必ず来る。", "この台詞は毎年誰かが言う。「著名人の発言」で何件実現したか数えてみて。"], ["〇〇ができない人は3年以内に全員失業。", "3年前「プロンプトが書けないと失業」と言った人は、今は別の講座を売っている。"]]}, "en": {"rc_t": "Good thing I never learned it: the procrastination receipt", "rc_p": "Tick the things you almost learned or paid for over the past few years, then put off. Prices are rough estimates from the time.", "rc_head": "Procrastination dividend", "rc_items": "Traps avoided", "rc_money": "Money saved", "rc_hours": "Time saved", "rc_eq": ["That's {a} dinners out", 40], "rc_sleep": "plus {b} full nights of sleep", "rc_none": "Tick a few items on the left.", "rc_all": "Select all (I resisted everything)", "rc_copy": "Copy result", "rc_copied": "Copied", "rc_share": "I skipped {n} AI learning traps and saved {m} and {h} hours. You?", "unit_h": "h", "unit_x": "", "jg_t": "Hype-speak translator", "jg_p": "Next time you see one of these lines on social media, swap it for the right-hand version in your head.", "jg_a": "What they say", "jg_b": "What it means", "rc": [[199, 15, "A ¥199 \"prompt engineering master class\" and spell sheet", "Plain language works now"], [2980, 60, "A Stable Diffusion boot camp on fixing hands and local training", "New models draw hands correctly out of the box"], [12999, 25, "An RTX 4090 rig to run models locally", "The cloud is faster and cheaper"], [0, 40, "Bookmarked 50 \"must-have AI tools\" lists, opened none", "Most have shut down or been built in (see the graveyard)"], [699, 35, "A course on 50-node Coze/Dify workflows", "Coze Enterprise shut down; agents plan their own steps now"], [599, 5, "A \"lifetime VIP\" on an early ChatGPT wrapper site", "You dodged the wrapper-site rug pulls"], [399, 30, "A course on camera-parameter tricks for early AI video", "New video models get it right in one go"], [0, 20, "Building GPTs for the GPT Store revenue share", "Custom GPTs were shut down (see the graveyard)"], [0, 30, "Learning LangChain chunking to read a long PDF", "Now you just drag the whole book into the chat"], [1500, 10, "Paying yearly for three or four AI subscriptions", "Prices and limits change every few months; monthly wins"]], "jg": [["Breaking! Silicon Valley just dropped a game-changing model. Learn it now or get left behind!", "The benchmark went up a few points and it understands plain language better. You need to learn less, not more."], ["AI won't replace you, people who use AI will. Grab our exclusive 100GB bundle!", "That bundle is mostly last year's tutorials, and half the tools in it have shut down. Check the names in the graveyard."], ["This prompt template makes you 10x more productive!", "Templates usually break with the next model update. Saying clearly what you want beats any template."], ["Next year everyone will need a multi-agent stack or be left behind.", "Complex setups become a single button within six months. Wait for the button and pay zero tuition."], ["Job X will be gone by next year.", "Most jobs declared dead in the past four years are still hiring. See how it ended under By industry."], ["Early-bird pricing ends tonight. Last chance to get on board!", "The best time to buy an AI course is never. This month's trick ships free in next month's model."], ["A big name says AGI arrives within two years, guaranteed.", "Someone says this every year. Count how many came true under Hot takes."], ["Anyone who can't do X will be unemployed within three years.", "The people who said that about prompt writing three years ago are selling a different course now."]]}};
 for(const k in I3)Object.assign(I[k],I3[k]);
 const I4={"zh": {"nav_receipt": "躺平账单", "nav_jargon": "黑话翻译机", "doors": [["today", "01", "今天要不要慌", "每天更新的中美 AI 动态，直接告诉你：追，还是不追。"], ["you", "02", "你在慌什么", "选一个你正在慌的事，看它能活多久，生成分享卡片。"], ["receipt", "03", "躺平省钱账单", "勾选你当年忍住没学的东西，算算省了多少钱和时间。"], ["jargon", "04", "黑话翻译机", "卖课博主的焦虑话术，逐句翻译成人话。"], ["timeline", "05", "时间线", "从 ChatGPT 到今天，每一件事和每一次慌的结局。"], ["jobs", "06", "按行业看", "程序员、影视短剧、设计、客服……你这行被喊过几次「要完」。"], ["graveyard", "07", "焦虑墓地", "两百多个被关掉、被取代、被收购的 AI 工具和模型。"], ["voices", "08", "大佬言论", "奥特曼、黄仁勋、马斯克、李彦宏们说过的话，兑现了没有。"], ["skills", "09", "开源与 Skill", "GitHub 上几万个 skill，哪些值得装，哪些不用管。"]], "jg_more": [["普通人逆袭的最后一次机会，错过再等十年！", "每一轮都是「最后一次」，四年下来已经最后了几十次。"], ["AI 一键生成，副业日入过万！", "真能日入过万的方法，不会用 199 元卖给你。卖课的人赚的是课钱。"], ["这个工具完全免费，不用白不用！", "免费的往往最先关停或开始收费。数据导不出来的，别放重要东西。"], ["这次真的放大招了，新模型将改变一切！", "上一个「改变一切」的旗舰，174 天后就下线了。"]]}, "ja": {"nav_receipt": "レシート", "nav_jargon": "翻訳機", "doors": [["today", "01", "今日は慌てる？", "毎日更新の米中AIニュースに、追うか追わないかを即答。"], ["you", "02", "あなたの不安", "今の不安を選ぶと、寿命の予想とシェア用カードが出る。"], ["receipt", "03", "先延ばしレシート", "学ばずに済んだものを選んで、浮いたお金と時間を計算。"], ["jargon", "04", "ことば翻訳機", "講座販売の不安あおり文句を、普通の言葉に翻訳。"], ["timeline", "05", "年表", "ChatGPTから今日まで、出来事と不安の結末。"], ["jobs", "06", "業界別", "エンジニア、映像、デザイン、客服…「終わる」と何度言われたか。"], ["graveyard", "07", "不安の墓地", "終了・置換・買収された200以上のAIツールとモデル。"], ["voices", "08", "著名人の発言", "アルトマン、フアン、マスクらの予言は当たったか。"], ["skills", "09", "OSSとスキル", "GitHubの数万のスキル、入れるべきものと無視していいもの。"]], "jg_more": [["一般人が逆転できる最後のチャンス、逃せば10年待ち！", "毎回「最後」と言われ、この4年でもう数十回目の最後。"], ["AIでワンクリック、副業で日給10万円！", "本当に稼げる方法は数千円の講座では売られない。儲かるのは講座の売り手。"], ["完全無料、使わなきゃ損！", "無料のものほど先に終了するか有料化する。書き出せないデータは大事なものを入れない。"], ["今度こそ本気の新モデル、すべてが変わる！", "前回「すべてを変える」と言われた旗艦は174日で退役した。"]]}, "en": {"nav_receipt": "Receipt", "nav_jargon": "Translator", "doors": [["today", "01", "Panic today?", "Daily China and US AI news with a straight answer: chase it or don't."], ["you", "02", "Your worry", "Pick what you're worried about, see its shelf life, get a share card."], ["receipt", "03", "The receipt", "Tick what you never got around to learning and see what you saved."], ["jargon", "04", "Hype translator", "Course-seller scare lines, translated into plain words."], ["timeline", "05", "Timeline", "Every event since ChatGPT, and how each panic ended."], ["jobs", "06", "By industry", "Programmers, film, design, support… how often your job was declared dead."], ["graveyard", "07", "Graveyard", "200+ AI tools and models shut down, replaced or acquired."], ["voices", "08", "Hot takes", "Altman, Jensen Huang, Musk, Robin Li: did their predictions land?"], ["skills", "09", "Open source & skills", "Tens of thousands of skills on GitHub. Which are worth installing."]], "jg_more": [["The last chance for ordinary people to get ahead. Miss it and wait ten years!", "Every wave is \"the last chance\". That's dozens of last chances in four years."], ["One click with AI and make $1,000 a day on the side!", "A method that really made $1,000 a day wouldn't be sold for $29. The seller earns from the course."], ["It's completely free, you'd be crazy not to use it!", "Free tools are often the first to shut down or start charging. Don't keep anything important where you can't export it."], ["This time it's huge. The new model changes everything!", "The last flagship that \"changed everything\" was retired after 174 days."]]}};
-const I5={zh:{c_x:'发到 X',c_x_hint:'图片已下载，在 X 发帖时把它加进去。',rc_card_t:'我的躺平省钱账单',rc_more:'……还有 {n} 项',rc_save:'保存图片',rc_stamp:'已躲过'},
- ja:{c_x:'Xに投稿',c_x_hint:'画像を保存しました。Xの投稿に添付してください。',rc_card_t:'私の先延ばし節約レシート',rc_more:'……ほか {n} 件',rc_save:'画像を保存',rc_stamp:'回避済'},
- en:{c_x:'Post to X',c_x_hint:'Image downloaded. Attach it to your post on X.',rc_card_t:'My procrastination receipt',rc_more:'…and {n} more',rc_save:'Save image',rc_stamp:'DODGED'}};
+const I5={zh:{c_x:'发到 X',c_x_hint:'图片已下载，在 X 发帖时把它加进去。',rc_card_t:'我的躺平省钱账单',rc_more:'……还有 {n} 项',rc_save:'保存图片',rc_stamp:'已躲过',rc_cashier:'收银员：时间本人',rc_rank:'鉴定结果',rc_zero:'一个坑都没躲过',c_x_copied:'图片已复制。跳到 X 后按 Cmd+V（Windows 按 Ctrl+V）贴进去。',
+  rc_tiers:[['AI 军备竞赛慈善家','VIP 课代表','感谢你为卖课博主的法拉利做出的贡献。好消息是：从这张小票开始，下半年的钱保住了。'],['及时止损的幸存者','已退坑','你也收藏过几百 G 教程，好在很快发现真正用得上的就两三个。能从坑里爬出来，也是本事。'],['耐心的潜伏猎手','人间清醒','你不为半成品付钱。等别人交完学费、踩完坑，你再进场用成品。'],['赛博老僧','一毛没拔','从提示词到 Agent，风口一茬接一茬，你一茬都没跟。慢半拍，是这个时代最好的防御。']],
+  rc_share2:'测了一下我的 AI 躺平省钱账单：{n} 个坑没踩，省了 {m} 和 {h} 小时，喜提【{t}】。你呢？',rc_share0:'测了一下我的 AI 躺平省钱账单，喜提【{t}】。坏了。你呢？'},
+ ja:{c_x:'Xに投稿',c_x_hint:'画像を保存しました。Xの投稿に添付してください。',rc_card_t:'私の先延ばし節約レシート',rc_more:'……ほか {n} 件',rc_save:'画像を保存',rc_stamp:'回避済',rc_cashier:'レジ担当：時間さん',rc_rank:'鑑定結果',rc_zero:'回避ゼロ',c_x_copied:'画像をコピーしました。Xの投稿欄で Cmd+V（WindowsはCtrl+V）で貼り付けてください。',
+  rc_tiers:[['AI軍拡の慈善家','VIP受講生','講座販売者のフェラーリへのご貢献、ありがとうございます。朗報：このレシートから、下半期のお金は守られます。'],['損切り上手な生還者','撤退済','何百GBもの教材を保存したこともある。でも本当に使うのは二、三個だと早めに気づいた。穴から這い上がるのも実力。'],['忍耐強いハンター','正気','未完成品にはお金を払わない。誰かが授業料を払い、穴に落ち終わってから完成品を使う。'],['サイバー老僧','一銭も払わず','プロンプトからエージェントまで、波は次々来たが一つも追わなかった。半歩遅れは、この時代いちばんの防御。']],
+  rc_share2:'AI先延ばし節約レシートを作ってみた：落とし穴{n}個を回避、{m}と{h}時間が浮いて【{t}】認定。あなたは？',rc_share0:'AI先延ばし節約レシートを作ってみたら【{t}】認定。やばい。あなたは？'},
+ en:{c_x:'Post to X',c_x_hint:'Image downloaded. Attach it to your post on X.',rc_card_t:'My procrastination receipt',rc_more:'…and {n} more',rc_save:'Save image',rc_stamp:'DODGED',rc_cashier:'Cashier: Time itself',rc_rank:'Verdict',rc_zero:'Dodged nothing',c_x_copied:'Image copied. Paste it into your X post with Cmd+V (Ctrl+V on Windows).',
+  rc_tiers:[['AI arms-race philanthropist','VIP STUDENT','Thank you for funding the course sellers\' Ferraris. Good news: from this receipt on, your money is safe.'],['Survivor who cut losses','OUT','You too hoarded gigabytes of tutorials, then noticed only two or three mattered. Climbing out counts.'],['Patient hunter','CLEAR-HEADED','You never pay for half-finished things. Others pay the tuition and hit the bugs; you walk in when it\'s done.'],['Cyber monk','NOT A CENT','Prompts, agents, wave after wave, and you chased none. Half a step late is the best defense of this era.']],
+  rc_share2:'Made my AI procrastination receipt: dodged {n} traps, saved {m} and {h} hours. Rank: {t}. You?',rc_share0:'Made my AI procrastination receipt. Rank: {t}. Oops. You?'}};
 for(const k in I5)Object.assign(I[k],I5[k]);
 const XH='Luckie_karaage',SITE_URL='logitlong.github.io/anti-ai-anxiety';
 for(const k in I4){const x=I4[k];I[k].nav_receipt=x.nav_receipt;I[k].nav_jargon=x.nav_jargon;I[k].doors=x.doors;I[k].jg=I[k].jg.concat(x.jg_more)}
@@ -969,12 +977,14 @@ function you(){
 async function cardBlob(sel='#card'){const r=await fetch($(sel).src);return r.blob()}
 function saveImg(sel,name){const im=$(sel);if(!im||!im.src)return;const a=document.createElement('a');a.href=im.src;a.download=name;document.body.appendChild(a);a.click();a.remove()}
 function saveCard(){saveImg('#card','anti-ai-anxiety.png')}
-async function postToX(sel,name,text,hintEl){const url=location.origin+location.pathname;
+async function postToX(sel,name,text,hintEl,hash=''){const url=location.origin+location.pathname+hash;
   if(matchMedia('(pointer:coarse)').matches&&navigator.canShare){try{const b=await cardBlob(sel),f=new File([b],name,{type:'image/png'});
     if(navigator.canShare({files:[f]})){await navigator.share({files:[f],text:text+' '+url+' @'+XH});return}}catch(e){if(e&&e.name==='AbortError')return}}
-  saveImg(sel,name);
+  let copied=false;
+  try{if(navigator.clipboard&&window.ClipboardItem){await navigator.clipboard.write([new ClipboardItem({'image/png':cardBlob(sel)})]);copied=true}}catch(e){}
+  if(!copied)saveImg(sel,name);
   window.open('https://x.com/intent/post?text='+encodeURIComponent(text)+'&url='+encodeURIComponent(url)+'&via='+XH,'_blank','noopener');
-  if(hintEl){const t=T(),o=hintEl.textContent;hintEl.textContent=t.c_x_hint;setTimeout(()=>{hintEl.textContent=o},6000)}}
+  if(hintEl){const t=T(),o=hintEl.textContent;hintEl.textContent=copied?t.c_x_copied:t.c_x_hint;hintEl.classList.add('flash');setTimeout(()=>{hintEl.textContent=o;hintEl.classList.remove('flash')},8000)}}
 function cardFooter(x,W,H,t,sans,serif){
   x.setLineDash([8,8]);x.strokeStyle='#171411';x.lineWidth=2;x.strokeRect(56,H-150,W-112,1);x.setLineDash([]);
   x.fillStyle='#171411';x.font=`900 34px ${serif}`;x.fillText(t.card_site,56,H-92);
@@ -1019,25 +1029,27 @@ function rcOut(){
   const c=sel.reduce((a,x)=>a+x[0],0),h=sel.reduce((a,x)=>a+x[1],0);
   const unitC=lang==='ja'?c*21:lang==='en'?c/7.1:c;
   const eq=t.rc_eq[0].replace('{a}',Math.floor(unitC/t.rc_eq[1]).toLocaleString()),sl=t.rc_sleep.replace('{b}',(h/8).toFixed(1));
-  const msg=t.rc_share.replace('{n}',sel.length).replace('{m}',money(c)).replace('{h}',h);
+  const r=sel.length/t.rc.length,tier=t.rc_tiers[!sel.length?0:r<.5?1:r<.9?2:3];
+  const msg=(sel.length?t.rc_share2:t.rc_share0).replace('{n}',sel.length).replace('{m}',money(c)).replace('{h}',h).replace('{t}',tier[0]);
   $('#rc-out').innerHTML=`<div class="hd">${esc(t.rc_head)}</div>
     <div class="row"><span>${esc(t.rc_items)}</span><b>${sel.length}${esc(t.unit_x)}</b></div>
     <div class="row"><span>${esc(t.rc_money)}</span><b>${esc(money(c))}</b></div>
     <div class="row"><span>${esc(t.rc_hours)}</span><b>${h} ${esc(t.unit_h)}</b></div>
     <div class="eq">${sel.length?esc(eq+'，'.replace('，',lang==='en'?', ':'，')+sl):esc(t.rc_none)}</div>
+    <div class="eq rc-tier">${esc(t.rc_rank)}：<b>${esc(tier[0])}</b></div>
     <div class="rc-act"><button type="button" class="pri" id="rc-copy">${esc(t.rc_copy)}</button><button type="button" id="rc-all">${esc(t.rc_all)}</button></div>`;
   $('#rc-all').onclick=()=>{t.rc.forEach((_,i)=>rcSel.add(i));receipt()};
-  $('#rc-copy').onclick=async()=>{const url=location.origin+location.pathname;const txt=msg+' '+url;
+  $('#rc-copy').onclick=async()=>{const url=location.origin+location.pathname+'#receipt';const txt=msg+' '+url;
     try{if(navigator.share&&matchMedia('(pointer:coarse)').matches){await navigator.share({text:txt});return}}catch(e){if(e&&e.name==='AbortError')return}
     try{await navigator.clipboard.writeText(txt);const b=$('#rc-copy');b.textContent=t.rc_copied;setTimeout(()=>{b.textContent=t.rc_copy},2000)}catch(e){}};
-  const box=$('#rc-card');box.hidden=!sel.length;
+  const box=$('#rc-card');box.hidden=false;
   $('#rc-x').textContent=t.c_x;$('#rc-save').textContent=t.rc_save;$('#rc-hint').textContent=t.card_hint;
-  $('#rc-x').onclick=()=>postToX('#rc-img','ai-receipt.png',msg,$('#rc-hint'));
+  $('#rc-x').onclick=()=>postToX('#rc-img','ai-receipt.png',msg,$('#rc-hint'),'#receipt');
   $('#rc-save').onclick=()=>saveImg('#rc-img','ai-receipt.png');
-  if(sel.length)drawReceipt(sel,c,h,eq,sl);
+  drawReceipt(sel,c,h,eq,sl,tier);
 }
 let rcDrawN=0;
-async function drawReceipt(sel,c,h,eq,sl){
+async function drawReceipt(sel,c,h,eq,sl,tier){
   const my=++rcDrawN;try{await document.fonts.ready}catch(e){}
   if(my!==rcDrawN)return;
   const t=T(),W=720,H=1400,cv=document.createElement('canvas');cv.width=W;cv.height=H;const x=cv.getContext('2d');
@@ -1049,18 +1061,27 @@ async function drawReceipt(sel,c,h,eq,sl){
   x.fillStyle='#625a4d';x.font=`700 22px ${mono}`;x.textAlign='center';x.fillText(t.rc_head,W/2,110);
   x.fillStyle='#171411';let fs=44;do{x.font=`900 ${fs}px ${serif}`;fs-=2}while(x.measureText(t.rc_card_t).width>W-112&&fs>24);x.fillText(t.rc_card_t,W/2,172);x.textAlign='left';
   dash(204);
-  const maxRows=10,rows=sel.length>maxRows?sel.slice(0,maxRows-1):sel;let y=252;
+  x.fillStyle='#625a4d';x.font=`500 18px ${sans}`;x.fillText(t.rc_cashier,56,236);const dt=D.updated||'';x.fillText(dt,W-56-x.measureText(dt).width,236);
+  const maxRows=10,rows=sel.length>maxRows?sel.slice(0,maxRows-1):sel;let y=284;
+  if(!sel.length){x.fillStyle='#625a4d';x.font=`400 22px ${sans}`;x.fillText(t.rc_zero,56,y);y+=38}
   rows.forEach(([cc,hh,nm])=>{x.fillStyle='#171411';x.font=`400 22px ${sans}`;const pr=cc?money(cc):'—';
     x.font=`700 22px ${mono}`;const pw=x.measureText(pr).width;x.font=`400 22px ${sans}`;
     x.fillText(fit(nm,W-112-pw-24),56,y);x.font=`700 22px ${mono}`;x.fillStyle='#b0231b';x.fillText(pr,W-56-pw,y);y+=38});
   if(sel.length>rows.length){x.fillStyle='#625a4d';x.font=`400 20px ${sans}`;x.fillText(t.rc_more.replace('{n}',sel.length-rows.length),56,y);y+=38}
   y+=4;dash(y);y+=52;
   const tot=(lb,val,big)=>{x.fillStyle='#625a4d';x.font=`500 24px ${sans}`;x.fillText(lb,56,y);x.fillStyle=big?'#b0231b':'#171411';x.font=`700 ${big?44:32}px ${mono}`;x.fillText(val,W-56-x.measureText(val).width,y+(big?4:0));y+=big?56:46};
-  tot(t.rc_items,sel.length+(t.unit_x?' '+t.unit_x:''),false);tot(t.rc_money,money(c),true);tot(t.rc_hours,h+' '+t.unit_h,false);
-  x.fillStyle='#171411';x.font=`500 22px ${sans}`;wrapText(x,eq+(lang==='en'?', ':'，')+sl,W-112).slice(0,2).forEach(l=>{x.fillText(l,56,y);y+=34});
-  y+=46;x.save();x.translate(W-150,y);x.rotate(-0.12);x.strokeStyle='rgba(176,35,27,.85)';x.lineWidth=5;x.font=`900 34px ${serif}`;
-  const sw=x.measureText(t.rc_stamp).width+40;x.strokeRect(-sw/2,-34,sw,52);x.fillStyle='rgba(176,35,27,.85)';x.textAlign='center';x.fillText(t.rc_stamp,0,4);x.restore();
-  const FH=Math.max(y+60+150,760),c2=document.createElement('canvas');c2.width=W;c2.height=FH;const x2=c2.getContext('2d');
+  tot(t.rc_items,sel.length+(t.unit_x?' '+t.unit_x:''),false);const moneyY=y;tot(t.rc_money,money(c),true);tot(t.rc_hours,h+' '+t.unit_h,false);
+  if(sel.length){x.fillStyle='#171411';x.font=`500 22px ${sans}`;wrapText(x,eq+(lang==='en'?', ':'，')+sl,W-112).slice(0,2).forEach(l=>{x.fillText(l,56,y);y+=34})}
+  if(!sel.length)y-=8;
+  y+=10;dash(y);y+=44;
+  x.fillStyle='#625a4d';x.font=`700 18px ${mono}`;x.textAlign='center';x.fillText(t.rc_rank,W/2,y);y+=56;
+  let ts=44;do{x.font=`900 ${ts}px ${serif}`;ts-=2}while(x.measureText(tier[0]).width>W-112&&ts>24);
+  x.fillStyle='#171411';x.fillText(tier[0],W/2,y);const tw=x.measureText(tier[0]).width;y+=48;
+  x.font=`400 21px ${sans}`;x.fillStyle='#171411';wrapText(x,tier[2],W-160).slice(0,4).forEach(l=>{x.fillText(l,W/2,y);y+=34});x.textAlign='left';
+  x.save();x.translate(W/2-30,moneyY-6);x.rotate(-0.14);x.globalAlpha=.85;
+  let ss=30;do{x.font=`900 ${ss}px ${serif}`;ss-=2}while(x.measureText(tier[1]).width>170&&ss>16);
+  const sw=x.measureText(tier[1]).width+32;x.strokeStyle='#b0231b';x.lineWidth=4;x.strokeRect(-sw/2,-30,sw,46);x.fillStyle='#b0231b';x.textAlign='center';x.fillText(tier[1],0,3);x.restore();
+  const FH=Math.max(y+30+150,760),c2=document.createElement('canvas');c2.width=W;c2.height=FH;const x2=c2.getContext('2d');
   x2.drawImage(cv,0,0);cardFooter(x2,W,FH,t,sans,serif);
   const im=$('#rc-img');if(im){im.src=c2.toDataURL('image/png');im.alt=t.rc_card_t}
 }
