@@ -251,6 +251,28 @@ h3{font-size:19px;line-height:1.4;font-weight:700}
 .card-act{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
 .card-act button{font:inherit;font-size:14px;font-weight:700;padding:8px 16px;border-radius:999px;cursor:pointer;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink)}
 .card-act button.ghost{background:none;color:var(--accent)}
+.rc{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:12px;margin-top:14px;align-items:start}
+.rc-list{border:1px solid var(--line);background:var(--surface)}
+.rc-list label{display:grid;grid-template-columns:20px 1fr auto;gap:2px 12px;padding:12px 16px;border-top:1px solid var(--line);cursor:pointer;align-items:start}
+.rc-list label:first-child{border-top:0}
+.rc-list label:hover{background:var(--surface-2)}
+.rc-list input{margin:4px 0 0;accent-color:var(--accent);width:16px;height:16px}
+.rc-list .nm{font-weight:600;font-size:14px;line-height:1.5}
+.rc-list .ws{grid-column:2;color:var(--muted);font-size:12px}
+.rc-list .pr{font-family:var(--mono);font-size:13px;color:var(--accent);white-space:nowrap;text-align:right}
+.rc-list .pr small{display:block;color:var(--muted);font-size:11px}
+.rc-out{border:1px dashed var(--muted);background:var(--surface-2);padding:20px;font-family:var(--mono);position:sticky;top:110px}
+.rc-out .hd{text-align:center;font-size:13px;letter-spacing:.2em;color:var(--muted);border-bottom:1px dashed var(--line);padding-bottom:10px;margin-bottom:12px}
+.rc-out .row{display:flex;justify-content:space-between;gap:12px;padding:6px 0;font-size:14px}
+.rc-out .row b{font-size:20px;color:var(--accent)}
+.rc-out .eq{border-top:1px dashed var(--line);margin-top:10px;padding-top:12px;font-family:var(--body);font-size:14px;line-height:1.6}
+.rc-act{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.rc-act button{font:inherit;font-family:var(--body);font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;border:1px solid var(--accent);background:none;color:var(--accent)}
+.rc-act button.pri{background:var(--accent);color:var(--accent-ink)}
+.jg{display:grid;gap:10px;margin-top:14px}
+.jg .pair{margin-top:0}
+.jg .box{font-size:15px;line-height:1.6}
+@media (max-width:820px){.rc{grid-template-columns:1fr}.rc-out{position:static}}
 .ask{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
 @media (max-width:760px){.ask{grid-template-columns:1fr}}
 .opts{display:grid;gap:8px}
@@ -319,6 +341,8 @@ footer p{margin:0 0 6px;max-width:90ch}
     </div>
     <div class="short-h"><h3 data-i="h_short">保质期最短的焦虑</h3><p class="ph-sub" data-i="h_short_p">当时都说「这次真的完了」。结果没撑过几天。</p></div>
     <div class="shorts" id="h-short"></div>
+    <div class="short-h"><h3 data-i="rc_t">多亏我当初没学：躺平省钱账单</h3><p class="ph-sub" data-i="rc_p"></p></div>
+    <div class="rc"><div class="rc-list" id="rc-list"></div><div class="rc-out" id="rc-out"></div></div>
     <div class="doors" id="doors"></div>
   </section>
 
@@ -398,6 +422,8 @@ footer p{margin:0 0 6px;max-width:90ch}
     <div class="three" id="three"></div>
     <h3 style="margin-top:40px" data-i="wh_t">那什么时候该学？</h3>
     <div class="when" id="when"></div>
+    <h3 style="margin-top:48px" data-i="jg_t">贩卖焦虑黑话翻译机</h3><p class="ph-sub" data-i="jg_p"></p>
+    <div class="jg" id="jg"></div>
   </section>
 </main>
 
@@ -531,7 +557,7 @@ const I2={
   sk_t:'开源与 Skill：几万个技能，你需要几个？',sk_p:'GitHub 上的 skill 仓库、skill 网站和开源 Agent 每天都在涨。数字来自第三方统计，口径不一，仅供感受量级。',
   sk_top:'最常被提到的几个，追不追',sk_rules:'装 skill 的四条规矩',sk_ev:'开源社区大事',sk_evp:'时间线中归为「开源社区」的事件，最新在前。',
   cagent:'Agent 与个人助理',
-  doors:[['timeline','01','时间线','从 ChatGPT 到今天，按天排好的每一件事，和每一次慌的结局。'],['jobs','02','按行业看','程序员、影视短剧、设计、客服、司机……你这行被喊过几次「要完」。'],['graveyard','03','焦虑墓地','两百多个被关掉、被取代、被收购的 AI 工具和模型。'],['voices','04','大佬言论','奥特曼、黄仁勋、马斯克、李彦宏们说过的话，后来兑现了没有。'],['skills','05','开源与 Skill','GitHub 上几万个 skill，哪些值得装，哪些不用管。'],['today','06','今天要不要慌','最新动态，每条直接告诉你：追，还是不追。'],['you','07','你在慌什么','选一个你正在慌的事，看它的预计寿命，生成分享卡片。'],['calm','08','怎么办','不追也不落后的几条实际做法。']]},
+  doors:[['timeline','01','时间线','从 ChatGPT 到今天，按天排好的每一件事，和每一次慌的结局。'],['jobs','02','按行业看','程序员、影视短剧、设计、客服、司机……你这行被喊过几次「要完」。'],['graveyard','03','焦虑墓地','两百多个被关掉、被取代、被收购的 AI 工具和模型。'],['voices','04','大佬言论','奥特曼、黄仁勋、马斯克、李彦宏们说过的话，后来兑现了没有。'],['skills','05','开源与 Skill','GitHub 上几万个 skill，哪些值得装，哪些不用管。'],['today','06','今天要不要慌','最新动态，每条直接告诉你：追，还是不追。'],['you','07','你在慌什么','选一个你正在慌的事，看它的预计寿命，生成分享卡片。'],['calm','08','怎么办','不追也不落后的几条做法，和一台贩卖焦虑黑话翻译机。']]},
  ja:{h_ask:'最近何に慌ててる？選ぶと寿命がわかる',c_share:'カードを共有',c_save:'画像を保存',c_copied:'リンクをコピーしました',c_title:'反・AI不安',c_text:'私のAI不安の賞味期限、あなたも測ってみて：',h_today:'今日は慌てる？',h_all:'すべて →',h_otd:'過去の今日',h_tl:'年表 →',h_otd_exact:'過去の同じ日、みんな何に慌てていたか。',h_otd_near:k=>`過去のこの時期（前後${k}日）、みんな何に慌てていたか。`,h_short:'賞味期限が最も短かった不安',h_short_p:'「今度こそ終わり」と言われ、数週間ももたなかった。毎日入れ替わります。',nav_jobs:'業界別',jb_t:'業界別：あなたの仕事は何度「AIに奪われる」と言われたか',jb_p:'業界や職種を選ぶと、「置き換えられる」不安とその後の結末が見られます。数字は収録件数。',jb_lbl:'業界 / 職種',cpeople:'人事',ind:{"code": "エンジニア", "film": "映像 / ショートドラマ", "design": "デザイン / 美術", "music": "音楽", "voice": "声優", "drive": "運転手 / 移動", "factory": "工場 / ロボット", "logi": "物流倉庫", "cs": "カスタマーサポート", "edu": "教育", "lang": "翻訳 / 語学", "care": "心理 / 交流", "news": "報道", "pub": "執筆 / 出版", "media": "SNS / メディア", "ecom": "EC / ライブ販売", "ad": "広告 / コピー", "hr": "人事 / 事務", "office": "ホワイトカラー", "law": "法律", "med": "医療", "fin": "金融 / 投資", "sci": "研究", "game": "ゲーム", "photo": "写真 / 撮影", "gov": "公務員", "bank": "銀行", "acct": "会計 / 監査", "realty": "不動産仲介"},
   nav_voices:'著名人の発言',nav_skills:'OSSとスキル',
   s_dead:'墓地に眠るツール・モデル・企業',s_dead_u:'件',
@@ -546,7 +572,7 @@ const I2={
   sk_t:'OSSとスキル：数万のスキル、必要なのはいくつ？',sk_p:'GitHubのスキルリポジトリ、スキルサイト、OSSエージェントは毎日増える。数字は第三者集計で基準もまちまち、規模感の参考に。',
   sk_top:'よく名前が挙がるもの：追う？追わない？',sk_rules:'スキルを入れる4つのルール',sk_ev:'オープンソースの出来事',sk_evp:'年表で「オープンソース」に分類された出来事、新しい順。',
   cagent:'エージェント・個人アシスタント',
-  doors:[['timeline','01','年表','ChatGPTから今日まで、日付順の出来事と不安の結末。'],['jobs','02','業界別','エンジニア、映像、デザイン、客服、運転手…「終わる」と何度言われたか。'],['graveyard','03','不安の墓地','終了・置換・買収された200以上のAIツールとモデル。'],['voices','04','著名人の発言','アルトマン、ジェンスン・フアン、マスクらの発言は実現したか。'],['skills','05','OSSとスキル','GitHubの数万のスキル、入れるべきものと無視していいもの。'],['today','06','今日は慌てる？','最新ニュースに、追うか追わないかを即答。'],['you','07','あなたの不安','今の不安を選ぶと、予想寿命とシェア用カードが出る。'],['calm','08','どうする','追わなくても置いていかれない、いくつかの実践。']]},
+  doors:[['timeline','01','年表','ChatGPTから今日まで、日付順の出来事と不安の結末。'],['jobs','02','業界別','エンジニア、映像、デザイン、客服、運転手…「終わる」と何度言われたか。'],['graveyard','03','不安の墓地','終了・置換・買収された200以上のAIツールとモデル。'],['voices','04','著名人の発言','アルトマン、ジェンスン・フアン、マスクらの発言は実現したか。'],['skills','05','OSSとスキル','GitHubの数万のスキル、入れるべきものと無視していいもの。'],['today','06','今日は慌てる？','最新ニュースに、追うか追わないかを即答。'],['you','07','あなたの不安','今の不安を選ぶと、予想寿命とシェア用カードが出る。'],['calm','08','どうする','追わなくても置いていかれない実践と、不安商法ことば翻訳機。']]},
  en:{h_ask:'What are you worried about lately? Pick one and see how long it lasts',c_share:'Share card',c_save:'Save image',c_copied:'Link copied',c_title:'Anti AI Anxiety',c_text:'I checked the shelf life of my AI anxiety. Try yours:',h_today:'Panic today?',h_all:'All →',h_otd:'On this day',h_tl:'Timeline →',h_otd_exact:'What people were panicking about on this date in past years.',h_otd_near:k=>`What people were panicking about around this date (±${k} days) in past years.`,h_short:'The shortest-lived panics',h_short_p:'Each one was "this time it\'s really over". None lasted more than a few weeks. A new set every day.',nav_jobs:'By industry',jb_t:'By industry: how many times was your job "about to be replaced"?',jb_p:'Pick your industry or role to see each "AI will replace you" panic and what actually happened. Numbers are event counts.',jb_lbl:'Industry / role',cpeople:'People moves',ind:{"code": "Programmers", "film": "Film & short drama", "design": "Design & art", "music": "Music", "voice": "Voice acting", "drive": "Drivers", "factory": "Factory & robots", "logi": "Warehouse & logistics", "cs": "Customer service", "edu": "Education", "lang": "Translation", "care": "Therapy & companionship", "news": "News", "pub": "Writing & publishing", "media": "Social media", "ecom": "E-commerce & live selling", "ad": "Advertising & copy", "hr": "HR & back office", "office": "Office work", "law": "Law", "med": "Medicine", "fin": "Finance & markets", "sci": "Research", "game": "Games", "photo": "Photography", "gov": "Government", "bank": "Banking", "acct": "Accounting & audit", "realty": "Real estate"},
   nav_voices:'Hot takes',nav_skills:'Open source & skills',
   s_dead:'Tools, models and companies in the graveyard',s_dead_u:'',
@@ -561,9 +587,11 @@ const I2={
   sk_t:'Open source & skills: tens of thousands, how many do you need?',sk_p:'Skill repos on GitHub, skill directories and open-source agents grow daily. Numbers come from third-party counts with different methods; read them as orders of magnitude.',
   sk_top:'The ones everyone mentions: chase or skip?',sk_rules:'Four rules for installing skills',sk_ev:'Open-source milestones',sk_evp:'Timeline events filed under "Open source", newest first.',
   cagent:'Agents & assistants',
-  doors:[['timeline','01','Timeline','Every event since ChatGPT, day by day, with how each panic ended.'],['jobs','02','By industry','Programmers, film, design, support, drivers… how many times your job was declared dead.'],['graveyard','03','Graveyard','200+ AI tools and models that were shut down, replaced or acquired.'],['voices','04','Hot takes','Altman, Jensen Huang, Musk, Robin Li and others: did their predictions land?'],['skills','05','Open source & skills','Tens of thousands of skills on GitHub. Which are worth installing.'],['today','06','Panic today?','Latest news with a straight answer: chase it or don\'t.'],['you','07','Your worry','Pick what you\'re worried about, see its shelf life, get a share card.'],['calm','08','What to do','A few practical ways to keep up without chasing everything.']]}
+  doors:[['timeline','01','Timeline','Every event since ChatGPT, day by day, with how each panic ended.'],['jobs','02','By industry','Programmers, film, design, support, drivers… how many times your job was declared dead.'],['graveyard','03','Graveyard','200+ AI tools and models that were shut down, replaced or acquired.'],['voices','04','Hot takes','Altman, Jensen Huang, Musk, Robin Li and others: did their predictions land?'],['skills','05','Open source & skills','Tens of thousands of skills on GitHub. Which are worth installing.'],['today','06','Panic today?','Latest news with a straight answer: chase it or don\'t.'],['you','07','Your worry','Pick what you\'re worried about, see its shelf life, get a share card.'],['calm','08','What to do','Practical ways to keep up without chasing, plus a hype-speak translator.']]}
 };
 for(const k in I2){Object.assign(I[k],I2[k]);I[k].c.agent=I2[k].cagent;I[k].c.people=I2[k].cpeople}
+const I3={"zh": {"rc_t": "多亏我当初没学：躺平省钱账单", "rc_p": "勾选这几年你动过念头、差点掏钱、最后因为拖延没去折腾的东西。价格按当时常见报价估算。", "rc_head": "躺平红利结算单", "rc_items": "躲过的坑", "rc_money": "省下的钱", "rc_hours": "省下的时间", "rc_eq": ["相当于 {a} 顿火锅", 150], "rc_sleep": "外加 {b} 个整晚好觉", "rc_none": "先在左边勾几项。", "rc_all": "全选（我全都忍住了）", "rc_copy": "复制战报", "rc_copied": "已复制", "rc_share": "{n} 个 AI 学习坑我都没踩，省了 {m}、{h} 小时。你呢？", "unit_h": "小时", "unit_x": "个", "jg_t": "贩卖焦虑黑话翻译机", "jg_p": "下次在朋友圈、小红书、短视频里看到这些话，在脑子里自动换成右边这句。", "jg_a": "原话", "jg_b": "翻译成人话", "rc": [[199, 15, "199 元的「提示词工程大师课」和万能咒语表", "现在直接说人话就行"], [2980, 60, "Stable Diffusion 本地炼丹、修手指训练营", "新模型原生就能画对手"], [12999, 25, "为了本地跑模型买的 RTX 4090 高配主机", "云端又快又便宜"], [0, 40, "收藏了 50 个「必学 AI 神器合集」，一个没打开", "其中一大半已关停或被官方内置（见焦虑墓地）"], [699, 35, "Coze / Dify 五十个节点的工作流搭建课", "扣子企业版都关了，Agent 会自己规划步骤"], [599, 5, "早期套壳网站的「终身 VIP 会员」", "躲过了套壳站跑路潮"], [399, 30, "AI 视频「防崩坏抽卡」运镜参数课", "新一代视频模型一步到位"], [0, 20, "熬夜捏 GPTs，等着 GPT 商店分成", "GPTs 已被官方关掉（见焦虑墓地）"], [0, 30, "为了读长 PDF，学 LangChain 切片和本地向量库", "现在直接把整本书拖进对话框"], [1500, 10, "一口气年付了三四个 AI 会员", "价格和额度每几个月就变一次，按月付才不亏"]], "jg": [["炸裂！硅谷又发布颠覆级模型，普通人再不学就彻底出局！", "跑分高了几个点，它更听得懂大白话了。你需要学的反而更少。"], ["淘汰你的不是 AI，是会用 AI 的人。限时领取 100G 独家资料！", "那 100G 多半是半年前的旧教程，里面一半工具已经关停了。不信去焦虑墓地对一下名字。"], ["这套提示词模板，让你效率提升 10 倍！", "模型一升级，模板多半就失效了。把你要什么说清楚，比任何模板都好用。"], ["明年每个人都需要自己的多 Agent 矩阵，否则寸步难行。", "复杂配置半年内就会变成一个按钮。等按钮出来再用，一分钱学费都不用交。"], ["XX 岗位明年就会彻底消失。", "过去四年被喊过「要消失」的岗位，绝大多数还在招人。去「按行业看」翻翻结局。"], ["早鸟价今晚截止，这是最后一次上车机会！", "AI 课程最好的购买时间是永远不买。这个月卖的技巧，下个月会被新版本免费内置。"], ["某大佬说，AGI 两年内一定到来。", "这句话每年都有人说。去「大佬言论」数数兑现了几条。"], ["不会 XX 的人，三年内全部失业。", "三年前说「不会写提示词就失业」的人，现在在卖别的课了。"]]}, "ja": {"rc_t": "学ばなくてよかった：先延ばし節約レシート", "rc_p": "この数年、学ぼうと思った・お金を払いかけた・でも先延ばしで手を出さなかったものにチェック。金額は当時の相場から推定。", "rc_head": "先延ばし配当レシート", "rc_items": "避けた落とし穴", "rc_money": "浮いたお金", "rc_hours": "浮いた時間", "rc_eq": ["回転寿司 {a} 回分", 3000], "rc_sleep": "さらに {b} 晩ぐっすり眠れる", "rc_none": "左で項目を選んでください。", "rc_all": "全部選ぶ（全部ガマンした）", "rc_copy": "結果をコピー", "rc_copied": "コピーしました", "rc_share": "AI学習の落とし穴を{n}個回避、{m}と{h}時間が浮いた。あなたは？", "unit_h": "時間", "unit_x": "個", "jg_t": "不安商法ことば翻訳機", "jg_p": "SNSや動画でこういう言葉を見たら、頭の中で右側に置き換えてください。", "jg_a": "原文", "jg_b": "普通の言葉で言うと", "rc": [[199, 15, "199元の「プロンプト職人講座」と呪文集", "今は普通に話せば通じる"], [2980, 60, "Stable Diffusionの手直し・ローカル学習講座", "新モデルは最初から手を正しく描く"], [12999, 25, "ローカルでモデルを動かすためのRTX 4090マシン", "クラウドの方が速くて安い"], [0, 40, "「必修AIツール50選」を保存したまま開かず", "大半は終了か公式に統合済み（不安の墓地へ）"], [699, 35, "Coze/Difyで50ノードのワークフロー講座", "扣子企業版は終了、エージェントが自分で手順を組む"], [599, 5, "初期のラッパーサイトの「永久VIP会員」", "ラッパーサイトの夜逃げを回避"], [399, 30, "AI動画の「崩れ防止ガチャ」講座", "新世代の動画モデルは一発で出る"], [0, 20, "GPTストアの収益分配を夢見てGPTsを量産", "GPTsは公式に終了（不安の墓地へ）"], [0, 30, "長いPDFのためにLangChainと分割を学ぶ", "今は本を丸ごと会話欄に入れるだけ"], [1500, 10, "AIサービスを3〜4個まとめて年払い", "価格も枠も数か月で変わる。月払いが正解"]], "jg": [["衝撃！シリコンバレーでまた革命的モデル。今学ばない一般人は完全に脱落！", "ベンチマークが数点上がり、普通の言葉がもっと通じるようになった。学ぶことはむしろ減った。"], ["AIに仕事を奪われるのではない、AIを使える人に奪われる。100GBの限定資料を今すぐ！", "その100GBは半年前の古い教材で、半分のツールは既に終了。不安の墓地で名前を確かめてみて。"], ["このプロンプトテンプレートで効率10倍！", "モデルが更新されるとテンプレートはたいてい無効に。欲しいものをはっきり言う方がどんなテンプレートより効く。"], ["来年は誰もがマルチエージェント体制を持たないと何もできない。", "複雑な設定は半年でボタン一つになる。ボタンが出てから使えば、受講料はゼロ。"], ["〇〇職は来年完全に消える。", "この4年「消える」と言われた職の大半は今も募集中。「業界別」で結末を見てみて。"], ["早割は今夜まで、最後のチャンス！", "AI講座の最適な購入時期は「買わない」。今月売られた技は来月の新版に無料で入っている。"], ["著名人いわく、AGIは2年以内に必ず来る。", "この台詞は毎年誰かが言う。「著名人の発言」で何件実現したか数えてみて。"], ["〇〇ができない人は3年以内に全員失業。", "3年前「プロンプトが書けないと失業」と言った人は、今は別の講座を売っている。"]]}, "en": {"rc_t": "Good thing I never learned it: the procrastination receipt", "rc_p": "Tick the things you almost learned or paid for over the past few years, then put off. Prices are rough estimates from the time.", "rc_head": "Procrastination dividend", "rc_items": "Traps avoided", "rc_money": "Money saved", "rc_hours": "Time saved", "rc_eq": ["That's {a} dinners out", 40], "rc_sleep": "plus {b} full nights of sleep", "rc_none": "Tick a few items on the left.", "rc_all": "Select all (I resisted everything)", "rc_copy": "Copy result", "rc_copied": "Copied", "rc_share": "I skipped {n} AI learning traps and saved {m} and {h} hours. You?", "unit_h": "h", "unit_x": "", "jg_t": "Hype-speak translator", "jg_p": "Next time you see one of these lines on social media, swap it for the right-hand version in your head.", "jg_a": "What they say", "jg_b": "What it means", "rc": [[199, 15, "A ¥199 \"prompt engineering master class\" and spell sheet", "Plain language works now"], [2980, 60, "A Stable Diffusion boot camp on fixing hands and local training", "New models draw hands correctly out of the box"], [12999, 25, "An RTX 4090 rig to run models locally", "The cloud is faster and cheaper"], [0, 40, "Bookmarked 50 \"must-have AI tools\" lists, opened none", "Most have shut down or been built in (see the graveyard)"], [699, 35, "A course on 50-node Coze/Dify workflows", "Coze Enterprise shut down; agents plan their own steps now"], [599, 5, "A \"lifetime VIP\" on an early ChatGPT wrapper site", "You dodged the wrapper-site rug pulls"], [399, 30, "A course on camera-parameter tricks for early AI video", "New video models get it right in one go"], [0, 20, "Building GPTs for the GPT Store revenue share", "Custom GPTs were shut down (see the graveyard)"], [0, 30, "Learning LangChain chunking to read a long PDF", "Now you just drag the whole book into the chat"], [1500, 10, "Paying yearly for three or four AI subscriptions", "Prices and limits change every few months; monthly wins"]], "jg": [["Breaking! Silicon Valley just dropped a game-changing model. Learn it now or get left behind!", "The benchmark went up a few points and it understands plain language better. You need to learn less, not more."], ["AI won't replace you, people who use AI will. Grab our exclusive 100GB bundle!", "That bundle is mostly last year's tutorials, and half the tools in it have shut down. Check the names in the graveyard."], ["This prompt template makes you 10x more productive!", "Templates usually break with the next model update. Saying clearly what you want beats any template."], ["Next year everyone will need a multi-agent stack or be left behind.", "Complex setups become a single button within six months. Wait for the button and pay zero tuition."], ["Job X will be gone by next year.", "Most jobs declared dead in the past four years are still hiring. See how it ended under By industry."], ["Early-bird pricing ends tonight. Last chance to get on board!", "The best time to buy an AI course is never. This month's trick ships free in next month's model."], ["A big name says AGI arrives within two years, guaranteed.", "Someone says this every year. Count how many came true under Hot takes."], ["Anyone who can't do X will be unemployed within three years.", "The people who said that about prompt writing three years ago are selling a different course now."]]}};
+for(const k in I3)Object.assign(I[k],I3[k]);
 const VIEWS=['home','timeline','graveyard','jobs','voices','skills','today','you','calm'];
 const RC={us:'--c-global',cn:'--c-cn',other:'--c-jp'};
 let lang='zh', D=null, G=null, F=null, K=null, V=null, S=null;
@@ -797,6 +825,32 @@ async function drawCard(o){
   const img=$('#card');if(img){img.src=c.toDataURL('image/png');img.alt=t.card_t+'：'+o.q}
 }
 
+const rcSel=new Set([0,2,3]);
+const money=c=>lang==='ja'?'¥'+Math.round(c*21).toLocaleString():lang==='en'?'$'+Math.round(c/7.1).toLocaleString():'¥'+c.toLocaleString();
+function receipt(){
+  const t=T();
+  $('#rc-list').innerHTML=t.rc.map(([c,h,nm,ws],i)=>`<label><input type="checkbox" data-i="${i}" ${rcSel.has(i)?'checked':''}><span class="nm">${esc(nm)}</span><span class="pr">${c?esc(money(c)):'—'}<small>${h} ${esc(t.unit_h)}</small></span><span class="ws">→ ${esc(ws)}</span></label>`).join('');
+  $('#rc-list').querySelectorAll('input').forEach(b=>b.onchange=()=>{const i=+b.dataset.i;b.checked?rcSel.add(i):rcSel.delete(i);rcOut()});
+  rcOut();
+}
+function rcOut(){
+  const t=T(),sel=[...rcSel].map(i=>t.rc[i]);
+  const c=sel.reduce((a,x)=>a+x[0],0),h=sel.reduce((a,x)=>a+x[1],0);
+  const unitC=lang==='ja'?c*21:lang==='en'?c/7.1:c;
+  const eq=t.rc_eq[0].replace('{a}',Math.floor(unitC/t.rc_eq[1]).toLocaleString()),sl=t.rc_sleep.replace('{b}',(h/8).toFixed(1));
+  const msg=t.rc_share.replace('{n}',sel.length).replace('{m}',money(c)).replace('{h}',h);
+  $('#rc-out').innerHTML=`<div class="hd">${esc(t.rc_head)}</div>
+    <div class="row"><span>${esc(t.rc_items)}</span><b>${sel.length}${esc(t.unit_x)}</b></div>
+    <div class="row"><span>${esc(t.rc_money)}</span><b>${esc(money(c))}</b></div>
+    <div class="row"><span>${esc(t.rc_hours)}</span><b>${h} ${esc(t.unit_h)}</b></div>
+    <div class="eq">${sel.length?esc(eq+'，'.replace('，',lang==='en'?', ':'，')+sl):esc(t.rc_none)}</div>
+    <div class="rc-act"><button type="button" class="pri" id="rc-copy">${esc(t.rc_copy)}</button><button type="button" id="rc-all">${esc(t.rc_all)}</button></div>`;
+  $('#rc-all').onclick=()=>{t.rc.forEach((_,i)=>rcSel.add(i));receipt()};
+  $('#rc-copy').onclick=async()=>{const url=location.origin+location.pathname;const txt=msg+' '+url;
+    try{if(navigator.share&&matchMedia('(pointer:coarse)').matches){await navigator.share({text:txt});return}}catch(e){if(e&&e.name==='AbortError')return}
+    try{await navigator.clipboard.writeText(txt);const b=$('#rc-copy');b.textContent=t.rc_copied;setTimeout(()=>{b.textContent=t.rc_copy},2000)}catch(e){}};
+}
+function jargon(){const t=T();$('#jg').innerHTML=t.jg.map(([a,b])=>`<div class="pair"><div class="box fear"><div class="h">${esc(t.jg_a)}</div>「${esc(a)}」</div><div class="box calm"><div class="h">${esc(t.jg_b)}</div>${esc(b)}</div></div>`).join('')}
 function calm(){
   const t=T();
   $('#three').innerHTML=t.three.map(([k,h,p])=>`<div><span class="k">${k}</span><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join('');
@@ -805,7 +859,7 @@ function calm(){
 
 function footer(){const t=T();$('#foot1').textContent=t.foot1;$('#foot2').textContent=t.foot2(D.updated)}
 
-function renderAll(){applyStatic();stats();seis();doors();filters();timeline();graves();deaths();jobs();voices();skills();feed();you();calm();footer()}
+function renderAll(){applyStatic();stats();seis();doors();filters();timeline();graves();deaths();jobs();voices();skills();feed();you();calm();receipt();jargon();footer()}
 
 function route(){
   const v=VIEWS.includes(location.hash.slice(1))?location.hash.slice(1):'home';
