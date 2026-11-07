@@ -4,6 +4,86 @@
  "items": [
   {
    "d": "2026-11-06",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "Anthropic 上市估值遇冷：投资者嫌 1.5 万亿美元太贵，谈到 1.2 万亿",
+    "ja": "AnthropicのIPO評価額に冷や水、投資家が1.5兆ドルは高いと難色",
+    "en": "Anthropic's IPO valuation cools as investors balk at $1.5 trillion"
+   },
+   "why": {
+    "zh": "AI 股这周先跌了一波，买家开始还价，路演能不能按期开都成了问题。但这只是华尔街的讨价还价，跟模型好不好用没关系——普通人既买不到原始股，也不用为一家公司的估值焦虑。",
+    "ja": "AI株が先に下げ、買い手が値切り始めた。ただの値段交渉で、モデルの出来とは無関係。一般人は株も買えないし、気にしなくていい。",
+    "en": "AI stocks slid first, so buyers are haggling over price. It's Wall Street negotiating, not a verdict on the models — and you can't buy in anyway, so there's nothing to do."
+   },
+   "src": "https://aistockwire.com/blog/anthropic-ant-ipo-valuation-1-trillion-run-rate-blank-november-2026"
+  },
+  {
+   "d": "2026-11-05",
+   "verdict": "wait",
+   "panic": 2,
+   "t": {
+    "zh": "Perplexity 推出常驻 AI 队友 Teammates：每月 200 美元起，替你长期盯活儿",
+    "ja": "Perplexityが常駐AIチームメイトを開始、月200ドルから",
+    "en": "Perplexity launches Teammates, always-on AI agents for ongoing work — from $200 a month"
+   },
+   "why": {
+    "zh": "它能替你长期跟进项目、在 Slack 里协作，听着像招了个数字员工。但要每月 200 美元的 Max 套餐，还只是网页预览版。普通人先观望，等它降价或出平价版再说。",
+    "ja": "長期プロジェクトを任せられるAI同僚だが、月200ドルのMax限定でWebプレビュー。様子見で十分。",
+    "en": "Always-on agents that own long-running work sound like hiring digital staff — but they need the $200-a-month Max plan and are web-only preview for now. Wait for a cheaper tier."
+   },
+   "src": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work"
+  },
+  {
+   "d": "2026-11-05",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "英伟达开源 4 个 Cosmos 3 世界模型：能同时生成行车视频和激光雷达",
+    "ja": "NVIDIAがCosmos 3の世界モデル4種を公開、運転映像とLiDARを同時生成",
+    "en": "Nvidia open-sources four Cosmos 3 world models for driving and robotics simulation"
+   },
+   "why": {
+    "zh": "自动驾驶和机器人训练用的仿真模型，16B 参数、商用许可都给了，但这是开发者的工具——得有英伟达的卡和仿真环境才跑得起来。普通人看看就好，车和机器人不会因此明天就变样。",
+    "ja": "自動運転・ロボット訓練用のシミュレーションモデル。開発者向けの道具で、一般人には関係ない。",
+    "en": "Simulation models for self-driving and robotics training — powerful, but they're developer tools that need Nvidia hardware and a simulator. Nothing changes for the rest of us tomorrow."
+   },
+   "src": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+  },
+  {
+   "d": "2026-11-05",
+   "verdict": "try",
+   "panic": 1,
+   "t": {
+    "zh": "Gemini 新功能：拍张手绘草图，就能生成可用的小应用",
+    "ja": "Geminiが手描きスケッチをアプリ化、写真を撮るだけ",
+    "en": "Gemini turns a photo of a hand-drawn sketch into a working app"
+   },
+   "why": {
+    "zh": "零学习成本：拍张草图照片、问一句「能写成 App 吗」，就能在预览里试着改。想做个习惯打卡表或小游戏的顺手试试；注意别往里面放隐私内容，分享链接的人都能改数据。",
+    "ja": "学習コストゼロ。スケッチの写真を撮って聞くだけ。ただ共有リンクを持つ人は誰でもデータを編集できるので、個人情報は入れないこと。",
+    "en": "Zero learning curve: photograph a sketch, ask it to code the app, tweak it in the preview. Worth a try for a habit tracker or mini game — just don't put private data in it, since anyone with the share link can edit it."
+   },
+   "src": "https://blog.google/innovation-and-ai/products/gemini-app/turn-drawings-into-apps-gemini/"
+  },
+  {
+   "d": "2026-11-05",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "Mira Murati 的 Thinking Machines 发布 Inkling 2 Small：594B 参数，权重下周才开源",
+    "ja": "Mira MuratiのThinking Machines、Inkling 2 Smallを発表、重みは来週公開予定",
+    "en": "Thinking Machines Lab ships Inkling 2 Small, a 594B-parameter model — open weights due next week"
+   },
+   "why": {
+    "zh": "参数 594B、能连续干 4 小时的活，听着很强，但现在只能在它自己的 Tinker 平台上用，权重下周才放出来（还得看安全测试过不过）。普通人等它真开源、进了常用工具再说。",
+    "ja": "594Bパラメータで長時間タスクに強いが、今は自社Tinker限定。重み公開は来週以降。様子見でいい。",
+    "en": "A 594B-parameter model built for hours-long autonomous work — but today it only runs on Thinking Machines' own Tinker platform, with open weights promised next week pending safety tests. Wait until it actually lands in tools you use."
+   },
+   "src": "https://www.unite.ai/thinking-machines-lab-launches-inkling-2-small-with-open-weights-pending/"
+  },
+  {
+   "d": "2026-11-06",
    "verdict": "try",
    "panic": 2,
    "t": {
