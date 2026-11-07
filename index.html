@@ -55,6 +55,7 @@ nav.tabs{display:flex;flex-wrap:wrap;gap:2px 4px;order:3;flex:1 0 100%;min-width
 nav.tabs::-webkit-scrollbar{display:none}
 nav.tabs a{white-space:nowrap;text-decoration:none;color:var(--muted);padding:6px 12px;border-radius:999px;font-size:14px}
 nav.tabs a:hover{color:var(--fg)}
+.nsep{width:1px;align-self:stretch;background:var(--line);margin:6px 6px}
 nav.tabs a[aria-current="page"]{background:var(--accent);color:var(--accent-ink);font-weight:700}
 .lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none;margin-left:auto}
 .lang button{background:none;border:0;padding:4px 10px;font-size:13px;color:var(--muted);cursor:pointer}
@@ -113,11 +114,11 @@ h3{font-size:19px;line-height:1.4;font-weight:700}
 .short .ttl{font-weight:700;font-size:15px;line-height:1.45}
 .short .dt{font-family:var(--mono);font-size:12px;color:var(--muted)}
 .short .box{flex:none}.short .life{margin-top:auto;align-self:flex-start}
-.doors{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);background:var(--surface);margin-top:40px}
+.doors{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);background:var(--surface);margin-top:40px}
 @media (max-width:820px){.home2,.shorts{grid-template-columns:1fr}}
-@media (max-width:680px){.doors{grid-template-columns:1fr}.door:nth-child(2){border-top:1px solid var(--line)}}
+@media (max-width:820px){.doors{grid-template-columns:1fr}.door:nth-child(n){border-right:0;border-top:1px solid var(--line)}.door:first-child{border-top:0}}
 .door{display:grid;grid-template-columns:36px 1fr auto;gap:0 12px;align-items:baseline;text-decoration:none;color:var(--fg);padding:16px 20px;border-top:1px solid var(--line)}
-.door:nth-child(odd){border-right:1px solid var(--line)}.door:nth-child(-n+2){border-top:0}
+.door:not(:nth-child(3n)){border-right:1px solid var(--line)}.door:nth-child(-n+3){border-top:0}
 .door::after{content:'→';color:var(--muted)}
 .door:hover{background:var(--surface-2)}.door:hover::after,.door:hover h3{color:var(--accent)}
 .door .k{font-family:var(--mono);font-size:12px;color:var(--accent)}
@@ -306,14 +307,17 @@ footer p{margin:0 0 6px;max-width:90ch}
     <a class="brand" href="#home" data-i="brand">反 <b>AI</b> 焦虑</a>
     <nav class="tabs" aria-label="sections">
       <a href="#home" data-v="home" data-i="nav_home">首页</a>
+      <a href="#today" data-v="today" data-i="nav_today">今天要不要慌</a>
+      <span class="nsep" aria-hidden="true"></span>
+      <a href="#you" data-v="you" data-i="nav_you">你在慌什么</a>
+      <a href="#receipt" data-v="receipt" data-i="nav_receipt">躺平账单</a>
+      <a href="#jargon" data-v="jargon" data-i="nav_jargon">黑话翻译机</a>
+      <span class="nsep" aria-hidden="true"></span>
       <a href="#timeline" data-v="timeline" data-i="nav_timeline">时间线</a>
-      <a href="#graveyard" data-v="graveyard" data-i="nav_graveyard">焦虑墓地</a>
       <a href="#jobs" data-v="jobs" data-i="nav_jobs">按行业看</a>
+      <a href="#graveyard" data-v="graveyard" data-i="nav_graveyard">焦虑墓地</a>
       <a href="#voices" data-v="voices" data-i="nav_voices">大佬言论</a>
       <a href="#skills" data-v="skills" data-i="nav_skills">开源与 Skill</a>
-      <a href="#today" data-v="today" data-i="nav_today">今天要不要慌</a>
-      <a href="#you" data-v="you" data-i="nav_you">你在慌什么</a>
-      <a href="#calm" data-v="calm" data-i="nav_calm">怎么办</a>
     </nav>
     <div class="lang" role="group" aria-label="Language">
       <button type="button" data-l="zh">中</button><button type="button" data-l="ja">日</button><button type="button" data-l="en">EN</button>
@@ -341,8 +345,6 @@ footer p{margin:0 0 6px;max-width:90ch}
     </div>
     <div class="short-h"><h3 data-i="h_short">保质期最短的焦虑</h3><p class="ph-sub" data-i="h_short_p">当时都说「这次真的完了」。结果没撑过几天。</p></div>
     <div class="shorts" id="h-short"></div>
-    <div class="short-h"><h3 data-i="rc_t">多亏我当初没学：躺平省钱账单</h3><p class="ph-sub" data-i="rc_p"></p></div>
-    <div class="rc"><div class="rc-list" id="rc-list"></div><div class="rc-out" id="rc-out"></div></div>
     <div class="doors" id="doors"></div>
   </section>
 
@@ -415,14 +417,19 @@ footer p{margin:0 0 6px;max-width:90ch}
   <section class="view" id="v-you" hidden>
     <div class="sec-head"><h2 data-i="yu_t">轮到你了：这周你在慌什么？</h2><p data-i="yu_p">选一个你最近真的慌过的问题，看看按过去四年的规律，它大概能活多久。</p></div>
     <div id="you-ask"><div class="ask"><div class="opts" id="opts"></div><div class="result" id="result"></div></div></div>
-  </section>
-
-  <section class="view" id="v-calm" hidden>
-    <div class="sec-head"><h2 data-i="cm_t">结论：你可以不追。</h2><p data-i="cm_p">不是劝你躺平。这条时间线证明了一件事：浪花不用追，它自己会退。真正留下的，是你手里那件要做的事本身。</p></div>
+    <div class="sec-head" style="margin-top:56px"><h2 data-i="cm_t">结论：你可以不追。</h2><p data-i="cm_p">不是劝你躺平。这条时间线证明了一件事：浪花不用追，它自己会退。真正留下的，是你手里那件要做的事本身。</p></div>
     <div class="three" id="three"></div>
     <h3 style="margin-top:40px" data-i="wh_t">那什么时候该学？</h3>
     <div class="when" id="when"></div>
-    <h3 style="margin-top:48px" data-i="jg_t">贩卖焦虑黑话翻译机</h3><p class="ph-sub" data-i="jg_p"></p>
+  </section>
+
+  <section class="view" id="v-receipt" hidden>
+    <div class="sec-head"><h2 data-i="rc_t">多亏我当初没学：躺平省钱账单</h2><p data-i="rc_p"></p></div>
+    <div class="rc"><div class="rc-list" id="rc-list"></div><div class="rc-out" id="rc-out"></div></div>
+  </section>
+
+  <section class="view" id="v-jargon" hidden>
+    <div class="sec-head"><h2 data-i="jg_t">贩卖焦虑黑话翻译机</h2><p data-i="jg_p"></p></div>
     <div class="jg" id="jg"></div>
   </section>
 </main>
@@ -592,7 +599,9 @@ const I2={
 for(const k in I2){Object.assign(I[k],I2[k]);I[k].c.agent=I2[k].cagent;I[k].c.people=I2[k].cpeople}
 const I3={"zh": {"rc_t": "多亏我当初没学：躺平省钱账单", "rc_p": "勾选这几年你动过念头、差点掏钱、最后因为拖延没去折腾的东西。价格按当时常见报价估算。", "rc_head": "躺平红利结算单", "rc_items": "躲过的坑", "rc_money": "省下的钱", "rc_hours": "省下的时间", "rc_eq": ["相当于 {a} 顿火锅", 150], "rc_sleep": "外加 {b} 个整晚好觉", "rc_none": "先在左边勾几项。", "rc_all": "全选（我全都忍住了）", "rc_copy": "复制战报", "rc_copied": "已复制", "rc_share": "{n} 个 AI 学习坑我都没踩，省了 {m}、{h} 小时。你呢？", "unit_h": "小时", "unit_x": "个", "jg_t": "贩卖焦虑黑话翻译机", "jg_p": "下次在朋友圈、小红书、短视频里看到这些话，在脑子里自动换成右边这句。", "jg_a": "原话", "jg_b": "翻译成人话", "rc": [[199, 15, "199 元的「提示词工程大师课」和万能咒语表", "现在直接说人话就行"], [2980, 60, "Stable Diffusion 本地炼丹、修手指训练营", "新模型原生就能画对手"], [12999, 25, "为了本地跑模型买的 RTX 4090 高配主机", "云端又快又便宜"], [0, 40, "收藏了 50 个「必学 AI 神器合集」，一个没打开", "其中一大半已关停或被官方内置（见焦虑墓地）"], [699, 35, "Coze / Dify 五十个节点的工作流搭建课", "扣子企业版都关了，Agent 会自己规划步骤"], [599, 5, "早期套壳网站的「终身 VIP 会员」", "躲过了套壳站跑路潮"], [399, 30, "AI 视频「防崩坏抽卡」运镜参数课", "新一代视频模型一步到位"], [0, 20, "熬夜捏 GPTs，等着 GPT 商店分成", "GPTs 已被官方关掉（见焦虑墓地）"], [0, 30, "为了读长 PDF，学 LangChain 切片和本地向量库", "现在直接把整本书拖进对话框"], [1500, 10, "一口气年付了三四个 AI 会员", "价格和额度每几个月就变一次，按月付才不亏"]], "jg": [["炸裂！硅谷又发布颠覆级模型，普通人再不学就彻底出局！", "跑分高了几个点，它更听得懂大白话了。你需要学的反而更少。"], ["淘汰你的不是 AI，是会用 AI 的人。限时领取 100G 独家资料！", "那 100G 多半是半年前的旧教程，里面一半工具已经关停了。不信去焦虑墓地对一下名字。"], ["这套提示词模板，让你效率提升 10 倍！", "模型一升级，模板多半就失效了。把你要什么说清楚，比任何模板都好用。"], ["明年每个人都需要自己的多 Agent 矩阵，否则寸步难行。", "复杂配置半年内就会变成一个按钮。等按钮出来再用，一分钱学费都不用交。"], ["XX 岗位明年就会彻底消失。", "过去四年被喊过「要消失」的岗位，绝大多数还在招人。去「按行业看」翻翻结局。"], ["早鸟价今晚截止，这是最后一次上车机会！", "AI 课程最好的购买时间是永远不买。这个月卖的技巧，下个月会被新版本免费内置。"], ["某大佬说，AGI 两年内一定到来。", "这句话每年都有人说。去「大佬言论」数数兑现了几条。"], ["不会 XX 的人，三年内全部失业。", "三年前说「不会写提示词就失业」的人，现在在卖别的课了。"]]}, "ja": {"rc_t": "学ばなくてよかった：先延ばし節約レシート", "rc_p": "この数年、学ぼうと思った・お金を払いかけた・でも先延ばしで手を出さなかったものにチェック。金額は当時の相場から推定。", "rc_head": "先延ばし配当レシート", "rc_items": "避けた落とし穴", "rc_money": "浮いたお金", "rc_hours": "浮いた時間", "rc_eq": ["回転寿司 {a} 回分", 3000], "rc_sleep": "さらに {b} 晩ぐっすり眠れる", "rc_none": "左で項目を選んでください。", "rc_all": "全部選ぶ（全部ガマンした）", "rc_copy": "結果をコピー", "rc_copied": "コピーしました", "rc_share": "AI学習の落とし穴を{n}個回避、{m}と{h}時間が浮いた。あなたは？", "unit_h": "時間", "unit_x": "個", "jg_t": "不安商法ことば翻訳機", "jg_p": "SNSや動画でこういう言葉を見たら、頭の中で右側に置き換えてください。", "jg_a": "原文", "jg_b": "普通の言葉で言うと", "rc": [[199, 15, "199元の「プロンプト職人講座」と呪文集", "今は普通に話せば通じる"], [2980, 60, "Stable Diffusionの手直し・ローカル学習講座", "新モデルは最初から手を正しく描く"], [12999, 25, "ローカルでモデルを動かすためのRTX 4090マシン", "クラウドの方が速くて安い"], [0, 40, "「必修AIツール50選」を保存したまま開かず", "大半は終了か公式に統合済み（不安の墓地へ）"], [699, 35, "Coze/Difyで50ノードのワークフロー講座", "扣子企業版は終了、エージェントが自分で手順を組む"], [599, 5, "初期のラッパーサイトの「永久VIP会員」", "ラッパーサイトの夜逃げを回避"], [399, 30, "AI動画の「崩れ防止ガチャ」講座", "新世代の動画モデルは一発で出る"], [0, 20, "GPTストアの収益分配を夢見てGPTsを量産", "GPTsは公式に終了（不安の墓地へ）"], [0, 30, "長いPDFのためにLangChainと分割を学ぶ", "今は本を丸ごと会話欄に入れるだけ"], [1500, 10, "AIサービスを3〜4個まとめて年払い", "価格も枠も数か月で変わる。月払いが正解"]], "jg": [["衝撃！シリコンバレーでまた革命的モデル。今学ばない一般人は完全に脱落！", "ベンチマークが数点上がり、普通の言葉がもっと通じるようになった。学ぶことはむしろ減った。"], ["AIに仕事を奪われるのではない、AIを使える人に奪われる。100GBの限定資料を今すぐ！", "その100GBは半年前の古い教材で、半分のツールは既に終了。不安の墓地で名前を確かめてみて。"], ["このプロンプトテンプレートで効率10倍！", "モデルが更新されるとテンプレートはたいてい無効に。欲しいものをはっきり言う方がどんなテンプレートより効く。"], ["来年は誰もがマルチエージェント体制を持たないと何もできない。", "複雑な設定は半年でボタン一つになる。ボタンが出てから使えば、受講料はゼロ。"], ["〇〇職は来年完全に消える。", "この4年「消える」と言われた職の大半は今も募集中。「業界別」で結末を見てみて。"], ["早割は今夜まで、最後のチャンス！", "AI講座の最適な購入時期は「買わない」。今月売られた技は来月の新版に無料で入っている。"], ["著名人いわく、AGIは2年以内に必ず来る。", "この台詞は毎年誰かが言う。「著名人の発言」で何件実現したか数えてみて。"], ["〇〇ができない人は3年以内に全員失業。", "3年前「プロンプトが書けないと失業」と言った人は、今は別の講座を売っている。"]]}, "en": {"rc_t": "Good thing I never learned it: the procrastination receipt", "rc_p": "Tick the things you almost learned or paid for over the past few years, then put off. Prices are rough estimates from the time.", "rc_head": "Procrastination dividend", "rc_items": "Traps avoided", "rc_money": "Money saved", "rc_hours": "Time saved", "rc_eq": ["That's {a} dinners out", 40], "rc_sleep": "plus {b} full nights of sleep", "rc_none": "Tick a few items on the left.", "rc_all": "Select all (I resisted everything)", "rc_copy": "Copy result", "rc_copied": "Copied", "rc_share": "I skipped {n} AI learning traps and saved {m} and {h} hours. You?", "unit_h": "h", "unit_x": "", "jg_t": "Hype-speak translator", "jg_p": "Next time you see one of these lines on social media, swap it for the right-hand version in your head.", "jg_a": "What they say", "jg_b": "What it means", "rc": [[199, 15, "A ¥199 \"prompt engineering master class\" and spell sheet", "Plain language works now"], [2980, 60, "A Stable Diffusion boot camp on fixing hands and local training", "New models draw hands correctly out of the box"], [12999, 25, "An RTX 4090 rig to run models locally", "The cloud is faster and cheaper"], [0, 40, "Bookmarked 50 \"must-have AI tools\" lists, opened none", "Most have shut down or been built in (see the graveyard)"], [699, 35, "A course on 50-node Coze/Dify workflows", "Coze Enterprise shut down; agents plan their own steps now"], [599, 5, "A \"lifetime VIP\" on an early ChatGPT wrapper site", "You dodged the wrapper-site rug pulls"], [399, 30, "A course on camera-parameter tricks for early AI video", "New video models get it right in one go"], [0, 20, "Building GPTs for the GPT Store revenue share", "Custom GPTs were shut down (see the graveyard)"], [0, 30, "Learning LangChain chunking to read a long PDF", "Now you just drag the whole book into the chat"], [1500, 10, "Paying yearly for three or four AI subscriptions", "Prices and limits change every few months; monthly wins"]], "jg": [["Breaking! Silicon Valley just dropped a game-changing model. Learn it now or get left behind!", "The benchmark went up a few points and it understands plain language better. You need to learn less, not more."], ["AI won't replace you, people who use AI will. Grab our exclusive 100GB bundle!", "That bundle is mostly last year's tutorials, and half the tools in it have shut down. Check the names in the graveyard."], ["This prompt template makes you 10x more productive!", "Templates usually break with the next model update. Saying clearly what you want beats any template."], ["Next year everyone will need a multi-agent stack or be left behind.", "Complex setups become a single button within six months. Wait for the button and pay zero tuition."], ["Job X will be gone by next year.", "Most jobs declared dead in the past four years are still hiring. See how it ended under By industry."], ["Early-bird pricing ends tonight. Last chance to get on board!", "The best time to buy an AI course is never. This month's trick ships free in next month's model."], ["A big name says AGI arrives within two years, guaranteed.", "Someone says this every year. Count how many came true under Hot takes."], ["Anyone who can't do X will be unemployed within three years.", "The people who said that about prompt writing three years ago are selling a different course now."]]}};
 for(const k in I3)Object.assign(I[k],I3[k]);
-const VIEWS=['home','timeline','graveyard','jobs','voices','skills','today','you','calm'];
+const I4={"zh": {"nav_receipt": "躺平账单", "nav_jargon": "黑话翻译机", "doors": [["today", "01", "今天要不要慌", "每天更新的中美 AI 动态，直接告诉你：追，还是不追。"], ["you", "02", "你在慌什么", "选一个你正在慌的事，看它能活多久，生成分享卡片。"], ["receipt", "03", "躺平省钱账单", "勾选你当年忍住没学的东西，算算省了多少钱和时间。"], ["jargon", "04", "黑话翻译机", "卖课博主的焦虑话术，逐句翻译成人话。"], ["timeline", "05", "时间线", "从 ChatGPT 到今天，每一件事和每一次慌的结局。"], ["jobs", "06", "按行业看", "程序员、影视短剧、设计、客服……你这行被喊过几次「要完」。"], ["graveyard", "07", "焦虑墓地", "两百多个被关掉、被取代、被收购的 AI 工具和模型。"], ["voices", "08", "大佬言论", "奥特曼、黄仁勋、马斯克、李彦宏们说过的话，兑现了没有。"], ["skills", "09", "开源与 Skill", "GitHub 上几万个 skill，哪些值得装，哪些不用管。"]], "jg_more": [["普通人逆袭的最后一次机会，错过再等十年！", "每一轮都是「最后一次」，四年下来已经最后了几十次。"], ["AI 一键生成，副业日入过万！", "真能日入过万的方法，不会用 199 元卖给你。卖课的人赚的是课钱。"], ["这个工具完全免费，不用白不用！", "免费的往往最先关停或开始收费。数据导不出来的，别放重要东西。"], ["这次真的放大招了，新模型将改变一切！", "上一个「改变一切」的旗舰，174 天后就下线了。"]]}, "ja": {"nav_receipt": "先延ばしレシート", "nav_jargon": "ことば翻訳機", "doors": [["today", "01", "今日は慌てる？", "毎日更新の米中AIニュースに、追うか追わないかを即答。"], ["you", "02", "あなたの不安", "今の不安を選ぶと、寿命の予想とシェア用カードが出る。"], ["receipt", "03", "先延ばしレシート", "学ばずに済んだものを選んで、浮いたお金と時間を計算。"], ["jargon", "04", "ことば翻訳機", "講座販売の不安あおり文句を、普通の言葉に翻訳。"], ["timeline", "05", "年表", "ChatGPTから今日まで、出来事と不安の結末。"], ["jobs", "06", "業界別", "エンジニア、映像、デザイン、客服…「終わる」と何度言われたか。"], ["graveyard", "07", "不安の墓地", "終了・置換・買収された200以上のAIツールとモデル。"], ["voices", "08", "著名人の発言", "アルトマン、フアン、マスクらの予言は当たったか。"], ["skills", "09", "OSSとスキル", "GitHubの数万のスキル、入れるべきものと無視していいもの。"]], "jg_more": [["一般人が逆転できる最後のチャンス、逃せば10年待ち！", "毎回「最後」と言われ、この4年でもう数十回目の最後。"], ["AIでワンクリック、副業で日給10万円！", "本当に稼げる方法は数千円の講座では売られない。儲かるのは講座の売り手。"], ["完全無料、使わなきゃ損！", "無料のものほど先に終了するか有料化する。書き出せないデータは大事なものを入れない。"], ["今度こそ本気の新モデル、すべてが変わる！", "前回「すべてを変える」と言われた旗艦は174日で退役した。"]]}, "en": {"nav_receipt": "Receipt", "nav_jargon": "Hype translator", "doors": [["today", "01", "Panic today?", "Daily China and US AI news with a straight answer: chase it or don't."], ["you", "02", "Your worry", "Pick what you're worried about, see its shelf life, get a share card."], ["receipt", "03", "The receipt", "Tick what you never got around to learning and see what you saved."], ["jargon", "04", "Hype translator", "Course-seller scare lines, translated into plain words."], ["timeline", "05", "Timeline", "Every event since ChatGPT, and how each panic ended."], ["jobs", "06", "By industry", "Programmers, film, design, support… how often your job was declared dead."], ["graveyard", "07", "Graveyard", "200+ AI tools and models shut down, replaced or acquired."], ["voices", "08", "Hot takes", "Altman, Jensen Huang, Musk, Robin Li: did their predictions land?"], ["skills", "09", "Open source & skills", "Tens of thousands of skills on GitHub. Which are worth installing."]], "jg_more": [["The last chance for ordinary people to get ahead. Miss it and wait ten years!", "Every wave is \"the last chance\". That's dozens of last chances in four years."], ["One click with AI and make $1,000 a day on the side!", "A method that really made $1,000 a day wouldn't be sold for $29. The seller earns from the course."], ["It's completely free, you'd be crazy not to use it!", "Free tools are often the first to shut down or start charging. Don't keep anything important where you can't export it."], ["This time it's huge. The new model changes everything!", "The last flagship that \"changed everything\" was retired after 174 days."]]}};
+for(const k in I4){const x=I4[k];I[k].nav_receipt=x.nav_receipt;I[k].nav_jargon=x.nav_jargon;I[k].doors=x.doors;I[k].jg=I[k].jg.concat(x.jg_more)}
+const VIEWS=['home','today','you','receipt','jargon','timeline','jobs','graveyard','voices','skills'];
 const RC={us:'--c-global',cn:'--c-cn',other:'--c-jp'};
 let lang='zh', D=null, G=null, F=null, K=null, V=null, S=null;
 const st={r:'all',c:'all',pair:false,q:'',desc:true,opt:0,dk:'all',dy:'all',dq:'',dn:48,vc:'all',vs:'all',jk:'all'};
@@ -862,7 +871,8 @@ function footer(){const t=T();$('#foot1').textContent=t.foot1;$('#foot2').textCo
 function renderAll(){applyStatic();stats();seis();doors();filters();timeline();graves();deaths();jobs();voices();skills();feed();you();calm();receipt();jargon();footer()}
 
 function route(){
-  const v=VIEWS.includes(location.hash.slice(1))?location.hash.slice(1):'home';
+  let h=location.hash.slice(1);if(h==='calm')h='you';
+  const v=VIEWS.includes(h)?h:'home';
   VIEWS.forEach(n=>{$('#v-'+n).hidden=n!==v});
   const ask=$('.ask');if(v==='home')$('#home-ask').appendChild(ask);else if(v==='you')$('#you-ask').appendChild(ask);
   document.querySelectorAll('nav.tabs a').forEach(a=>{if(a.dataset.v===v)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
