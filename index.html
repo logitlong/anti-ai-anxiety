@@ -19,6 +19,7 @@
 <meta name="twitter:description" content="从 ChatGPT 到今天，每一次 AI 焦虑和它后来的结局。你可以不追。">
 <meta name="twitter:image" content="https://logitlong.github.io/anti-ai-anxiety/og.png">
 <link rel="canonical" href="https://logitlong.github.io/anti-ai-anxiety/">
+<script data-goatcounter="https://anti-ai-anxiety.goatcounter.com/count" data-goatcounter-settings='{"no_onload":true}' async src="https://gc.zgo.at/count.js"></script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -968,22 +969,22 @@ function pastList(){
 function you(){
   const t=T();
   $('#opts').innerHTML=t.opts.map((o,i)=>`<button type="button" class="opt" data-i="${i}" aria-pressed="${st.opt===i}">${esc(o.q)}</button>`).join('');
-  $('#opts').querySelectorAll('button').forEach(b=>b.onclick=()=>{st.opt=+b.dataset.i;you()});
+  $('#opts').querySelectorAll('button').forEach(b=>b.onclick=()=>{st.opt=+b.dataset.i;gc('worry-'+st.opt,1);you()});
   const o=t.opts[st.opt];
   $('#result').innerHTML=`<div style="color:var(--muted);font-size:13px">${esc(t.life_l)}</div><div class="big">${esc(o.life)}</div>
     <p style="margin:8px 0 0"><b>${esc(t.past)}</b>：${esc(t.times(o.n))}</p>
     <p style="margin:12px 0 0"><b>${esc(t.todo)}</b></p><ul>${o.tips.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
     <div class="card-out"><img id="card" alt=""><div class="card-act"><button type="button" id="c-x">${esc(t.c_x)}</button><button type="button" class="ghost" id="c-share">${esc(t.c_share)}</button><button type="button" class="ghost" id="c-save">${esc(t.c_save)}</button></div><p id="c-hint">${esc(t.card_hint)}</p></div>`;
   $('#c-save').onclick=saveCard;$('#c-share').onclick=shareCard;
-  $('#c-x').onclick=()=>postToX('#card','anti-ai-anxiety.png',t.c_text,$('#c-hint'));
+  $('#c-x').onclick=()=>postToX('#card','anti-ai-anxiety.png',t.c_text,$('#c-hint'),'worry');
   drawCard(o);
   pastList();
 }
 
 async function cardBlob(sel='#card'){const r=await fetch($(sel).src);return r.blob()}
 function saveImg(sel,name){const im=$(sel);if(!im||!im.src)return;const a=document.createElement('a');a.href=im.src;a.download=name;document.body.appendChild(a);a.click();a.remove()}
-function saveCard(){saveImg('#card','anti-ai-anxiety.png')}
-async function postToX(sel,name,text,hintEl,hash=''){const url=location.origin+location.pathname+hash;
+function saveCard(){gc('save-worry',1);saveImg('#card','anti-ai-anxiety.png')}
+async function postToX(sel,name,text,hintEl,ref,hash=''){const url=shareUrl('x-'+ref,hash);gc('x-'+ref,1);
   if(matchMedia('(pointer:coarse)').matches&&navigator.canShare){try{const b=await cardBlob(sel),f=new File([b],name,{type:'image/png'});
     if(navigator.canShare({files:[f]})){await navigator.share({files:[f],text:text+' '+url+' @'+XH});return}}catch(e){if(e&&e.name==='AbortError')return}}
   let copied=false;
@@ -997,7 +998,7 @@ function cardFooter(x,W,H,t,sans,serif){
   x.fillStyle='#625a4d';x.font=`400 20px ${sans}`;x.fillText(D.updated,W-56-x.measureText(D.updated).width,H-94);
   x.fillStyle='#625a4d';x.font=`500 20px ${sans}`;x.fillText(SITE_URL,56,H-54);
   x.fillStyle='#b0231b';x.font=`700 20px ${sans}`;const hd='X @'+XH;x.fillText(hd,W-56-x.measureText(hd).width,H-54);}
-async function shareCard(){const t=T(),url=location.origin+location.pathname;
+async function shareCard(){const t=T(),url=shareUrl('share-worry');gc('share-worry',1);
   try{const b=await cardBlob(),f=new File([b],'anti-ai-anxiety.png',{type:'image/png'});
     if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f],title:t.c_title,text:t.c_text+' '+url});return}
     if(navigator.share){await navigator.share({title:t.c_title,text:t.c_text,url});return}
@@ -1039,12 +1040,12 @@ function rcOut(){
   const msg=(sel.length?t.rc_share2:t.rc_share0).replace('{n}',sel.length).replace('{m}',money(c)).replace('{h}',h).replace('{t}',tier[0]);
   $('#rc-copy').textContent=t.rc_copy;$('#rc-all').textContent=t.rc_all;
   $('#rc-all').onclick=()=>{t.rc.forEach((_,i)=>rcSel.add(i));receipt()};
-  $('#rc-copy').onclick=async()=>{const url=location.origin+location.pathname+'#receipt';const txt=msg+' '+url;
+  $('#rc-copy').onclick=async()=>{const url=shareUrl('copy-receipt','#receipt');gc('copy-receipt',1);const txt=msg+' '+url;
     try{if(navigator.share&&matchMedia('(pointer:coarse)').matches){await navigator.share({text:txt});return}}catch(e){if(e&&e.name==='AbortError')return}
     try{await navigator.clipboard.writeText(txt);const b=$('#rc-copy');b.textContent=t.rc_copied;setTimeout(()=>{b.textContent=t.rc_copy},2000)}catch(e){}};
   $('#rc-x').textContent=t.c_x;$('#rc-save').textContent=t.rc_save;$('#rc-hint').textContent=t.card_hint;
-  $('#rc-x').onclick=()=>postToX('#rc-img','ai-receipt.png',msg,$('#rc-hint'),'#receipt');
-  $('#rc-save').onclick=()=>saveImg('#rc-img','ai-receipt.png');
+  $('#rc-x').onclick=()=>(gc('rank-'+t.rc_tiers.indexOf(tier),1),postToX('#rc-img','ai-receipt.png',msg,$('#rc-hint'),'receipt','#receipt'));
+  $('#rc-save').onclick=()=>{gc('save-receipt',1);gc('rank-'+t.rc_tiers.indexOf(tier),1);saveImg('#rc-img','ai-receipt.png')};
   drawReceipt(sel,c,h,eq,sl,tier);
 }
 let rcDrawN=0;
@@ -1095,6 +1096,12 @@ function footer(){const t=T();$('#foot1').textContent=t.foot1;$('#foot2').textCo
 
 function renderAll(){applyStatic();stats();seis();doors();filters();timeline();graves();deaths();jobs();voices();skills();feed();you();calm();receipt();jargon();footer()}
 
+// Stats (GoatCounter): each section counts as its own page; button presses count as events.
+const gcQ=[];let gcTry=0;
+function gc(path,ev){gcQ.push({path,title:ev?path:document.title,event:!!ev});gcFlush()}
+function gcFlush(){const g=window.goatcounter;if(g&&g.count){while(gcQ.length)try{g.count(gcQ.shift())}catch(e){}return}if(gcTry++<40)setTimeout(gcFlush,500)}
+function shareUrl(ref,hash=''){return location.origin+location.pathname+'?ref='+ref+hash}
+let lastView='';
 function route(){
   let h=location.hash.slice(1);if(h==='calm')h='you';
   const v=VIEWS.includes(h)?h:'home';
@@ -1103,9 +1110,10 @@ function route(){
   document.querySelectorAll('nav.tabs a').forEach(a=>{if(a.dataset.v===v)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   const cur=document.querySelector('nav.tabs a[aria-current]');if(cur)cur.scrollIntoView({block:'nearest',inline:'nearest'});
   window.scrollTo(0,0);
+  if(v!==lastView){lastView=v;gc(v==='home'?'/':'/'+v)}
 }
 
-document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>{lang=b.dataset.l;try{localStorage.setItem('lang',lang)}catch(e){};renderAll()});
+document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>{lang=b.dataset.l;try{localStorage.setItem('lang',lang)}catch(e){};gc('lang-'+lang,1);renderAll()});
 $('#f-pair').onclick=()=>{st.pair=!st.pair;filters();timeline()};
 $('#f-q').oninput=e=>{st.q=e.target.value;timeline()};
 $('#d-q').oninput=e=>{st.dq=e.target.value;st.dn=48;deaths()};
