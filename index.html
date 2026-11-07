@@ -38,8 +38,9 @@ button,input,select{font:inherit;color:inherit}
 .top .wrap{display:flex;align-items:center;flex-wrap:wrap;gap:6px 16px;padding-block:10px 8px}
 .brand{font-family:var(--display);font-weight:900;font-size:18px;letter-spacing:.02em;white-space:nowrap;text-decoration:none;color:var(--fg)}
 .brand b{color:var(--accent)}
-nav.tabs{display:flex;flex-wrap:wrap;gap:2px 4px;order:3;flex:1 0 100%;min-width:0;margin-left:-12px}
-@media (max-width:680px){nav.tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-left:0;-webkit-mask-image:linear-gradient(to right,#000 88%,transparent);mask-image:linear-gradient(to right,#000 88%,transparent)}}
+nav.tabs{display:flex;flex-wrap:wrap;gap:2px 4px;min-width:0;margin-left:-12px}
+.navbox{order:3;flex:1 0 100%;min-width:0;position:relative}
+@media (max-width:680px){nav.tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-left:0}}
 nav.tabs::-webkit-scrollbar{display:none}
 nav.tabs a{white-space:nowrap;text-decoration:none;color:var(--muted);padding:6px 12px;border-radius:999px;font-size:14px}
 nav.tabs a:hover{color:var(--fg)}
@@ -387,11 +388,21 @@ html[lang="en"] .short::after{content:"EXPIRED";font-family:var(--mono)}
 .rc-act button:not(.pri),.card-act button.ghost{background:none;color:var(--ink)}
 .card-out img{border:1px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
 .jg .box{font-size:16px}
+
+/* nav scroll cue */
+.nav-arr{display:none;position:absolute;top:0;bottom:0;z-index:2;width:34px;border:0;padding:0;font:700 28px/1 var(--display);color:var(--accent);cursor:pointer}
+.nav-arr.l{left:-4px;background:linear-gradient(to right,var(--bg) 60%,transparent);text-align:left}
+.nav-arr.r{right:-4px;background:linear-gradient(to left,var(--bg) 60%,transparent);text-align:right}
+.navbox.can-l .nav-arr.l,.navbox.can-r .nav-arr.r{display:block}
+.navbox.hint .nav-arr.r{animation:navnudge .9s ease-in-out 3}
+@keyframes navnudge{50%{transform:translateX(4px)}}
 </style>
 
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#home" data-i="brand">反 <b>AI</b> 焦虑</a>
+    <div class="navbox">
+    <button type="button" class="nav-arr l" aria-label="scroll left" tabindex="-1">‹</button>
     <nav class="tabs" aria-label="sections">
       <a href="#home" data-v="home" data-i="nav_home">首页</a>
       <a href="#today" data-v="today" data-i="nav_today">今天要不要慌</a>
@@ -406,6 +417,8 @@ html[lang="en"] .short::after{content:"EXPIRED";font-family:var(--mono)}
       <a href="#voices" data-v="voices" data-i="nav_voices">大佬言论</a>
       <a href="#skills" data-v="skills" data-i="nav_skills">开源与 Skill</a>
     </nav>
+    <button type="button" class="nav-arr r" aria-label="scroll right" tabindex="-1">›</button>
+    </div>
     <div class="lang" role="group" aria-label="Language">
       <button type="button" data-l="zh">中</button><button type="button" data-l="ja">日</button><button type="button" data-l="en">EN</button>
     </div>
@@ -979,6 +992,19 @@ matchMedia('(prefers-color-scheme: light)').addEventListener?.('change',()=>D&&s
 Promise.all(['events.json','graveyard.json','feed.json','deaths.json','voices.json','skills.json'].map(u=>fetch(u,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(u);return r.json()})))
  .then(([e,g,f,k,v,sk])=>{D=e;G=g;F=f;K=k;V=v;S=sk;D.events.sort((a,b)=>a.d.localeCompare(b.d));$('#loading').remove();renderAll();route();live()})
  .catch(err=>{$('#loading').textContent='数据加载失败 / Failed to load data: '+err.message});
+
+(function(){
+  const box=document.querySelector('.navbox'),n=box.querySelector('nav.tabs');
+  const upd=()=>{box.classList.toggle('can-l',n.scrollLeft>4);box.classList.toggle('can-r',n.scrollLeft+n.clientWidth<n.scrollWidth-4)};
+  n.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);
+  box.querySelector('.nav-arr.r').onclick=()=>n.scrollBy({left:n.clientWidth*.7,behavior:'smooth'});
+  box.querySelector('.nav-arr.l').onclick=()=>n.scrollBy({left:-n.clientWidth*.7,behavior:'smooth'});
+  new MutationObserver(upd).observe(n,{subtree:true,childList:true,characterData:true});
+  setTimeout(()=>{upd();let seen=false;try{seen=sessionStorage.getItem('navhint')}catch(e){}
+    if(!seen&&box.classList.contains('can-r')&&n.scrollLeft<4){box.classList.add('hint');
+      n.scrollTo({left:70,behavior:'smooth'});setTimeout(()=>n.scrollTo({left:0,behavior:'smooth'}),700);
+      setTimeout(()=>box.classList.remove('hint'),2800);try{sessionStorage.setItem('navhint','1')}catch(e){}}},600);
+})();
 </script>
 
 </body>
