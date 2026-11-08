@@ -6671,7 +6671,22 @@
     "ja": "OpenAI史上最大の一斉廃止：GPT-3.5 Turbo、初代GPT-4、o1など",
     "en": "OpenAI's biggest cull: GPT-3.5 Turbo, original GPT-4, o1 and more retire the same day"
    },
-   "src": "https://killedbyai.net/"
+   "src": "https://killedbyai.net/",
+   "f": {
+    "zh": "GPT-3.5、初代 GPT-4、o1 同一天全退役，大家慌手里的旧工作流和 API 一夜断掉",
+    "ja": "GPT-3.5や初代GPT-4、o1が同日に全廃止され、古いワークフローやAPIが一夜で止まるのではと騒がれた",
+    "en": "GPT-3.5, the original GPT-4 and o1 all retired on the same day, and people worried their old workflows and API calls would break overnight"
+   },
+   "o": {
+    "zh": "退役按期完成，之后没再出相关风波，用户大多已提前迁到新模型",
+    "ja": "廃止は予定通り完了し、その後の騒ぎはなく、多くのユーザーは事前に新モデルへ移行済みだった",
+    "en": "The retirement went ahead as scheduled with no further fallout; most users had already migrated to newer models"
+   },
+   "life": {
+    "zh": "约 1 周",
+    "ja": "約1週間",
+    "en": "~1 week"
+   }
   },
   {
    "d": "2026-10-25",
@@ -6754,7 +6769,22 @@
     "en": "Baidu VP and ERNIE technical lead Wu Tian leaves"
    },
    "src": "https://app.myzaker.com/article/6ae419fc8e9f09781a63b5d4",
-   "v": 1
+   "v": 1,
+   "f": {
+    "zh": "文心大模型技术负责人离职，大家慌百度 AI 要掉队",
+    "ja": "文心大モデルの技術責任者が退職し、百度のAIが遅れるのではと騒がれた",
+    "en": "The tech lead behind Baidu's Ernie models left, and people worried Baidu's AI was falling behind"
+   },
+   "o": {
+    "zh": "离职已成事实，但百度照常运转，11 月 5 日还开源了文心 5.5 Flash Base",
+    "ja": "退職は事実となったが百度は通常運転で、11月5日には文心5.5 Flash Baseをオープンソース化した",
+    "en": "The departure stood, but Baidu carried on as usual and open-sourced Ernie 5.5 Flash Base on November 5"
+   },
+   "life": {
+    "zh": "约 1 周",
+    "ja": "約1週間",
+    "en": "~1 week"
+   }
   },
   {
    "d": "2026-10-29",
@@ -6871,6 +6901,32 @@
     "en": "METR report: Anthropic's AI-assisted R&D is improving models about twice as fast"
    },
    "src": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+  },
+  {
+   "d": "2026-11-07",
+   "r": "cn",
+   "c": "shutdown",
+   "p": 3,
+   "t": {
+    "zh": "腾讯 AI 助手 QClaw 宣布停运，12 月 24 日停止服务，用户迁往 WorkBuddy",
+    "ja": "テンセントのAIアシスタントQClawが終了へ、12月24日にサービス停止",
+    "en": "Tencent's AI assistant QClaw to shut down on December 24, users move to WorkBuddy"
+   },
+   "src": "https://www.36kr.com/p/3997508606972040",
+   "ind": "office"
+  },
+  {
+   "d": "2026-11-07",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "微软 AI Frontiers 研究组解散，负责人 John Langford 离职",
+    "ja": "マイクロソフトのAI Frontiersが解散、責任者ジョン・ラングフォード氏が退職",
+    "en": "Microsoft's AI Frontiers research group dissolves as leader John Langford departs"
+   },
+   "src": "https://dev.to/gabrielanhaia/the-microsoft-lab-that-worked-on-autogen-is-over-autogen-already-gets-no-security-fixes-281",
+   "ind": "sci"
   }
  ]
 }

@@ -1,7 +1,103 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-07",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "腾讯 AI 助手 QClaw 宣布停运：12 月 24 日停止服务，用户迁往 WorkBuddy",
+    "ja": "テンセントのAIアシスタントQClawが終了へ、12月24日にサービス停止",
+    "en": "Tencent's AI assistant QClaw to shut down on December 24, users move to WorkBuddy"
+   },
+   "why": {
+    "zh": "上线才半年就退场，听着像 AI 产品朝生暮死，但这次有明确去处：官方给了迁移工具和 1000 积分补贴，数据能在明年 3 月前备份。照着迁移走就行，不用为一时的“赛马失败”焦虑——大厂收拢产品线是常态，不是 AI 要凉了。",
+    "ja": "半年で終了と聞くとAI製品の短命さを感じるが、移行ツールと1000ポイントの補助があり、データも来年3月までバックアップ可能。移行すれば済む話で、大手の製品整理は日常茶飯事だ。",
+    "en": "A shutdown after just six months sounds like AI products die fast, but there's a clear off-ramp: an official migration tool, 1,000 bonus points, and data backup until next March. Just migrate — big companies consolidating product lines is routine, not a sign AI is fading."
+   },
+   "src": "https://www.36kr.com/p/3997508606972040"
+  },
+  {
+   "d": "2026-11-07",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "微软 AI Frontiers 研究组解散，负责人 John Langford 离职：称“有点像火车脱轨”",
+    "ja": "マイクロソフトのAI Frontiersが解散、責任者ジョン・ラングフォード氏が退職",
+    "en": "Microsoft's AI Frontiers research group dissolves as leader John Langford departs"
+   },
+   "why": {
+    "zh": "一个 50 人的前沿研究组被并入以“规模化”为主的 Microsoft AI，创始人觉得做不了原创研究就走了。听着像大厂不搞研究了，但 AutoGen 这些开源项目还在，微软只是把研究换了个地方做。对普通人来说，模型照常用，不用替研究员的去留焦虑。",
+    "ja": "約50人の先端研究グループがスケール重視のMicrosoft AIに吸収され、創設者は独自研究ができないと退職した。AutoGenなどオープンソースは残っており、研究の場所が変わっただけ。一般ユーザーはモデルを使い続ければよく、心配はいらない。",
+    "en": "A ~50-person frontier research group was folded into Microsoft AI, which prioritizes scaling over research, so its founder left. AutoGen and the other open-source projects remain; the research just moved house. For ordinary users, the models keep working — no need to worry about researchers' career moves."
+   },
+   "src": "https://dev.to/gabrielanhaia/the-microsoft-lab-that-worked-on-autogen-is-over-autogen-already-gets-no-security-fixes-281"
+  },
+  {
+   "d": "2026-11-07",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "微软逐步终止向甲骨文租用 AI 算力：老款英伟达芯片已跟不上，甲骨文股价一度跳水",
+    "ja": "マイクロソフトがオラクルからのAI計算資源リースを段階終了へ、旧型GPUが規格外に",
+    "en": "Microsoft winds down Oracle AI compute lease as older Nvidia chips fall short"
+   },
+   "why": {
+    "zh": "微软嫌甲骨文的老卡不够新，转头向 CoreWeave 这些新云厂商砸了 800 多亿美元，甲骨文股价应声跌了几个点。算力租赁这行就是谁新谁吃香，旧卡退租不代表 AI 需求降温——甲骨文自己还说旧 GPU 续租反而涨价 20%。普通人看个热闹就行。",
+    "ja": "マイクロソフトはオラクルの旧型GPUが規格外だとして契約を更新せず、CoreWeaveなど新興クラウドに800億ドル超を投じた。オラクル株は一時下落したが、同社は旧GPUの更新価格が20%上がったとも言っている。需要が冷えたわけではなく、借り手が新しいカードに乗り換えただけだ。",
+    "en": "Microsoft decided Oracle's older GPUs no longer meet its specs and shifted $80B+ of compute spending to newer cloud vendors, sending Oracle's stock down a few points. That's the compute-rental business: newest hardware wins. Oracle itself says renewals on old GPUs cost 20% more — demand isn't cooling, it's just moving to newer chips."
+   },
+   "src": "https://finance.ifeng.com/c/8xrpjLQfSym"
+  },
+  {
+   "d": "2026-11-07",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "AI 三天证出 18 年未解的量子猜想：Aaronson-Ambainis 猜想被 PSI 的研究系统攻克",
+    "ja": "AIが18年未解決の量子予想を3日で証明、Aaronson-Ambainis予想が解決",
+    "en": "AI proves 18-year-old quantum conjecture in three days"
+   },
+   "why": {
+    "zh": "一个悬了 18 年的量子计算数学难题，被 AI 研究系统三天证出来了，听着像数学家要失业。但证明还只是内部审核、没经过同行评审，而且 AI 是在人类搭好的思路上推进的。普通人不用慌：AI 当科研助手是好事，离“AI 自己搞定一切”还远。",
+    "ja": "18年未解決だった量子計算の数学予想を、AI研究システムが3日で証明した。数学者が不要になるように聞こえるが、証明は内部監査のみで査読はまだ。人間が組んだ筋道の上でAIが進めたものだ。AIが研究の助手になるのは歓迎すべきことで、すべてをAIがやる時代はまだ遠い。",
+    "en": "An 18-year-old quantum computing conjecture was proved in three days by an AI research system. It sounds like mathematicians are done for — but the proof has only had an internal audit, no peer review yet, and the AI advanced along a plan humans laid out. AI as a research assistant is good news; 'AI does everything itself' is still far off."
+   },
+   "src": "https://psi.inc/research/aaronson-ambainis/index.html"
+  },
+  {
+   "d": "2026-11-07",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "人形机器人公司 Agility 登陆纳斯达克：估值 25 亿美元，半年收入只有 17.4 万美元",
+    "ja": "ヒューマノイドのAgilityがナスダック上場、評価額25億ドルに対し半年売上は17.4万ドル",
+    "en": "Humanoid maker Agility lists on Nasdaq at a $2.5B valuation on $174K of half-year revenue"
+   },
+   "why": {
+    "zh": "美国第一家纯人形机器人上市公司，Digit 机器人已经在仓库里干活了，但半年收入才 17.4 万美元，估值却 25 亿——典型的“先讲故事后交货”。机器人进工厂是慢变量，不是一夜抢饭碗。普通人不用为股价焦虑，更不用为“机器人要来了”焦虑。",
+    "ja": "米国初の純粋ヒューマノイド上場企業。Digitは倉庫で稼働中だが、半年売上は17.4万ドルに対し評価額は25億ドルと、典型的な「まず物語、納品は後」だ。ロボットの現場導入はゆっくり進む話で、株価や「ロボットが来る」不安に付き合う必要はない。",
+    "en": "The first US-listed pure-play humanoid company: Digit robots already work in warehouses, but half-year revenue was just $174K against a $2.5B valuation — a classic 'story first, delivery later' listing. Robots entering factories is a slow-moving story, not an overnight job grab. No need to fret over the stock or the robot scare."
+   },
+   "src": "https://the-gadgeteer.com/2026/11/07/agility-digit-humanoid-goes-public/"
+  },
+  {
+   "d": "2026-11-07",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "据报道月之暗面下一代 Kimi K4 参数达 5.4 万亿，2027 年二季度问世",
+    "ja": "報道：月之暗面の次期Kimi K4は5.4兆パラメータ、2027年第2四半期登場か",
+    "en": "Report: Moonshot's next Kimi K4 to reach 5.4 trillion parameters in Q2 2027"
+   },
+   "why": {
+    "zh": "野村证券的报告被曝出来：K4 参数 5.4 万亿，差不多是 K3 的两倍，目标是追上 Mythos/Fable 级别。但这只是爆料、官方没认，发布时间还是明年年中。参数大不等于好用，普通人等它真发了再看也不迟。",
+    "ja": "野村証券の報告とされる話で、K4はK3の約2倍の5.4兆パラメータとなり、Mythos/Fable級を狙うという。ただし公式発表ではなく、登場も来年半ば。パラメータの大きさが使いやすさとイコールではないので、出てから見れば十分だ。",
+    "en": "A reported Nomura note says K4 will hit 5.4 trillion parameters — about twice K3 — aiming at Mythos/Fable class. But it's a leak, not an official announcement, and the launch is still mid-2027. Bigger parameters don't equal better to use, so there's no rush to care until it actually ships."
+   },
+   "src": "https://finance.sina.com.cn/tech/roll/2026-11-07/doc-inixwxpy4737489.shtml"
+  },
   {
    "d": "2026-11-06",
    "verdict": "skip",
