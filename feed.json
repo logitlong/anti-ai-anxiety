@@ -1,7 +1,119 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-08",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "英伟达董事会调查黄仁勋与疑似中国间谍的关系，黄仁勋承认曾有婚外情",
+    "ja": "エヌビディア取締役会、フアンCEOと中国スパイ疑惑の関係を調査",
+    "en": "Nvidia board investigates CEO Jensen Huang's ties to alleged Chinese spy"
+   },
+   "why": {
+    "zh": "板子打在八卦和地缘政治上，不是芯片上：董事会明说没有理由相信国家安全或公司机密泄露，调查由独立董事牵头。显卡价格看的是供需不是绯闻，不用跟着抢购。",
+    "ja": "問題はゴシップと地政学であって、チップそのものではない。取締役会は国家安全や企業機密の漏洩を信じる理由はないとしており、調査は独立取締役が主導する。GPUの値段を決めるのは需給であってスキャンダルではないので、慌てて買い急ぐ必要はない。",
+    "en": "This is gossip and geopolitics, not the chips: the board says it has no reason to believe national security or company secrets were compromised, and independent directors are running the probe. GPU prices follow supply and demand, not scandals — no need to panic-buy."
+   },
+   "src": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/"
+  },
+  {
+   "d": "2026-11-08",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "OpenAI 11 月 12 日起断供 Cursor：SpaceX 收购后的信任决裂",
+    "ja": "OpenAI、11月12日からCursorへのモデル提供を停止へ",
+    "en": "OpenAI to cut off Cursor's model access on November 12"
+   },
+   "why": {
+    "zh": "断的只是 OpenAI 这一家，约占 Cursor 流量的 5%，Claude、Gemini、Grok 都还在，Anthropic 还表态要加算力支援。用 Cursor 的话，11 月 12 日前在设置里把模型切到 Claude 或 Gemini 就行；不用 Cursor 的，看看奥特曼和马斯克的恩怨局就好。",
+    "ja": "止まるのはOpenAIのモデルだけで、Cursorの利用量の約5%にすぎない。ClaudeもGeminiもGrokも使えるし、Anthropicは支援を増やすと表明している。Cursorユーザーは11月12日までにモデルをClaudeやGeminiに切り替えればいい。使っていない人は、壮大な確執劇として眺めていれば十分だ。",
+    "en": "Only OpenAI's models are affected — about 5% of Cursor's traffic — while Claude, Gemini and Grok keep working, and Anthropic has offered extra compute support. If you use Cursor, switch your model to Claude or Gemini before November 12; if you don't, this is just the Altman–Musk feud playing out in public."
+   },
+   "src": "https://blog.ainetix.com/posts/cursor-spacex-60-billion-openai-model-cutoff-november-12-inkling2-thinking-machines"
+  },
+  {
+   "d": "2026-11-08",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "腾讯元器明天正式停服：在上面搭的智能体将不再响应",
+    "ja": "テンセント「元器」、明日11月9日にサービス終了",
+    "en": "Tencent's Yuanqi agent platform shuts down tomorrow, November 9"
+   },
+   "why": {
+    "zh": "停服是 10 月 8 日就公告了的，今天只是最后一天倒计时：停服后智能体不再响应，但数据能导出到明年 1 月 9 日，官方也给了迁往腾讯云 ADP 的指引。还在元器上跑着东西的人，今天花十分钟导出备份、按指引迁移就行。",
+    "ja": "終了自体は10月8日に発表済みで、今日は最後のカウントダウンだ。停止後はエージェントが応答しなくなるが、データは来年1月9日までエクスポートでき、テンセントクラウドADPへの移行ガイドも出ている。まだ元器を使っている人は今日10分でバックアップを取り、ガイドに沿って移行すればいい。",
+    "en": "The shutdown was announced on October 8 — today is just the final countdown. Agents will stop responding, but data can be exported until January 9 and Tencent offers a migration guide to its ADP platform. If you still run something on Yuanqi, spend ten minutes today exporting a backup and follow the guide."
+   },
+   "src": "https://news.pedaily.cn/202611/571383.shtml"
+  },
+  {
+   "d": "2026-11-08",
+   "verdict": "skip",
+   "panic": 1,
+   "t": {
+    "zh": "Uber 财报：AI Agent 最繁忙的一周，只替人订了 4 单车",
+    "ja": "Uber決算：AIエージェント経由の配車は最も忙しい週でもわずか4件",
+    "en": "Uber earnings: AI agents ordered just 4 rides in their busiest week"
+   },
+   "why": {
+    "zh": "喊了这么久的「AI 替你订车订餐订旅行」，落到财报里就是一周 4 单——Agent 还没抢走任何人的饭碗，连打车这件小事都还没学会。安心打自己的车，让子弹再飞一会儿。",
+    "ja": "「AIが代わりに配車も旅行も手配する」と騒がれてきたが、決算に出てきた数字は最も忙しい週でわずか4件。エージェントはまだ誰の仕事も奪っていないし、配車すら満足にこなせていない。慌てる必要はまったくない。",
+    "en": "After all the hype about AI agents booking your rides, trips and dinners, the earnings call says it all: four rides in the busiest week. Agents haven't taken anyone's job — they haven't even mastered hailing a cab yet. Relax."
+   },
+   "src": "https://techcrunch.com/2026/11/08/techcrunch-mobility-the-cybertruck-experiment-is-over/"
+  },
+  {
+   "d": "2026-11-07",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "OpenAI 首笔 110 亿美元到账、估值 1.25 万亿美元，不到原目标的一半",
+    "ja": "OpenAI、110億ドルを調達——当初の目標の半分以下",
+    "en": "OpenAI closes first $11B at a $1.25T valuation — less than half its original target"
+   },
+   "why": {
+    "zh": "连 OpenAI 找钱都得打折：原想融 300 亿美元、估值 1.4–1.5 万亿，结果首笔只到账 110 亿、估值 1.25 万亿。这说明 AI 的钱开始讲价了，但不是 AI 要完了——110 亿美元照样是天文数字，软银和 MGX 都掏了钱。",
+    "ja": "OpenAIですら資金調達で値引きを迫られた。300億ドル・評価額1.4〜1.5兆ドルを目指したが、最初の入金は110億ドル・評価額1.25兆ドルにとどまった。AIマネーが値切り始めた証拠だが、AIが終わったわけではない。110億ドルは依然として天文学的な金額で、ソフトバンクやMGXも出資している。",
+    "en": "Even OpenAI has to haggle now: it wanted $30 billion at a $1.4–1.5 trillion valuation and got an $11 billion first close at $1.25 trillion. That means AI money is getting picky, not that AI is over — $11 billion is still an astronomical sum, and SoftBank and MGX both joined."
+   },
+   "src": "https://www.unite.ai/openai-secures-11b-in-initial-funding-at-1-25t-valuation/"
+  },
+  {
+   "d": "2026-11-07",
+   "verdict": "skip",
+   "panic": 1,
+   "t": {
+    "zh": "谷歌接手 Crusoe 怀俄明数据中心烂尾项目，再投 170 亿美元",
+    "ja": "Google、Crusoeのワイオミング・データセンターを引き継ぎ170億ドルを追加投資",
+    "en": "Google takes over Crusoe's unfinished Wyoming data center, pledges $17B"
+   },
+   "why": {
+    "zh": "故事不是「AI 数据中心不行了」，而是「盖楼这事太难了」：Crusoe 成本和工期都兜不住，谷歌干脆自己接手、掏 170 亿美元继续盖。AI 算力需求还在，只是瓶颈从芯片挪到了电和工地，普通人不用关心谁家工地转手。",
+    "ja": "これは「AIデータセンターがダメになった」という話ではなく、「建てるのが難しすぎる」という話だ。コストと工期を抱えきれなくなったCrusoeからGoogleが引き継ぎ、170億ドルを投じて建設を続ける。AIの計算需要は健在で、ボトルネックがチップから電力と工事現場に移っただけだ。",
+    "en": "This isn't 'AI data centers are failing' — it's 'building them is really hard': Crusoe couldn't hold the cost and timeline, so Google took over and put $17 billion behind finishing the campus. Demand for AI compute is still there; the bottleneck just moved from chips to power and construction sites."
+   },
+   "src": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
+  },
+  {
+   "d": "2026-11-07",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "Claude Code「不再询问」会把含密码的命令存进设置文件：1122 份已在 GitHub 公开泄露",
+    "ja": "Claude Codeの「今後確認しない」がパスワード付きコマンドを保存：1122件がGitHubで公開漏洩",
+    "en": "Claude Code's 'don't ask again' saved password-bearing commands: 1,122 files leaked publicly on GitHub"
+   },
+   "why": {
+    "zh": "不是模型偷了你的密钥，是你点「以后别再问」时，工具把整条带密码的命令原样写进了项目设置文件，有人顺手提交到了公开仓库。用 Claude Code 的人今天就做两件事：搜一下自己仓库里有没有 .claude/settings.local.json，把它加进 .gitignore，并轮换掉所有进过这个文件的密钥。",
+    "ja": "モデルが鍵を盗んだのではない。「今後確認しない」を押したとき、ツールがパスワード入りのコマンドをそのままプロジェクトの設定ファイルに書き込み、それが公開リポジトリに上がってしまった。Claude Codeを使っている人は今日、自分のリポジトリに.claude/settings.local.jsonがないか確認し、.gitignoreに追加して、そのファイルに入ったことのある鍵をすべてローテーションしよう。",
+    "en": "The model didn't steal your keys — clicking 'don't ask again' writes the whole command, password included, into a project settings file, and some people committed it to public repos. If you use Claude Code, do two things today: search your repos for .claude/settings.local.json, add it to .gitignore, and rotate any credential that ever passed through that file."
+   },
+   "src": "https://cybernoz.com/claude-codes-dont-ask-again-file-exposes-passwords-and-keys-in-1122-public-copies-on-github/"
+  },
   {
    "d": "2026-11-07",
    "verdict": "skip",

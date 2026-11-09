@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "events": [
   {
    "d": "2022-11-30",
@@ -6927,6 +6927,19 @@
    },
    "src": "https://dev.to/gabrielanhaia/the-microsoft-lab-that-worked-on-autogen-is-over-autogen-already-gets-no-security-fixes-281",
    "ind": "sci"
+  },
+  {
+   "d": "2026-11-08",
+   "r": "us",
+   "c": "shutdown",
+   "p": 3,
+   "t": {
+    "zh": "OpenAI 拟于 11 月 12 日断供 Cursor：SpaceX 收购后的信任决裂",
+    "ja": "OpenAI、11月12日にCursorへのモデル提供を停止へ：SpaceX買収後の信頼決裂",
+    "en": "OpenAI plans to cut off Cursor's model access on Nov 12 after SpaceX acquisition"
+   },
+   "src": "https://blog.ainetix.com/posts/cursor-spacex-60-billion-openai-model-cutoff-november-12-inkling2-thinking-machines",
+   "ind": "code"
   }
  ]
 }
