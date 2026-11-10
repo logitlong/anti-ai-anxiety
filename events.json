@@ -6444,7 +6444,22 @@
     "ja": "テンセント元器が11/9終了を発表",
     "en": "Tencent's Yuanqi agent platform says it will shut on Nov 9"
    },
-   "src": "https://www.huxiu.com/article/4897295.html"
+   "src": "https://www.huxiu.com/article/4897295.html",
+   "f": {
+    "zh": "在元器上搭好的智能体要停了，迁移和数据怎么办",
+    "ja": "元器で作ったエージェントが止まる、移行やデータはどうなるのか",
+    "en": "Agents built on Yuanqi were about to stop — what about migration and data?"
+   },
+   "o": {
+    "zh": "11月9日如期停服，存量智能体停止响应，用户迁往腾讯云 ADP，数据可导出至2027年1月9日",
+    "ja": "11月9日に予定通りサービス終了。既存エージェントは応答を停止し、ユーザーはテンセントクラウドADPへ移行、データは2027年1月9日までエクスポート可能",
+    "en": "It shut down on schedule on Nov 9; existing agents stopped responding, users moved to Tencent Cloud ADP, and data stayed exportable until Jan 9, 2027"
+   },
+   "life": {
+    "zh": "约1个月",
+    "ja": "約1か月",
+    "en": "~1 month"
+   }
   },
   {
    "d": "2026-10-08",
@@ -6939,6 +6954,32 @@
     "en": "OpenAI plans to cut off Cursor's model access on Nov 12 after SpaceX acquisition"
    },
    "src": "https://blog.ainetix.com/posts/cursor-spacex-60-billion-openai-model-cutoff-november-12-inkling2-thinking-machines",
+   "ind": "code"
+  },
+  {
+   "d": "2026-11-09",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2，降价两成登顶跑分榜",
+    "ja": "Anthropic、Claude Fable 5.2とMythos 5.2を発表、2割値下げでベンチマーク首位に",
+    "en": "Anthropic launches Claude Fable 5.2 and Mythos 5.2, 20% cheaper and top of the benchmarks"
+   },
+   "src": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+   "ind": "code"
+  },
+  {
+   "d": "2026-11-09",
+   "r": "us",
+   "c": "model",
+   "p": 2,
+   "t": {
+    "zh": "Meta 发布最小模型 Muse Ember，专做 Agent 的重复活",
+    "ja": "Meta、最小モデルMuse Emberを発表、エージェントの繰り返し作業専用",
+    "en": "Meta releases Muse Ember, its smallest model, built for agents' repetitive work"
+   },
+   "src": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
    "ind": "code"
   }
  ]
