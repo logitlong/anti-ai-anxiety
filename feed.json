@@ -1,7 +1,71 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-10",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "谷歌最强模型 Gemini 4 Carbon 全面开放：入门价 2 美元，11 月 30 日后翻倍",
+    "ja": "Google 最強モデル Gemini 4 Carbon が全面公開：導入価格は2ドル、11月30日以降は倍に",
+    "en": "Google's strongest model Gemini 4 Carbon goes fully public: $2 intro price, doubling after Nov 30"
+   },
+   "why": {
+    "zh": "普通人不用急：免费版和 Pro 套餐暂时还用不上，只有付费 API 和最贵的 Ultra 才能用。开发者倒是可以趁 11 月 30 日前 2 美元的入门价先试试，12 月 1 日起就变 4 美元了——这波是谷歌在提醒你，旗舰模型只会越来越贵，早用早便宜。",
+    "ja": "一般ユーザーは急ぐ必要なし。無料版や Pro ではまだ使えず、使えるのは有料 API と最上位 Ultra のみ。開発者なら 11 月 30 日までの導入価格 2 ドルで試す価値あり。12 月 1 日からは 4 ドルに倍増——最上位モデルは値上がりする一方、ということ。",
+    "en": "No rush for most people: it's not on the free or Pro tiers yet — only the paid API and the priciest Ultra plan. Developers can try it at the $2 intro rate before Nov 30; from Dec 1 it doubles to $4. The message is simple: flagship models only get pricier, so try early if you need it."
+   },
+   "src": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+  },
+  {
+   "d": "2026-11-10",
+   "verdict": "wait",
+   "panic": 2,
+   "t": {
+    "zh": "Claude 开会了：能进视频会议边听边干活，还附赠表格和白板",
+    "ja": "Claude が会議に参加：聞きながら作業し、表計算とホワイトボードも追加",
+    "en": "Claude joins your meetings: listens in, works live, plus Sheets and Whiteboards"
+   },
+   "why": {
+    "zh": "先别急着换办公套件：会议功能还在测试版、只对 Team 和 Enterprise 开放，而且首批只支持 Google Meet。表格和白板也是付费版测试。等它向所有付费用户开放、你开会真觉得记笔记累的时候再试也不迟。",
+    "ja": "オフィススイートを乗り換えるのはまだ早い。会議機能はベータ版で Team・Enterprise 限定、最初は Google Meet のみ。表計算とホワイトボードも有料プランのベータだ。一般の有料ユーザーに広がって、議事録作りが本当に面倒だと感じてから試せば十分。",
+    "en": "Don't switch office suites yet: Meetings is in beta for Team and Enterprise only, and Google Meet only at launch. Sheets and Whiteboards are also paid-plan betas. Wait until it reaches all paid users and note-taking actually feels like a chore."
+   },
+   "src": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
+  },
+  {
+   "d": "2026-11-10",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "ChatGPT 变身企业黄页：商家能认领主页，还能派 AI 客服来接待你",
+    "ja": "ChatGPT が企業名鑑に：店舗が公式ページを持ち、AI 店員が接客",
+    "en": "ChatGPT turns into a business directory: firms claim profiles and send AI agents to greet you"
+   },
+   "why": {
+    "zh": "对普通用户就是多了一个查商家的入口，聊天里冒出来的商家 AI 是来卖东西的，记得它不是中立顾问。对开店的人来说倒是免费认领、值得顺手登记一个，真正能派上用场的 AI 客服目前只对美国电商开放。",
+    "ja": "一般ユーザーにとっては店探しの入口が一つ増えただけ。チャットに出てくる企業の AI は物を売るためのもの、中立な相談相手ではないと覚えておこう。店をやっている人なら無料で登録できるので、ついでに押さえておく価値はある。本格的な AI 接客は今のところ米国の EC 限定。",
+    "en": "For most users it's just one more way to look up a business — and the business AI that pops up in chat is there to sell, not to advise neutrally. If you run a shop, claiming the free profile is worth a minute; the full AI agent is US e-commerce only for now."
+   },
+   "src": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/"
+  },
+  {
+   "d": "2026-11-10",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "Anthropic 上市定价出炉：拟募资最高 644 亿美元，估值约 1 万亿美元",
+    "ja": "Anthropic の上場条件が判明：最大 644 億ドル調達、評価額は約 1 兆ドル",
+    "en": "Anthropic's IPO pricing lands: up to $64.4B raise, ~$1T valuation"
+   },
+   "why": {
+    "zh": "看个热闹就行：先是传出募资 693 亿美元、随后被撤回说是数字有误，改成 644 亿美元——连招股书都会发错版，说明这场史上最大 IPO 之一也在边走边改。普通人不用跟，更不用因此觉得 AI 要变天。",
+    "ja": "見物だけで十分。最初は 693 億ドル調達と報じられたが、数字の誤りで撤回され、644 億ドルに修正された。目論見書すら差し替えになるほど、史上最大級の IPO も走りながら修正中。一般の人が追う必要はなく、AI が変わるわけでもない。",
+    "en": "Just watch the show: first it was a $69.3B raise, then that was retracted as incorrect and corrected to $64.4B — even the prospectus needed a do-over, so one of the biggest IPOs ever is being fixed on the fly. No need for ordinary people to follow it, and it doesn't change AI itself."
+   },
+   "src": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/"
+  },
   {
    "d": "2026-11-09",
    "verdict": "skip",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-11",
  "events": [
   {
    "d": "2022-11-30",
@@ -6980,6 +6980,19 @@
     "en": "Meta releases Muse Ember, its smallest model, built for agents' repetitive work"
    },
    "src": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+   "ind": "code"
+  },
+  {
+   "d": "2026-11-10",
+   "r": "us",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "谷歌最强模型 Gemini 4 Carbon 全面开放，入门价 2 美元、11 月 30 日后翻倍",
+    "ja": "Google 最強モデル Gemini 4 Carbon が全面公開、導入価格 2 ドル・11月30日以降は倍に",
+    "en": "Google's strongest model Gemini 4 Carbon goes fully public; $2 intro price doubles after Nov 30"
+   },
+   "src": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
    "ind": "code"
   }
  ]
