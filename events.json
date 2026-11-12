@@ -6994,6 +6994,19 @@
    },
    "src": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
    "ind": "code"
+  },
+  {
+   "d": "2026-11-11",
+   "r": "cn",
+   "c": "model",
+   "p": 3,
+   "t": {
+    "zh": "阿里发布新一代旗舰模型 Qwen4-Max 预览版，100 万上下文、限时 15 天",
+    "ja": "アリババ、次世代旗艦モデル Qwen4-Max のプレビュー公開、100万トークン・15日間限定",
+    "en": "Alibaba previews flagship Qwen4-Max, 1M context, available for 15 days only"
+   },
+   "src": "https://cn.technode.com/post/2026-11-11/alibaba-qwen4-max-preview/",
+   "ind": "code"
   }
  ]
 }

@@ -1,7 +1,87 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-11",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "阿里 Qwen4 来了：旗舰 Qwen4-Max 开放预览，100 万上下文、11 月 25 日就下线",
+    "ja": "アリババ Qwen4 登場：最上位 Qwen4-Max がプレビュー公開、100万トークン対応・11月25日で終了",
+    "en": "Alibaba's Qwen4 arrives: flagship Qwen4-Max opens in preview, 1M context, gone Nov 25"
+   },
+   "why": {
+    "zh": "不用追：这只是 15 天的限时预览，没有跑分、没有定价，11 月 25 日到期就下线，连正式版什么时候来都没说。普通用户在千问 App 里免费点开玩玩就够了，开发者也别急着往生产环境里接，等正式版和跑分出来再说。",
+    "ja": "追う必要なし。これは15日間限定のプレビューで、ベンチマークも価格も未公表、11月25日に終了して正式版の時期も未定。一般ユーザーは Qwen アプリで無料で触れれば十分。開発者も本番導入は正式版とベンチマークを待ってからでいい。",
+    "en": "No need to chase this: a 15-day preview with no benchmarks, no price, and it retires Nov 25 with no date for the full release. Ordinary users can just poke at it free in the Qwen app; developers should wait for the real release and benchmarks before wiring it into production."
+   },
+   "src": "https://cn.technode.com/post/2026-11-11/alibaba-qwen4-max-preview/"
+  },
+  {
+   "d": "2026-11-11",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "谷歌出了个“只做选择题”的模型：一次判 1000 道题，答案直接给概率",
+    "ja": "Google が「選択肢だけ答える」モデル公開：1,000問を一度に判定、答えは確率で返す",
+    "en": "Google ships a model that only answers multiple-choice: 1,000 questions in one pass, answers as probabilities"
+   },
+   "why": {
+    "zh": "跟普通人没关系，这是给开发者用的新 API：模型不写文章，只对选择题打分，适合批量审核、分类这种活。一次能判 1000 道题、每百万 Token 只要 1 毛钱，说明大厂开始把模型拆成“专才”卖了——你该用的聊天助手一个也不会少。",
+    "ja": "一般ユーザーには関係なし。これは開発者向けの新 API で、文章を書かず選択肢に点数を付けるもの。大量の審査や分類に向いていて、1,000問を一度に判定でき、100万トークンあたり10セント。大手がモデルを「専門家」に切り分け始めた、という話。あなたのチャット相手が減るわけではない。",
+    "en": "Nothing for ordinary users — this is a developer API: instead of writing text, the model scores options, built for bulk review and classification. It judges 1,000 questions in one request at $0.10 per million tokens. The takeaway is that big labs are splitting models into specialists; your chatbot isn't going anywhere."
+   },
+   "src": "https://xenospectrum.com/en/gemini-decisions-api/"
+  },
+  {
+   "d": "2026-11-11",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "DeepMind 发布 AlphaGenome 2：能预测 DNA 变异在不同细胞里怎么捣乱",
+    "ja": "DeepMind が AlphaGenome 2 を発表：DNA 変異が細胞ごとにどう働くかを予測",
+    "en": "DeepMind unveils AlphaGenome 2: predicts how DNA variants act differently in each cell type"
+   },
+   "why": {
+    "zh": "这是给科研人员用的基因组模型，只开放非商业研究，离看病、体检还远得很。普通人不用懂也不用追，知道“AI 又往生物学里钻了一步”就够了。",
+    "ja": "研究者向けのゲノムモデルで、非商業研究にのみ開放。診察や健康診断とはまだ無縁。一般ユーザーは「AI がまた生物学に一歩踏み込んだ」と知るだけで十分。",
+    "en": "A genome model for researchers, open for non-commercial research only — nowhere near clinics or checkups. For everyone else, it's enough to know AI took another step into biology."
+   },
+   "src": "https://www.unite.ai/zh-cn/google-deepminds-alphagenome-2-predicts-cell-state-variant-effects/"
+  },
+  {
+   "d": "2026-11-11",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "Anthropic 上市认购火爆：订单是发行量的好几倍，11 月 18 日定价",
+    "ja": "Anthropic の IPO は申し込み殺到：発行株数の数倍の注文、11月18日に価格決定",
+    "en": "Anthropic's IPO is multiple times oversubscribed; pricing set for Nov 18"
+   },
+   "why": {
+    "zh": "抢的人多不等于上市后一定涨——过去 Klarna、StubHub 也是超额认购，上市后照样跌破发行价。11 月 19 日才开始交易，普通人看看热闹就行，别跟着“AI 泡沫到顶了还是刚起步”的争论走。",
+    "ja": "申し込みが多いからといって上場後に上がるとは限らない。Klarna や StubHub も超過申し込みだったが、上場後に公開価格を割った。取引開始は11月19日。一般の人は見物だけで十分。「AI バブルは天井か、まだ序盤か」の議論に付き合う必要はない。",
+    "en": "Heavy demand doesn't guarantee a pop after listing — Klarna and StubHub were also oversubscribed and still traded below their offer prices. Trading starts Nov 19; for everyone else, just watch. No need to join the \"AI bubble: top or just starting?\" debate."
+   },
+   "src": "https://stockanalysis.com/news/anthropic-ipo-multiple-times-oversubscribed/"
+  },
+  {
+   "d": "2026-11-11",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "AWS 推出免费本地云模拟器：200 多个服务随便测，代码全是 AI Agent 写的",
+    "ja": "AWS が無料のローカルクラウド模倣ツール公開：200超のサービスを試せて、コードは全て AI エージェント製",
+    "en": "AWS ships a free local cloud emulator: test 200+ services, code written entirely by AI agents"
+   },
+   "why": {
+    "zh": "普通人用不上，这是开发者的玩具：不用联网、不用花钱就能在本地测 AWS 代码。真正值得记的是另一件事——整个工具从写代码到修 bug 全是 AI Agent 干的，工程师一行都没看过。“AI 会不会抢程序员饭碗”先别慌，这次它抢的是“搭测试环境”这种重复活。",
+    "ja": "一般ユーザーには不要。これは開発者向けのおもちゃで、ネット接続も課金もなしに AWS のコードを手元で試せる。本当に覚えておくべきは別の点——このツールのコードもバグ修正も全て AI エージェントがやり、エンジニアは一行も目を通していない。「AI がプログラマーの仕事を奪うか」はまだ慌てる話ではなく、今回奪ったのはテスト環境づくりのような繰り返し作業だ。",
+    "en": "Not for ordinary users — a developer toy that tests AWS code locally, offline and free. The part worth remembering is different: every line of this tool, including bug fixes, was written by AI agents while engineers never read a line. As for \"will AI take programmers' jobs?\" — don't panic yet; this time it took the repetitive job of setting up test environments."
+   },
+   "src": "https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator"
+  },
   {
    "d": "2026-11-10",
    "verdict": "skip",
