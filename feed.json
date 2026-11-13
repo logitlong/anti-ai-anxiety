@@ -1,7 +1,103 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-13",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "谷歌 Gemini 4 Hydrogen 来了：比大哥 Argon 还能打，专干 Agent 的脏活累活",
+    "ja": "Google Gemini 4 Hydrogen 登場：兄貴分の Argon を上回る速さ、エージェントの雑務専門",
+    "en": "Google's Gemini 4 Hydrogen arrives: faster than big brother Argon, built for agents' grunt work"
+   },
+   "why": {
+    "zh": "不用追：这是 Gemini 4 家族里的快枪手，不是新旗舰，定位就是便宜、快、干重复活。普通用户在 Gemini App 和搜索里自动就能用上，不用专门去找；开发者也别急着换模型，等跑分和实际体验出来再说，反正 API 每百万输入才 1.5 美元，试错成本也不高。",
+    "ja": "追う必要なし。これは Gemini 4 ファミリーの韋駄天で、新旗艦ではない。安くて速くて繰り返し作業向き。普通の人は Gemini アプリや検索で自動的に使えるので探しに行く必要なし。開発者もベンチマークと実感が出てからで十分。API は入力 100 万トークンあたり 1.5 ドルと試すコストも低い。",
+    "en": "No need to chase: this is the speedy workhorse of the Gemini 4 family, not a new flagship — cheap, fast, built for repetitive jobs. Ordinary users will get it automatically in the Gemini app and Search, no need to go looking. Developers can wait for benchmarks and real-world feel; at $1.50 per million input tokens, trying it costs almost nothing anyway."
+   },
+   "src": "https://blog.google/intl/en-in/products/introducing-gemini-4-hydrogen/"
+  },
+  {
+   "d": "2026-11-12",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "百度世界大会：李彦宏说 AI 下一幕是「智能组织」，文心 5.5 来了、昆仑芯 M300 明年到",
+    "ja": "百度世界大会：李彦宏氏が AI の次幕は「スマート組織」と宣言、文心 5.5 登場・崑崙芯 M300 は来年",
+    "en": "Baidu World: Robin Li says AI's next act is the 'intelligent organization' as ERNIE 5.5 lands and Kunlunxin M300 comes next year"
+   },
+   "why": {
+    "zh": "不用追：这是一场面向企业客户的大会，「智能组织」「词元所」都是卖给公司的概念，普通人用不上。文心 5.5 Flash Preview 是个预览版，昆仑芯 M300 还要等到明年。想尝鲜的去文心 App 点两下就行，不用研究什么组织进化三原则。",
+    "ja": "追う必要なし。これは企業向けの大会で、「スマート組織」も「トークン取引所」も会社に売る話。一般の人には関係ない。文心 5.5 Flash Preview はプレビュー版、崑崙芯 M300 は来年までお預け。試したければ文心アプリで触るだけで十分。「組織進化の三原則」を覚える必要はない。",
+    "en": "No need to chase: this was a conference for enterprise customers — 'intelligent organization' and a token exchange are things sold to companies, not to you. ERNIE 5.5 Flash Preview is just a preview, and the Kunlunxin M300 chip waits until next year. If you're curious, poke at the ERNIE app; no need to study the three principles of organizational evolution."
+   },
+   "src": "https://m.thepaper.cn/newsDetail_forward_34458899"
+  },
+  {
+   "d": "2026-11-12",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "字节跳动被曝数周内推 AI 智能体、最高砸 700 亿美元，张一鸣：追平前沿要到 2029 年",
+    "ja": "バイトダンス、数週間以内に AI エージェント投入へ・最大 700 億ドル投資との報道、張一鳴氏「最前線に追いつくのは 2029 年」",
+    "en": "ByteDance reportedly launching an AI agent within weeks with up to $70B behind it; Zhang Yiming says catching the frontier takes until 2029"
+   },
+   "why": {
+    "zh": "不用追：产品还没发布，700 亿也只是计划，连张一鸣自己都说真正追平 OpenAI、Anthropic 要等到 2029 或 2030 年。豆包用户继续用现在的就行，这条新闻的意义是「字节终于认真了」，不是「你明天就要换工具」。",
+    "ja": "追う必要なし。製品はまだ出ていないし、700 億ドルも計画の話。張一鳴氏自身が OpenAI や Anthropic に追いつくのは 2029 年か 2030 年と言っている。豆包ユーザーは今のままで十分。このニュースの意味は「バイトダンスが本気になった」であって、「明日からツールを変えろ」ではない。",
+    "en": "No need to chase: the product isn't out yet, the $70B is just a plan, and Zhang Yiming himself says truly catching OpenAI and Anthropic takes until 2029 or 2030. Doubao users can carry on as they are — the news means 'ByteDance is finally serious,' not 'switch tools tomorrow.'"
+   },
+   "src": "https://finance.jrj.com.cn/2026/11/12131759116692.shtml"
+  },
+  {
+   "d": "2026-11-12",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "Gainsight 裁员约 270 人：不卖座位改卖结果，全面转向 AI Agent",
+    "ja": "Gainsight が約 270 人削減：座席課金から成果課金へ、AI エージェント中心に転換",
+    "en": "Gainsight cuts about 270 jobs as it pivots to AI agents and outcome-based pricing"
+   },
+   "why": {
+    "zh": "不用慌：这是一家做客户成功软件的公司自己的转型，裁的是它自己的员工，不是你的饭碗。信号倒是值得看一眼——连卖软件的公司都开始按「结果」而不是按「座位数」收费了，说明 AI Agent 正在改写 SaaS 的生意模式。普通人不用做什么，继续用你的工具就行。",
+    "ja": "慌てる必要なし。これはカスタマーサクセス・ソフトの会社自身の転換で、切られたのはその会社の社員であって、あなたの仕事ではない。ただシグナルとして見る価値はある。ソフトを売る会社まで「座席数」ではなく「成果」で課金し始めた。AI エージェントが SaaS の商売を書き換えつつある証拠だ。一般の人が何かする必要はない。",
+    "en": "No need to panic: this is a customer-success software company restructuring itself — its own employees, not your job. Still, the signal is worth a glance: even software sellers are moving from charging per seat to charging per outcome. AI agents are rewriting how SaaS makes money. Ordinary users don't need to do anything."
+   },
+   "src": "https://mlq.ai/news/gainsight-cuts-about-270-jobs-as-it-rebuilds-around-ai-agents-and-outcome-based-pricing/"
+  },
+  {
+   "d": "2026-11-11",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "ChatGPT 旧语音 12 月 11 日退役：高级语音和标准语音下线，全员改用 GPT-Live",
+    "ja": "ChatGPT の旧音声モード、12 月 11 日で終了：アドバンスト音声と標準音声が廃止、全員 GPT-Live へ",
+    "en": "ChatGPT's old voice modes retire Dec 11: Advanced and Standard Voice go away, everyone moves to GPT-Live"
+   },
+   "why": {
+    "zh": "不用慌：这只是把三个语音模式收成一个，大部分人早就用上 GPT-Live 了，聊天记录也都保留。唯一的小遗憾是视频通话和看屏幕功能暂时还得靠旧模式，OpenAI 没说什么时候补上——常用这两项的人，12 月 11 日前不用做任何事，到时候自动切换就行。",
+    "ja": "慌てる必要なし。3 つの音声モードを 1 つにまとめるだけで、大半の人はすでに GPT-Live を使っている。会話履歴も残る。唯一の惜しい点は、ビデオ通話と画面共有が当面は旧モード頼みで、移行時期は未定ということ。よく使う人も 12 月 11 日までに何もする必要はなく、自動で切り替わる。",
+    "en": "No need to panic: this just folds three voice modes into one, and most people already use GPT-Live; chat history stays put. The only wrinkle is that video calls and screen sharing still rely on the old mode for now, with no date for the handover — if you use those, you don't need to do anything before Dec 11, the switch happens automatically."
+   },
+   "src": "https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt"
+  },
+  {
+   "d": "2026-11-11",
+   "verdict": "try",
+   "panic": 1,
+   "t": {
+    "zh": "Claude 付费用户白捡一次满血复活：全模型全额度免费重置，12 月 10 日前领",
+    "ja": "Claude 有料ユーザーに無料のフルリセット：全モデル・全上限が 1 回だけ復活、12 月 10 日までに受け取り",
+    "en": "Paid Claude users get a free full reset: every model, every limit refilled once — claim by Dec 10"
+   },
+   "why": {
+    "zh": "顺手领一下：Anthropic 承认最近的小 bug 多扣了大家的额度，补发了一次全模型、全额度（含每周上限）的免费重置，Pro、Max、Ultra、Team 都有。不用现在就用，12 月 10 日下午 2 点（太平洋时间）前去设置 → 用量里点一下就行，留到额度快用完的时候再领最划算。免费用户没有份。",
+    "ja": "もらっておこう。Anthropic は最近の小さな不具合で上限を余分に消費していたことを認め、全モデル・全上限（週間上限を含む）の無料フルリセットを 1 回配った。Pro・Max・Ultra・Team が対象。今すぐ使う必要はなく、12 月 10 日午後 2 時（太平洋時間）までに設定 → 使用量から受け取ればいい。上限が尽きそうなときに使うのが一番お得。無料プランは対象外。",
+    "en": "Grab it while it's there: Anthropic admits recent bugs burned more of people's allowances than intended, so every paid plan gets one free full reset — all models, all limits, weekly ones included. No need to use it now; claim it from Settings → Usage before 2pm PT on Dec 10, ideally when your allowance is nearly gone. Free-plan users don't get one."
+   },
+   "src": "https://aitoolsrecap.com/Blog/claude-free-usage-reset-pro-max-ultra-team"
+  },
   {
    "d": "2026-11-11",
    "verdict": "skip",

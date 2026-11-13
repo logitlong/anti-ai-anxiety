@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-13",
  "events": [
   {
    "d": "2022-11-30",
@@ -7007,6 +7007,19 @@
    },
    "src": "https://cn.technode.com/post/2026-11-11/alibaba-qwen4-max-preview/",
    "ind": "code"
+  },
+  {
+   "d": "2026-11-11",
+   "r": "us",
+   "c": "shutdown",
+   "p": 3,
+   "t": {
+    "zh": "ChatGPT 旧语音 12 月 11 日退役：高级语音和标准语音下线，全员改用 GPT-Live",
+    "ja": "ChatGPT の旧音声モード、12 月 11 日で終了：アドバンスト音声と標準音声が廃止、全員 GPT-Live へ",
+    "en": "ChatGPT's old voice modes retire Dec 11: Advanced and Standard Voice go away, everyone moves to GPT-Live"
+   },
+   "src": "https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt",
+   "ind": "voice"
   }
  ]
 }
