@@ -6954,7 +6954,22 @@
     "en": "OpenAI plans to cut off Cursor's model access on Nov 12 after SpaceX acquisition"
    },
    "src": "https://blog.ainetix.com/posts/cursor-spacex-60-billion-openai-model-cutoff-november-12-inkling2-thinking-machines",
-   "ind": "code"
+   "ind": "code",
+   "f": {
+    "zh": "大家慌 11 月 12 日一到，Cursor 里的 GPT 就断供",
+    "ja": "11月12日になったらCursor内のGPTが使えなくなると騒がれた",
+    "en": "Everyone feared GPT inside Cursor would go dark on November 12"
+   },
+   "o": {
+    "zh": "OpenAI 当天临时延期，没断；旧模型 GPT-5.6 系列照常用，只是新模型不再给",
+    "ja": "OpenAIは当日、期限を一時延長し遮断はなし。旧モデルGPT-5.6系は使えるままで、新モデルだけ提供されない",
+    "en": "OpenAI extended access on the day instead of cutting it off; older GPT-5.6 models still work, only new models are withheld"
+   },
+   "life": {
+    "zh": "约 3 个月",
+    "ja": "約3か月",
+    "en": "~3 months"
+   }
   },
   {
    "d": "2026-11-09",
@@ -7020,6 +7035,18 @@
    },
    "src": "https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt",
    "ind": "voice"
+  },
+  {
+   "d": "2026-11-13",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "SpaceX 的 AI 部门裁掉 Grok Imagine 团队约 60 人，转向编程工具和智能体",
+    "ja": "スペースXのAI部門、Grok Imagineチーム約60人を削減　コーディングツールとエージェントへ転換",
+    "en": "SpaceX's AI arm cuts about 60 from the Grok Imagine team, pivoting to coding tools and agents"
+   },
+   "src": "https://techstartups.com/2026/11/13/spacex-lays-off-60-grok-imagine-employees-as-elon-musk-shifts-focus-to-ai-coding-and-agents/"
   }
  ]
 }

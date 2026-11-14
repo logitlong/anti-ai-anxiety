@@ -1,7 +1,119 @@
 {
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-13",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "四家非营利组织起诉五大 AI 巨头，要求法院冻结前沿模型开发",
+    "ja": "米非営利団体4団体、AI大手5社を提訴　最先端モデルの開発凍結を求める",
+    "en": "Four nonprofits sue five AI giants, asking a court to freeze frontier model development"
+   },
+   "why": {
+    "zh": "只是起诉、还没判，法院连紧急禁令都没发；五家公司照常发模型，普通人该干嘛干嘛。",
+    "ja": "提訴されただけで判決はまだ出ておらず、緊急差し止めも出ていない。各社は通常通りモデルを出しているので、普段通りで大丈夫。",
+    "en": "It's only a lawsuit — no ruling, no injunction. The labs are shipping models as usual, so carry on."
+   },
+   "src": "https://www.aljazeera.com/amp/news/2026/11/12/us-nonprofits-sue-tech-giants-to-halt-ai-development"
+  },
+  {
+   "d": "2026-11-13",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "SpaceX 的 AI 部门裁掉 Grok Imagine 团队约 60 人，转向编程工具和智能体",
+    "ja": "スペースXのAI部門、Grok Imagineチーム約60人を削減　コーディングツールとエージェントへ転換",
+    "en": "SpaceX's AI arm cuts about 60 from the Grok Imagine team, pivoting to coding tools and agents"
+   },
+   "why": {
+    "zh": "被裁的是做图生视频的团队，不是你用的 Grok 聊天；产品还在，只是以后更新可能变慢。",
+    "ja": "削減されたのは画像・動画生成チームで、普段使うGrokチャットではない。製品は残るが、今後の更新は遅くなるかもしれない。",
+    "en": "The cuts hit the image-and-video team, not the Grok chat you use. The product stays, though updates may slow down."
+   },
+   "src": "https://techstartups.com/2026/11/13/spacex-lays-off-60-grok-imagine-employees-as-elon-musk-shifts-focus-to-ai-coding-and-agents/"
+  },
+  {
+   "d": "2026-11-13",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "OpenAI 推出 Daybreak 安全双件套：AI 帮你找漏洞、写补丁",
+    "ja": "OpenAI、セキュリティ製品Daybreakを発表　AIが脆弱性を探してパッチも作る",
+    "en": "OpenAI launches Daybreak security duo: AI that finds your bugs and writes the patches"
+   },
+   "why": {
+    "zh": "企业安全工具，红队要申请、补丁厂只是预览插件；跟普通用户没关系，连价格都没公布。",
+    "ja": "企業向けセキュリティツールで、レッドチームは申請制、パッチ工場はプレビュー段階。価格も未発表で、一般ユーザーには関係なし。",
+    "en": "Enterprise security tools — Red Team needs an application, Defense Factory is a preview plugin. No pricing yet, and nothing for regular users."
+   },
+   "src": "https://www.siliconreport.com/openai-introduces-daybreak-security-tools-to-test-and-fix-web-apps"
+  },
+  {
+   "d": "2026-11-13",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "Anthropic 让企业把整套 Claude 智能体服务搬回自家机房",
+    "ja": "Anthropic、Claudeエージェント一式を自社サーバーで動かせる私設ベータを開始",
+    "en": "Anthropic lets enterprises run the whole Claude agent service on their own servers"
+   },
+   "why": {
+    "zh": "私测、只对大企业开放，模型本身还是走云端；普通人连申请入口都没有。",
+    "ja": "プライベートベータで大企業限定、モデル自体はクラウド経由のまま。一般ユーザーが申し込む口もない。",
+    "en": "Private beta for big enterprises only, and the model still runs in the cloud. There's not even a sign-up for regular users."
+   },
+   "src": "https://claude.com/resources/articles/self-hosted-claude-managed-agents"
+  },
+  {
+   "d": "2026-11-13",
+   "verdict": "wait",
+   "panic": 2,
+   "t": {
+    "zh": "Claude 开始进视频会议：边开会边写文档做白板",
+    "ja": "Claudeがビデオ会議に参加開始　会議中に資料とホワイトボードを作る",
+    "en": "Claude starts joining your video calls, building docs and whiteboards mid-meeting"
+   },
+   "why": {
+    "zh": "目前只在 Team/Enterprise 套餐测试版、只支持 Google Meet；个人版和免费用户都用不上，先看看。",
+    "ja": "今はTeam/Enterpriseプランのベータ版でGoogle Meetのみ。個人・無料プランは対象外なので、様子見でいい。",
+    "en": "Beta only for Team and Enterprise plans, Google Meet only. Pro, Max and free users don't get it — wait and see."
+   },
+   "src": "https://claude.com/resources/articles/claude-meetings"
+  },
+  {
+   "d": "2026-11-13",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "DeepSeek 把 App 的整套能力开放成 API：联网搜索、读文件、语音全打包",
+    "ja": "DeepSeek、アプリの機能一式をAPI化　検索・ファイル読み取り・音声をまとめて提供",
+    "en": "DeepSeek turns its whole app into an API: web search, file reading, voice, all included"
+   },
+   "why": {
+    "zh": "给开发者用的，普通用户继续用 App 就行；想自己搭个 DeepSeek 的人可以省掉一堆接外部工具的活。",
+    "ja": "開発者向けの話で、一般ユーザーはアプリを使い続ければOK。自分でDeepSeek風アプリを作りたい人は外部ツール連携の手間が省ける。",
+    "en": "This is for developers — regular users just keep using the app. If you want to build your own DeepSeek clone, it saves a lot of plumbing."
+   },
+   "src": "https://zhidx.com/p/610514.html"
+  },
+  {
+   "d": "2026-11-13",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "前 OpenAI 研究员称中国六款新模型带着被禁 Blackwell 芯片的“指纹”",
+    "ja": "元OpenAI研究員、中国の新型モデル6件に輸出禁止のBlackwellチップの「指紋」があると指摘",
+    "en": "Ex-OpenAI researcher says six new Chinese models carry the \"fingerprint\" of banned Blackwell chips"
+   },
+   "why": {
+    "zh": "只是一份法医式推测，作者自己都说数字没把握；就算属实也是出口管制的事，跟你用哪个模型没关系。",
+    "ja": "法医学的な推測にすぎず、著者自身も数字に自信がないと認めている。仮に事実でも輸出管理の話で、使うモデル選びには関係ない。",
+    "en": "It's a forensic guess — the author himself says he's not confident in the numbers. Even if true, it's an export-control story, not a reason to switch models."
+   },
+   "src": "https://madrobot.blog/2026/11/13/chinese-ai-models-nvidia-blackwell-fingerprints/"
+  },
   {
    "d": "2026-11-13",
    "verdict": "skip",
