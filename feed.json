@@ -1,7 +1,103 @@
 {
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-13",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "OpenAI 给 AI 智能体发了钱包：能替你下单付款了",
+    "ja": "OpenAIがAIエージェントに財布を渡した：代わりに買い物して決済できるように",
+    "en": "OpenAI gives its AI agents a wallet: they can now shop and pay for you"
+   },
+   "why": {
+    "zh": "先别急着绑卡：目前只对美国 Pro 用户开放，日本还用不上，而且每笔都要你人脸或指纹确认。等它真正到你手边再学也不迟。",
+    "ja": "慌ててカードを登録する必要はない。今は米国のProユーザー限定で、日本ではまだ使えないし、支払いのたびに顔認証や指紋での確認が必要だ。自分の番が来てからで十分間に合う。",
+    "en": "Don't rush to link a card: it's US Pro users only for now, not available in Japan yet, and every purchase still needs your Face ID or fingerprint. You'll have plenty of time to learn it when it actually reaches you."
+   },
+   "src": "https://openai.com/index/introducing-chatgpt-wallet/"
+  },
+  {
+   "d": "2026-11-13",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "华为昇腾出货量首超英伟达，国产 AI 芯片份额反超",
+    "ja": "ファーウェイAscendの出荷がNVIDIAを初めて上回る：中国製AIチップのシェアが逆転",
+    "en": "Huawei's Ascend shipments overtake Nvidia's for the first time as domestic AI chips take the lead in China"
+   },
+   "why": {
+    "zh": "这是芯片供应链的事，不是你的电脑明天就换芯。普通人该关心的只有一件事：国产模型会不会因此更便宜更好用——答案要等产品说话。",
+    "ja": "これはチップの供給網の話で、あなたのパソコンが明日いきなり変わるわけではない。一般の人が気にすべきは一点だけ。国産モデルがこれで安く、使いやすくなるかどうか。答えは製品が出てからだ。",
+    "en": "This is a chip-supply story, not a sign your computer changes tomorrow. The only question that matters for most people is whether Chinese models get cheaper and better because of it — and that answer has to wait for the products."
+   },
+   "src": "https://kimkj.com/ai-board/?mod=document&uid=21566"
+  },
+  {
+   "d": "2026-11-12",
+   "verdict": "skip",
+   "panic": 4,
+   "t": {
+    "zh": "黄仁勋辞去英伟达 CEO，结束 33 年掌舵",
+    "ja": "ジェンスン・フアンがNVIDIAのCEOを辞任、33年の舵取りに幕",
+    "en": "Jensen Huang resigns as Nvidia CEO, ending his 33-year run"
+   },
+   "why": {
+    "zh": "AI 行业地震级的人事变动，但英伟达的芯片路线图照常推进，股价也已从 13% 的跌幅收窄。普通人不用为此换电脑、换职业规划，看下任 CEO 是谁再说。",
+    "ja": "AI業界にとって地震級の人事だが、NVIDIAのチップのロードマップは予定通り進み、株価も13％の下落から持ち直している。一般の人がこれでパソコンを買い替えたり進路を変えたりする必要はない。次のCEOが誰になるかを見てからでいい。",
+    "en": "An earthquake for the AI industry, but Nvidia says its chip roadmap continues uninterrupted and the stock has already pared back its 13% plunge. No need to change your computer or career plans over this — wait and see who the next CEO is."
+   },
+   "src": "https://www.usatoday.com/story/tech/2026/11/12/jensen-huang-nvidia-ceo-resigns-affair-investigation/92734431007/"
+  },
+  {
+   "d": "2026-11-12",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "Notion AI 对话记录经供应商 Fireworks 泄露，不到 1% 工作区受影响",
+    "ja": "Notion AIの会話記録が委託先Fireworks経由で流出、影響は1％未満のワークスペース",
+    "en": "Notion AI chat transcripts leaked via vendor Fireworks, affecting under 1% of workspaces"
+   },
+   "why": {
+    "zh": "如果你没收到 Notion 的通知就不用做什么；收到通知的才需要轮换曾贴进 AI 对话的密码和密钥。教训只有一个：别把密码、密钥往任何 AI 聊天框里贴。",
+    "ja": "Notionから通知が来ていなければ何もする必要はない。通知が来た人だけ、AIチャットに貼ったパスワードやキーを変更すればいい。教訓は一つだけ。パスワードやキーをAIのチャット欄に貼らないこと。",
+    "en": "If you didn't get a notice from Notion, you don't need to do anything; only notified users should rotate passwords or keys they pasted into AI chats. The lesson is one line: never paste passwords or API keys into any AI chat box."
+   },
+   "src": "https://betanews.com/article/notion-ai-chats-exposed-fireworks-breach/"
+  },
+  {
+   "d": "2026-11-12",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "Anthropic 区域政策生效：中国等地控股的实体禁用 Claude",
+    "ja": "Anthropicの地域ポリシーが施行：中国などに支配される法人はClaudeを使えなくなる",
+    "en": "Anthropic's regional policy takes effect: entities controlled from China and elsewhere barred from Claude"
+   },
+   "why": {
+    "zh": "在日本的普通用户不受影响；受影响的是人在中国内地、或由中俄等国控股的实体。如果你靠 Claude 干活，备一个国产模型当 Plan B 就行，不用连夜迁移。",
+    "ja": "日本にいる一般のユーザーには影響はない。影響を受けるのは中国本土にいる人や、中国・ロシアなどに支配される法人だ。Claudeに頼って仕事をしている人は、国産モデルを予備に一つ持っておけば十分。慌てて移行する必要はない。",
+    "en": "Ordinary users in Japan aren't affected; the ban hits people in mainland China and entities controlled from China, Russia and similar regions. If your work depends on Claude, just keep a domestic model as a Plan B — no need to migrate overnight."
+   },
+   "src": "https://aistaffo.com/news/anthropics-new-regions-policy-bars-china-controlled-firms-from-claude/"
+  },
+  {
+   "d": "2026-11-12",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "微软 365 全球宕机：Outlook、Teams、Copilot 一起中断",
+    "ja": "Microsoft 365が世界規模で障害：Outlook、Teams、Copilotが同時に止まる",
+    "en": "Microsoft 365 goes down worldwide: Outlook, Teams and Copilot all interrupted"
+   },
+   "why": {
+    "zh": "断网式的一天，但服务已经恢复，文件和邮件都没丢。能做的只有一件事：重要资料别只放在一个云里，本地留个备份。",
+    "ja": "丸一日つながらない不便はあったが、サービスは復旧し、ファイルもメールも消えていない。できることは一つだけ。大事な資料はクラウド一つに預けず、ローカルにもバックアップを置くこと。",
+    "en": "An inconvenient day offline, but services are back and no files or mail were lost. The only takeaway: don't keep important files in a single cloud — keep a local backup too."
+   },
+   "src": "https://www.everydev.ai/p/news-weekly-ai-dev-news-digest-november-8-november-13-2026"
+  },
   {
    "d": "2026-11-13",
    "verdict": "skip",

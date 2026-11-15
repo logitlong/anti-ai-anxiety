@@ -7047,6 +7047,44 @@
     "en": "SpaceX's AI arm cuts about 60 from the Grok Imagine team, pivoting to coding tools and agents"
    },
    "src": "https://techstartups.com/2026/11/13/spacex-lays-off-60-grok-imagine-employees-as-elon-musk-shifts-focus-to-ai-coding-and-agents/"
+  },
+  {
+   "d": "2026-11-12",
+   "r": "us",
+   "c": "people",
+   "p": 4,
+   "t": {
+    "zh": "黄仁勋辞去英伟达 CEO，结束 33 年掌舵",
+    "ja": "ジェンスン・フアンがNVIDIAのCEOを辞任、33年の舵取りに幕",
+    "en": "Jensen Huang resigns as Nvidia CEO, ending his 33-year run"
+   },
+   "src": "https://www.usatoday.com/story/tech/2026/11/12/jensen-huang-nvidia-ceo-resigns-affair-investigation/92734431007/"
+  },
+  {
+   "d": "2026-11-12",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "ind": "office",
+   "t": {
+    "zh": "Notion AI 对话记录经供应商 Fireworks 泄露，不到 1% 工作区受影响",
+    "ja": "Notion AIの会話記録が委託先Fireworks経由で流出、影響は1％未満のワークスペース",
+    "en": "Notion AI chat transcripts leaked via vendor Fireworks, affecting under 1% of workspaces"
+   },
+   "src": "https://betanews.com/article/notion-ai-chats-exposed-fireworks-breach/"
+  },
+  {
+   "d": "2026-11-12",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "ind": "code",
+   "t": {
+    "zh": "Anthropic 区域政策生效：中国等地控股的实体禁用 Claude",
+    "ja": "Anthropicの地域ポリシーが施行：中国などに支配される法人はClaudeを使えなくなる",
+    "en": "Anthropic's regional policy takes effect: entities controlled from China and elsewhere barred from Claude"
+   },
+   "src": "https://aistaffo.com/news/anthropics-new-regions-policy-bars-china-controlled-firms-from-claude/"
   }
  ]
 }
