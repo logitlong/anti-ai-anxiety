@@ -1,7 +1,135 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-15",
+   "verdict": "skip",
+   "panic": 1,
+   "t": {
+    "zh": "MIT 韩松团队开源 PEAR：27B 小模型在单张 5090 上开双臂机器人",
+    "ja": "MITの韓松チームがPEARを公開：27Bの小モデルがRTX 5090一枚で双腕ロボットを操作",
+    "en": "MIT's Han Lab open-sources PEAR: a 27B model runs a dual-arm robot on a single RTX 5090"
+   },
+   "why": {
+    "zh": "不用羡慕大厂的机器人大模型：这套方案只用开源小模型加仿真强化学习，零真机数据就能上手，还能在消费级显卡上跑。普通人看看热闹就行，等它变成能买到的产品再说。",
+    "ja": "大手の巨大ロボットモデルを羨む必要はない。オープンな小モデルとシミュレーション学習だけで実機データなしに動かせ、民生GPUでも走る。普通の人は眺めているだけで十分で、買える製品になってから考えればいい。",
+    "en": "No need to envy Big Tech's giant robot models: this uses an open small model plus simulated reinforcement learning, no real-robot data required, and it runs on a consumer GPU. For most of us, watching from the sidelines is enough — revisit it when it becomes something you can actually buy."
+   },
+   "src": "https://feng.ifeng.com/c/8y4bDF9RJJ1"
+  },
+  {
+   "d": "2026-11-14",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "马斯克等人联名请愿：让黄仁勋回英伟达，已有超 11.5 万人签名",
+    "ja": "マスク氏らが請願：ファン氏をエヌビディアCEOに復帰させよ、署名は11.5万人超",
+    "en": "Musk and other tech chiefs petition to bring Jensen Huang back to Nvidia, passing 115,000 signatures"
+   },
+   "why": {
+    "zh": "请愿书不是董事会决议，签名数也是请愿网站自报的、没经过核实，英伟达董事会至今没回应。芯片照样出货、显卡照样能买，这出宫斗剧看看就行，不用跟着站队。",
+    "ja": "請願書は取締役会の決議ではないし、署名数は請願サイトの自己申告で未検証、取締役会もまだ返答していない。チップは出荷され続け、GPUも普通に買える。この宮廷劇は眺めるだけで十分で、肩入れする必要はない。",
+    "en": "A petition isn't a board resolution, the signature count is self-reported by the campaign site and unverified, and Nvidia's board hasn't responded. Chips still ship and GPUs are still on sale — this boardroom drama is a spectator sport, no need to pick a side."
+   },
+   "src": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"
+  },
+  {
+   "d": "2026-11-13",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "OpenAI 解散独立机器人团队：通用大模型直接控机器人，不再单独立项",
+    "ja": "OpenAIがロボット専門チームを解散：汎用モデルが直接ロボットを制御へ",
+    "en": "OpenAI dissolves its standalone robotics team: general-purpose models will drive robots directly"
+   },
+   "why": {
+    "zh": "不是放弃机器人，是 OpenAI 觉得 GPT-6 Astra 这类通用模型已经能直接开机器人，没必要再养一个专门造“机器人大脑”的团队。人形机器人 2027 年才演示，离你家客厅还远得很。",
+    "ja": "ロボットを諦めたわけではない。GPT-6 Astraのような汎用モデルがもう直接ロボットを動かせるので、「ロボット専用の頭脳」を作る別チームは不要だという判断だ。ヒューマノイドのデモは2027年の予定で、あなたのリビングに来るのはまだまだ先の話。",
+    "en": "This isn't quitting robotics — OpenAI figures general-purpose models like GPT-6 Astra can already drive robots directly, so a separate team building a 'robot brain' is redundant. The humanoid demo is slated for 2027, so it's nowhere near your living room yet."
+   },
+   "src": "https://digitechbytes.com/technology-news-gadgets/does-robotics-need-its-own-ai-openai-splits-its-team-as-runway-opens-praxis-1/"
+  },
+  {
+   "d": "2026-11-13",
+   "verdict": "skip",
+   "panic": 1,
+   "t": {
+    "zh": "LangChain 融资 3 亿美元、估值 30 亿美元：一年翻了一倍多",
+    "ja": "LangChainが3億ドル調達、評価額30億ドルに：1年で倍以上",
+    "en": "LangChain raises $300M at a $3B valuation, more than doubling in a year"
+   },
+   "why": {
+    "zh": "钱是投给“让智能体稳定跑起来”的基建，不是又一个聊天机器人。估值翻倍说明资本看好 Agent 落地，但对普通人来说什么都没变：该用的工具照常用，不用学新东西。",
+    "ja": "お金は新しいチャットボットではなく、「エージェントを安定稼働させる」インフラに投じられている。評価額の倍増は資本がエージェントの実用化に賭けている証拠だが、普通の人には何も変わらない。使うツールはそのまま使えばよく、新しいことを学ぶ必要はない。",
+    "en": "The money is going to infrastructure that keeps agents running reliably, not another chatbot. The doubled valuation shows investors are betting on agents going mainstream — but nothing changes for ordinary users: keep using the tools you already use, no new skills required."
+   },
+   "src": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
+  },
+  {
+   "d": "2026-11-13",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "Anthropic CEO：买算力是公司“最深的经营难题”，已承诺近 9000 亿美元",
+    "ja": "Anthropic CEO：コンピュート調達は「最も深い経営のジレンマ」、約9000億ドルの確約済み",
+    "en": "Anthropic CEO: buying compute is the company's 'deepest business dilemma', with nearly $900B committed"
+   },
+   "why": {
+    "zh": "连最赚钱的 AI 公司都为“提前一两年买多少算力”发愁，买少了不够卖、买多了怕破产——这是大厂的烦恼，不是你的。Claude 该用还用，上市前夜的喊话听听就好。",
+    "ja": "最も儲かっているAI企業でさえ「1〜2年先にどれだけ買うか」で悩んでいる。買いすぎれば破産の恐れ、少なすぎれば売るものがない——これは大企業の悩みで、あなたの悩みではない。Claudeはこれまで通り使えばよく、IPO前夜の発言は聞き流して大丈夫。",
+    "en": "Even the most profitable AI company agonizes over how much compute to buy a year or two ahead — too little and it can't serve customers, too much and it risks bankruptcy. That's Big Tech's headache, not yours. Keep using Claude as usual; pre-IPO remarks are safe to ignore."
+   },
+   "src": "https://www.business-standard.com/world-news/anthropic-ceo-dario-amodei-calls-computing-power-deepest-business-dilemma-126111400181_1.html"
+  },
+  {
+   "d": "2026-11-12",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "华为云具身世界模型定档 11 月 16 日发布：首款昇腾原生，叫 CloudRobo-WM1.2",
+    "ja": "ファーウェイ・クラウドの具身世界モデル、11月16日発表へ：初のAscendネイティブ「CloudRobo-WM1.2」",
+    "en": "Huawei Cloud sets November 16 launch for its first Ascend-native embodied world model, CloudRobo-WM1.2"
+   },
+   "why": {
+    "zh": "目前只有发布会时间，具体参数、跑分、价格一样都没公布。机器人离普通人还远，等 16 号直播讲清楚了再看也不迟，现在不用提前焦虑。",
+    "ja": "今わかっているのは発表会の日程だけで、パラメータもベンチマークも価格もまだ何も出ていない。ロボットは一般の人にはまだ遠い存在だ。16日の発表で内容が明らかになってから見れば十分で、今から焦る必要はない。",
+    "en": "So far only the launch date is public — no specs, benchmarks or pricing yet. Robots are still far from everyday life, so wait for the November 16 livestream to spell it out. No need to worry in advance."
+   },
+   "src": "https://juejin.cn/post/7707218987331698739"
+  },
+  {
+   "d": "2026-11-11",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "高通印度裁员超 1000 人：手机芯片卖不动，全球重组转向 AI 数据中心",
+    "ja": "クアルコムがインドで1000人超を削減：スマホ向け不振でAIデータセンターへシフト",
+    "en": "Qualcomm cuts over 1,000 jobs in India as handset chips slump and the company pivots to AI data centers"
+   },
+   "why": {
+    "zh": "裁的是手机芯片业务的老岗位，公司要把人手挪去 AI 数据中心芯片——被裁的也不是因为 AI 直接抢了饭碗，而是手机市场本身在缩水。普通人不用对号入座，芯片行业的饭碗换个地方端而已。",
+    "ja": "削られるのはスマホ向けチップの古いポストで、人員をAIデータセンター向けチップに回すためだ。AIに仕事を奪われたというより、スマホ市場そのものが縮んでいる。普通の人が自分事として心配する必要はない。チップ業界の仕事が場所を変えただけだ。",
+    "en": "The cuts hit legacy handset-chip roles as Qualcomm shifts people toward AI data-center chips — less 'AI took the jobs' than 'the phone market itself is shrinking.' No need to take it personally; the chip industry's jobs are just moving somewhere else."
+   },
+   "src": "https://www.businesstoday.in/amp/technology/news/story/1000-qualcomm-jobs-at-risk-in-india-as-chipmaker-begins-layoffs-severance-details-emerge-566795-2026-11-11"
+  },
+  {
+   "d": "2026-11-09",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "美团开源 LongCat-2.5 权重：1.6 万亿参数智能体模型，全程没用一块英伟达 GPU",
+    "ja": "美団がLongCat-2.5の重みを公開：1.6兆パラメータのエージェントモデル、NVIDIA GPUゼロで学習",
+    "en": "Meituan open-sources LongCat-2.5 weights: a 1.6T-parameter agent model trained without a single Nvidia GPU"
+   },
+   "why": {
+    "zh": "模型本身 11 月 2 日就发布了，这次是权重开源；3.56TB 的大家伙还得配 194 块华为昇腾才能跑，普通人下载了也用不上。值得高兴的是“不用英伟达也能训万亿模型”这条路走通了，但离你的日常还很远。",
+    "ja": "モデル自体は11月2日に発表済みで、今回は重みの公開だ。3.56TBの巨体はファーウェイAscend 194基で動かす前提で、普通の人がダウンロードしても使い道はない。「NVIDIAなしでも兆級モデルを学習できる」という道が開けたのは喜ばしいが、あなたの日常からはまだ遠い。",
+    "en": "The model itself launched November 2; this is the open-weights release. The 3.56TB giant needs 194 Huawei Ascend chips to run, so downloading it won't help most people. The real news is that training a trillion-parameter model without Nvidia is now proven possible — but it's still far from your daily life."
+   },
+   "src": "https://aicoder.com/zh/news/news-20261109-meituan-longcat-2-5-open-weights-mit-hugging-face-1-6t-w4a4-npu"
+  },
   {
    "d": "2026-11-13",
    "verdict": "skip",
@@ -1160,39 +1288,6 @@
     "en": "Faster and cheaper. Claude users get it automatically."
    },
    "src": "https://www.anthropic.com/claude-sonnet-5-5"
-  },
-  {
-   "d": "2026-09-08",
-   "verdict": "wait",
-   "panic": 3,
-   "t": {
-    "zh": "Meta 发布个人 Agent「Muse」",
-    "ja": "Metaが個人エージェントMuseを発表",
-    "en": "Meta launches the Muse personal agent"
-   },
-   "why": {
-    "zh": "有免费版，可以顺手试试做个小事。但它要连你的邮箱和支付，授权前想清楚。",
-    "ja": "無料版あり。ただメールや決済につながるので権限は慎重に。",
-    "en": "There's a free tier, but it wants email and payment access. Think before granting it."
-   },
-   "src": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
-  },
-  {
-   "d": "2026-09-03",
-   "verdict": "wait",
-   "panic": 4,
-   "v": 1,
-   "t": {
-    "zh": "GPT-6 Astra 发布",
-    "ja": "GPT-6 Astra公開",
-    "en": "GPT-6 Astra released"
-   },
-   "why": {
-    "zh": "大版本号最吓人，但你的用法不用变。等身边有人用出真实成果再看。",
-    "ja": "大きな番号ほど怖く見えるが使い方は変わらない。",
-    "en": "Big version numbers look scary; your workflow doesn't need to change."
-   },
-   "src": "https://en.wikipedia.org/wiki/GPT-6"
   }
  ]
 }

@@ -7085,6 +7085,31 @@
     "en": "Anthropic's regional policy takes effect: entities controlled from China and elsewhere barred from Claude"
    },
    "src": "https://aistaffo.com/news/anthropics-new-regions-policy-bars-china-controlled-firms-from-claude/"
+  },
+  {
+   "d": "2026-11-11",
+   "r": "us",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "高通印度裁员超 1000 人：手机芯片卖不动，全球重组转向 AI 数据中心",
+    "ja": "クアルコムがインドで1000人超を削減：スマホ向け不振でAIデータセンターへシフト",
+    "en": "Qualcomm cuts over 1,000 jobs in India as handset chips slump and the company pivots to AI data centers"
+   },
+   "src": "https://www.businesstoday.in/amp/technology/news/story/1000-qualcomm-jobs-at-risk-in-india-as-chipmaker-begins-layoffs-severance-details-emerge-566795-2026-11-11"
+  },
+  {
+   "d": "2026-11-13",
+   "r": "us",
+   "c": "people",
+   "p": 2,
+   "ind": "factory",
+   "t": {
+    "zh": "OpenAI 解散独立机器人团队：通用大模型直接控机器人，不再单独立项",
+    "ja": "OpenAIがロボット専門チームを解散：汎用モデルが直接ロボットを制御へ",
+    "en": "OpenAI dissolves its standalone robotics team: general-purpose models will drive robots directly"
+   },
+   "src": "https://digitechbytes.com/technology-news-gadgets/does-robotics-need-its-own-ai-openai-splits-its-team-as-runway-opens-praxis-1/"
   }
  ]
 }
