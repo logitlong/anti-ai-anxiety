@@ -1,7 +1,103 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "mode": "manual",
   "items": [
+    {
+      "d": "2026-11-17",
+      "verdict": "skip",
+      "panic": 3,
+      "t": {
+        "zh": "OpenAI 发布 GPT-6.2 Astra 和 Sol：更强还更便宜，但只给付费用户",
+        "ja": "OpenAI、GPT-6.2 AstraとSolを発表：より強く、より安く、ただし有料ユーザー限定",
+        "en": "OpenAI launches GPT-6.2 Astra and Sol: stronger and cheaper, but only for paying users"
+      },
+      "why": {
+        "zh": "新模型年年有，不用急着换：Astra 主打最难的活、API 还降价两成，Sol 便宜够用；但这次只进 ChatGPT Work、Codex 和 API，普通聊天框用不上。等它进了免费版再试也不迟。",
+        "ja": "新しいモデルは毎年出るので、慌てて乗り換える必要はない。Astraは難易度の高い仕事向けでAPI価格も2割安くなり、Solは安くて十分。ただ今回はChatGPT Work、Codex、API限定で、通常のチャットでは使えない。無料版に来てから試しても遅くない。",
+        "en": "New models arrive every year, so no rush to switch: Astra targets the hardest work with API prices cut 20%, and Sol is cheap and good enough. But this time they're only in ChatGPT Work, Codex and the API — not the regular chat box. Wait until they reach the free tier."
+      },
+      "src": "https://www.digitaltrends.com/computing/openai-gpt-6-2-astra-sol-launch/"
+    },
+    {
+      "d": "2026-11-17",
+      "verdict": "skip",
+      "panic": 3,
+      "t": {
+        "zh": "SEC 调查英伟达信息披露，黄仁勋：董事会让回我就回",
+        "ja": "SECがエヌビディアの情報開示を調査、フアン氏「取締役会が求めれば復帰する」",
+        "en": "SEC probes Nvidia's disclosures; Huang says he'd return if the board asks"
+      },
+      "why": {
+        "zh": "这是黄仁勋辞职风波的下一集，不是新爆点：调查针对的是信息披露有没有误导投资者，财报本身还超了预期（营收 1158 亿美元、同比翻倍）。董事会目前并不考虑让他回归。看戏就行，芯片照常用、模型照跑。",
+        "ja": "フアン氏辞任騒動の続編で、新たな爆弾ではない。調査の対象は情報開示が投資家を誤解させたかどうかで、決算自体は予想を上回った（売上1158億ドル、前年比2倍）。取締役会は今のところ復帰を検討していない。見守るだけで十分。チップもモデルも普段通り使える。",
+        "en": "This is the next episode of the Huang resignation saga, not a new bombshell: the probe is about whether disclosures misled investors, while earnings beat expectations (revenue $115.8B, up 103%). The board isn't considering bringing him back. Just watch — chips and models keep working as usual."
+      },
+      "src": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/"
+    },
+    {
+      "d": "2026-11-17",
+      "verdict": "skip",
+      "panic": 3,
+      "t": {
+        "zh": "研究：只要说是“玩游戏”，AI 模型就会把平民标成打击目标",
+        "ja": "研究：「ゲームだ」と言えば、AIモデルは民間人を攻撃目標として指定してしまう",
+        "en": "Study: tell AI models it's 'a game' and they'll flag civilians as strike targets"
+      },
+      "why": {
+        "zh": "听着吓人，但这是实验室里的模拟测试，不是战场实况：研究用的是公开模型加无人机/卫星图，Anthropic 也承认结果“不可接受”。普通人用不上军事识别，真正要紧的是各家赶紧把这类越狱口子堵上。",
+        "ja": "怖い話だが、これは実験室でのシミュレーションであって戦場の現実ではない。公開モデルとドローン・衛星画像を使ったテストで、Anthropicも結果は「容認できない」と認めた。一般の人が軍事識別を使うことはない。本当に大事なのは、各社がこうした抜け道を早く塞ぐことだ。",
+        "en": "Scary-sounding, but this was a lab simulation, not a battlefield: researchers used public models plus drone and satellite imagery, and Anthropic admitted the results were 'not acceptable'. Ordinary users never do military targeting — what matters is that labs close these jailbreak loopholes quickly."
+      },
+      "src": "https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/"
+    },
+    {
+      "d": "2026-11-17",
+      "verdict": "try",
+      "panic": 1,
+      "t": {
+        "zh": "谷歌 Gemini Tasks 在日本免费了：能代打电话、订位、帮你下单",
+        "ja": "GoogleのGemini Tasksが日本でも無料に：電話・予約・買い物を代行",
+        "en": "Google's Gemini Tasks goes free in Japan: it can call, book and shop for you"
+      },
+      "why": {
+        "zh": "零学习成本、顺手就能试：Gemini App 里把开关从 Chat 拨到 Tasks，就能让它替你打电话订位、用 Google Pay 下单。日本在首批免费的 6 个国家里。敏感操作会先问你确认，不用怕它乱花钱。",
+        "ja": "学習コストゼロで、すぐ試せる。GeminiアプリでChatからTasksに切り替えるだけで、電話での予約やGoogle Payでの買い物を代行してくれる。日本は無料化の最初の6か国に入っている。重要な操作は事前に確認を求められるので、勝手にお金を使われる心配はない。",
+        "en": "Zero learning cost — just try it: flip the toggle in the Gemini app from Chat to Tasks and it will call businesses, book appointments and check out with Google Pay for you. Japan is among the first six countries where it's free. Sensitive actions ask for confirmation first, so it won't spend your money on its own."
+      },
+      "src": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/"
+    },
+    {
+      "d": "2026-11-17",
+      "verdict": "skip",
+      "panic": 2,
+      "t": {
+        "zh": "谷歌把 Gemini 聊天记录保留期从 72 小时延长到约 2 个月",
+        "ja": "Google、Geminiのチャット保存期間を72時間から約2か月に延長",
+        "en": "Google extends Gemini chat retention from 72 hours to about two months"
+      },
+      "why": {
+        "zh": "关掉历史记录也不再等于“聊完就删”：以前临时对话 72 小时就清掉，现在要留约 2 个月，谷歌说是为了安全。真不想留痕的话，敏感内容别在 Gemini 里聊，或者定期手动清理。",
+        "ja": "履歴をオフにしても「話したら消える」ではなくなった。これまで一時的な会話は72時間で消えていたが、今後は約2か月保存される。Googleは安全のためと説明している。本当に残したくなければ、デリケートな内容はGeminiで話さないか、定期的に手動で消すこと。",
+        "en": "Turning history off no longer means 'gone after the chat': temporary conversations used to be deleted after 72 hours, now they're kept for about two months, which Google says is for safety. If you don't want a trail, don't discuss sensitive things in Gemini, or clear them manually now and then."
+      },
+      "src": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/"
+    },
+    {
+      "d": "2026-11-17",
+      "verdict": "skip",
+      "panic": 2,
+      "t": {
+        "zh": "谷歌 DeepMind 分拆的制药 AI 公司 Isomorphic 融资 50 亿美元",
+        "ja": "DeepMind発の創薬AI、Isomorphic Labsが50億ドルを調達",
+        "en": "Isomorphic Labs, DeepMind's drug-discovery spinout, raises $5 billion"
+      },
+      "why": {
+        "zh": "钱是真金白银，但药还没影：这是 AI 制药史上最大一笔私募，半年前刚融过 21 亿美元；但公司至今没有一款候选药进入人体试验，估值也没公布。普通人不用懂，知道“AI 还没造出药、但资本还在加注”就够了。",
+        "ja": "お金は本物だが、薬はまだない。AI創薬として過去最大の資金調達で、半年前にも21億ドルを集めたばかり。ただ、まだ人体試験に入った候補薬は一つもなく、評価額も非公表だ。一般の人は「AIはまだ薬を作っていないが、資金は集まり続けている」と知っておけば十分。",
+        "en": "The money is real, but the drugs aren't yet: the biggest private round in AI drug discovery, six months after a $2.1B raise — yet no candidate has entered a human trial and no valuation was disclosed. For most people it's enough to know AI hasn't made a drug yet, but capital keeps pouring in."
+      },
+      "src": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/"
+    },
     {
       "d": "2026-11-16",
       "verdict": "skip",
@@ -1186,107 +1282,6 @@
         "en": "A point release. If you use it, you get it automatically."
       },
       "src": "https://llmgateway.io/timeline"
-    },
-    {
-      "d": "2026-11-04",
-      "verdict": "skip",
-      "panic": 4,
-      "t": {
-        "zh": "Canva 裁员 1271 人（约 22%），13 年来第一次，AI 成本涨太快",
-        "ja": "Canvaが1271人（約22%）を削減、13年で初めて、AIコスト高騰も一因",
-        "en": "Canva cuts 1,271 jobs (about 22%) in its first layoffs in 13 years, as AI costs balloon"
-      },
-      "why": {
-        "zh": "看着像「AI 抢饭碗」，细看还有另一面：AI 太贵，把公司的算力账单顶上去了，增长又放缓。被挤掉的是「只会套模板」的部分，设计这门活本身没消失。用 Canva 的人什么都不用做，继续用就行。",
-        "ja": "「AIに仕事を奪われた」話に見えるが、裏側ではAIのコスト高が会社の支出を膨らませ、成長も鈍った。消えたのはテンプレ作業の部分で、デザインの仕事自体ではない。利用者はそのまま使えばいい。",
-        "en": "It looks like \"AI took the jobs,\" but the other half of the story is that AI got expensive: compute bills ballooned while growth slowed. What got squeezed is template-only work, not design itself. If you use Canva, just keep using it."
-      },
-      "src": "https://techcrunch.com/2026/11/04/canva-lays-off-over-1200-people-amid-slowing-growth/?utm_campaign=mb&utm_source=morning_brew&utm_medium=newsletter"
-    },
-    {
-      "d": "2026-11-04",
-      "verdict": "skip",
-      "panic": 2,
-      "t": {
-        "zh": "Meta 收购 Conductor，云服务 11 月 20 日关停",
-        "ja": "MetaがConductorを買収、クラウドは11/20終了",
-        "en": "Meta buys Conductor; its cloud shuts Nov 20"
-      },
-      "why": {
-        "zh": "又一个被收购后关停的工具。用着的话把数据导出来，换一个就行。",
-        "ja": "買収後に終了するツールがまた一つ。データを書き出して乗り換えればいい。",
-        "en": "Another acquired-then-closed tool. Export your data and switch."
-      },
-      "src": "https://tooldirectory.ai/ai-graveyard/2026",
-      "v": 1
-    },
-    {
-      "d": "2026-11-04",
-      "verdict": "try",
-      "panic": 1,
-      "v": 1,
-      "t": {
-        "zh": "OpenAI 上线新一代图像模型 GPT Image 2.6",
-        "ja": "OpenAIが新画像モデルGPT Image 2.6を公開",
-        "en": "OpenAI ships GPT Image 2.6"
-      },
-      "why": {
-        "zh": "零学习成本，想出图时直接用就行，不用学参数。",
-        "ja": "学習コストゼロ。必要な時にそのまま使えばいい。",
-        "en": "Zero learning curve. Use it when you need an image."
-      },
-      "src": "https://llmgateway.io/timeline"
-    },
-    {
-      "d": "2026-11-02",
-      "verdict": "skip",
-      "panic": 1,
-      "t": {
-        "zh": "Agent 平台 Vellum 因竞争激烈关停",
-        "ja": "エージェント基盤Vellumが競争激化で終了",
-        "en": "Agent platform Vellum shuts down amid competition"
-      },
-      "why": {
-        "zh": "Agent 搭建平台在洗牌。没在用就不用管。",
-        "ja": "エージェント構築基盤は再編中。使っていなければ無関係。",
-        "en": "Agent-builder platforms are consolidating. Not your problem unless you use it."
-      },
-      "src": "https://tooldirectory.ai/ai-graveyard/2026",
-      "v": 1
-    },
-    {
-      "d": "2026-10-29",
-      "verdict": "skip",
-      "panic": 2,
-      "t": {
-        "zh": "谷歌编程 Agent Jules 年底关闭",
-        "ja": "GoogleのJulesが年末終了",
-        "en": "Google's Jules coding agent closes at year end"
-      },
-      "why": {
-        "zh": "功能并入 Antigravity。这就是别押注单个工具的原因。",
-        "ja": "Antigravityに統合。単一ツールに賭けない理由がこれ。",
-        "en": "Folded into Antigravity. This is why you don't bet on one tool."
-      },
-      "src": "https://tooldirectory.ai/ai-graveyard/2026",
-      "v": 1
-    },
-    {
-      "d": "2026-10-29",
-      "verdict": "skip",
-      "panic": 3,
-      "v": 1,
-      "t": {
-        "zh": "OpenAI 先说要砍 Pro 额度，被骂后改成翻倍",
-        "ja": "OpenAIがProの枠削減を撤回し倍増",
-        "en": "OpenAI reverses a Pro cut and doubles limits"
-      },
-      "why": {
-        "zh": "额度和价格会反复变。按月付费，不够再升级，别年付。",
-        "ja": "枠と価格は何度も変わる。月払いで、足りなければ上げる。",
-        "en": "Limits keep moving. Pay monthly, upgrade only if you hit the wall."
-      },
-      "src": "https://www.androidauthority.com/openai-doubles-chatgpt-usage-limits-3730213/"
     }
   ]
 }
