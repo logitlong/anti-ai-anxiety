@@ -1,7 +1,87 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "mode": "manual",
   "items": [
+    {
+      "d": "2026-11-18",
+      "verdict": "skip",
+      "panic": 3,
+      "t": {
+        "zh": "Anthropic 上市定价 83 美元：超出发行区间，史上最大 IPO",
+        "ja": "AnthropicのIPO価格は83ドルに決定：想定レンジを上回り、史上最大規模の上場へ",
+        "en": "Anthropic prices IPO at $83, above its range — the largest IPO on record"
+      },
+      "why": {
+        "zh": "定价 83 美元、募资约 813 亿美元，11 月 19 日以 ANT 在纳斯达克挂牌，确实是 AI 史上最大上市。但发行价高不等于开盘就涨——SpaceX 上市后也一度跌破开盘价。普通人看看热闹就行，不用急着追高。",
+        "ja": "価格は83ドル、調達額は約813億ドルで、11月19日にティッカーANTでナスダックに上場。AI史上最大の上場なのは確かだ。ただし初値が高いからといって上がり続けるとは限らない。SpaceXも上場後に初値を割ったことがある。普通の人は見物だけで十分で、慌てて買う必要はない。",
+        "en": "Priced at $83, raising about $81.3B, trading Nov 19 on Nasdaq as ANT — the largest IPO ever for an AI company. But a high offer price doesn't mean it only goes up: SpaceX also fell below its opening price after listing. For everyone else, just watch; no need to chase."
+      },
+      "src": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/"
+    },
+    {
+      "d": "2026-11-18",
+      "verdict": "skip",
+      "panic": 2,
+      "t": {
+        "zh": "谷歌 Gemini 4 Neon 来了：一个月内第四款 Gemini 4，跑分第三、价格却更贵",
+        "ja": "Google、Gemini 4 Neonを発表：1か月で4つ目のGemini 4、ベンチマーク3位でも価格は高め",
+        "en": "Google ships Gemini 4 Neon: the fourth Gemini 4 in a month, ranked #3 but pricier"
+      },
+      "why": {
+        "zh": "Neon 号称前沿水平、跑分排第三，上下文 100 万 token，输入 3 美元、输出 15 美元每百万 token——比 Hydrogen 贵一倍。一个月连发四款，名字都快记不住了：普通用户在 Gemini App 里等 Pro 版推送就行，不用追着每个型号跑。",
+        "ja": "Neonはフロンティア級とうたい、ベンチマークで3位、コンテキスト100万トークン、100万トークンあたり入力3ドル・出力15ドルとHydrogenの2倍の価格。1か月で4モデルも出て名前を覚えきれない。普通のユーザーはGeminiアプリのPro版に届くのを待てば十分で、モデルごとに追いかける必要はない。",
+        "en": "Neon claims frontier-level smarts, ranks #3 on the benchmark, with a 1M-token window at $3/$15 per million tokens — twice Hydrogen's price. Four models in one month is impossible to keep up with: regular users can just wait for it to land in the Gemini app's Pro tier instead of chasing every release."
+      },
+      "src": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    },
+    {
+      "d": "2026-11-18",
+      "verdict": "skip",
+      "panic": 3,
+      "t": {
+        "zh": "微软 Ignite 一口气发 7 个自研模型，还推了 24 小时在线的 Copilot Autopilot",
+        "ja": "Microsoft、Igniteで自社モデル7つを一挙発表：24時間稼働のCopilot Autopilotも登場",
+        "en": "Microsoft's Ignite drops 7 in-house models and an always-on Copilot Autopilot"
+      },
+      "why": {
+        "zh": "MAI Code 2、Cyber 2 Flash 等 7 个模型加自研 Maia 300 芯片，号称“前沿性能、不用前沿价钱”；Autopilot 号称 24 小时替你跟进邮件和项目。但 Autopilot 只给 Frontier 早期客户、还没定价，Code 2 已进 GitHub Copilot——写代码的可以顺手用，普通人等它真正进日常办公再说。",
+        "ja": "MAI Code 2やCyber 2 Flashなど7モデルに自社チップMaia 300を追加し、「フロンティア級の性能をフロンティア級の価格なしで」とアピール。Autopilotはメールやプロジェクトを24時間追ってくれるという。ただしAutopilotはFrontierの早期顧客限定で価格未定。Code 2はGitHub Copilotに入ったので、コードを書く人はついでに使えばよく、普通の人は日常業務に届いてからで十分だ。",
+        "en": "Seven models including MAI Code 2 and Cyber 2 Flash, plus the Maia 300 chip — 'frontier performance without frontier prices' — and Autopilot, which supposedly follows up on emails and projects around the clock. But Autopilot is Frontier-only with no price yet. Code 2 is already in GitHub Copilot, so coders can try it in passing; everyone else can wait until it reaches everyday work."
+      },
+      "src": "https://www.epcgroup.net/insights/microsoft-ignite-2026-day-1-announcements"
+    },
+    {
+      "d": "2026-11-18",
+      "verdict": "skip",
+      "panic": 2,
+      "t": {
+        "zh": "DeepSeek 免费限额两天仍没松：长对话、每日额度都卡住了",
+        "ja": "DeepSeekの無料制限、2日経っても緩まず：長文会話も1日の利用枠も制限中",
+        "en": "DeepSeek's free-tier limits still in place after two days: long chats and daily quotas capped"
+      },
+      "why": {
+        "zh": "11 月 16 日起，免费用户单次输入压到约 4 万字、超 7 天没动的长对话不能接续、每天还有额度上限，用两小时就可能被限流。官方理由是算力不足，至今没说什么时候解除、也没出付费方案。重度用户可以先把重要对话导出备份，日常轻度使用基本不受影响，不用急着换家。",
+        "ja": "11月16日から無料ユーザーは1回の入力が約4万字までに圧縮され、7日以上動いていない長文会話は続けられず、1日の利用枠にも上限がつき、2時間ほどで制限されることもある。理由は計算資源不足で、解除時期も有料プランもまだ発表されていない。重要な会話はエクスポートして控えておき、軽い日常利用ならほぼ影響はないので、慌てて乗り換える必要はない。",
+        "en": "Since Nov 16, free users get ~40,000 characters per input, can't resume chats idle over 7 days, and hit a daily quota — sometimes after under two hours. The reason given is a compute shortage, with no end date or paid plan announced. Heavy users should export important chats as backup; light everyday use is barely affected, so no need to switch in a panic."
+      },
+      "src": "https://www.21jingji.com/article/20261118/herald/c2c62e711ddb6fc733f430b178bc5b93.html"
+    },
+    {
+      "d": "2026-11-18",
+      "verdict": "skip",
+      "panic": 2,
+      "t": {
+        "zh": "法国机器人 Genesis 融了 5 亿美元：轮式机器人 Eno，2027 年量产",
+        "ja": "仏ロボット企業Genesisが5億ドル調達：車輪型ロボットEno、2027年に量産へ",
+        "en": "French robot maker Genesis raises $500M: wheeled robot Eno heads for mass production in 2027"
+      },
+      "why": {
+        "zh": "5 亿美元 A 轮、估值 35 亿美元，英伟达、施密特都投了，Eno 主打“手比腿重要”——轮式底盘加灵巧手，先进工厂仓库。但目前只造了 30 到 40 台，量产要等 2027 年。机器人进工厂是慢变量，普通人不用担心明天就被替代。",
+        "ja": "5億ドルのシリーズAで評価額35億ドル。エヌビディアやシュミット氏らが出資し、Enoは「脚より手」を売りにする車輪型ロボットで、工場や倉庫から入る。ただし今あるのは30〜40台だけで、量産は2027年。ロボットの工場進出はゆっくりした変化なので、明日いきなり置き換えられる心配はない。",
+        "en": "$500M Series A at a $3.5B valuation, backed by Nvidia and Eric Schmidt, for Eno — a wheeled robot betting that hands matter more than legs, starting in factories and warehouses. But only 30–40 units exist so far, with mass production in 2027. Robots entering factories is a slow shift, not an overnight replacement."
+      },
+      "src": "https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-3-5b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302941249.html"
+    },
     {
       "d": "2026-11-17",
       "verdict": "skip",
@@ -1201,87 +1281,6 @@
         "en": "It found piles of flaws in Linux and Firefox, which sounds scary, but you can't get it anyway — it's limited to vetted security teams. Your only job: leave automatic software updates on."
       },
       "src": "https://openai.com/index/introducing-gpt-6-cyber/"
-    },
-    {
-      "d": "2026-11-05",
-      "verdict": "try",
-      "panic": 2,
-      "t": {
-        "zh": "谷歌视频模型 Gemini Omni 1.2 Flash：能做 15 秒，还降价 30%",
-        "ja": "Googleの動画モデルGemini Omni 1.2 Flash、15秒対応で30%値下げ",
-        "en": "Google's Gemini Omni 1.2 Flash does 15-second video and costs 30% less"
-      },
-      "why": {
-        "zh": "视频从 10 秒变 15 秒，价格还便宜了。平时做短视频的顺手试试就行；不做视频的完全可以跳过，不必为多 5 秒换工具。",
-        "ja": "動画が10秒から15秒になり、値下げもした。短い動画を作る人だけ試せばいい。作らない人は5秒のために乗り換え不要。",
-        "en": "Clips grow from 10 to 15 seconds and get cheaper. Worth a try only if you already make short videos — no need to switch tools for five extra seconds."
-      },
-      "src": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/?ref=aiposthub.com"
-    },
-    {
-      "d": "2026-11-05",
-      "verdict": "skip",
-      "panic": 4,
-      "t": {
-        "zh": "报告称 Anthropic 用 AI 做研发，模型进步速度快了约一倍",
-        "ja": "AnthropicはAIでAI開発を加速、進歩速度は約2倍との報告",
-        "en": "Report: Anthropic's AI-assisted R&D is improving models about twice as fast"
-      },
-      "why": {
-        "zh": "「AI 在造 AI」听着像科幻，但报告自己说不确定性很大，关键证据还被打码了。对普通人的影响约等于零：模型变强也是自动推送到你手里，不用提前焦虑。",
-        "ja": "「AIがAIを作る」と聞くとSFだが、報告自体が不確実性は大きいとし、肝心の証拠は黒塗り。一般人への影響はほぼゼロで、強くなっても自動で届く。",
-        "en": "\"AI building AI\" sounds like sci-fi, but the report itself stresses high uncertainty and its key evidence is redacted. For ordinary users the impact is nil — stronger models arrive automatically anyway."
-      },
-      "src": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
-    },
-    {
-      "d": "2026-11-05",
-      "verdict": "wait",
-      "panic": 2,
-      "t": {
-        "zh": "Claude 上线个人财务功能（美国测试版）：能看账单，不能动钱",
-        "ja": "Claudeに個人財務機能が登場（米国のベータ）: 支出は見えるがお金は動かせない",
-        "en": "Claude adds Personal Finance in US beta: it can read your bills, not move your money"
-      },
-      "why": {
-        "zh": "它能连上银行账单帮你算「钱花哪了」，但只能看、不能转账。目前只有美国付费用户能用，其他地区连入口都没有，先观望，不用急着把账单交出去。",
-        "ja": "銀行明細を読んで支出を教えてくれるが、送金はできない。現状は米国の有料ユーザーだけで、他地域は入口すらない。様子見でいい。",
-        "en": "It can read your bank transactions and explain where money went, but it can't move a cent. US paid plans only for now — everyone else can't even see it, so just wait."
-      },
-      "src": "https://claude.com/resources/articles/introducing-personal-finance-in-claude?ref=testingcatalog.com"
-    },
-    {
-      "d": "2026-11-05",
-      "verdict": "skip",
-      "panic": 2,
-      "t": {
-        "zh": "月之暗面开放 Kimi K3.1 Pro 权重，2.8 万亿参数",
-        "ja": "Moonshot AIがKimi K3.1 Proのウェイトを公開、2.8兆パラメータ",
-        "en": "Moonshot AI open-sources Kimi K3.1 Pro weights, a 2.8T-parameter model"
-      },
-      "why": {
-        "zh": "参数大得吓人，但「开放权重」主要是给开发者部署用的，普通人打开 Kimi 网页就能直接聊。你不用为了一个模型去买显卡。",
-        "ja": "パラメータ数は巨大だが、ウェイト公開は主に開発者向け。一般人はKimiのWebでそのまま使える。モデルのためにGPUを買う必要はない。",
-        "en": "The parameter count is huge, but open weights are mainly for developers to deploy. Everyone else can just chat with Kimi on the web — no GPU purchase required."
-      },
-      "src": "https://www.ithome.com/1/022/490.htm"
-    },
-    {
-      "d": "2026-11-05",
-      "verdict": "skip",
-      "panic": 1,
-      "v": 1,
-      "t": {
-        "zh": "DeepSeek V4 Flash 小版本更新",
-        "ja": "DeepSeek V4 Flashのマイナー更新",
-        "en": "DeepSeek V4 Flash minor update"
-      },
-      "why": {
-        "zh": "小版本迭代。在用的话会自动换上，不用做任何事。",
-        "ja": "小さな更新。使っていれば自動で反映、何もしなくていい。",
-        "en": "A point release. If you use it, you get it automatically."
-      },
-      "src": "https://llmgateway.io/timeline"
     }
   ]
 }
