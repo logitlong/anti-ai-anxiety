@@ -1,7 +1,87 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "mode": "manual",
   "items": [
+    {
+      "d": "2026-11-19",
+      "verdict": "skip",
+      "panic": 3,
+      "t": {
+        "zh": "Anthropic 上市首日：开盘冲到 111.50 美元，收盘 97.17 美元、较发行价涨 17%",
+        "ja": "Anthropic上場初日：111.50ドルで寄り付き、97.17ドルで引け、公開価格比17%高",
+        "en": "Anthropic's first trading day: opened at $111.50, closed at $97.17, up 17% on its $83 IPO price"
+      },
+      "why": {
+        "zh": "史上最大 IPO 平安落地，首日没破发也没疯涨。想买 AI 股的人不用追开盘价，等它走稳了、看看财报再说也不迟；不买股票的人，这事和你一点关系也没有。",
+        "ja": "史上最大のIPOは無事成立し、初日に公募価格割れも暴騰もしなかった。AI株を買いたい人も寄り付きを追う必要はない。落ち着いてから決算を見て考えれば十分。株を買わない人にはそもそも関係のない話。",
+        "en": "The largest IPO ever landed without breaking below its offer price or going wild on day one. If you want AI stocks, there is no need to chase the opening print — wait for it to settle and read the earnings first. If you don't buy stocks, this has nothing to do with you."
+      },
+      "src": "https://invezz.com/news/2026/11/19/anthropic-stock-first-day-close-2026-11-19/"
+    },
+    {
+      "d": "2026-11-19",
+      "verdict": "skip",
+      "panic": 3,
+      "t": {
+        "zh": "美国芯片新规今天生效：堵上远程用芯漏洞，英伟达已停供中国 H200",
+        "ja": "米国の半導体新規制が施行：リモート利用の抜け穴を塞ぎ、NVIDIAは中国へのH200供給を停止",
+        "en": "US chip rule takes effect today, closing the remote-access loophole; Nvidia has already halted H200 shipments to China"
+      },
+      "why": {
+        "zh": "管的是芯片流向，不是你手里的电脑和手机；中国大模型早就转向国产芯片适配，这出拉锯还会再演几轮，普通人看个热闹就行。",
+        "ja": "規制の対象は半導体の流れであって、あなたのパソコンやスマホではない。中国の大規模モデルはすでに国産チップへの対応を進めており、この綱引きはまだ何ラウンドも続く。普通の人は眺めているだけで十分。",
+        "en": "This regulates where chips flow, not the computer or phone in your hands. Chinese model makers have long been adapting to domestic chips, and this tug-of-war has several rounds left. For most people, watching from the sidelines is enough."
+      },
+      "src": "https://www.techi.com/us-chip-export-rule-takes-effect-nvidia-halts-h200-china-sales/"
+    },
+    {
+      "d": "2026-11-18",
+      "verdict": "skip",
+      "panic": 3,
+      "t": {
+        "zh": "加州新报告：州政府应有权紧急关停危险模型，还能给 AI 自我改进踩刹车",
+        "ja": "カリフォルニア州の新報告：危険なモデルを緊急停止できる権限と、AIの自己改善への上限を提言",
+        "en": "California report: the state should be able to order emergency shutdowns of dangerous models and cap AI self-improvement"
+      },
+      "why": {
+        "zh": "这只是建议，还不是法律，州议会 12 月才回来讨论；真要落地也是管大厂的，和你用的聊天机器人没关系，不用担心哪天突然被拔网线。",
+        "ja": "これは提言であって、まだ法律ではない。州議会が戻ってくるのは12月。仮に成立しても対象は大手ラボで、あなたが使うチャットボットとは関係ない。ある日突然止められる心配はいらない。",
+        "en": "These are recommendations, not law — the legislature only returns in December to debate them. Even if enacted, they would govern the big labs, not the chatbot you use. No need to worry about being unplugged one day."
+      },
+      "src": "https://www.unite.ai/newsom-proposes-mandatory-frontier-ai-oversight-and-shutdown-powers/"
+    },
+    {
+      "d": "2026-11-18",
+      "verdict": "skip",
+      "panic": 3,
+      "t": {
+        "zh": "OpenAI 自曝：自家智能体已能独立干完 46% 的中时长研究活，3 月才 23%",
+        "ja": "OpenAIが自白：自社エージェントが2〜4時間の研究タスクの46%を独力で完了、3月は23%だった",
+        "en": "OpenAI: its own coding agents now finish 46% of two-to-four-hour research tasks alone, up from 23% in March"
+      },
+      "why": {
+        "zh": "数字看着吓人，但 OpenAI 自己都承认：挑活儿变精了也有功劳，写推理服务代码这类硬活成功率才 25%。AI 越来越能干活，不等于你的活明天就没了，先学会把它当同事使。",
+        "ja": "数字だけ見ると怖いが、OpenAI自身も認めている。任せる仕事の選び方がうまくなった分もあり、推論サービスのコード書きのような難しい仕事の成功率は25%どまり。AIが仕事をこなせるようになったからといって、あなたの仕事が明日なくなるわけではない。まずは同僚として使う練習から。",
+        "en": "The numbers look scary, but OpenAI itself admits part of the rise comes from researchers getting better at picking delegable tasks — success on hard jobs like writing inference-serving code is only 25%. AI getting better at work doesn't mean your job vanishes tomorrow; learn to use it as a colleague first."
+      },
+      "src": "https://openai.com/index/research-acceleration-jagged-frontier/"
+    },
+    {
+      "d": "2026-11-19",
+      "verdict": "skip",
+      "panic": 2,
+      "t": {
+        "zh": "GPT-6.2 上线两天就挨骂：早期测试者嫌它自主性过头、不好用",
+        "ja": "GPT-6.2は公開2日で酷評：初期テスターが自律性の過剰さと使いにくさを指摘",
+        "en": "GPT-6.2 gets panned by early testers two days after launch: too autonomous, hard to use"
+      },
+      "why": {
+        "zh": "新模型翻车是常态，上一代刚出时也被骂过一轮；你又不是必须第一天就换模型，等它修几轮再试也不迟，旧模型又没跑。",
+        "ja": "新モデルの出だしのつまずきは日常茶飯事で、前世代も公開直後は同じように叩かれた。初日に乗り換える必要はない。何度か修正されてから試せば十分で、旧モデルが消えるわけでもない。",
+        "en": "A rocky launch is normal for a new model — the previous generation got the same treatment on day one. You don't have to switch on the first day; try it again after a few rounds of fixes. The old model isn't going anywhere."
+      },
+      "src": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-19-2026/"
+    },
     {
       "d": "2026-11-18",
       "verdict": "skip",
@@ -1201,86 +1281,6 @@
         "en": "Always-on agents that own long-running work sound like hiring digital staff — but they need the $200-a-month Max plan and are web-only preview for now. Wait for a cheaper tier."
       },
       "src": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work"
-    },
-    {
-      "d": "2026-11-05",
-      "verdict": "skip",
-      "panic": 2,
-      "t": {
-        "zh": "英伟达开源 4 个 Cosmos 3 世界模型：能同时生成行车视频和激光雷达",
-        "ja": "NVIDIAがCosmos 3の世界モデル4種を公開、運転映像とLiDARを同時生成",
-        "en": "Nvidia open-sources four Cosmos 3 world models for driving and robotics simulation"
-      },
-      "why": {
-        "zh": "自动驾驶和机器人训练用的仿真模型，16B 参数、商用许可都给了，但这是开发者的工具——得有英伟达的卡和仿真环境才跑得起来。普通人看看就好，车和机器人不会因此明天就变样。",
-        "ja": "自動運転・ロボット訓練用のシミュレーションモデル。開発者向けの道具で、一般人には関係ない。",
-        "en": "Simulation models for self-driving and robotics training — powerful, but they're developer tools that need Nvidia hardware and a simulator. Nothing changes for the rest of us tomorrow."
-      },
-      "src": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
-    },
-    {
-      "d": "2026-11-05",
-      "verdict": "try",
-      "panic": 1,
-      "t": {
-        "zh": "Gemini 新功能：拍张手绘草图，就能生成可用的小应用",
-        "ja": "Geminiが手描きスケッチをアプリ化、写真を撮るだけ",
-        "en": "Gemini turns a photo of a hand-drawn sketch into a working app"
-      },
-      "why": {
-        "zh": "零学习成本：拍张草图照片、问一句「能写成 App 吗」，就能在预览里试着改。想做个习惯打卡表或小游戏的顺手试试；注意别往里面放隐私内容，分享链接的人都能改数据。",
-        "ja": "学習コストゼロ。スケッチの写真を撮って聞くだけ。ただ共有リンクを持つ人は誰でもデータを編集できるので、個人情報は入れないこと。",
-        "en": "Zero learning curve: photograph a sketch, ask it to code the app, tweak it in the preview. Worth a try for a habit tracker or mini game — just don't put private data in it, since anyone with the share link can edit it."
-      },
-      "src": "https://blog.google/innovation-and-ai/products/gemini-app/turn-drawings-into-apps-gemini/"
-    },
-    {
-      "d": "2026-11-05",
-      "verdict": "skip",
-      "panic": 2,
-      "t": {
-        "zh": "Mira Murati 的 Thinking Machines 发布 Inkling 2 Small：594B 参数，权重下周才开源",
-        "ja": "Mira MuratiのThinking Machines、Inkling 2 Smallを発表、重みは来週公開予定",
-        "en": "Thinking Machines Lab ships Inkling 2 Small, a 594B-parameter model — open weights due next week"
-      },
-      "why": {
-        "zh": "参数 594B、能连续干 4 小时的活，听着很强，但现在只能在它自己的 Tinker 平台上用，权重下周才放出来（还得看安全测试过不过）。普通人等它真开源、进了常用工具再说。",
-        "ja": "594Bパラメータで長時間タスクに強いが、今は自社Tinker限定。重み公開は来週以降。様子見でいい。",
-        "en": "A 594B-parameter model built for hours-long autonomous work — but today it only runs on Thinking Machines' own Tinker platform, with open weights promised next week pending safety tests. Wait until it actually lands in tools you use."
-      },
-      "src": "https://www.unite.ai/thinking-machines-lab-launches-inkling-2-small-with-open-weights-pending/"
-    },
-    {
-      "d": "2026-11-06",
-      "verdict": "try",
-      "panic": 2,
-      "t": {
-        "zh": "蚂蚁百灵发布 Ling-3.2-Flash 多模态模型，前两周免费",
-        "ja": "アントの百霊がマルチモーダルモデルLing-3.2-Flashを公開、最初の2週間は無料",
-        "en": "Ant Group's Ling team ships the Ling-3.2-Flash multimodal model, free for two weeks"
-      },
-      "why": {
-        "zh": "又一个大模型上线，自测跑分看看就好。真好奇就趁免费在网页上试两下，不用下载，也不用学新工具。",
-        "ja": "また新しい大モデル。自社ベンチは話半分で。気になるなら無料期間にWebで触るだけで十分、ダウンロードも学習も不要。",
-        "en": "Another big model launch; vendor benchmarks are vendor benchmarks. If you're curious, try it free on the web — nothing to install or learn."
-      },
-      "src": "https://www.ithome.com/1/023/043.htm"
-    },
-    {
-      "d": "2026-11-05",
-      "verdict": "skip",
-      "panic": 3,
-      "t": {
-        "zh": "OpenAI 发布安全专用模型 GPT-6 Cyber，只给审核过的安全团队",
-        "ja": "OpenAIがセキュリティ特化モデルGPT-6 Cyberを発表、審査済みチーム限定",
-        "en": "OpenAI launches GPT-6 Cyber, a security model limited to vetted teams"
-      },
-      "why": {
-        "zh": "它在 Linux 和 Firefox 里挖出了一堆漏洞，听着吓人，但普通人根本拿不到，只开放给审核过的安全团队。你要做的只有一件：把软件自动更新打开。",
-        "ja": "LinuxやFirefoxで大量の脆弱性を見つけたと聞くと怖いが、一般人はそもそも使えない。審査済みチーム限定。やることはソフトの自動更新をオンにするだけ。",
-        "en": "It found piles of flaws in Linux and Firefox, which sounds scary, but you can't get it anyway — it's limited to vetted security teams. Your only job: leave automatic software updates on."
-      },
-      "src": "https://openai.com/index/introducing-gpt-6-cyber/"
     }
   ]
 }

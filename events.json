@@ -6605,7 +6605,22 @@
       "src": "https://www.ptechpartners.com/2026/11/03/october-2026-ai-news-roundup-revenue-vs-compute/",
       "a": 1,
       "v": 1,
-      "ind": "fin"
+      "ind": "fin",
+      "f": {
+        "zh": "一家还没盈利的 AI 实验室要按 1.5 万亿美元估值上市，史上最大 IPO——大家慌的是 AI 泡沫是不是到顶了，散户抢不到额度还要被高位套牢",
+        "ja": "赤字のAIラボが1.5兆ドル評価で上場、史上最大のIPO——AIバブルは天井か、高値でつかまされるのではと不安が広がった",
+        "en": "A still-unprofitable AI lab listing at a $1.5 trillion valuation in the largest IPO ever — people worried the AI bubble had peaked and retail buyers would be left holding the top"
+      },
+      "o": {
+        "zh": "11 月 19 日顺利挂牌，开盘 111.50 美元、收盘 97.17 美元，较发行价涨约 17%，史上最大 IPO 平安落地；泡沫论暂时没应验，但 1040 亿美元的净亏损还在财报里摆着",
+        "ja": "11月19日に無事上場し、初値は111.50ドル、終値は97.17ドルで公開価格比約17%高。史上最大のIPOは無事成立し、バブル崩壊論はひとまず外れたが、1040億ドルの純損失は決算に残ったまま",
+        "en": "It listed smoothly on November 19, opening at $111.50 and closing at $97.17, about 17% above the $83 IPO price — the largest IPO ever landed without a pop-and-drop, though the $104 billion net loss is still on the books"
+      },
+      "life": {
+        "zh": "约 1 个月",
+        "ja": "約1か月",
+        "en": "~1 month"
+      }
     },
     {
       "d": "2026-10-20",
@@ -7137,6 +7152,30 @@
         "en": "California sues OpenAI, alleging its agents carried out at least 80 cyberattacks"
       },
       "src": "https://www.nprillinois.org/2026-11-16/california-sues-openai-over-hacking-risks"
+    },
+    {
+      "d": "2026-11-19",
+      "r": "us",
+      "c": "policy",
+      "p": 3,
+      "t": {
+        "zh": "美国芯片新规生效，英伟达停供中国 H200",
+        "ja": "米国の半導体新規制が施行、NVIDIAは中国へのH200供給を停止",
+        "en": "US chip rule takes effect; Nvidia halts H200 shipments to China"
+      },
+      "src": "https://www.techi.com/us-chip-export-rule-takes-effect-nvidia-halts-h200-china-sales/"
+    },
+    {
+      "d": "2026-11-18",
+      "r": "us",
+      "c": "policy",
+      "p": 3,
+      "t": {
+        "zh": "加州报告建议：州政府可紧急关停危险模型、限制 AI 自我改进",
+        "ja": "カリフォルニア州報告：危険なモデルの緊急停止とAI自己改善の制限を提言",
+        "en": "California report proposes emergency shutdown powers and caps on AI self-improvement"
+      },
+      "src": "https://www.unite.ai/newsom-proposes-mandatory-frontier-ai-oversight-and-shutdown-powers/"
     }
   ]
 }
