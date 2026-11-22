@@ -1,7 +1,103 @@
 {
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-21",
+   "verdict": "skip",
+   "panic": 4,
+   "t": {
+    "zh": "黎曼猜想被攻克了？Anthropic 数学家称与 Claude 合作完成证明，独立验证已通过",
+    "ja": "リーマン予想を解決？Anthropicの数学者がClaudeと協力して証明、独立検証も通過",
+    "en": "Riemann hypothesis cracked? Anthropic mathematician says he proved it with Claude, and independent checks pass"
+   },
+   "why": {
+    "zh": "这是数学界 167 年来最难的问题，Lean 社区周六已验证 1700 万行证明代码无误。但注意：这只是机器验证通过，克莱研究所还没正式授奖，而且同一天还冒出了另一份纯人工的证明。数学家不会因此失业，普通人更不用慌——看个热闹，等学界慢慢消化就行。",
+    "ja": "167年間未解決だった数学最大の難問について、Leanコミュニティが土曜日に1700万行の証明コードを検証し、正しいと認めた。ただしこれは機械検証が通っただけで、クレイ研究所の正式認定はまだで、同じ日に人間だけの別証明も現れた。数学者が失業する話ではなく、一般の人は見物して、学界の消化を待てばいい。",
+    "en": "The hardest open problem in mathematics in 167 years: the Lean community verified 17 million lines of proof code on Saturday and says it checks out. But that is machine verification only — the Clay Institute has not formally accepted it, and a separate all-human proof appeared the same day. Mathematicians are not about to lose their jobs, and ordinary readers need not panic — just watch and let the field digest it."
+   },
+   "src": "https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/"
+  },
+  {
+   "d": "2026-11-21",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "Signal 在手机上禁截图：系统级 AI Agent 会偷看加密聊天，隐私防线告急",
+    "ja": "Signalがスマホでスクショを制限：OSのAIエージェントが暗号化チャットをのぞき見る",
+    "en": "Signal blocks screenshots on phones: OS-level AI agents can peek at encrypted chats"
+   },
+   "why": {
+    "zh": "Signal 总裁的话说得很重：Windows、安卓、iOS 现在都让 AI Agent 直接扫屏幕，你的加密聊天一上屏就可能被系统级 Agent 抓走存走，加密本身没破、防线却被绕过去了。Signal 只能先禁截图自保，还承认这招不彻底。普通人不用换应用，但要知道：手机上「已加密」不等于「没人能看」，截图和录屏权限别乱给。",
+    "ja": "Signalの社長は重い言葉を使った。WindowsもAndroidもiOSも、AIエージェントが画面を直接読み取るようになり、暗号化されたチャットも画面に出た瞬間に取り込まれかねない。暗号自体は破られていないのに、守りが迂回される。Signalはスクショ制限で自衛するしかなく、不完全な対策だと認めている。一般の人はアプリを変える必要はないが、「暗号化済み」は「誰も見られない」と同じではない。スクショや画面録画の権限は安易に渡さないこと。",
+    "en": "Signal's president put it bluntly: Windows, Android and iOS now let AI agents scan your screen, so an encrypted chat can be scooped up by an OS-level agent the moment it appears on screen. The encryption is not broken — it is bypassed. Signal can only defend itself by blocking screenshots, and admits the fix is incomplete. Ordinary users need not switch apps, but know this: 'encrypted' on your phone does not mean 'nobody can see it' — don't hand out screenshot and screen-recording permissions lightly."
+   },
+   "src": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/"
+  },
+  {
+   "d": "2026-11-20",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "腾讯混元 Hy4 全量开源：770B 旗舰权重可下载，混元系列至此全部开放",
+    "ja": "テンセント混元Hy4を全面オープンソース化：770Bフラッグシップの重みを公開、混元シリーズが全開放",
+    "en": "Tencent open-sources Hunyuan Hy4: 770B flagship weights downloadable, full series now open"
+   },
+   "why": {
+    "zh": "770B 参数、100 万上下文，听着唬人，但这模型光权重就有 1.5TB，普通人的电脑根本跑不动，也不是给你用的。真正值得看的是趋势：国产大模型从「闭源追赶」走到「开源对打」，开发者多了个免费的旗舰底座。普通用户继续用 App 就行，不用去下载权重凑热闹。",
+    "ja": "770Bパラメータ、100万コンテキストと聞くとすごいが、重みだけで1.5TBあり、普通のパソコンでは動かせないし、一般ユーザー向けでもない。本当に注目すべきは流れだ。中国の大規模モデルが「クローズドで追う」から「オープンで戦う」に変わり、開発者は無料の旗艦ベースを手に入れた。一般ユーザーはアプリを使い続ければよく、重みをダウンロードしに行く必要はない。",
+    "en": "770B parameters and a million-token context sounds huge, but the weights alone are about 1.5TB — no ordinary computer can run it, and it is not meant for you. The real story is the trend: Chinese frontier models have moved from closed catch-up to open competition, giving developers a free flagship base to build on. Ordinary users should just keep using the apps; no need to download weights for fun."
+   },
+   "src": "https://github.com/Tencent-Hunyuan/Hy4"
+  },
+  {
+   "d": "2026-11-20",
+   "verdict": "try",
+   "panic": 2,
+   "t": {
+    "zh": "ChatGPT Space 上线：页面和幻灯片变成可多人协作的画布，取代侧边栏 Library",
+    "ja": "ChatGPT Spaceが登場：ページとスライドが共同編集できるキャンバスに、Libraryに代わる",
+    "en": "ChatGPT Space arrives: pages and slides become a collaborative canvas, replacing Library"
+   },
+   "why": {
+    "zh": "Plus 用户现在就能用：新建页面、演示文稿，还能拉人一起编辑、@ChatGPT 提改动，页面还能随已连的应用自动更新。不用学新东西，会用 ChatGPT 就会用。不是革命，就是把原来散在 Library 里的文件变成了能一起改的画布。",
+    "ja": "Plusユーザーは今すぐ使える。ページやプレゼン資料を新規作成し、他の人を招いて一緒に編集し、@ChatGPTで修正を頼める。ページは接続済みアプリに合わせて自動更新もできる。新しいことを学ぶ必要はなく、ChatGPTが使えれば使える。革命ではなく、Libraryに散らばっていたファイルを共同編集できるキャンバスにしただけだ。",
+    "en": "Plus users can try it now: create pages and slide decks, invite others to edit together, ask @ChatGPT for changes, and let pages auto-update from connected apps. Nothing new to learn — if you can use ChatGPT, you can use this. Not a revolution, just the files scattered in Library turned into a canvas people can edit together."
+   },
+   "src": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+  },
+  {
+   "d": "2026-11-20",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "Claude 的 computer use 开给 Team 与 Enterprise：AI 能看屏幕、代操作桌面应用",
+    "ja": "Claudeのcomputer useがTeamとEnterpriseに拡大：AIが画面を見てデスクトップアプリを操作",
+    "en": "Claude's computer use opens to Team and Enterprise: AI can see your screen and operate desktop apps"
+   },
+   "why": {
+    "zh": "Claude 现在能在你授权的电脑上看屏幕、点鼠标、代操作应用。听着像科幻，但默认是关的，得管理员手动开，而且目前只面向团队和企业版。个人用户不用紧张，也不用急着尝鲜——等它先在企业里把权限和事故边界磨清楚再说。",
+    "ja": "Claudeが、許可されたパソコンで画面を見て、クリックし、アプリを操作できるようになった。SFのようだが、デフォルトはオフで管理者が手動で有効化する必要があり、対象も今はTeamとEnterpriseのみ。個人ユーザーは慌てる必要も、急いで試す必要もない。企業で権限と事故の境界が整ってからで十分だ。",
+    "en": "Claude can now look at your screen, click around and operate apps on a computer you authorize. It sounds like science fiction, but it ships off by default, needs an admin to turn it on, and is only for Team and Enterprise plans for now. Individual users need neither worry nor rush to try it — let enterprises work out the permissions and failure modes first."
+   },
+   "src": "https://support.claude.com/en/articles/12138966-release-notes"
+  },
+  {
+   "d": "2026-11-18",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "纳德拉解释微软 6 万人买断：AI 时代人人都要管 Agent，但不是被 AI 取代",
+    "ja": "ナデラ氏がマイクロソフト6万人買収提案を説明：AI時代は誰もがエージェントを管理する、置き換えられるのではない",
+    "en": "Nadella explains Microsoft's 60,000-employee buyout: in the AI era everyone manages agents — not replaced by them"
+   },
+   "why": {
+    "zh": "这是 10 月 26 日那份 6 万人买断 offer 的后续：纳德拉在 DealBook 上亲口说，买断是给员工一个「选不选新玩法」的选择权。他举的例子很直白：365 里一个叫 Cowork 的 Agent 团队只有 11 个人，「他们建的是造产品的软件工厂，而不是自己造产品」。意思是岗位不会消失，但活法变了——从亲自干活变成管 AI 干活。普通人不用对号入座，但这句话值得记下来：以后简历上多一行「会管 Agent」，比多一行「会用 AI」更值钱。",
+    "ja": "10月26日の6万人買収提案の続報だ。ナデラ氏はDealBookで、買収は従業員に「新しい働き方を選ぶか」の選択肢を与えるものだと説明した。例も直截だ。Microsoft 365のCoworkというエージェントチームはわずか11人で、「彼らが作っているのは製品を作るソフトウェア工場であって、製品そのものではない」。職が消えるのではなく、働き方が変わる——自分で作業するのではなく、AIに作業を任せて管理する。普通の人は自分に当てはめる必要はないが、この一言は覚えておく価値がある。これからは履歴書に「AIを使う」より「エージェントを管理できる」と書けるほうが価値が高い。",
+    "en": "A follow-up to the October 26 offer of buyouts to 60,000 staff: Nadella told DealBook the buyout gives employees a choice about whether to sign up for the new way of working. His example was blunt — the Cowork agent team in Microsoft 365 has just 11 people: 'They build a software factory that builds the product. They don't build the product.' Jobs are not vanishing; the work is changing from doing it yourself to managing AI that does it. Ordinary readers need not take it personally, but the line is worth remembering: on a résumé, 'can manage agents' will soon be worth more than 'can use AI.'"
+   },
+   "src": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/"
+  },
   {
    "d": "2026-11-20",
    "verdict": "skip",
@@ -1185,102 +1281,6 @@
     "en": "Even OpenAI has to haggle now: it wanted $30 billion at a $1.4–1.5 trillion valuation and got an $11 billion first close at $1.25 trillion. That means AI money is getting picky, not that AI is over — $11 billion is still an astronomical sum, and SoftBank and MGX both joined."
    },
    "src": "https://www.unite.ai/openai-secures-11b-in-initial-funding-at-1-25t-valuation/"
-  },
-  {
-   "d": "2026-11-07",
-   "verdict": "skip",
-   "panic": 1,
-   "t": {
-    "zh": "谷歌接手 Crusoe 怀俄明数据中心烂尾项目，再投 170 亿美元",
-    "ja": "Google、Crusoeのワイオミング・データセンターを引き継ぎ170億ドルを追加投資",
-    "en": "Google takes over Crusoe's unfinished Wyoming data center, pledges $17B"
-   },
-   "why": {
-    "zh": "故事不是「AI 数据中心不行了」，而是「盖楼这事太难了」：Crusoe 成本和工期都兜不住，谷歌干脆自己接手、掏 170 亿美元继续盖。AI 算力需求还在，只是瓶颈从芯片挪到了电和工地，普通人不用关心谁家工地转手。",
-    "ja": "これは「AIデータセンターがダメになった」という話ではなく、「建てるのが難しすぎる」という話だ。コストと工期を抱えきれなくなったCrusoeからGoogleが引き継ぎ、170億ドルを投じて建設を続ける。AIの計算需要は健在で、ボトルネックがチップから電力と工事現場に移っただけだ。",
-    "en": "This isn't 'AI data centers are failing' — it's 'building them is really hard': Crusoe couldn't hold the cost and timeline, so Google took over and put $17 billion behind finishing the campus. Demand for AI compute is still there; the bottleneck just moved from chips to power and construction sites."
-   },
-   "src": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
-  },
-  {
-   "d": "2026-11-07",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "Claude Code「不再询问」会把含密码的命令存进设置文件：1122 份已在 GitHub 公开泄露",
-    "ja": "Claude Codeの「今後確認しない」がパスワード付きコマンドを保存：1122件がGitHubで公開漏洩",
-    "en": "Claude Code's 'don't ask again' saved password-bearing commands: 1,122 files leaked publicly on GitHub"
-   },
-   "why": {
-    "zh": "不是模型偷了你的密钥，是你点「以后别再问」时，工具把整条带密码的命令原样写进了项目设置文件，有人顺手提交到了公开仓库。用 Claude Code 的人今天就做两件事：搜一下自己仓库里有没有 .claude/settings.local.json，把它加进 .gitignore，并轮换掉所有进过这个文件的密钥。",
-    "ja": "モデルが鍵を盗んだのではない。「今後確認しない」を押したとき、ツールがパスワード入りのコマンドをそのままプロジェクトの設定ファイルに書き込み、それが公開リポジトリに上がってしまった。Claude Codeを使っている人は今日、自分のリポジトリに.claude/settings.local.jsonがないか確認し、.gitignoreに追加して、そのファイルに入ったことのある鍵をすべてローテーションしよう。",
-    "en": "The model didn't steal your keys — clicking 'don't ask again' writes the whole command, password included, into a project settings file, and some people committed it to public repos. If you use Claude Code, do two things today: search your repos for .claude/settings.local.json, add it to .gitignore, and rotate any credential that ever passed through that file."
-   },
-   "src": "https://cybernoz.com/claude-codes-dont-ask-again-file-exposes-passwords-and-keys-in-1122-public-copies-on-github/"
-  },
-  {
-   "d": "2026-11-07",
-   "verdict": "skip",
-   "panic": 3,
-   "t": {
-    "zh": "腾讯 AI 助手 QClaw 宣布停运：12 月 24 日停止服务，用户迁往 WorkBuddy",
-    "ja": "テンセントのAIアシスタントQClawが終了へ、12月24日にサービス停止",
-    "en": "Tencent's AI assistant QClaw to shut down on December 24, users move to WorkBuddy"
-   },
-   "why": {
-    "zh": "上线才半年就退场，听着像 AI 产品朝生暮死，但这次有明确去处：官方给了迁移工具和 1000 积分补贴，数据能在明年 3 月前备份。照着迁移走就行，不用为一时的“赛马失败”焦虑——大厂收拢产品线是常态，不是 AI 要凉了。",
-    "ja": "半年で終了と聞くとAI製品の短命さを感じるが、移行ツールと1000ポイントの補助があり、データも来年3月までバックアップ可能。移行すれば済む話で、大手の製品整理は日常茶飯事だ。",
-    "en": "A shutdown after just six months sounds like AI products die fast, but there's a clear off-ramp: an official migration tool, 1,000 bonus points, and data backup until next March. Just migrate — big companies consolidating product lines is routine, not a sign AI is fading."
-   },
-   "src": "https://www.36kr.com/p/3997508606972040"
-  },
-  {
-   "d": "2026-11-07",
-   "verdict": "skip",
-   "panic": 3,
-   "t": {
-    "zh": "微软 AI Frontiers 研究组解散，负责人 John Langford 离职：称“有点像火车脱轨”",
-    "ja": "マイクロソフトのAI Frontiersが解散、責任者ジョン・ラングフォード氏が退職",
-    "en": "Microsoft's AI Frontiers research group dissolves as leader John Langford departs"
-   },
-   "why": {
-    "zh": "一个 50 人的前沿研究组被并入以“规模化”为主的 Microsoft AI，创始人觉得做不了原创研究就走了。听着像大厂不搞研究了，但 AutoGen 这些开源项目还在，微软只是把研究换了个地方做。对普通人来说，模型照常用，不用替研究员的去留焦虑。",
-    "ja": "約50人の先端研究グループがスケール重視のMicrosoft AIに吸収され、創設者は独自研究ができないと退職した。AutoGenなどオープンソースは残っており、研究の場所が変わっただけ。一般ユーザーはモデルを使い続ければよく、心配はいらない。",
-    "en": "A ~50-person frontier research group was folded into Microsoft AI, which prioritizes scaling over research, so its founder left. AutoGen and the other open-source projects remain; the research just moved house. For ordinary users, the models keep working — no need to worry about researchers' career moves."
-   },
-   "src": "https://dev.to/gabrielanhaia/the-microsoft-lab-that-worked-on-autogen-is-over-autogen-already-gets-no-security-fixes-281"
-  },
-  {
-   "d": "2026-11-07",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "微软逐步终止向甲骨文租用 AI 算力：老款英伟达芯片已跟不上，甲骨文股价一度跳水",
-    "ja": "マイクロソフトがオラクルからのAI計算資源リースを段階終了へ、旧型GPUが規格外に",
-    "en": "Microsoft winds down Oracle AI compute lease as older Nvidia chips fall short"
-   },
-   "why": {
-    "zh": "微软嫌甲骨文的老卡不够新，转头向 CoreWeave 这些新云厂商砸了 800 多亿美元，甲骨文股价应声跌了几个点。算力租赁这行就是谁新谁吃香，旧卡退租不代表 AI 需求降温——甲骨文自己还说旧 GPU 续租反而涨价 20%。普通人看个热闹就行。",
-    "ja": "マイクロソフトはオラクルの旧型GPUが規格外だとして契約を更新せず、CoreWeaveなど新興クラウドに800億ドル超を投じた。オラクル株は一時下落したが、同社は旧GPUの更新価格が20%上がったとも言っている。需要が冷えたわけではなく、借り手が新しいカードに乗り換えただけだ。",
-    "en": "Microsoft decided Oracle's older GPUs no longer meet its specs and shifted $80B+ of compute spending to newer cloud vendors, sending Oracle's stock down a few points. That's the compute-rental business: newest hardware wins. Oracle itself says renewals on old GPUs cost 20% more — demand isn't cooling, it's just moving to newer chips."
-   },
-   "src": "https://finance.ifeng.com/c/8xrpjLQfSym"
-  },
-  {
-   "d": "2026-11-07",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "AI 三天证出 18 年未解的量子猜想：Aaronson-Ambainis 猜想被 PSI 的研究系统攻克",
-    "ja": "AIが18年未解決の量子予想を3日で証明、Aaronson-Ambainis予想が解決",
-    "en": "AI proves 18-year-old quantum conjecture in three days"
-   },
-   "why": {
-    "zh": "一个悬了 18 年的量子计算数学难题，被 AI 研究系统三天证出来了，听着像数学家要失业。但证明还只是内部审核、没经过同行评审，而且 AI 是在人类搭好的思路上推进的。普通人不用慌：AI 当科研助手是好事，离“AI 自己搞定一切”还远。",
-    "ja": "18年未解決だった量子計算の数学予想を、AI研究システムが3日で証明した。数学者が不要になるように聞こえるが、証明は内部監査のみで査読はまだ。人間が組んだ筋道の上でAIが進めたものだ。AIが研究の助手になるのは歓迎すべきことで、すべてをAIがやる時代はまだ遠い。",
-    "en": "An 18-year-old quantum computing conjecture was proved in three days by an AI research system. It sounds like mathematicians are done for — but the proof has only had an internal audit, no peer review yet, and the AI advanced along a plan humans laid out. AI as a research assistant is good news; 'AI does everything itself' is still far off."
-   },
-   "src": "https://psi.inc/research/aaronson-ambainis/index.html"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13",
+ "updated": "2026-11-22",
  "events": [
   {
    "d": "2022-11-30",
@@ -384,7 +384,22 @@
     "ja": "千人超が署名「GPT-4超のAI開発を6か月停止せよ」",
     "en": "Open letter signed by 1,000+ calls for a six-month AI pause"
    },
-   "src": "https://en.wikipedia.org/wiki/Pause_Giant_AI_Experiments:_An_Open_Letter"
+   "src": "https://en.wikipedia.org/wiki/Pause_Giant_AI_Experiments:_An_Open_Letter",
+   "f": {
+    "zh": "AI 再不停下来就要失控，赶紧停训半年想想清楚。",
+    "ja": "AIを止めなければ制御不能になる。半年訓練を止めて考えよう。",
+    "en": "AI will spin out of control unless training pauses for six months to think it over."
+   },
+   "o": {
+    "zh": "没有一家实验室真的停下来。之后三年，GPT-5、GPT-6、Gemini 4、Claude 一个接一个，暂停信自己成了历史文件。",
+    "ja": "どのラボも本当に止まらなかった。その後3年間、GPT-5、GPT-6、Gemini 4、Claudeと次々に登場し、公開書簡自体が歴史資料になった。",
+    "en": "No lab actually stopped. Over the next three years GPT-5, GPT-6, Gemini 4 and Claude shipped one after another, and the letter itself became a historical document."
+   },
+   "life": {
+    "zh": "约 2 个月",
+    "ja": "約2か月",
+    "en": "~2 months"
+   }
   },
   {
    "d": "2023-04-05",
@@ -631,7 +646,22 @@
     "ja": "中国の大規模モデルが79個に、「百モデル大戦」",
     "en": "China counts 79 models over 1B parameters; the \"hundred-model war\" begins"
    },
-   "src": "https://thepaper.cn/newsDetail_forward_23259967"
+   "src": "https://thepaper.cn/newsDetail_forward_23259967",
+   "f": {
+    "zh": "模型多到追不过来，不知道该学哪个、押哪个。",
+    "ja": "モデルが多すぎて追えない。どれを学び、どれに賭ければいいのかわからない。",
+    "en": "Too many models to follow — which one should I learn, which one should I bet on?"
+   },
+   "o": {
+    "zh": "三年后还留在牌桌上的只剩几家头部：DeepSeek、阿里、字节、智谱等。大多数模型悄悄退场，不用追，时间会替你选。",
+    "ja": "3年後に残ったのはDeepSeek、アリババ、バイトダンス、智譜など数社だけ。ほとんどのモデルは静かに消え、追う必要はなかった。時間が選んでくれた。",
+    "en": "Three years later only a handful remain at the table — DeepSeek, Alibaba, ByteDance, Zhipu and a few others. Most models quietly faded away; there was no need to chase them, time chose for you."
+   },
+   "life": {
+    "zh": "约 1 年半",
+    "ja": "約1年半",
+    "en": "~18 months"
+   }
   },
   {
    "d": "2023-05-30",
@@ -7202,6 +7232,19 @@
    },
    "src": "https://www.21jingji.com/article/20261120/herald/68aff30d57dc409031fdff268626074a.html",
    "ind": "fin"
+  },
+  {
+   "d": "2026-11-21",
+   "r": "us",
+   "c": "model",
+   "p": 4,
+   "t": {
+    "zh": "黎曼猜想证明获独立验证：Anthropic 数学家称与 Claude 合作完成证明",
+    "ja": "リーマン予想の証明が独立検証を通過：Anthropicの数学者がClaudeと協力して証明",
+    "en": "Riemann hypothesis proof passes independent verification: Anthropic mathematician says he proved it with Claude"
+   },
+   "src": "https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/",
+   "ind": "sci"
   }
  ]
 }
