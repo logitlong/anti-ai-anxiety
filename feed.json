@@ -1,7 +1,87 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-22",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "韩国高考防 AI 作弊翻车，教育部长引咎辞职",
+    "ja": "韓国の大学入試でAIカンニング対策が混乱、教育相が引責辞任",
+    "en": "South Korea's education minister resigns after AI-cheating measures chaos at the college entrance exam"
+   },
+   "why": {
+    "zh": "韩国高考前几天，政府对防 AI 作弊的规定改了又改，111 名考生因违规带智能设备被查，部长 22 日辞职、总统 1 小时内就批了。考试本身没出大事故，辞职是为准备不足担责——AI 作弊是真问题，但这场风波的教训是“临时改规则比作弊本身更乱”，普通人不用跟着焦虑，安心等明年的新规就行。",
+    "ja": "試験の数日前に政府がAIカンニング対策のルールを何度も変更し、111人がスマート機器の持ち込みで摘発され、22日に教育相が辞任、大統領は1時間で受理した。試験自体に大きな事故はなく、辞任は準備不足の責任を取ったもの。AIカンニングは本物の問題だが、この騒動の教訓は「直前のルール変更のほうがカンニングより混乱を招く」ということ。一般の人は慌てず、来年の新ルールを待てばいい。",
+    "en": "Days before the exam, the government kept revising its anti-AI-cheating rules; 111 students were caught with smart devices, and the minister resigned on the 22nd, with the president accepting within an hour. The exam itself had no major incident — the resignation was about poor preparation. AI cheating is a real problem, but the lesson here is that last-minute rule changes caused more chaos than the cheating itself. Ordinary readers need not panic; just wait for next year's new rules."
+   },
+   "src": "https://www.koreatimes.co.kr/southkorea/education/20261122/education-minister-resigns-amid-backlash-over-csat-anti-cheating-measures"
+  },
+  {
+   "d": "2026-11-22",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "MiniMax 内部模型攻破多个密码学方案：理论攻击几秒就能跑通",
+    "ja": "MiniMaxの内部モデルが複数の暗号方式を破る：理論上の攻撃が数秒で実行可能に",
+    "en": "MiniMax's internal model cracks several cryptographic schemes: theoretical attacks now run in seconds"
+   },
+   "why": {
+    "zh": "MiniMax 说它的内部模型首次实际攻破了多个 NIST 竞赛候选算法，还把一些理论攻击推进到秒级可执行，听着像“密码要完了”。先别慌：官方明确说了，针对的是学术前沿方案和历史候选设计，AES、RSA、SHA-256 这些日常用的主流标准不受影响，而且结果已提前同步给方案作者。普通人的密码和网银都还安全，这条新闻的意义在科研圈，不在你的手机里。",
+    "ja": "MiniMaxによれば、内部モデルがNISTコンペの候補アルゴリズムを初めて実際に破り、理論上の攻撃を秒単位で実行できるようにしたという。「暗号が終わる」ように聞こえるが、慌てる必要はない。対象は学術的な最先端の方式や過去の候補設計で、AESやRSA、SHA-256といった日常の標準は影響を受けないと公式に明言され、結果は事前に設計者に共有済みだ。あなたのパスワードもネットバンキングも安全で、このニュースの意味は研究の世界にある。",
+    "en": "MiniMax says its internal model broke several NIST competition candidate algorithms for the first time and turned some theoretical attacks into seconds-long practical ones — it sounds like 'cryptography is finished.' Don't panic yet: the company is explicit that the targets are academic frontier schemes and historical candidates, while everyday standards like AES, RSA and SHA-256 are unaffected, and the findings were shared with the scheme authors in advance. Your passwords and online banking are still safe; this story matters in research circles, not on your phone."
+   },
+   "src": "https://www.minimax.io/blog/practical-cryptanalysis-with-minimaxs-latest-internal-model"
+  },
+  {
+   "d": "2026-11-22",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "低价 AI 推理商被曝偷看用户提示词，OpenRouter 下架 3 家供应商",
+    "ja": "格安AI推論業者がユーザーのプロンプトを盗み見、OpenRouterが3社を排除",
+    "en": "Cheap AI inference providers caught peeking at user prompts; OpenRouter drops three of them"
+   },
+   "why": {
+    "zh": "安全公司 Dragos 用 200 万条带“金丝雀”假密钥的提示词做测试，发现至少 3 家推理服务商的数据被攻击者偷走，有的连标了“零数据保留”的请求也被复制；OpenRouter 22 日下架了 3 家供应商、125 个端点。慌的点在于：你以为没保存的对话，可能早就被第三方抄走了。普通人能做的很简单：别把密钥、密码、私密内容塞进不知名的小众推理接口，走官方渠道或可信大厂就行。",
+    "ja": "セキュリティ企業のDragosが、偽の秘密情報を仕込んだ約200万件のプロンプトでテストしたところ、少なくとも3社の推論サービスからデータが盗まれていたことが判明。中には「ゼロデータ保持」と表示されたリクエストまでコピーされていた。OpenRouterは22日に3社を排除し、125のエンドポイントを対象外にした。慌てるべき点は、保存されないはずの会話が第三者にコピーされていた可能性があること。一般の人ができることは簡単で、無名の格安推論サービスに秘密情報やパスワードを入れず、公式や信頼できる大手を使えばいい。",
+    "en": "Security firm Dragos planted 'canary' fake secrets in about two million prompts and found data stolen from at least three inference providers — some requests marked 'zero data retention' were copied too. OpenRouter dropped three providers and 125 endpoints on the 22nd. The worrying part: conversations you thought were never stored may have been copied by a third party. What ordinary users can do is simple: don't paste secrets or passwords into obscure cheap inference services — stick to official channels or trusted big providers."
+   },
+   "src": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html"
+  },
+  {
+   "d": "2026-11-22",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "特斯拉 FSD v15 上线：中控屏变 GTA 画风，AI 实时生成街景",
+    "ja": "テスラFSD v15提供開始：画面がGTA風に、AIが街並みをリアルタイム生成",
+    "en": "Tesla FSD v15 rolls out: the screen turns GTA-style as AI generates the street in real time"
+   },
+   "why": {
+    "zh": "FSD v15 换上了 Tesla Reality View：车载 AI 实时生成一张虚拟俯视街景，让你看清车打算怎么开，特斯拉还说关键干预率降低了 25 倍。画面像游戏不代表能当游戏玩——它只是把原来灰框框的可视化换成了更好看的样子，司机照样得盯着路、随时准备接管。普通人不用急着换车，等它铺开到更多车型、看真实路测口碑再说。",
+    "ja": "FSD v15ではTesla Reality Viewが登場し、車載AIが仮想の俯瞰ビューをリアルタイムで生成して、車がどう動くつもりかを見せてくれる。テスラは重要な介入率が25分の1になったとも言う。画面がゲームのようでも、ゲームとして遊べるわけではない。従来の灰色の枠線表示をきれいにしただけで、運転者はこれまで通り道路を見て、いつでも介入できる態勢が必要だ。一般の人は車を急いで買い替える必要はなく、対応車種が広がり、実際の評判が出てから考えればいい。",
+    "en": "FSD v15 brings Tesla Reality View: the car's AI generates a live bird's-eye view of the street so you can see what the car plans to do, and Tesla claims critical interventions fell 25-fold. A game-like screen does not make it a game — it is just a prettier version of the old grey-box visualization, and drivers still have to watch the road and be ready to take over. Ordinary readers need not rush to buy a new car; wait until it reaches more models and real-world reviews come in."
+   },
+   "src": "https://insideevs.com/news/816351/tesla-fsd-v15-new-features/"
+  },
+  {
+   "d": "2026-11-22",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "蚂蚁发布 560B 参数医疗模型 LingSante：开源权重，不当诊断用",
+    "ja": "アントが560Bパラメータの医療モデルLingSanteを公開：重みはオープン、診断用途ではない",
+    "en": "Ant Group releases 560B-parameter medical model LingSante with open weights — not for diagnosis"
+   },
+   "why": {
+    "zh": "蚂蚁百灵发布了 LingSante-3.1-flash：560B 总参数、每次只激活 25B，1M 上下文，权重按 MIT 许可开源，官方说医疗推理跑分超过了不少开源模型。别急着拿它看病——官方自己划了红线：只供研究评估，不是医疗器械，不能当诊断依据。普通人不用追这个模型，等它变成产品里的功能再说；开发者倒是可以免费拿去试试。",
+    "ja": "アントの百灵がLingSante-3.1-flashを公開した。総パラメータ560Bで1トークンあたり25Bだけ活性化し、1Mトークンのコンテキストに対応、重みはMITライセンスでオープン。公式によれば医療推論のベンチマークで多くのオープンモデルを上回るという。ただし診断に使うのはまだ早い。公式自身が線を引いている。研究・評価用であって医療機器ではなく、診断の根拠にはならない。一般の人はこのモデルを追う必要はなく、製品の機能になってからで十分。開発者なら無料で試せる。",
+    "en": "Ant's Ling team released LingSante-3.1-flash: 560B total parameters with only 25B active per token, 1M-token context, weights open under the MIT license, and official benchmarks claiming it beats many open models on medical reasoning. Don't rush to use it for medical advice — the team draws its own line: it is for research and evaluation only, not a medical device, and not a basis for diagnosis. Ordinary readers need not chase this model; wait until it shows up inside a product. Developers can try it for free, though."
+   },
+   "src": "https://ant-ling.medium.com/lingsante-3-1-flash-bridging-medical-reasoning-and-real-world-workflows-fdc95f262f64"
+  },
   {
    "d": "2026-11-21",
    "verdict": "skip",
@@ -1201,86 +1281,6 @@
     "en": "Usage is developers voting with their wallets, not a syllabus for everyday users. Cheap, capable open models are winning — but keep using whichever chatbot you like."
    },
    "src": "https://finance.sina.cn/2026-11-09/detail-iniyazeh3403060.d.html"
-  },
-  {
-   "d": "2026-11-08",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "英伟达董事会调查黄仁勋与疑似中国间谍的关系，黄仁勋承认曾有婚外情",
-    "ja": "エヌビディア取締役会、フアンCEOと中国スパイ疑惑の関係を調査",
-    "en": "Nvidia board investigates CEO Jensen Huang's ties to alleged Chinese spy"
-   },
-   "why": {
-    "zh": "板子打在八卦和地缘政治上，不是芯片上：董事会明说没有理由相信国家安全或公司机密泄露，调查由独立董事牵头。显卡价格看的是供需不是绯闻，不用跟着抢购。",
-    "ja": "問題はゴシップと地政学であって、チップそのものではない。取締役会は国家安全や企業機密の漏洩を信じる理由はないとしており、調査は独立取締役が主導する。GPUの値段を決めるのは需給であってスキャンダルではないので、慌てて買い急ぐ必要はない。",
-    "en": "This is gossip and geopolitics, not the chips: the board says it has no reason to believe national security or company secrets were compromised, and independent directors are running the probe. GPU prices follow supply and demand, not scandals — no need to panic-buy."
-   },
-   "src": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/"
-  },
-  {
-   "d": "2026-11-08",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "OpenAI 11 月 12 日起断供 Cursor：SpaceX 收购后的信任决裂",
-    "ja": "OpenAI、11月12日からCursorへのモデル提供を停止へ",
-    "en": "OpenAI to cut off Cursor's model access on November 12"
-   },
-   "why": {
-    "zh": "断的只是 OpenAI 这一家，约占 Cursor 流量的 5%，Claude、Gemini、Grok 都还在，Anthropic 还表态要加算力支援。用 Cursor 的话，11 月 12 日前在设置里把模型切到 Claude 或 Gemini 就行；不用 Cursor 的，看看奥特曼和马斯克的恩怨局就好。",
-    "ja": "止まるのはOpenAIのモデルだけで、Cursorの利用量の約5%にすぎない。ClaudeもGeminiもGrokも使えるし、Anthropicは支援を増やすと表明している。Cursorユーザーは11月12日までにモデルをClaudeやGeminiに切り替えればいい。使っていない人は、壮大な確執劇として眺めていれば十分だ。",
-    "en": "Only OpenAI's models are affected — about 5% of Cursor's traffic — while Claude, Gemini and Grok keep working, and Anthropic has offered extra compute support. If you use Cursor, switch your model to Claude or Gemini before November 12; if you don't, this is just the Altman–Musk feud playing out in public."
-   },
-   "src": "https://blog.ainetix.com/posts/cursor-spacex-60-billion-openai-model-cutoff-november-12-inkling2-thinking-machines"
-  },
-  {
-   "d": "2026-11-08",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "腾讯元器明天正式停服：在上面搭的智能体将不再响应",
-    "ja": "テンセント「元器」、明日11月9日にサービス終了",
-    "en": "Tencent's Yuanqi agent platform shuts down tomorrow, November 9"
-   },
-   "why": {
-    "zh": "停服是 10 月 8 日就公告了的，今天只是最后一天倒计时：停服后智能体不再响应，但数据能导出到明年 1 月 9 日，官方也给了迁往腾讯云 ADP 的指引。还在元器上跑着东西的人，今天花十分钟导出备份、按指引迁移就行。",
-    "ja": "終了自体は10月8日に発表済みで、今日は最後のカウントダウンだ。停止後はエージェントが応答しなくなるが、データは来年1月9日までエクスポートでき、テンセントクラウドADPへの移行ガイドも出ている。まだ元器を使っている人は今日10分でバックアップを取り、ガイドに沿って移行すればいい。",
-    "en": "The shutdown was announced on October 8 — today is just the final countdown. Agents will stop responding, but data can be exported until January 9 and Tencent offers a migration guide to its ADP platform. If you still run something on Yuanqi, spend ten minutes today exporting a backup and follow the guide."
-   },
-   "src": "https://news.pedaily.cn/202611/571383.shtml"
-  },
-  {
-   "d": "2026-11-08",
-   "verdict": "skip",
-   "panic": 1,
-   "t": {
-    "zh": "Uber 财报：AI Agent 最繁忙的一周，只替人订了 4 单车",
-    "ja": "Uber決算：AIエージェント経由の配車は最も忙しい週でもわずか4件",
-    "en": "Uber earnings: AI agents ordered just 4 rides in their busiest week"
-   },
-   "why": {
-    "zh": "喊了这么久的「AI 替你订车订餐订旅行」，落到财报里就是一周 4 单——Agent 还没抢走任何人的饭碗，连打车这件小事都还没学会。安心打自己的车，让子弹再飞一会儿。",
-    "ja": "「AIが代わりに配車も旅行も手配する」と騒がれてきたが、決算に出てきた数字は最も忙しい週でわずか4件。エージェントはまだ誰の仕事も奪っていないし、配車すら満足にこなせていない。慌てる必要はまったくない。",
-    "en": "After all the hype about AI agents booking your rides, trips and dinners, the earnings call says it all: four rides in the busiest week. Agents haven't taken anyone's job — they haven't even mastered hailing a cab yet. Relax."
-   },
-   "src": "https://techcrunch.com/2026/11/08/techcrunch-mobility-the-cybertruck-experiment-is-over/"
-  },
-  {
-   "d": "2026-11-07",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "OpenAI 首笔 110 亿美元到账、估值 1.25 万亿美元，不到原目标的一半",
-    "ja": "OpenAI、110億ドルを調達——当初の目標の半分以下",
-    "en": "OpenAI closes first $11B at a $1.25T valuation — less than half its original target"
-   },
-   "why": {
-    "zh": "连 OpenAI 找钱都得打折：原想融 300 亿美元、估值 1.4–1.5 万亿，结果首笔只到账 110 亿、估值 1.25 万亿。这说明 AI 的钱开始讲价了，但不是 AI 要完了——110 亿美元照样是天文数字，软银和 MGX 都掏了钱。",
-    "ja": "OpenAIですら資金調達で値引きを迫られた。300億ドル・評価額1.4〜1.5兆ドルを目指したが、最初の入金は110億ドル・評価額1.25兆ドルにとどまった。AIマネーが値切り始めた証拠だが、AIが終わったわけではない。110億ドルは依然として天文学的な金額で、ソフトバンクやMGXも出資している。",
-    "en": "Even OpenAI has to haggle now: it wanted $30 billion at a $1.4–1.5 trillion valuation and got an $11 billion first close at $1.25 trillion. That means AI money is getting picky, not that AI is over — $11 billion is still an astronomical sum, and SoftBank and MGX both joined."
-   },
-   "src": "https://www.unite.ai/openai-secures-11b-in-initial-funding-at-1-25t-valuation/"
   }
  ]
 }

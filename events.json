@@ -7245,6 +7245,19 @@
    },
    "src": "https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/",
    "ind": "sci"
+  },
+  {
+   "d": "2026-11-22",
+   "r": "other",
+   "c": "people",
+   "p": 3,
+   "t": {
+    "zh": "韩国高考防 AI 作弊翻车，教育部长引咎辞职",
+    "ja": "韓国の大学入試でAIカンニング対策が混乱、教育相が引責辞任",
+    "en": "South Korea's education minister resigns after AI-cheating measures chaos at the college entrance exam"
+   },
+   "src": "https://www.koreatimes.co.kr/southkorea/education/20261122/education-minister-resigns-amid-backlash-over-csat-anti-cheating-measures",
+   "ind": "edu"
   }
  ]
 }
