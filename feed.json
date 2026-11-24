@@ -1,7 +1,103 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-23",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "Anthropic 推出 Claude Ship：AI 审代码、修代码，还能替团队点头合并",
+    "ja": "Anthropic、Claude Shipを発表：AIがコードをレビューし、修正し、承認まで行う",
+    "en": "Anthropic launches Claude Ship: AI reviews code, fixes it, and approves merges for your team"
+   },
+   "why": {
+    "zh": "三只 Agent 分工：Code Review 审 PR，PR Steward 修 CI 失败和合并冲突，Claude Approvals 按团队自己写的规则决定哪些改动能自动批准。听着像程序员要失业了，但注意两点：现在只是 beta、只对 Team 和 Enterprise 的 GitHub 仓库开放，而且官方自己都建议先开“只观察”模式。普通人不用管；写代码的人可以先围观，等它从 beta 毕业再说。",
+    "ja": "3つのエージェントが分担する。Code ReviewがPRを審査し、PR StewardがCIの失敗やマージ競合を直し、Claude Approvalsがチーム自身のルールに従って自動承認できる変更を決める。「プログラマーが失業する」と聞こえるが、注意点が2つある。今はベータ版で、TeamとEnterpriseのGitHubリポジトリ限定であり、公式自身もまず「観察のみ」モードを勧めている。一般の人は気にしなくてよく、コードを書く人も、ベータを卒業するまで様子見で十分だ。",
+    "en": "Three agents split the job: Code Review checks the PR, PR Steward fixes failing CI and merge conflicts, and Claude Approvals decides which changes can be auto-approved under rules each team writes itself. It sounds like programmers are done for, but two caveats: it's beta only, limited to Team and Enterprise GitHub repos, and Anthropic itself suggests starting in observe-only mode. Ordinary readers can ignore it; developers can watch from the sidelines until it graduates from beta."
+   },
+   "src": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+  },
+  {
+   "d": "2026-11-23",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "OpenAI 联手思科开源 Shirudo：让 AI Agent 给 Linux 内核打“临时补丁”",
+    "ja": "OpenAIとシスコがShirudoをオープンソース化：AIエージェントがLinuxカーネルに「仮のパッチ」を当てる",
+    "en": "OpenAI and Cisco open-source Shirudo: AI agents write temporary kernel shields for Linux"
+   },
+   "why": {
+    "zh": "漏洞公开到补丁装好之间总有个空窗期，Shirudo 让 Agent 用 eBPF 写个带签名的临时“盾”，先堵住会被攻击的路径，正式补丁再慢慢装。部署前还要人签字点头，不是 AI 自己说了算。这是运维和安全圈的工具，跟普通用户没关系——你的电脑不用装，也不用学。",
+    "ja": "脆弱性が公開されてからパッチが行き渡るまでには空白期間がある。ShirudoはエージェントにeBPFで署名付きの仮の「盾」を書かせ、攻撃される経路を先に塞ぎ、正式パッチはゆっくり配る。展開前には人の承認が必要で、AIが勝手に決めるわけではない。これは運用とセキュリティの世界の道具で、一般ユーザーには関係ない。自分のPCに入れる必要も、学ぶ必要もない。",
+    "en": "There's always a gap between a vulnerability going public and the patch landing everywhere. Shirudo lets agents write a signed, temporary eBPF 'shield' that blocks the exploitable path first, while the real patch rolls out slowly. A human still has to sign off before deployment — the AI doesn't decide alone. This is a tool for ops and security teams, not ordinary users: nothing to install on your computer, nothing to learn."
+   },
+   "src": "https://blogs.cisco.com/news/expanding-the-defenders-window-with-self-defending-infrastructure"
+  },
+  {
+   "d": "2026-11-23",
+   "verdict": "skip",
+   "panic": 3,
+   "t": {
+    "zh": "Meta 首席 AI 官发长文：超级智能已经到了，未来一年决定人类结局",
+    "ja": "MetaのAI責任者が長文を発表：超知能はもう到来、この1年が人類の結末を決める",
+    "en": "Meta's chief AI officer declares superintelligence has arrived, and the next year decides humanity's fate"
+   },
+   "why": {
+    "zh": "Alexandr Wang 借黎曼猜想证明说事：AI 的智力短板已经补上，剩下的只是领域知识和实验条件，未来一年人类的选择将决定结局。马斯克也在 X 上跟了一句“欢迎来到奇点”。话说得很重，但注意两点：黎曼证明本身还没被数学界正式接受，而且这篇长文没有宣布 Meta 要改变任何具体做法。大佬喊话是舆论，不是时间表，普通人照常生活就行。",
+    "ja": "Alexandr Wangはリーマン予想の証明を引き合いに、AIの知能面の弱点はもう埋まり、残るのは専門知識と実験条件だけだとして、この1年の人類の選択が結末を決めると主張した。マスクもXで「特異点へようこそ」と続いた。重い言葉だが、2点注意したい。リーマン予想の証明自体はまだ数学界に正式に認められておらず、この長文でMetaが何か具体的な方針転換を発表したわけでもない。大物の発言は世論であって予定表ではない。一般の人は普段通りに過ごせばいい。",
+    "en": "Alexandr Wang uses the Riemann Hypothesis proof to argue that AI's intelligence gap is already closed — what remains is domain know-how and experimentation — and that humanity's choices over the next year will decide the outcome. Musk chimed in on X with 'welcome to the singularity.' Heavy words, but two caveats: the Riemann proof itself has not been formally accepted by mathematicians, and the essay announces no concrete change at Meta. A big name sounding the alarm is commentary, not a timetable. Ordinary readers can carry on as usual."
+   },
+   "src": "https://www.aljazeera.com/amp/economy/2026/11/23/ai-superintelligence-arriving-warns-top-meta-executive"
+  },
+  {
+   "d": "2026-11-23",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "小鹏世界模型 X-World 1.6：云端造一座“城市数字分身”，智驾随便重跑验证",
+    "ja": "小鵬のワールドモデルX-World 1.6：クラウドに「都市のデジタルツイン」を作り、自動運転を何度でも検証",
+    "en": "XPeng's X-World 1.6 builds a 'digital twin city' in the cloud to replay self-driving tests"
+   },
+   "why": {
+    "zh": "新版能在云端复现一座城市的空间和时间记忆，某路段施工半年前后的样子都能回去重跑同一段测试，操控延迟还压到 426 毫秒。这是给智驾研发省钱省时间的仿真工具，不是你马上能开上的车。自动驾驶越卷，测试越便宜，对乘客反而是好事，不用慌。",
+    "ja": "新版はクラウドで都市の空間と時間の記憶を再現できる。ある区間の半年にわたる工事の前後を呼び戻し、同じテストを何度でも走らせられる。操作遅延も426ミリ秒まで短縮された。これは自動運転の開発を安く速くするシミュレーション道具で、明日乗れる車ではない。競争が激しくなればテストは安くなり、乗る側にはむしろ良い話だ。慌てる必要はない。",
+    "en": "The new version can recreate a city's spatial and temporal memory in the cloud — rewind a roadwork stretch to before, during, or after six months of construction and rerun the same test, with control latency down to 426 ms. This is a simulation tool that makes self-driving R&D cheaper and faster, not a car you can drive tomorrow. The fiercer the competition, the cheaper the testing — good news for passengers, not a reason to panic."
+   },
+   "src": "https://www.ithome.com/1/031/212.htm"
+  },
+  {
+   "d": "2026-11-23",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "记忆张量联手英伟达开源 MemT-1.0-Pro：554B 参数，模型自带“记忆”",
+    "ja": "MemTensorとNVIDIA、MemT-1.0-Proをオープンソース化：554Bパラメータ、モデル自体が「記憶」を持つ",
+    "en": "MemTensor and Nvidia open-source MemT-1.0-Pro: a 554B-parameter model with built-in memory"
+   },
+   "why": {
+    "zh": "这个模型把记忆直接做进架构里，不用每次都靠外挂检索翻聊天记录，在 11 项记忆评测里平均分拿了第一。听着很玄，但对普通人来说就是一句话：以后 AI 记住你偏好的方式可能会更便宜、更自然。现在只是开源发布，离进你手机里的助手还有一段路，不用急着学。",
+    "ja": "このモデルは記憶をアーキテクチャに直接組み込み、その都度外部の検索で会話履歴を引く必要がない。11項目の記憶ベンチマークで平均スコア1位を取った。玄妙に聞こえるが、一般の人にとっての意味は一言で言える。AIがあなたの好みを覚える方法が、今後もっと安く自然になるかもしれないということだ。今はオープンソース公開の段階で、スマホの助手に入るまでにはまだ距離がある。急いで学ぶ必要はない。",
+    "en": "This model builds memory directly into its architecture instead of relying on external retrieval to dig through chat history, and it took the top average score across 11 memory benchmarks. It sounds arcane, but for ordinary people it boils down to one thing: the way AI remembers your preferences may get cheaper and more natural. This is just an open-source release for now — still a long way from the assistant on your phone, so no need to rush to learn it."
+   },
+   "src": "https://www.jiemian.com/article/15363432.html"
+  },
+  {
+   "d": "2026-11-23",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "自变量发布具身模型 WALL-OSS-1.0：机器人不练题也能上手，312 项任务零样本成功 55%",
+    "ja": "自変量、具身モデルWALL-OSS-1.0を発表：練習なしでロボットが動き、312タスクでゼロショット成功率55%",
+    "en": "X Square Robot unveils WALL-OSS-1.0: robots handle new tasks without task-specific training, 55% zero-shot success"
+   },
+   "why": {
+    "zh": "它把视觉、语言和动作放进同一套预训练里学，312 项没练过的真机任务直接上手，成功率 55.1%。数字看着离谱，但注意：这是自家评测，而且完整旗舰权重还没全放出来，只有 Lite 版权重可下载。机器人进工厂、进家庭还早，普通人先看热闹就行，不用担心明天就被机器人抢饭碗。",
+    "ja": "視覚・言語・動作を同じ事前学習にまとめて学ばせ、練習していない312項目の実機タスクに直接挑み、成功率55.1%を出した。数字はすごいが、注意点がある。これは自社評価であり、フラッグシップの重みはまだ全部公開されておらず、ダウンロードできるのはLite版だけだ。ロボットが工場や家庭に入るのはまだ先の話。一般の人は見物していればよく、明日ロボットに仕事を奪われる心配はいらない。",
+    "en": "It learns vision, language, and action together in one pretraining run, then tackles 312 never-practiced real-robot tasks directly, with a 55.1% success rate. The number looks wild, but two caveats: it's the company's own evaluation, and the full flagship weights aren't all out yet — only the Lite version is downloadable. Robots entering factories and homes is still a long way off. Ordinary readers can just watch the show; no need to worry about a robot taking your job tomorrow."
+   },
+   "src": "https://agidaily.cc/articles/x-square-wall-oss-1-0-zero-shot"
+  },
   {
    "d": "2026-11-22",
    "verdict": "skip",
@@ -1185,102 +1281,6 @@
     "en": "Just watch the show: first it was a $69.3B raise, then that was retracted as incorrect and corrected to $64.4B — even the prospectus needed a do-over, so one of the biggest IPOs ever is being fixed on the fly. No need for ordinary people to follow it, and it doesn't change AI itself."
    },
    "src": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/"
-  },
-  {
-   "d": "2026-11-09",
-   "verdict": "skip",
-   "panic": 3,
-   "t": {
-    "zh": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2：降价两成、快三成，登顶跑分榜",
-    "ja": "Anthropic、Claude Fable 5.2とMythos 5.2を発表：2割値下げ・3割高速化でベンチマーク首位に",
-    "en": "Anthropic launches Claude Fable 5.2 and Mythos 5.2: 20% cheaper, 30% faster, top of the benchmarks"
-   },
-   "why": {
-    "zh": "又是新旗舰、又是跑分第一，但普通人基本感觉不到：Fable 只在付费档，日常聊天用免费档完全够用。Anthropic 上市在即，新模型多半是给投资人看的，等它下放到免费档再试也不迟。",
-    "ja": "また新フラッグシップ、またベンチマーク1位。ただFableは有料プラン限定で、日常の会話なら無料枠で十分です。Anthropicは上場を控えており、新モデルは投資家向けの面も。無料枠に来てから試せば十分です。",
-    "en": "Another flagship, another benchmark crown — but everyday users will barely feel it: Fable is on paid plans only, and the free tier is plenty for daily chats. With an IPO looming, this launch is partly for investors. Wait until it reaches the free tier."
-   },
-   "src": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"
-  },
-  {
-   "d": "2026-11-09",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "Meta 发布最小模型 Muse Ember：专给 Agent 打杂，百万 Token 只要 1 毛钱",
-    "ja": "Meta、最小モデルMuse Emberを発表：エージェントの雑務専用、100万トークン10セント",
-    "en": "Meta releases Muse Ember, its smallest model: built for agents' repetitive chores at $0.10 per million tokens"
-   },
-   "why": {
-    "zh": "这是给开发者批量跑 Agent 准备的便宜小模型，不是给普通人聊天用的：它负责工具调用、分类、解析文档这些重复活。你手机里的助手不会因此变聪明，也不会变贵，不用换工具。",
-    "ja": "開発者がエージェントを大量に回すための安い小型モデルで、一般ユーザーのチャット用ではありません。ツール呼び出しや分類、文書解析といった繰り返し作業を担います。手元の助手が賢くなるわけでも高くなるわけでもないので、乗り換える必要はありません。",
-    "en": "A cheap small model for developers running agents at scale, not a chatbot for everyday users: it handles tool calls, routing and document parsing. Nothing in your pocket gets smarter or pricier because of it — no need to switch tools."
-   },
-   "src": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
-  },
-  {
-   "d": "2026-11-09",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "Anthropic 豪掷 34 亿美元买天然气发电机：AI 大厂开始自己囤电了",
-    "ja": "Anthropic、34億ドルで天然ガス発電機を購入：AI大手が自前で電力を確保し始めた",
-    "en": "Anthropic spends $3.4B on natural-gas turbines: AI labs are now hoarding their own power"
-   },
-   "why": {
-    "zh": "电网排队要等好几年，涡轮机订单排到 2030 年代，大厂只好自己买发电机。这是算力军备竞赛的基建账单，不是你的电费账单：普通人既不用抢电，也不用担心家里停电。",
-    "ja": "送電網への接続待ちは数年、タービンの受注残は2030年代まで延びており、大手は自前で発電機を買うしかありません。これは計算能力競争のインフラ投資の話で、あなたの電気代の話ではありません。",
-    "en": "Grid hookups take years and turbine backlogs stretch into the 2030s, so labs are buying their own generators. This is an infrastructure bill in the compute arms race, not your electricity bill."
-   },
-   "src": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/"
-  },
-  {
-   "d": "2026-11-09",
-   "verdict": "skip",
-   "panic": 1,
-   "t": {
-    "zh": "ChatGPT 企业版上架 AWS 商店：企业采购多了一个下单入口",
-    "ja": "ChatGPT EnterpriseがAWSマーケットプレイスに登場：法人向け購入ルートが一つ増えただけ",
-    "en": "ChatGPT Enterprise arrives on AWS Marketplace: one more checkout lane for corporate buyers"
-   },
-   "why": {
-    "zh": "这是企业采购流程的变化：公司能走 AWS 账单一起结算 ChatGPT 企业版，功能和直接买完全一样。个人用户不受影响，免费版和 Plus 的价格功能都没变。",
-    "ja": "AWSの請求にまとめて買えるようになった、法人調達の話です。機能は直接買う場合とまったく同じで、個人の無料版やPlusの料金・機能は変わりません。",
-    "en": "A procurement change for companies that can now bill ChatGPT Enterprise through AWS, with identical features to buying direct. Free and Plus plans for individuals are untouched."
-   },
-   "src": "https://www.securities.io/openai-adds-aws-procurement-and-billing-for-chatgpt-enterprise/"
-  },
-  {
-   "d": "2026-11-09",
-   "verdict": "skip",
-   "panic": 1,
-   "t": {
-    "zh": "韩国 LG 免费开放 K-EXAONE 2.5 API：自称 Agent 能力追平 DeepSeek",
-    "ja": "韓国LG、K-EXAONE 2.5のAPIを無料開放：エージェント性能はDeepSeek並みと主張",
-    "en": "LG opens K-EXAONE 2.5 API for free, claiming agent skills on par with DeepSeek"
-   },
-   "why": {
-    "zh": "又一个国家队模型加入免费 API 的行列，对开发者是多一个备选，对普通人没什么变化：日常用的助手还是那几个，不用为了一个新名字换工具。",
-    "ja": "また一つの国の基盤モデルが無料APIに加わりました。開発者には選択肢が増えますが、一般ユーザーが使う助手は変わらないので、新しい名前のためだけに乗り換える必要はありません。",
-    "en": "One more national model joins the free-API club — an extra option for developers, no change for everyday users. No need to switch tools over a new name."
-   },
-   "src": "https://en.nocutnews.co.kr/news/6603836"
-  },
-  {
-   "d": "2026-11-09",
-   "verdict": "skip",
-   "panic": 1,
-   "t": {
-    "zh": "上周全球大模型调用量：中国模型前五占四，DeepSeek 连续三周第一",
-    "ja": "先週の世界モデル利用量：中国勢が上位5位中4席、DeepSeekが3週連続首位",
-    "en": "Last week's global model usage: Chinese models took 4 of the top 5, DeepSeek #1 for a third straight week"
-   },
-   "why": {
-    "zh": "调用量是开发者的用脚投票，不是普通人的必修课：说明便宜好用的开源模型正在赢，但你聊天用哪个顺手就用哪个，榜单不用追。",
-    "ja": "利用量は開発者の投票であって、一般ユーザーの必修科目ではありません。安くて使えるオープン模型が伸びている証拠ですが、あなたは使い慣れたもので十分です。",
-    "en": "Usage is developers voting with their wallets, not a syllabus for everyday users. Cheap, capable open models are winning — but keep using whichever chatbot you like."
-   },
-   "src": "https://finance.sina.cn/2026-11-09/detail-iniyazeh3403060.d.html"
   }
  ]
 }
