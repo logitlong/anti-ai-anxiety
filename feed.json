@@ -1,7 +1,103 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-23",
+   "verdict": "skip",
+   "panic": 4,
+   "t": {
+    "zh": "黄仁勋回来了：辞职 11 天后，英伟达董事会全票恢复其 CEO 职务",
+    "ja": "黄仁勲が帰ってきた：辞任から11日で、NVIDIA取締役会が全会一致でCEOに復帰",
+    "en": "Jensen Huang is back: 11 days after resigning, Nvidia's board unanimously restores him as CEO"
+   },
+   "why": {
+    "zh": "11 月 12 日辞职、17 日董事长还说“不打算让他回来”，23 日董事会就全票反转，股价单日暴涨约 30%、市值一日回血近 1 万亿美元。反转来得比连续剧还快，但对普通人来说剧情已经演完了：芯片还是那家芯片，AI 还是那个 AI，董事会闹剧不影响你手里的模型该怎么用。真正还没完的是国会听证和内部调查，12 月初见分晓——那才是下一集。",
+    "ja": "11月12日に辞任し、17日には会長が「復帰させるつもりはない」と言ったのに、23日には取締役会が全会一致で覆し、株価は1日で約30％急騰、時価総額は1日で約1兆ドル回復した。連続ドラマより展開が速いが、一般の人にとって物語はもう終わった。チップは同じチップ、AIは同じAIで、取締役会の騒動があなたの手元のモデルの使い方を変えることはない。本当に未完なのは12月初めの議会公聴会と内部調査で、それが次の話だ。",
+    "en": "He resigned on November 12, the chair said on the 17th there was no plan to bring him back, and on the 23rd the board unanimously reversed itself; the stock jumped about 30% in a day and roughly $1 trillion of market value came back. Faster than a TV drama — but for ordinary people the story is over: same chips, same AI, and a boardroom saga doesn't change how you use the models in your hands. What's genuinely unfinished is the congressional testimony and internal investigation in early December. That's the next episode."
+   },
+   "src": "https://www.aljazeera.com/economy/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo"
+  },
+  {
+   "d": "2026-11-23",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "智谱发布 GLM-5.4：7500 亿参数“循环”两遍，号称有 2~3 万亿的本事",
+    "ja": "Z.ai、GLM-5.4を発表：7500億パラメータを「2周」させ、2～3兆級の実力をうたう",
+    "en": "Z.ai releases GLM-5.4: a 750B model that 'loops' twice, claiming 2–3 trillion-level ability"
+   },
+   "why": {
+    "zh": "新招叫 Loop Transformer：28 层共享权重来回跑两遍，参数不增加、算力只多一点，官方说能打出 2~3T 级模型的水平。听着像白嫖算力，但注意这是厂商自己的说法、基准成绩还没公开，而且模型自己都承认容易陷入“马拉松式思考”——想得太多、想得太久。普通人不用换模型，等等开源权重和独立评测再说。",
+    "ja": "新しい手は Loop Transformer。28層の共有重みを2周させることで、パラメータを増やさず、計算量も少しだけ増やして、公式によれば2～3兆パラメータ級の性能を出すという。計算力をただで手に入れたように聞こえるが、これはメーカー自身の主張で、ベンチマーク結果はまだ公開されていない。しかもモデル自身、「マラソン思考」に陥りやすいと認めている。考えすぎて、考えが長すぎるのだ。一般の人はモデルを乗り換える必要はない。オープンウェイトと独立した評価を待てばいい。",
+    "en": "The trick is called Loop Transformer: 28 shared-weight layers run twice, adding barely any parameters or compute, and Z.ai claims 2–3 trillion-parameter-level performance. It sounds like free compute, but that's the vendor's own claim — no benchmark results are public yet — and the model itself admits it can fall into 'marathon thinking': thinking too much, for too long. Ordinary users don't need to switch models; wait for the open weights and independent tests."
+   },
+   "src": "https://z.ai/blog/glm-5.4"
+  },
+  {
+   "d": "2026-11-23",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "GPT-6.2 Sol 进了 ChatGPT 聊天栏：付费用户先用，GPT-5.6 定于 12 月 23 日退役",
+    "ja": "GPT-6.2 SolがChatGPTのチャット欄へ：有料ユーザーが先行、GPT-5.6は12月23日に退役",
+    "en": "GPT-6.2 Sol reaches ChatGPT's Chat tab: paid users first, GPT-5.6 to retire December 23"
+   },
+   "why": {
+    "zh": "一周前才在 Work 和 Codex 上线的新模型，现在轮到日常聊天栏：Plus、Pro、Business、Enterprise 都能用，读图和按指令办事据说强了不少。免费用户还留在 GPT-6 Luna，不用急。顺便官方定了旧模型的退役日：GPT-5.6 Sol 和 Terra 12 月 23 日下线。模型换代现在是按月算的，习惯就好——你的聊天记录不会跟着旧模型一起消失。",
+    "ja": "1週間前に Work と Codex で登場した新モデルが、今度は日常のチャット欄へ。Plus、Pro、Business、Enterprise が使え、画像の読み取りや指示への対応がかなり良くなったという。無料ユーザーは GPT-6 Luna のままで、急ぐ必要はない。ついでに旧モデルの退役日も決まった。GPT-5.6 Sol と Terra は 12 月 23 日に終了する。モデルの世代交代は今や月単位の話だ。慣れるしかない。あなたのチャット履歴が旧モデルと一緒に消えるわけではない。",
+    "en": "The new model that arrived in Work and Codex a week ago now powers the everyday Chat tab for Plus, Pro, Business and Enterprise, reportedly much better at reading images and following instructions. Free users stay on GPT-6 Luna — no rush. OpenAI also set the retirement date for the old models: GPT-5.6 Sol and Terra leave on December 23. Model generations now turn over monthly; get used to it — your chat history won't disappear with the old model."
+   },
+   "src": "https://www.digitaltrends.com/computing/chatgpt-is-getting-a-chat-tuned-gpt-6-2-sol-and-it-can-offer-to-watch-for-a-price-drop/"
+  },
+  {
+   "d": "2026-11-23",
+   "verdict": "try",
+   "panic": 2,
+   "t": {
+    "zh": "Claude 变“应用商店”了：连接器和 skill 合并成插件，1 万多个任挑",
+    "ja": "Claudeが「アプリストア」に：コネクターとスキルがプラグインに統合、1万件以上から選べる",
+    "en": "Claude turns into an 'app store': connectors and skills merge into plugins, 10,000+ to pick from"
+   },
+   "why": {
+    "zh": "Anthropic 把原来散在各处的连接器（连邮箱、日历、网盘）和 skill（教 Claude 按你的套路干活）打包成插件，统一放进一个目录，免费版也能用。听着像又要学新东西，其实恰恰相反：以前要一个个配，现在一个插件装好、技能和连接一次到位。想试就打开 Claude 的 Plugins 页面逛逛，装一个顺手的；不想试也完全没损失——旧的连接器和 skill 都还在。",
+    "ja": "Anthropic は、これまで散らばっていたコネクター（メールやカレンダー、クラウドへの接続）とスキル（Claude にあなたのやり方を教えるもの）をプラグインとしてまとめ、ひとつのディレクトリに集めた。無料版でも使える。「また新しいことを覚えるのか」と聞こえるが、実は逆だ。以前はひとつずつ設定が必要だったのが、今はプラグインをひとつ入れるだけで、スキルも接続も一度にそろう。試したければ Claude の Plugins ページをのぞいて、気に入ったものをひとつ入れてみればいい。試さなくても損はない。昔のコネクターやスキルはそのままだ。",
+    "en": "Anthropic bundled the scattered connectors (email, calendar, cloud drives) and skills (teaching Claude your way of working) into plugins in one directory — free plans included. It sounds like something new to learn, but it's the opposite: where you once configured each piece separately, one plugin now installs the skill and its connections together. If you're curious, browse the Plugins page in Claude and add one that looks handy; if not, you lose nothing — your old connectors and skills are still there."
+   },
+   "src": "https://dev.to/fathomnews/chatgpt-rival-claude-gets-an-app-store-with-10000-add-ons-3jee"
+  },
+  {
+   "d": "2026-11-23",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "Google 搜索能“读”你的钱包和网盘了：Personal Intelligence 接入 Wallet、Drive",
+    "ja": "Google検索が財布とドライブを「読む」ように：Personal IntelligenceがWalletとDriveに対応",
+    "en": "Google Search can now 'read' your wallet and Drive: Personal Intelligence adds Wallet and Drive"
+   },
+   "why": {
+    "zh": "Google 宣布 AI Mode 的 Personal Intelligence 再扩围：先接 Wallet（帮你算信用卡返现），接下来几周接 Drive 和 Gemini 应用，Gmail、日历、照片本来就已经在列。听着像隐私大放送，但它是 opt-in 的——不点“连接”就什么都不会发生，而且随时能断开。普通人不用慌：不想要就别开；开了也能在回答下方的 Personalization 图标里看到它用了哪些信息。",
+    "ja": "Google は AI Mode の Personal Intelligence をさらに広げると発表した。まず Wallet をつなぎ（クレジットカードの還元を計算してくれる）、数週間以内に Drive と Gemini アプリも加わる。Gmail、カレンダー、写真はもともと対象だ。「プライバシーの大放出か」と聞こえるが、これはオプトインだ。「接続」を押さなければ何も起きないし、いつでも切れる。一般の人は慌てる必要はない。いらなければ開かなければいい。開いた場合も、回答の下の Personalization アイコンから、どの情報が使われたか確認できる。",
+    "en": "Google is expanding Personal Intelligence in AI Mode: Wallet first (it can work out your credit-card rewards), with Drive and the Gemini app following in the coming weeks; Gmail, Calendar and Photos were already in. It sounds like a privacy giveaway, but it's opt-in — nothing happens unless you tap connect, and you can disconnect anytime. Ordinary users needn't panic: leave it off if you don't want it, and if you do turn it on, the Personalization icon under each answer shows what information it used."
+   },
+   "src": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/"
+  },
+  {
+   "d": "2026-11-23",
+   "verdict": "skip",
+   "panic": 2,
+   "t": {
+    "zh": "DeepMind 让 Gemini 智能体小队改进量子算法：有的步骤快了 290 倍，还都经过 Lean 验算",
+    "ja": "DeepMind、Geminiエージェントチームで量子アルゴリズムを改善：一部は290倍高速に、すべてLeanで検証済み",
+    "en": "DeepMind has Gemini agent teams improve quantum algorithms: one routine 290x faster, all Lean-verified"
+   },
+   "why": {
+    "zh": "Gemini 4 的智能体小队在 Lean 定理证明器里改写量子算法：arcsin 这个常用算术步骤号称快了 290 倍，核聚变模拟便宜了约 12 倍，而且每一步都有机器核验的正确性证明。数字很吓人，但离“量子计算机明天就能用”还差十万八千里——这是在给未来的量子硬件铺路，不是给你的电脑加速。普通人看看热闹就行，顺便记住一个趋势：AI 做科研，正在从“猜答案”变成“拿证明说话”。",
+    "ja": "Gemini 4 のエージェントチームが、Lean 定理証明器の中で量子アルゴリズムを書き直した。arcsin というよく使われる算術ルーチンは 290 倍速くなったとされ、核融合シミュレーションは約 12 倍安くなり、しかも各ステップに機械で検証された正しさの証明が付いている。数字はすごいが、「量子コンピューターが明日から使える」には程遠い。これは未来の量子ハードウェアへの布石であり、あなたのパソコンを速くする話ではない。一般の人は見物していれば十分だ。ただ、ひとつの流れだけ覚えておこう。AI の科学研究は「答えを当てる」から「証明で語る」へと移りつつある。",
+    "en": "Teams of Gemini 4 agents rewrote quantum algorithms inside the Lean theorem prover: the everyday arcsin routine is claimed 290x faster, fusion simulations about 12x cheaper, and every step carries a machine-checked proof of correctness. The numbers are dramatic, but 'quantum computers usable tomorrow' is still a long way off — this is groundwork for future quantum hardware, not a speed-up for your laptop. Ordinary readers can just enjoy the show, and note one trend: AI research is shifting from guessing answers to arguing with proofs."
+   },
+   "src": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/"
+  },
   {
    "d": "2026-11-23",
    "verdict": "skip",
@@ -1185,102 +1281,6 @@
     "en": "A genome model for researchers, open for non-commercial research only — nowhere near clinics or checkups. For everyone else, it's enough to know AI took another step into biology."
    },
    "src": "https://www.unite.ai/zh-cn/google-deepminds-alphagenome-2-predicts-cell-state-variant-effects/"
-  },
-  {
-   "d": "2026-11-11",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "Anthropic 上市认购火爆：订单是发行量的好几倍，11 月 18 日定价",
-    "ja": "Anthropic の IPO は申し込み殺到：発行株数の数倍の注文、11月18日に価格決定",
-    "en": "Anthropic's IPO is multiple times oversubscribed; pricing set for Nov 18"
-   },
-   "why": {
-    "zh": "抢的人多不等于上市后一定涨——过去 Klarna、StubHub 也是超额认购，上市后照样跌破发行价。11 月 19 日才开始交易，普通人看看热闹就行，别跟着“AI 泡沫到顶了还是刚起步”的争论走。",
-    "ja": "申し込みが多いからといって上場後に上がるとは限らない。Klarna や StubHub も超過申し込みだったが、上場後に公開価格を割った。取引開始は11月19日。一般の人は見物だけで十分。「AI バブルは天井か、まだ序盤か」の議論に付き合う必要はない。",
-    "en": "Heavy demand doesn't guarantee a pop after listing — Klarna and StubHub were also oversubscribed and still traded below their offer prices. Trading starts Nov 19; for everyone else, just watch. No need to join the \"AI bubble: top or just starting?\" debate."
-   },
-   "src": "https://stockanalysis.com/news/anthropic-ipo-multiple-times-oversubscribed/"
-  },
-  {
-   "d": "2026-11-11",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "AWS 推出免费本地云模拟器：200 多个服务随便测，代码全是 AI Agent 写的",
-    "ja": "AWS が無料のローカルクラウド模倣ツール公開：200超のサービスを試せて、コードは全て AI エージェント製",
-    "en": "AWS ships a free local cloud emulator: test 200+ services, code written entirely by AI agents"
-   },
-   "why": {
-    "zh": "普通人用不上，这是开发者的玩具：不用联网、不用花钱就能在本地测 AWS 代码。真正值得记的是另一件事——整个工具从写代码到修 bug 全是 AI Agent 干的，工程师一行都没看过。“AI 会不会抢程序员饭碗”先别慌，这次它抢的是“搭测试环境”这种重复活。",
-    "ja": "一般ユーザーには不要。これは開発者向けのおもちゃで、ネット接続も課金もなしに AWS のコードを手元で試せる。本当に覚えておくべきは別の点——このツールのコードもバグ修正も全て AI エージェントがやり、エンジニアは一行も目を通していない。「AI がプログラマーの仕事を奪うか」はまだ慌てる話ではなく、今回奪ったのはテスト環境づくりのような繰り返し作業だ。",
-    "en": "Not for ordinary users — a developer toy that tests AWS code locally, offline and free. The part worth remembering is different: every line of this tool, including bug fixes, was written by AI agents while engineers never read a line. As for \"will AI take programmers' jobs?\" — don't panic yet; this time it took the repetitive job of setting up test environments."
-   },
-   "src": "https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator"
-  },
-  {
-   "d": "2026-11-10",
-   "verdict": "skip",
-   "panic": 3,
-   "t": {
-    "zh": "谷歌最强模型 Gemini 4 Carbon 全面开放：入门价 2 美元，11 月 30 日后翻倍",
-    "ja": "Google 最強モデル Gemini 4 Carbon が全面公開：導入価格は2ドル、11月30日以降は倍に",
-    "en": "Google's strongest model Gemini 4 Carbon goes fully public: $2 intro price, doubling after Nov 30"
-   },
-   "why": {
-    "zh": "普通人不用急：免费版和 Pro 套餐暂时还用不上，只有付费 API 和最贵的 Ultra 才能用。开发者倒是可以趁 11 月 30 日前 2 美元的入门价先试试，12 月 1 日起就变 4 美元了——这波是谷歌在提醒你，旗舰模型只会越来越贵，早用早便宜。",
-    "ja": "一般ユーザーは急ぐ必要なし。無料版や Pro ではまだ使えず、使えるのは有料 API と最上位 Ultra のみ。開発者なら 11 月 30 日までの導入価格 2 ドルで試す価値あり。12 月 1 日からは 4 ドルに倍増——最上位モデルは値上がりする一方、ということ。",
-    "en": "No rush for most people: it's not on the free or Pro tiers yet — only the paid API and the priciest Ultra plan. Developers can try it at the $2 intro rate before Nov 30; from Dec 1 it doubles to $4. The message is simple: flagship models only get pricier, so try early if you need it."
-   },
-   "src": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
-  },
-  {
-   "d": "2026-11-10",
-   "verdict": "wait",
-   "panic": 2,
-   "t": {
-    "zh": "Claude 开会了：能进视频会议边听边干活，还附赠表格和白板",
-    "ja": "Claude が会議に参加：聞きながら作業し、表計算とホワイトボードも追加",
-    "en": "Claude joins your meetings: listens in, works live, plus Sheets and Whiteboards"
-   },
-   "why": {
-    "zh": "先别急着换办公套件：会议功能还在测试版、只对 Team 和 Enterprise 开放，而且首批只支持 Google Meet。表格和白板也是付费版测试。等它向所有付费用户开放、你开会真觉得记笔记累的时候再试也不迟。",
-    "ja": "オフィススイートを乗り換えるのはまだ早い。会議機能はベータ版で Team・Enterprise 限定、最初は Google Meet のみ。表計算とホワイトボードも有料プランのベータだ。一般の有料ユーザーに広がって、議事録作りが本当に面倒だと感じてから試せば十分。",
-    "en": "Don't switch office suites yet: Meetings is in beta for Team and Enterprise only, and Google Meet only at launch. Sheets and Whiteboards are also paid-plan betas. Wait until it reaches all paid users and note-taking actually feels like a chore."
-   },
-   "src": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
-  },
-  {
-   "d": "2026-11-10",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "ChatGPT 变身企业黄页：商家能认领主页，还能派 AI 客服来接待你",
-    "ja": "ChatGPT が企業名鑑に：店舗が公式ページを持ち、AI 店員が接客",
-    "en": "ChatGPT turns into a business directory: firms claim profiles and send AI agents to greet you"
-   },
-   "why": {
-    "zh": "对普通用户就是多了一个查商家的入口，聊天里冒出来的商家 AI 是来卖东西的，记得它不是中立顾问。对开店的人来说倒是免费认领、值得顺手登记一个，真正能派上用场的 AI 客服目前只对美国电商开放。",
-    "ja": "一般ユーザーにとっては店探しの入口が一つ増えただけ。チャットに出てくる企業の AI は物を売るためのもの、中立な相談相手ではないと覚えておこう。店をやっている人なら無料で登録できるので、ついでに押さえておく価値はある。本格的な AI 接客は今のところ米国の EC 限定。",
-    "en": "For most users it's just one more way to look up a business — and the business AI that pops up in chat is there to sell, not to advise neutrally. If you run a shop, claiming the free profile is worth a minute; the full AI agent is US e-commerce only for now."
-   },
-   "src": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/"
-  },
-  {
-   "d": "2026-11-10",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "Anthropic 上市定价出炉：拟募资最高 644 亿美元，估值约 1 万亿美元",
-    "ja": "Anthropic の上場条件が判明：最大 644 億ドル調達、評価額は約 1 兆ドル",
-    "en": "Anthropic's IPO pricing lands: up to $64.4B raise, ~$1T valuation"
-   },
-   "why": {
-    "zh": "看个热闹就行：先是传出募资 693 亿美元、随后被撤回说是数字有误，改成 644 亿美元——连招股书都会发错版，说明这场史上最大 IPO 之一也在边走边改。普通人不用跟，更不用因此觉得 AI 要变天。",
-    "ja": "見物だけで十分。最初は 693 億ドル調達と報じられたが、数字の誤りで撤回され、644 億ドルに修正された。目論見書すら差し替えになるほど、史上最大級の IPO も走りながら修正中。一般の人が追う必要はなく、AI が変わるわけでもない。",
-    "en": "Just watch the show: first it was a $69.3B raise, then that was retracted as incorrect and corrected to $64.4B — even the prospectus needed a do-over, so one of the biggest IPOs ever is being fixed on the fly. No need for ordinary people to follow it, and it doesn't change AI itself."
-   },
-   "src": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/"
   }
  ]
 }
