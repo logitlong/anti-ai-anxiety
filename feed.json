@@ -1,7 +1,103 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-25",
+   "panic": 2,
+   "src": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+   "t": {
+    "en": "GPT-6 can now design proteins: 35 of 322 designs actually bound in the lab",
+    "ja": "GPT-6がタンパク質を設計：322個中35個が実験室で実際に結合した",
+    "zh": "GPT-6 会设计蛋白质了：322 个小蛋白，35 个在实验室里真的结合上了"
+   },
+   "verdict": "skip",
+   "why": {
+    "en": "No need to panic: this is a research preprint with roughly a one-in-ten hit rate, and specialist models were still needed to pick candidates and set sequences. Real medicines are many steps away. Ordinary readers don't need to learn protein design — just know general-purpose models are moving into the lab.",
+    "ja": "慌てなくて大丈夫：これは研究のプレプリントで、成功率は約1割。候補の選別や配列の決定には専門モデルがまだ必要で、新薬になるまでにはいくつもの関門があります。一般の人はタンパク質設計を学ぶ必要はなく、汎用モデルが研究の現場に入り込んできていると知っておけば十分です。",
+    "zh": "先别慌：这只是研究预印本，命中率约一成，而且筛候选、定序列还得靠专业模型帮忙；离新药上架还隔着好几道关。普通人不用学蛋白质设计，知道通用模型正在往科研里长就行了。"
+   }
+  },
+  {
+   "d": "2026-11-24",
+   "panic": 2,
+   "src": "https://36kr.com/p/4083853276752256",
+   "t": {
+    "en": "ByteDance's personal agent 'Xiaodou' enters public beta: it tracks tasks, remembers things, and even calls restaurants for you",
+    "ja": "バイトダンスのパーソナルエージェント「小豆」が公開テスト開始：自分から用事を追い、覚え、電話でレストラン予約も",
+    "zh": "字节的个人智能体「小豆」公测了：会主动盯事、记事，还能替你打电话订餐厅"
+   },
+   "verdict": "wait",
+   "why": {
+    "en": "Wait and see for now: it's an invite-only beta, so without a code you can't get in, and the feature set and quota rules are still shifting. No need to chase an invite code — ByteDance says these abilities will gradually move into the main Doubao app, where everyone can use them.",
+    "ja": "まずは様子見：今は招待制の公開テストで、コードがなければ入れません。能力の範囲も利用枠のルールもまだ変わる最中です。コードを急いで手に入れる必要はありません——公式によれば、これらの機能は今後、豆包アプリ本体に順次組み込まれる予定です。",
+    "zh": "先观望：目前是邀请制公测，没码进不去，而且能力边界、额度规则都还在变。不用急着抢码——官方说了，这些能力以后会逐步搬进豆包主 App，到时候人人都能用。"
+   }
+  },
+  {
+   "d": "2026-11-24",
+   "panic": 2,
+   "src": "https://claude.com/ja/resources/articles/install-as-app",
+   "t": {
+    "en": "Claude artifacts can now install as desktop apps: describe a small tool, no packaging or API keys needed",
+    "ja": "Claudeの小物がデスクトップアプリに：ひと言で小さなソフトが作れ、パッケージも鍵設定も不要",
+    "zh": "Claude 的小工具能装成桌面 App 了：一句话做个小软件，不用打包不用配密钥"
+   },
+   "verdict": "try",
+   "why": {
+    "en": "Worth a quick try: it works on the free plan too. Turn a tool you actually use — a ledger, a timer — into its own app that opens on its own. One caution: think twice before granting an app full access to your computer; only for tools you built yourself and trust.",
+    "ja": "気軽に試してみて：無料プランでも使えます。よく使う小物（家計簿やタイマーなど）を独立したアプリとしてインストールすれば、開くだけで使えます。ただし「パソコンへのフルアクセス」を許可する前によく考えて、自分で作った信頼できるものだけに。",
+    "zh": "顺手试试：免费版也能用，把常用的小工具（比如记账表、计时器）装成独立 App，打开就用。提醒一句：给 App 开“完全访问电脑”权限前先想想，只给自己做的、信得过的开。"
+   }
+  },
+  {
+   "d": "2026-11-24",
+   "panic": 2,
+   "src": "https://www.ithome.com/1/031/501.htm",
+   "t": {
+    "en": "Baidu open-sources ERNIE 5.5 Flash Preview: 280B parameters under Apache 2.0, free for commercial use",
+    "ja": "百度の文心5.5 Flash Previewがオープンソース化：2800億パラメータ、Apache 2.0で商用も自由",
+    "zh": "百度文心 5.5 Flash Preview 开源了：2800 亿参数，Apache 2.0 协议随便商用"
+   },
+   "verdict": "skip",
+   "why": {
+    "en": "No need to chase this: these are open weights for developers and companies, not something ordinary users run — 280B parameters still need several high-end GPUs locally. Just note that Chinese labs are now competing on 'commercially usable, deployable on-premises' models.",
+    "ja": "追わなくて大丈夫：これは開発者や企業向けのオープンウェイトで、一般の人が使うものではありません。2800億パラメータをローカルで動かすには高性能GPUが何枚も要ります。中国の大規模モデルが「商用可・ローカル展開可」を売りにし始めていると知っておけば十分です。",
+    "zh": "不用追：这是给开发者和企业的开源权重，普通人用不上；2800 亿参数本地跑起来也要好几张高端卡。知道国产大模型正在把“能商用、能本地部署”当成卖点就够了。"
+   }
+  },
+  {
+   "d": "2026-11-24",
+   "panic": 2,
+   "src": "https://finance.sina.cn/2026-11-24/detail-inizvzia8926468.d.html",
+   "t": {
+    "en": "Amap's ABot-World 0.5 world model: it simulates collisions, adds sound effects, and rewrites the scene on one sentence",
+    "ja": "高徳のワールドモデルABot-World 0.5：衝突を計算し、効果音も付き、ひと言で筋書きを変更",
+    "zh": "高德的世界模型 ABot-World 0.5：会算碰撞、会配音效，一句话就能改剧情"
+   },
+   "verdict": "skip",
+   "why": {
+    "en": "No need to chase this: the online workshop is open to play with, but this is mainly a tool for games, film and robot training. Ordinary readers can just enjoy it as a moving electronic sandbox — no need to study world models.",
+    "ja": "追わなくて大丈夫：オンラインの工房で遊べますが、これは主にゲームや映像、ロボット学習のための道具です。一般の人は動く「電子サンドボックス」として眺めるだけで、ワールドモデルを勉強する必要はありません。",
+    "zh": "不用追：在线工坊能玩，但这主要是给游戏、影视和机器人训练用的工具；普通人当个会动的“电子沙盘”看看热闹就行，不用去研究什么世界模型。"
+   }
+  },
+  {
+   "d": "2026-11-24",
+   "panic": 2,
+   "src": "https://www.36kr.com/p/4083520759600768",
+   "t": {
+    "en": "Embodied AI raised three nine-figure rounds in 48 hours — all of it steering clear of humanoid bodies, into hands, parts and niche hits",
+    "ja": "身体性AI、48時間で3件の億元級資金調達：お金はすべてヒューマノイド本体を避け、手・部品・垂直特化製品へ",
+    "zh": "具身智能 48 小时三笔亿元融资：钱全绕开了人形整机，投给了手、部件和垂直爆品"
+   },
+   "verdict": "skip",
+   "why": {
+    "en": "No need to panic: this is about where capital is flowing, not about robots at your door getting pricier. Investors now prefer parts and subsystems that already sell over humanoid stories told first. For ordinary people, the timeline for a humanoid in the home hasn't changed.",
+    "ja": "慌てなくて大丈夫：これは資本の風向きの話で、あなたの家のロボットが値上がりする話ではありません。投資家は今、ヒューマノイドの物語より「まず売れる」部品やサブシステムを好んでいます。一般の人にとって、ヒューマノイドが家庭に入る時期は変わっていません。",
+    "zh": "不用慌：这说的是资本风向，不是你家门口的机器人要涨价了。投资人现在更爱“先把东西卖出去”的部件和子系统，而不是先讲人形故事。对普通人来说，人形机器人进家门的时间表没变，该干嘛干嘛。"
+   }
+  },
   {
    "d": "2026-11-23",
    "verdict": "skip",
@@ -1185,102 +1281,6 @@
     "en": "No need to chase: the product isn't out yet, the $70B is just a plan, and Zhang Yiming himself says truly catching OpenAI and Anthropic takes until 2029 or 2030. Doubao users can carry on as they are — the news means 'ByteDance is finally serious,' not 'switch tools tomorrow.'"
    },
    "src": "https://finance.jrj.com.cn/2026/11/12131759116692.shtml"
-  },
-  {
-   "d": "2026-11-12",
-   "verdict": "skip",
-   "panic": 3,
-   "t": {
-    "zh": "Gainsight 裁员约 270 人：不卖座位改卖结果，全面转向 AI Agent",
-    "ja": "Gainsight が約 270 人削減：座席課金から成果課金へ、AI エージェント中心に転換",
-    "en": "Gainsight cuts about 270 jobs as it pivots to AI agents and outcome-based pricing"
-   },
-   "why": {
-    "zh": "不用慌：这是一家做客户成功软件的公司自己的转型，裁的是它自己的员工，不是你的饭碗。信号倒是值得看一眼——连卖软件的公司都开始按「结果」而不是按「座位数」收费了，说明 AI Agent 正在改写 SaaS 的生意模式。普通人不用做什么，继续用你的工具就行。",
-    "ja": "慌てる必要なし。これはカスタマーサクセス・ソフトの会社自身の転換で、切られたのはその会社の社員であって、あなたの仕事ではない。ただシグナルとして見る価値はある。ソフトを売る会社まで「座席数」ではなく「成果」で課金し始めた。AI エージェントが SaaS の商売を書き換えつつある証拠だ。一般の人が何かする必要はない。",
-    "en": "No need to panic: this is a customer-success software company restructuring itself — its own employees, not your job. Still, the signal is worth a glance: even software sellers are moving from charging per seat to charging per outcome. AI agents are rewriting how SaaS makes money. Ordinary users don't need to do anything."
-   },
-   "src": "https://mlq.ai/news/gainsight-cuts-about-270-jobs-as-it-rebuilds-around-ai-agents-and-outcome-based-pricing/"
-  },
-  {
-   "d": "2026-11-11",
-   "verdict": "skip",
-   "panic": 3,
-   "t": {
-    "zh": "ChatGPT 旧语音 12 月 11 日退役：高级语音和标准语音下线，全员改用 GPT-Live",
-    "ja": "ChatGPT の旧音声モード、12 月 11 日で終了：アドバンスト音声と標準音声が廃止、全員 GPT-Live へ",
-    "en": "ChatGPT's old voice modes retire Dec 11: Advanced and Standard Voice go away, everyone moves to GPT-Live"
-   },
-   "why": {
-    "zh": "不用慌：这只是把三个语音模式收成一个，大部分人早就用上 GPT-Live 了，聊天记录也都保留。唯一的小遗憾是视频通话和看屏幕功能暂时还得靠旧模式，OpenAI 没说什么时候补上——常用这两项的人，12 月 11 日前不用做任何事，到时候自动切换就行。",
-    "ja": "慌てる必要なし。3 つの音声モードを 1 つにまとめるだけで、大半の人はすでに GPT-Live を使っている。会話履歴も残る。唯一の惜しい点は、ビデオ通話と画面共有が当面は旧モード頼みで、移行時期は未定ということ。よく使う人も 12 月 11 日までに何もする必要はなく、自動で切り替わる。",
-    "en": "No need to panic: this just folds three voice modes into one, and most people already use GPT-Live; chat history stays put. The only wrinkle is that video calls and screen sharing still rely on the old mode for now, with no date for the handover — if you use those, you don't need to do anything before Dec 11, the switch happens automatically."
-   },
-   "src": "https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt"
-  },
-  {
-   "d": "2026-11-11",
-   "verdict": "try",
-   "panic": 1,
-   "t": {
-    "zh": "Claude 付费用户白捡一次满血复活：全模型全额度免费重置，12 月 10 日前领",
-    "ja": "Claude 有料ユーザーに無料のフルリセット：全モデル・全上限が 1 回だけ復活、12 月 10 日までに受け取り",
-    "en": "Paid Claude users get a free full reset: every model, every limit refilled once — claim by Dec 10"
-   },
-   "why": {
-    "zh": "顺手领一下：Anthropic 承认最近的小 bug 多扣了大家的额度，补发了一次全模型、全额度（含每周上限）的免费重置，Pro、Max、Ultra、Team 都有。不用现在就用，12 月 10 日下午 2 点（太平洋时间）前去设置 → 用量里点一下就行，留到额度快用完的时候再领最划算。免费用户没有份。",
-    "ja": "もらっておこう。Anthropic は最近の小さな不具合で上限を余分に消費していたことを認め、全モデル・全上限（週間上限を含む）の無料フルリセットを 1 回配った。Pro・Max・Ultra・Team が対象。今すぐ使う必要はなく、12 月 10 日午後 2 時（太平洋時間）までに設定 → 使用量から受け取ればいい。上限が尽きそうなときに使うのが一番お得。無料プランは対象外。",
-    "en": "Grab it while it's there: Anthropic admits recent bugs burned more of people's allowances than intended, so every paid plan gets one free full reset — all models, all limits, weekly ones included. No need to use it now; claim it from Settings → Usage before 2pm PT on Dec 10, ideally when your allowance is nearly gone. Free-plan users don't get one."
-   },
-   "src": "https://aitoolsrecap.com/Blog/claude-free-usage-reset-pro-max-ultra-team"
-  },
-  {
-   "d": "2026-11-11",
-   "verdict": "skip",
-   "panic": 3,
-   "t": {
-    "zh": "阿里 Qwen4 来了：旗舰 Qwen4-Max 开放预览，100 万上下文、11 月 25 日就下线",
-    "ja": "アリババ Qwen4 登場：最上位 Qwen4-Max がプレビュー公開、100万トークン対応・11月25日で終了",
-    "en": "Alibaba's Qwen4 arrives: flagship Qwen4-Max opens in preview, 1M context, gone Nov 25"
-   },
-   "why": {
-    "zh": "不用追：这只是 15 天的限时预览，没有跑分、没有定价，11 月 25 日到期就下线，连正式版什么时候来都没说。普通用户在千问 App 里免费点开玩玩就够了，开发者也别急着往生产环境里接，等正式版和跑分出来再说。",
-    "ja": "追う必要なし。これは15日間限定のプレビューで、ベンチマークも価格も未公表、11月25日に終了して正式版の時期も未定。一般ユーザーは Qwen アプリで無料で触れれば十分。開発者も本番導入は正式版とベンチマークを待ってからでいい。",
-    "en": "No need to chase this: a 15-day preview with no benchmarks, no price, and it retires Nov 25 with no date for the full release. Ordinary users can just poke at it free in the Qwen app; developers should wait for the real release and benchmarks before wiring it into production."
-   },
-   "src": "https://cn.technode.com/post/2026-11-11/alibaba-qwen4-max-preview/"
-  },
-  {
-   "d": "2026-11-11",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "谷歌出了个“只做选择题”的模型：一次判 1000 道题，答案直接给概率",
-    "ja": "Google が「選択肢だけ答える」モデル公開：1,000問を一度に判定、答えは確率で返す",
-    "en": "Google ships a model that only answers multiple-choice: 1,000 questions in one pass, answers as probabilities"
-   },
-   "why": {
-    "zh": "跟普通人没关系，这是给开发者用的新 API：模型不写文章，只对选择题打分，适合批量审核、分类这种活。一次能判 1000 道题、每百万 Token 只要 1 毛钱，说明大厂开始把模型拆成“专才”卖了——你该用的聊天助手一个也不会少。",
-    "ja": "一般ユーザーには関係なし。これは開発者向けの新 API で、文章を書かず選択肢に点数を付けるもの。大量の審査や分類に向いていて、1,000問を一度に判定でき、100万トークンあたり10セント。大手がモデルを「専門家」に切り分け始めた、という話。あなたのチャット相手が減るわけではない。",
-    "en": "Nothing for ordinary users — this is a developer API: instead of writing text, the model scores options, built for bulk review and classification. It judges 1,000 questions in one request at $0.10 per million tokens. The takeaway is that big labs are splitting models into specialists; your chatbot isn't going anywhere."
-   },
-   "src": "https://xenospectrum.com/en/gemini-decisions-api/"
-  },
-  {
-   "d": "2026-11-11",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "DeepMind 发布 AlphaGenome 2：能预测 DNA 变异在不同细胞里怎么捣乱",
-    "ja": "DeepMind が AlphaGenome 2 を発表：DNA 変異が細胞ごとにどう働くかを予測",
-    "en": "DeepMind unveils AlphaGenome 2: predicts how DNA variants act differently in each cell type"
-   },
-   "why": {
-    "zh": "这是给科研人员用的基因组模型，只开放非商业研究，离看病、体检还远得很。普通人不用懂也不用追，知道“AI 又往生物学里钻了一步”就够了。",
-    "ja": "研究者向けのゲノムモデルで、非商業研究にのみ開放。診察や健康診断とはまだ無縁。一般ユーザーは「AI がまた生物学に一歩踏み込んだ」と知るだけで十分。",
-    "en": "A genome model for researchers, open for non-commercial research only — nowhere near clinics or checkups. For everyone else, it's enough to know AI took another step into biology."
-   },
-   "src": "https://www.unite.ai/zh-cn/google-deepminds-alphagenome-2-predicts-cell-state-variant-effects/"
   }
  ]
 }
