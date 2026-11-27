@@ -7118,6 +7118,21 @@
     "ja": "ジェンスン・フアンがNVIDIAのCEOを辞任、33年の舵取りに幕",
     "en": "Jensen Huang resigns as Nvidia CEO, ending his 33-year run"
    },
+   "f": {
+    "zh": "英伟达 33 年掌舵人突然辞职，大家慌的是：AI 龙头会不会群龙无首、股价会不会崩盘",
+    "ja": "NVIDIAを33年率いたCEOの突然の辞任に、AIの旗手が迷走するのでは、株価が暴落するのではと皆が慌てた",
+    "en": "Nvidia's CEO of 33 years suddenly resigned, and everyone panicked: would the AI leader lose its way, and would the stock crash?"
+   },
+   "o": {
+    "zh": "11 天后董事会全票恢复他的 CEO 职务，风波收场，公司照常运转",
+    "ja": "11日後、取締役会が全会一致でCEOに復帰させ、騒動は収束して会社は通常通りに回り始めた",
+    "en": "Eleven days later the board unanimously reinstated him as CEO; the storm passed and the company carried on as usual"
+   },
+   "life": {
+    "zh": "约 11 天",
+    "ja": "約11日間",
+    "en": "~11 days"
+   },
    "src": "https://www.usatoday.com/story/tech/2026/11/12/jensen-huang-nvidia-ceo-resigns-affair-investigation/92734431007/"
   },
   {
@@ -7270,6 +7285,30 @@
     "en": "Jensen Huang reinstated 11 days after resigning: Nvidia board unanimously restores him as CEO"
    },
    "src": "https://www.aljazeera.com/economy/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo"
+  },
+  {
+   "d": "2026-11-26",
+   "r": "cn",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "美国芯片管制与反蒸馏拖慢中国大模型：智谱 GLM-5.5、月之暗面 Kimi K4 延期",
+    "ja": "米国の半導体規制と蒸留対策が中国のAI開発を減速：智譜のGLM-5.5と月之暗面のKimi K4が延期",
+    "en": "US chip curbs and anti-distillation measures slow Chinese AI models: Zhipu's GLM-5.5 and Moonshot's Kimi K4 delayed"
+   },
+   "src": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/"
+  },
+  {
+   "d": "2026-11-25",
+   "r": "us",
+   "c": "policy",
+   "p": 3,
+   "t": {
+    "zh": "42 州总检察长联手阻击 Character.ai 拍卖 2100 万用户私密聊天记录",
+    "ja": "42州の司法長官がCharacter.aiの2100万人分の私的チャット記録の競売阻止へ",
+    "en": "42 state attorneys general move to block Character.ai's auction of 21 million users' private chats"
+   },
+   "src": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"
   }
  ]
 }
