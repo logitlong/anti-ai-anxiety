@@ -1,7 +1,71 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "mode": "manual",
  "items": [
+  {
+   "d": "2026-11-27",
+   "panic": 2,
+   "src": "https://blockoala.com/index.php/2026/11/27/deepseek-shows-token-costs-for-each-chat-turn-but-conversations-remain-free/",
+   "t": {
+    "en": "DeepSeek now shows you the bill: token cost listed under every reply",
+    "ja": "DeepSeekが領収書を出し始めた：1往復ごとに返信の下にトークン料金が表示される",
+    "zh": "DeepSeek 开始给你看账单了：每聊一轮，回复底下多了一行 token 花费"
+   },
+   "verdict": "skip",
+   "why": {
+    "en": "Don't panic: personal chat is still free for now — this just makes the cost visible. If paid plans ever come, they'll target heavy coding users first. Wait and see.",
+    "ja": "慌てなくて大丈夫。個人チャットは今のところ無料で、この表示はコストを見える化しただけ。有料化されるとしても、まずはヘビーなコーディング用途から。今は様子見で十分。",
+    "zh": "先别慌：个人聊天目前还是免费，这行小字只是把成本亮给你看。真要收费也是以后针对写代码的重度用户，到时候再看也不迟。"
+   }
+  },
+  {
+   "d": "2026-11-27",
+   "panic": 2,
+   "src": "https://www.ithome.com/1/033/282.htm",
+   "t": {
+    "en": "Tencent's Hunyuan Hy3D 3.6 is here: one image becomes a 2-million-polygon pro-grade 3D model",
+    "ja": "テンセント混元 Hy3D 3.6登場：1枚の画像から200万ポリゴンの本格3Dモデルが作れる",
+    "zh": "腾讯混元 Hy3D 3.6 来了：一张图就能捏出 200 万面的专业级 3D 模型"
+   },
+   "verdict": "try",
+   "why": {
+    "en": "If you make 3D stuff, try it — 5 free generations a day. If you don't, it's just another tool getting better; nothing to do with your daily life.",
+    "ja": "3Dを作る人なら1日5回まで無料で試せる。3Dと無縁なら、またひとつ道具が賢くなっただけのこと。日常には関係ない。",
+    "zh": "做 3D 的朋友可以顺手试试，每天能免费玩 5 次；不做 3D 的话，这就是又一款工具变强了，跟你的日常没关系。"
+   }
+  },
+  {
+   "d": "2026-11-27",
+   "panic": 2,
+   "src": "https://github.com/Robbyant/lingbot-map-v2",
+   "t": {
+    "en": "Ant's LingBot-Map 2.0 goes open source: robots that map as they walk — and rewrite their own spatial memory",
+    "ja": "アント霊波がLingBot-Map 2.0をオープンソース化：歩きながら地図を作り、記憶も自分で書き換えるロボット",
+    "zh": "蚂蚁灵波开源 LingBot-Map 2.0：机器人边走边建图，还学会了自己改记忆"
+   },
+   "verdict": "skip",
+   "why": {
+    "en": "This is open-source plumbing for robot developers, not something you'll use. Robots getting better at finding their way is good news — but they're still a long way from working in your home.",
+    "ja": "これはロボット開発者向けのオープンソース部品で、一般の人が使うものではない。ロボットが道を覚えるのは良いことだが、家で働くようになるのはまだ先の話。",
+    "zh": "这是给机器人开发者的开源零件，普通人用不上。机器人越来越会认路是好事，但离它进你家干活还早得很。"
+   }
+  },
+  {
+   "d": "2026-11-27",
+   "panic": 1,
+   "src": "http://www.huyangnet.cn/content/2026-11/27/content_2078763.html",
+   "t": {
+    "en": "China launches SUICE V0.1, an Earth foundation-model engine that lets LLMs read satellite imagery directly",
+    "ja": "中国が地球大モデルエンジンSUICE V0.1を発表：大規模モデルが衛星画像を直接読み解く",
+    "zh": "我国发布地球大模型引擎 SUICE V0.1：让大模型直接读懂卫星影像"
+   },
+   "verdict": "skip",
+   "why": {
+    "en": "This is remote-sensing and space infrastructure — about as far from daily life as it gets. Better use of satellite data won't suddenly make your life harder.",
+    "ja": "リモートセンシングと宇宙インフラの進展で、一般の人の生活とは無関係。衛星データが上手に使われるようになっても、あなたの暮らしが急に大変になることはない。",
+    "zh": "这是遥感和太空基础设施的进展，跟普通人八竿子打不着。卫星数据用得更好，不会让你的生活突然变难。"
+   }
+  },
   {
    "d": "2026-11-27",
    "panic": 1,
@@ -1217,70 +1281,6 @@
     "en": "Ordinary users in Japan aren't affected; the ban hits people in mainland China and entities controlled from China, Russia and similar regions. If your work depends on Claude, just keep a domestic model as a Plan B — no need to migrate overnight."
    },
    "src": "https://aistaffo.com/news/anthropics-new-regions-policy-bars-china-controlled-firms-from-claude/"
-  },
-  {
-   "d": "2026-11-12",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "微软 365 全球宕机：Outlook、Teams、Copilot 一起中断",
-    "ja": "Microsoft 365が世界規模で障害：Outlook、Teams、Copilotが同時に止まる",
-    "en": "Microsoft 365 goes down worldwide: Outlook, Teams and Copilot all interrupted"
-   },
-   "why": {
-    "zh": "断网式的一天，但服务已经恢复，文件和邮件都没丢。能做的只有一件事：重要资料别只放在一个云里，本地留个备份。",
-    "ja": "丸一日つながらない不便はあったが、サービスは復旧し、ファイルもメールも消えていない。できることは一つだけ。大事な資料はクラウド一つに預けず、ローカルにもバックアップを置くこと。",
-    "en": "An inconvenient day offline, but services are back and no files or mail were lost. The only takeaway: don't keep important files in a single cloud — keep a local backup too."
-   },
-   "src": "https://www.everydev.ai/p/news-weekly-ai-dev-news-digest-november-8-november-13-2026"
-  },
-  {
-   "d": "2026-11-13",
-   "verdict": "skip",
-   "panic": 3,
-   "t": {
-    "zh": "四家非营利组织起诉五大 AI 巨头，要求法院冻结前沿模型开发",
-    "ja": "米非営利団体4団体、AI大手5社を提訴　最先端モデルの開発凍結を求める",
-    "en": "Four nonprofits sue five AI giants, asking a court to freeze frontier model development"
-   },
-   "why": {
-    "zh": "只是起诉、还没判，法院连紧急禁令都没发；五家公司照常发模型，普通人该干嘛干嘛。",
-    "ja": "提訴されただけで判決はまだ出ておらず、緊急差し止めも出ていない。各社は通常通りモデルを出しているので、普段通りで大丈夫。",
-    "en": "It's only a lawsuit — no ruling, no injunction. The labs are shipping models as usual, so carry on."
-   },
-   "src": "https://www.aljazeera.com/amp/news/2026/11/12/us-nonprofits-sue-tech-giants-to-halt-ai-development"
-  },
-  {
-   "d": "2026-11-13",
-   "verdict": "skip",
-   "panic": 3,
-   "t": {
-    "zh": "SpaceX 的 AI 部门裁掉 Grok Imagine 团队约 60 人，转向编程工具和智能体",
-    "ja": "スペースXのAI部門、Grok Imagineチーム約60人を削減　コーディングツールとエージェントへ転換",
-    "en": "SpaceX's AI arm cuts about 60 from the Grok Imagine team, pivoting to coding tools and agents"
-   },
-   "why": {
-    "zh": "被裁的是做图生视频的团队，不是你用的 Grok 聊天；产品还在，只是以后更新可能变慢。",
-    "ja": "削減されたのは画像・動画生成チームで、普段使うGrokチャットではない。製品は残るが、今後の更新は遅くなるかもしれない。",
-    "en": "The cuts hit the image-and-video team, not the Grok chat you use. The product stays, though updates may slow down."
-   },
-   "src": "https://techstartups.com/2026/11/13/spacex-lays-off-60-grok-imagine-employees-as-elon-musk-shifts-focus-to-ai-coding-and-agents/"
-  },
-  {
-   "d": "2026-11-13",
-   "verdict": "skip",
-   "panic": 2,
-   "t": {
-    "zh": "OpenAI 推出 Daybreak 安全双件套：AI 帮你找漏洞、写补丁",
-    "ja": "OpenAI、セキュリティ製品Daybreakを発表　AIが脆弱性を探してパッチも作る",
-    "en": "OpenAI launches Daybreak security duo: AI that finds your bugs and writes the patches"
-   },
-   "why": {
-    "zh": "企业安全工具，红队要申请、补丁厂只是预览插件；跟普通用户没关系，连价格都没公布。",
-    "ja": "企業向けセキュリティツールで、レッドチームは申請制、パッチ工場はプレビュー段階。価格も未発表で、一般ユーザーには関係なし。",
-    "en": "Enterprise security tools — Red Team needs an application, Defense Factory is a preview plugin. No pricing yet, and nothing for regular users."
-   },
-   "src": "https://www.siliconreport.com/openai-introduces-daybreak-security-tools-to-test-and-fix-web-apps"
   }
  ]
 }
